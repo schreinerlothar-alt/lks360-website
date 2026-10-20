@@ -1,0 +1,47 @@
+:root{--navy:#0d2238;--blue:#145da0;--teal:#0fa3b1;--red:#e3262b;--ink:#16202c;--muted:#5a6676;--line:#e3e8ef;--soft:#f4f7fa}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Source Sans 3","Segoe UI",Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6;font-size:17px}
+h1,h2,h3,.brand{font-family:"Barlow Condensed","Segoe UI",Arial,sans-serif;line-height:1.1}
+a{color:var(--blue)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:14px}
+.brand{font-size:24px;font-weight:700;color:var(--navy);text-decoration:none;letter-spacing:.3px}
+.brand span{color:var(--red)}
+nav a{margin-left:22px;text-decoration:none;color:var(--muted);font-weight:600;font-size:15px}
+nav a:hover{color:var(--blue)}
+.btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;font-weight:600;padding:12px 24px;border-radius:30px}
+.btn.alt{background:#fff;color:var(--navy)}
+.hero{position:relative;color:#fff;background:var(--navy) url("img/gas-turbine-rotor.jpg") center/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(13,34,56,.94) 0%,rgba(13,34,56,.78) 45%,rgba(13,34,56,.25) 100%)}
+.hero .wrap{position:relative;padding:110px 20px 120px}
+.hero h1{font-size:54px;margin:0 0 18px;max-width:700px}
+.hero p{font-size:20px;color:#d7e3ef;max-width:600px;margin:0 0 30px}
+.hero .btn{margin:0 12px 10px 0}
+section{padding:80px 0}
+.soft{background:var(--soft)}
+.kicker{color:var(--teal);text-transform:uppercase;letter-spacing:1.5px;font-weight:700;font-size:13px;margin:0 0 6px}
+h2{font-size:40px;margin:0 0 12px;color:var(--navy)}
+.lead{color:var(--muted);max-width:700px;margin:0 0 40px;font-size:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border-radius:16px;padding:28px;box-shadow:0 8px 28px rgba(13,34,56,.08)}
+.card h3{font-size:24px;margin:0 0 8px;color:var(--navy)}
+.card p{margin:0;color:var(--muted)}
+.num{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--teal);color:#fff;font-weight:700;margin-bottom:14px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.steps .card:nth-child(2) .num{background:var(--blue)}.steps .card:nth-child(3) .num{background:#2f8f4e}.steps .card:nth-child(4) .num{background:var(--red)}
+.two{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:start}
+.facts{list-style:none;padding:0;margin:0}
+.facts li{padding:12px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px}
+.facts li span{color:var(--muted)}
+.cta{background:linear-gradient(110deg,var(--navy),var(--blue));color:#fff;text-align:center;padding:70px 20px}
+.cta h2{color:#fff}
+.cta p{color:#d7e3ef;margin:0 0 26px}
+footer{background:#0a1a2b;color:#9fb0c3;font-size:14px;padding:40px 0}
+footer .cols{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+footer a{color:#dfe8f2;text-decoration:none;margin-right:18px}
+.legal{max-width:780px}
+.legal h1{font-size:44px;color:var(--navy);margin:0 0 20px}
+.legal h2{font-size:26px;margin:30px 0 8px}
+@media(max-width:900px){.grid3,.steps,.two{grid-template-columns:1fr}.hero h1{font-size:38px}nav a:not(.btn){display:none}}
