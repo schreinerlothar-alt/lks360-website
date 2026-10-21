@@ -18,12 +18,10 @@
 - Gas turbines: industrial and aeroderivative packages, 50 and 60 Hz, new, unused or overhauled.
 - Steam turbines: generator sets for power plants and industrial cogeneration.
 - Generator sets: gas and diesel, for industrial and utility projects.
+- Money flow: purchase payments go directly from buyer to owner and never pass through accounts of LKS 360-SCHREINER LLC. Income is a commission under a written agreement, paid by bank transfer after the purchase contract is signed.
 - Role: independent broker on commission. Equipment stays with its owner until the sale. The purchase contract is made between buyer and owner. LKS 360-SCHREINER LLC does not take title to the equipment.
 - Process: buyer requirement, offer with the owner's conditions, letter of intent and inspection, purchase contract between buyer and owner.
 - Compliance: counterparties are screened against OFAC, EU and UN sanction lists. No business with sanctioned persons, entities or embargoed countries.
-
-## Related company
-- LKS 360 IMPORT EXPORT TRADING SERVICE CO., LTD (Vietnam, tax code 0314542902), https://lks360exim.com, is a separate legal entity.
 
 ## Pages
 - [Home](https://lks360.com/)
@@ -31,6 +29,6 @@
 - [Steam turbines](https://lks360.com/steam-turbines.html): Siemens SST-400 and other steam turbine generator sets
 - [Generator sets](https://lks360.com/generator-sets.html): Caterpillar, Wärtsilä, MTU, Cummins, MAN
 - [How we work and FAQ](https://lks360.com/how-we-work.html)
-- [Available units, list of 21 October 2026](https://lks360.com/available-units.html): 34 units (23 gas turbines, 2 steam turbines, 9 generator sets)
+- [Compliance policy](https://lks360.com/compliance.html): sanctions screening, counterparty identification, no handling of purchase funds
 - [Imprint](https://lks360.com/imprint.html)
 - [Privacy Policy](https://lks360.com/privacy.html)
