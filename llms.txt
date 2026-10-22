@@ -18,13 +18,14 @@
 - Gas turbines: industrial and aeroderivative packages, 50 and 60 Hz, new, unused or overhauled.
 - Steam turbines: generator sets for power plants and industrial cogeneration.
 - Generator sets: gas and diesel, for industrial and utility projects.
-- Money flow: purchase payments go directly from buyer to owner and never pass through accounts of LKS 360-SCHREINER LLC. Income is a commission under a written agreement, paid by bank transfer after the purchase contract is signed.
+- Site supervision: installation and site management for industrial plants.
+- Money flow: purchase payments go directly from buyer to owner and never pass through accounts of LKS 360-SCHREINER LLC. Brokerage income is a commission under a written agreement, paid by bank transfer after the purchase contract is signed.
 - Role: independent broker on commission. Equipment stays with its owner until the sale. The purchase contract is made between buyer and owner. LKS 360-SCHREINER LLC does not take title to the equipment.
 - Process: buyer requirement, offer with the owner's conditions, letter of intent and inspection, purchase contract between buyer and owner.
 
 ## Pages
 - [Home](https://lks360.com/)
-- [Gas turbines](https://lks360.com/gas-turbines.html): Siemens SGT-600/700/800, SGT5-2000E, W501D5, 701DU; GE Frame 5, 6B, 6F.03, 7EA, 9HA.01, LM2500, LM5000, LM6000, TM2500+; Solar Centaur 40, Taurus 60, Titan 130, Titan 250; Mitsubishi MF111
+- [Gas turbines](https://lks360.com/gas-turbines.html): Siemens SGT-600/700/800, SGT5-2000E, W501D5, 701DU; GE Frame 5, 6B, 6F.03, 7EA, LM2500, LM5000, LM6000, TM2500+; Solar Centaur 40, Taurus 60, Titan 130, Titan 250; Mitsubishi MF111
 - [Steam turbines](https://lks360.com/steam-turbines.html): Siemens SST-400 and other steam turbine generator sets
 - [Generator sets](https://lks360.com/generator-sets.html): Caterpillar, Wärtsilä, MTU, Cummins, MAN
 - [How we work and FAQ](https://lks360.com/how-we-work.html)
