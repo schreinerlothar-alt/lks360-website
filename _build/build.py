@@ -7,6 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 UNITS = json.loads((ROOT / "_build" / "units.json").read_text(encoding="utf-8"))
 LISTED = "21 October 2026"
+UPDATED = "23 October 2026"
 TODAY = datetime.date.today().isoformat()
 SITE = "https://lks360.com"
 MAIL = "manager@lks360.com"
@@ -172,7 +173,7 @@ def inventory_page():
                 f"{n} gas turbines, steam turbines and generator sets for sale: Siemens, GE, Solar, Mitsubishi, Caterpillar, Wärtsilä and more. 50 and 60 Hz. Offered on behalf of the owners.",
                 "/inventory.html", f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n') + header() + f"""
 <div class="hero slim"><div class="wrap">
-  <p class="kicker light">Inventory · updated {LISTED}</p>
+  <p class="kicker light">Inventory · updated {UPDATED}</p>
   <h1>Gas turbines, steam turbines and generator sets for sale</h1>
   <p>{n} units from owners in our network: {counts['gas']} gas turbines, {counts['steam']} steam turbines and {counts['genset']} generator sets. Each listing has a stock number. Prices on request.</p>
 </div></div>
@@ -202,7 +203,7 @@ def inventory_page():
 
 def cat_block(cat):
     us = [u for u in UNITS if u["cat"] == cat]
-    return (f'<!--UNITS-->\n<section class="soft"><div class="wrap">\n  <p class="kicker">Inventory · updated {LISTED}</p>\n'
+    return (f'<!--UNITS-->\n<section class="soft"><div class="wrap">\n  <p class="kicker">Inventory · updated {UPDATED}</p>\n'
             f'  <h2>{len(us)} {CATS[cat][1].lower()} for sale</h2>\n  <div class="ulist">{"".join(row(u) for u in us)}</div>\n'
             f'  <p><a href="/inventory.html?cat={cat}">Filter all units in the inventory</a></p>\n</div></section>\n<!--/UNITS-->')
 
