@@ -25,6 +25,9 @@
 
 ## Pages
 - [Home](https://lks360.com/)
+- [Inventory](https://lks360.com/inventory.html): 35 listed units with stock numbers (24 gas turbines, 2 steam turbines, 9 generator sets), each with its own page under https://lks360.com/units/, filter by type, manufacturer, frequency and output. Prices on request.
+- [Sell equipment](https://lks360.com/sell.html): how owners list a unit confidentially
+- [Contact](https://lks360.com/contact.html): requirement form, email and phone
 - [Gas turbines](https://lks360.com/gas-turbines.html): Siemens SGT-600/700/800, SGT5-2000E, W501D5, 701DU; GE Frame 5, 6B, 6F.03, 7EA, LM2500, LM5000, LM6000, TM2500+; Solar Centaur 40, Taurus 60, Titan 130, Titan 250; Mitsubishi MF111
 - [Steam turbines](https://lks360.com/steam-turbines.html): Siemens SST-400 and other steam turbine generator sets
 - [Generator sets](https://lks360.com/generator-sets.html): Caterpillar, Wärtsilä, MTU, Cummins, MAN
