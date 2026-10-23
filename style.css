@@ -208,3 +208,12 @@ footer a{color:#dfe8f2;text-decoration:none;margin-right:18px}
  .stats{grid-template-columns:1fr 1fr}.frow{grid-template-columns:1fr}.fcols{grid-template-columns:1fr 1fr}
  .side{position:static}.hero.slim h1,.unitpage h1{font-size:34px}
 }
+/* news */
+.newslist{display:grid;gap:14px}
+.newsitem{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 22px}
+.newsitem h3{font-size:22px;margin:2px 0 6px}.newsitem h3 a{color:var(--navy);text-decoration:none}.newsitem h3 a:hover{color:var(--blue)}
+.newsitem p.muted{margin:0;font-size:15px}
+.post h1{font-size:40px;color:var(--navy)}
+.postbody ul{padding-left:20px}.postbody li{margin:5px 0}
+.note{background:var(--soft);border-left:4px solid var(--teal);padding:14px 18px;border-radius:8px;margin-top:30px}
+@media(max-width:1240px){nav a:not(.btn){margin-left:11px;font-size:14px}}

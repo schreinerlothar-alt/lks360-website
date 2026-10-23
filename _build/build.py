@@ -41,7 +41,7 @@ def header():
     return f"""<header><div class="wrap nav">
   <a class="brand" href="/">LKS <span>360</span>-SCHREINER LLC</a>
   <input type="checkbox" id="menu" class="menu-toggle"><label for="menu" class="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></label>
-  <nav><a href="/inventory.html">Inventory</a><a href="/gas-turbines.html">Gas turbines</a><a href="/steam-turbines.html">Steam turbines</a><a href="/generator-sets.html">Generator sets</a><a href="/sell.html">Sell equipment</a><a href="/how-we-work.html">How we work</a><a class="btn" href="/contact.html">Contact</a></nav>
+  <nav><a href="/inventory.html">Inventory</a><a href="/gas-turbines.html">Gas turbines</a><a href="/steam-turbines.html">Steam turbines</a><a href="/generator-sets.html">Generator sets</a><a href="/sell.html">Sell equipment</a><a href="/news.html">News</a><a href="/how-we-work.html">How we work</a><a class="btn" href="/contact.html">Contact</a></nav>
 </div></header>"""
 
 
@@ -49,7 +49,7 @@ def footer():
     return f"""<footer><div class="wrap fcols">
   <div><p class="fbrand">LKS <span>360</span>-SCHREINER LLC</p><p>Florida limited liability company<br>Document No. L26000221347<br>7901 4th St N, Ste 300<br>St. Petersburg, FL 33702, USA</p></div>
   <div><p class="fh">Equipment</p><a href="/inventory.html">Inventory</a><a href="/gas-turbines.html">Gas turbines</a><a href="/steam-turbines.html">Steam turbines</a><a href="/generator-sets.html">Generator sets</a><a href="/sell.html">Sell equipment</a></div>
-  <div><p class="fh">Company</p><a href="/how-we-work.html">How we work</a><a href="/compliance.html">Compliance</a><a href="/imprint.html">Imprint</a><a href="/privacy.html">Privacy Policy</a><a href="https://www.linkedin.com/company/142908032">LinkedIn</a></div>
+  <div><p class="fh">Company</p><a href="/news.html">News</a><a href="/how-we-work.html">How we work</a><a href="/compliance.html">Compliance</a><a href="/imprint.html">Imprint</a><a href="/privacy.html">Privacy Policy</a><a href="https://www.linkedin.com/company/142908032">LinkedIn</a></div>
   <div><p class="fh">Contact</p><a href="mailto:{MAIL}">{MAIL}</a><a href="tel:+491704656619">{PHONE}</a><a href="/contact.html">Contact form</a></div>
 </div><div class="wrap fbase">© 2026 LKS 360-SCHREINER LLC. Equipment is offered on behalf of its owners and subject to prior sale. Manufacturer names describe the equipment; we are not affiliated with any manufacturer.</div></footer>"""
 
@@ -222,6 +222,59 @@ def featured_block():
 <!--/FEATURED-->"""
 
 
+POSTS = json.loads((ROOT / "_build" / "posts.json").read_text(encoding="utf-8"))
+POSTS.sort(key=lambda p: -p["num"])
+MONTHS = {m: i for i, m in enumerate(["January", "February", "March", "April", "May", "June", "July", "August",
+                                      "September", "October", "November", "December"], 1)}
+
+
+def post_date(p):
+    d = p["date"] or (re.search(r"(\d{1,2} [A-Z][a-z]+ 2026)", p["title"]) or [None, ""])[1]
+    if not d:
+        return "", ""
+    day, mon, year = d.split()
+    return f"{int(day)} {mon} {year}", f"{year}-{MONTHS[mon]:02d}-{int(day):02d}"
+
+
+def post_page(p):
+    shown, iso = post_date(p)
+    plain = re.sub(r"<[^>]+>", " ", p["html"])
+    desc = re.sub(r"\s+", " ", plain).strip()[:155]
+    path = f"/news/{p['slug']}.html"
+    ld = {"@context": "https://schema.org", "@type": "Article", "headline": p["title"][:110], "url": SITE + path,
+          "author": {"@type": "Person", "name": "Lothar Schreiner"},
+          "publisher": {"@type": "Organization", "name": "LKS 360-SCHREINER LLC", "logo": {"@type": "ImageObject", "url": SITE + "/favicon.svg"}},
+          **({"datePublished": iso} if iso else {})}
+    return head(p["title"] + " | LKS 360-SCHREINER LLC", desc, path, f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n') + header() + f"""
+<div class="crumbs wrap"><a href="/">Home</a> / <a href="/news.html">News</a></div>
+<section class="unitpage"><div class="wrap legal post">
+  <p class="kicker">News{' · ' + shown if shown else ''}</p>
+  <h1>{e(p['title'])}</h1>
+  <div class="postbody">{p['html']}</div>
+  <p class="note">Availability changes every week. All units are offered on behalf of their owners and subject to prior sale. Current units: <a href="/inventory.html">inventory</a>.</p>
+  <p><a href="/news.html">All news</a></p>
+</div></section>
+""" + footer() + "\n</body>\n</html>\n"
+
+
+def news_page():
+    items = []
+    for p in POSTS:
+        shown, _ = post_date(p)
+        plain = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", p["html"])).strip()
+        items.append(f"""<article class="newsitem"><p class="ustock">{shown or 'News'}</p><h3><a href="/news/{p['slug']}.html">{e(p['title'])}</a></h3><p class="muted">{e(plain[:180])}...</p></article>""")
+    return head("News: Gas Turbines, Steam Turbines and Gensets for Sale and Wanted | LKS 360-SCHREINER LLC",
+                "Offers, wanted lists and market notes on used gas turbines, steam turbines and generator sets from LKS 360-SCHREINER LLC.",
+                "/news.html") + header() + f"""
+<div class="hero slim"><div class="wrap">
+  <p class="kicker light">News</p>
+  <h1>Offers, wanted lists and market notes</h1>
+  <p>Our posts on gas turbines, steam turbines and generator sets, newest first. Current units are in the <a href="/inventory.html" style="color:#fff">inventory</a>.</p>
+</div></div>
+<section><div class="wrap"><div class="newslist">{''.join(items)}</div></div></section>
+""" + footer() + "\n</body>\n</html>\n"
+
+
 def patch_static(path):
     t = path.read_text(encoding="utf-8")
     t = re.sub(r"<header>.*?</header>", lambda m: header(), t, count=1, flags=re.S)
@@ -236,7 +289,7 @@ def patch_static(path):
 
 
 STATIC = ["index.html", "inventory.html", "gas-turbines.html", "steam-turbines.html", "generator-sets.html",
-          "sell.html", "how-we-work.html", "contact.html", "compliance.html", "imprint.html", "privacy.html"]
+          "sell.html", "news.html", "how-we-work.html", "contact.html", "compliance.html", "imprint.html", "privacy.html"]
 
 (ROOT / "units").mkdir(exist_ok=True)
 for old in (ROOT / "units").glob("*.html"):
@@ -244,15 +297,21 @@ for old in (ROOT / "units").glob("*.html"):
 for u in UNITS:
     (ROOT / "units" / f"{u['slug']}.html").write_text(unit_page(u), encoding="utf-8", newline="\n")
 (ROOT / "inventory.html").write_text(inventory_page(), encoding="utf-8", newline="\n")
+(ROOT / "news.html").write_text(news_page(), encoding="utf-8", newline="\n")
+(ROOT / "news").mkdir(exist_ok=True)
+for old in (ROOT / "news").glob("*.html"):
+    old.unlink()
+for p in POSTS:
+    (ROOT / "news" / f"{p['slug']}.html").write_text(post_page(p), encoding="utf-8", newline="\n")
 for name in STATIC:
     p = ROOT / name
-    if p.exists() and name != "inventory.html":
+    if p.exists() and name not in ("inventory.html", "news.html"):
         patch_static(p)
 for name in ["404.html"]:
     patch_static(ROOT / name)
 
-urls = [f"{SITE}/"] + [f"{SITE}/{n}" for n in STATIC[1:] if (ROOT / n).exists()] + [SITE + u["url"] for u in UNITS]
+urls = [f"{SITE}/"] + [f"{SITE}/{n}" for n in STATIC[1:] if (ROOT / n).exists()] + [SITE + u["url"] for u in UNITS] + [f"{SITE}/news/{p['slug']}.html" for p in POSTS]
 (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
                                   + "".join(f"  <url><loc>{x}</loc><lastmod>{TODAY}</lastmod></url>\n" for x in urls)
                                   + "</urlset>\n", encoding="utf-8", newline="\n")
-print(len(UNITS), "unit pages,", len(urls), "sitemap URLs")
+print(len(UNITS), "unit pages,", len(POSTS), "posts,", len(urls), "sitemap URLs")
