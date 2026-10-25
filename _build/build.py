@@ -141,7 +141,7 @@ def unit_page(u):
     <p class="chips big">{chips(u)}</p>
     <table class="spec">{spec_rows(u)}</table>
     {scope}
-    <p class="muted small">Offered on behalf of the owner and subject to prior sale. Serial numbers, unit location and full technical documents follow after receipt of a letter of intent.</p>
+    <p class="muted small">Offered on behalf of the owner and subject to prior sale. Serial numbers, unit location and full technical documents are released after receipt of a letter of intent.</p>
   </div>
   <aside class="card side">
     <p class="price big">Price on request</p>
@@ -190,12 +190,12 @@ def inventory_page():
   <div class="ulist" id="ulist">
 {''.join(row(u) for u in UNITS)}
   </div>
-  <p class="empty" id="empty" hidden>No unit matches. Send us your requirement and we search our network of owners: <a href="/contact.html">contact form</a>.</p>
-  <p class="muted small">All units are offered on behalf of their owners and subject to prior sale. Serial numbers, unit location and full technical documents follow after receipt of a letter of intent.</p>
+  <p class="empty" id="empty" hidden>No unit matches. Send us your requirement and we match it with units offered by their owners: <a href="/contact.html">contact form</a>.</p>
+  <p class="muted small">All units are offered on behalf of their owners and subject to prior sale. Serial numbers, unit location and full technical documents are released after receipt of a letter of intent.</p>
 </div></section>
 <div class="cta">
   <h2>Not on the list?</h2>
-  <p>Send type, output, frequency and delivery country. We search our network of owners.</p>
+  <p>Send type, output, frequency and delivery country. We match it with units offered by their owners.</p>
   <a class="btn alt" href="/contact.html">Send your requirement</a>
 </div>
 """ + footer() + '\n<script src="/site.js"></script>\n</body>\n</html>\n'
