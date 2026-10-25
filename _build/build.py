@@ -315,4 +315,16 @@ urls = [f"{SITE}/"] + [f"{SITE}/{n}" for n in STATIC[1:] if (ROOT / n).exists()]
 (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
                                   + "".join(f"  <url><loc>{x}</loc><lastmod>{TODAY}</lastmod></url>\n" for x in urls)
                                   + "</urlset>\n", encoding="utf-8", newline="\n")
+
+# llms.txt: keep the hand-written head, regenerate the unit and news lists so AI search finds every unit.
+llms_path = ROOT / "llms.txt"
+head = llms_path.read_text(encoding="utf-8").split("\n## Units for sale")[0].rstrip() + "\n"
+def llms_line(u):
+    facts = ", ".join(x for x in [u["output"], u["hz"], str(u["year"] or ""), u["condition"]] if x)
+    return f"- [LKS-{u['id']}: {u['name']}]({SITE}{u['url']}): {facts}. Price on request, subject to prior sale."
+llms = (head + f"\n## Units for sale (stock list, updated {TODAY})\n"
+        + "\n".join(llms_line(u) for u in UNITS)
+        + "\n\n## News\n" + "\n".join(f"- [{p['title']}]({SITE}/news/{p['slug']}.html)" for p in POSTS) + "\n")
+llms_path.write_text(llms, encoding="utf-8", newline="\n")
+
 print(len(UNITS), "unit pages,", len(POSTS), "posts,", len(urls), "sitemap URLs")
