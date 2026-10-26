@@ -217,3 +217,15 @@ footer a{color:#dfe8f2;text-decoration:none;margin-right:18px}
 .postbody ul{padding-left:20px}.postbody li{margin:5px 0}
 .note{background:var(--soft);border-left:4px solid var(--teal);padding:14px 18px;border-radius:8px;margin-top:30px}
 @media(max-width:1240px){nav a:not(.btn){margin-left:11px;font-size:14px}}
+/* status, whatsapp, form feedback */
+.badge{display:inline-block;margin-left:6px;padding:1px 9px;border-radius:12px;font-size:12px;letter-spacing:.4px;text-transform:uppercase;font-weight:700;vertical-align:middle}
+.badge.reserved{background:#fff4d6;color:#8a5a00;border:1px solid #f0d58a}
+.confirmed{margin:6px 0 0;font-size:13px;color:var(--muted)}
+.btn.wa{background:#1f9d55;color:#fff}
+.wafloat{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom, 0px));width:54px;height:54px;border-radius:50%;background:#1f9d55;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:20}
+.wafloat svg{width:30px;height:30px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.formnote{padding:10px 14px;border-radius:8px;margin:0}
+.formnote.ok{background:#e8f6ee;color:#1d6b3e}
+.formnote.err{background:#fdecec;color:#9b1c1c}
+.mailform button:disabled{opacity:.6;cursor:wait}

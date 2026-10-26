@@ -27,6 +27,7 @@
 - [Home](https://lks360.com/)
 - [Inventory](https://lks360.com/inventory.html): 35 listed units with stock numbers (24 gas turbines, 2 steam turbines, 9 generator sets), each with its own page under https://lks360.com/units/, filter by type, manufacturer, frequency and output. Prices on request.
 - [News](https://lks360.com/news.html): 5 posts with offers, wanted lists and market notes on gas turbines, steam turbines and gensets
+- [Siemens SGT-800 for sale](https://lks360.com/siemens-sgt-800-for-sale.html), [GE TM2500 for sale](https://lks360.com/ge-tm2500-for-sale.html), [GE LM2500 for sale](https://lks360.com/ge-lm2500-for-sale.html): model pages with listed units
 - [Sell equipment](https://lks360.com/sell.html): how owners list a unit confidentially
 - [Contact](https://lks360.com/contact.html): requirement form, email and phone
 - [Gas turbines](https://lks360.com/gas-turbines.html): Siemens SGT-600/700/800, SGT5-2000E, W501D5, 701DU; GE Frame 5, 6B, 6F.03, 7EA, LM2500, LM5000, LM6000, TM2500+; Solar Centaur 40, Taurus 60, Titan 130, Titan 250; Mitsubishi MF111
@@ -37,15 +38,14 @@
 - [Imprint](https://lks360.com/imprint.html)
 - [Privacy Policy](https://lks360.com/privacy.html)
 
-## Units for sale (stock list, updated 2026-10-25)
+## Units for sale (stock list, updated 2026-10-26)
 - [LKS-GT-01: 2 x Siemens Westinghouse W701DS gas turbine generator sets](https://lks360.com/units/gt-01-2-x-siemens-westinghouse-w701ds-gas-turbine-generator-sets-127-8-mw-each-255-6-mw-to.html): 127.8 MW each, 255.6 MW total, 50 Hz, Rebuilt, unused since rebuild. Price on request, subject to prior sale.
-- [LKS-GT-02: Siemens SGT-800 gas turbines](https://lks360.com/units/gt-02-siemens-sgt-800-gas-turbines-51-9-mw.html): 51.9 MW, 50/60 Hz, 2024, New. Price on request, subject to prior sale.
+- [LKS-GT-02: Siemens SGT-800 gas turbines](https://lks360.com/units/gt-02-siemens-sgt-800-gas-turbines-51-9-mw.html): 51.9 MW, 50/60 Hz, 2024, New, reserved. Price on request, subject to prior sale.
 - [LKS-GT-03: Siemens SGT-800 combined cycle blocks](https://lks360.com/units/gt-03-siemens-sgt-800-combined-cycle-blocks-53-mw-gt-plus-25-mw-st.html): 53 MW GT + 25 MW ST, 50 Hz, 2017. Price on request, subject to prior sale.
-- [LKS-GT-04: Siemens SGT5-2000E combined cycle power plant modules](https://lks360.com/units/gt-04-siemens-sgt5-2000e-combined-cycle-power-plant-modules-245-mw.html): 245 MW, 50 Hz. Price on request, subject to prior sale.
-- [LKS-GT-05: Siemens SGT-700 combined cycle units](https://lks360.com/units/gt-05-siemens-sgt-700-combined-cycle-units-45-mw.html): 45 MW, 50 Hz. Price on request, subject to prior sale.
+- [LKS-GT-04: Siemens SGT5-2000E combined cycle power plant modules](https://lks360.com/units/gt-04-siemens-sgt5-2000e-combined-cycle-power-plant-modules-245-mw.html): 245 MW, 50 Hz, 0 h. Price on request, subject to prior sale.
+- [LKS-GT-05: Siemens SGT-700 combined cycle units](https://lks360.com/units/gt-05-siemens-sgt-700-combined-cycle-units-45-mw.html): 45 MW, 50 Hz, approx. 230 h. Price on request, subject to prior sale.
 - [LKS-GT-06: Siemens SGT-600 gas turbines, never fired](https://lks360.com/units/gt-06-siemens-sgt-600-gas-turbines-never-fired-24-5-mw.html): 24.5 MW, 2021-2022, New, never fired. Price on request, subject to prior sale.
-- [LKS-GT-07: Siemens SGT-600 (GT10B1) gas turbine generator set with HRSG](https://lks360.com/units/gt-07-siemens-sgt-600-gt10b1-gas-turbine-generator-set-with-hrsg-24-6-mw.html): 24.6 MW, 50 Hz. Price on request, subject to prior sale.
-- [LKS-GT-08: Siemens Westinghouse 701DU gas turbines](https://lks360.com/units/gt-08-siemens-westinghouse-701du-gas-turbines-127-mw.html): 127 MW, 50 Hz. Price on request, subject to prior sale.
+- [LKS-GT-07: Siemens SGT-600 (GT10B1) gas turbine generator set with HRSG](https://lks360.com/units/gt-07-siemens-sgt-600-gt10b1-gas-turbine-generator-set-with-hrsg-24-6-mw.html): 24.6 MW, 50 Hz, approx. 86,000 h. Price on request, subject to prior sale.
 - [LKS-GT-09: Siemens Westinghouse W501D5 gas turbine](https://lks360.com/units/gt-09-siemens-westinghouse-w501d5-gas-turbine-112-mw.html): 112 MW, 60 Hz. Price on request, subject to prior sale.
 - [LKS-GT-10: GE 9HA.01 gas turbine, unused](https://lks360.com/units/gt-10-ge-9ha-01-gas-turbine-unused-448-mw.html): 448 MW, 50 Hz, 2021, Unused. Price on request, subject to prior sale.
 - [LKS-GT-11: GE 7EA gas turbines, dual fuel](https://lks360.com/units/gt-11-ge-7ea-gas-turbines-dual-fuel-76-to-85-mw.html): 76 to 85 MW, 60 Hz. Price on request, subject to prior sale.
@@ -53,23 +53,21 @@
 - [LKS-GT-13: GE Frame 6B (6B.03) gas turbines](https://lks360.com/units/gt-13-ge-frame-6b-6b-03-gas-turbines-39-2-mw.html): 39.2 MW. Price on request, subject to prior sale.
 - [LKS-GT-14: GE Frame 5 MS5001N gas turbines](https://lks360.com/units/gt-14-ge-frame-5-ms5001n-gas-turbines-23-6-mw.html): 23.6 MW, 60 Hz. Price on request, subject to prior sale.
 - [LKS-GT-15: GE Frame 5 (MS5001) power barge gas turbine units](https://lks360.com/units/gt-15-ge-frame-5-ms5001-power-barge-gas-turbine-units-approx-20-mw.html): approx. 20 MW, 60 Hz. Price on request, subject to prior sale.
-- [LKS-GT-16: GE TM2500+ mobile gas turbine generator](https://lks360.com/units/gt-16-ge-tm2500-plus-mobile-gas-turbine-generator-33-9-mw.html): 33.9 MW, 60 Hz, Zero time since GE overhaul. Price on request, subject to prior sale.
 - [LKS-GT-17: GE LM2500+G4 DLE gas turbines](https://lks360.com/units/gt-17-ge-lm2500-plusg4-dle-gas-turbines-33-6-mw.html): 33.6 MW, 50/60 Hz. Price on request, subject to prior sale.
 - [LKS-GT-18: GE LM5000 simple cycle gas turbine units](https://lks360.com/units/gt-18-ge-lm5000-simple-cycle-gas-turbine-units-34-mw.html): 34 MW, 60 Hz. Price on request, subject to prior sale.
 - [LKS-GT-19: GE LM6000 PD Sprint gas turbine](https://lks360.com/units/gt-19-ge-lm6000-pd-sprint-gas-turbine.html): 60 Hz. Price on request, subject to prior sale.
 - [LKS-GT-20: GE LM2500 PC103B trailer-mounted gas turbines](https://lks360.com/units/gt-20-ge-lm2500-pc103b-trailer-mounted-gas-turbines.html): 60 Hz. Price on request, subject to prior sale.
 - [LKS-GT-21: Solar Titan 250S mechanical drive gas turbine, unused](https://lks360.com/units/gt-21-solar-titan-250s-mechanical-drive-gas-turbine-unused-22-4-mw.html): 22.4 MW, Unused. Price on request, subject to prior sale.
 - [LKS-GT-22: Solar Titan 130 SoLoNOx gas turbine generator set, new](https://lks360.com/units/gt-22-solar-titan-130-solonox-gas-turbine-generator-set-new-16-mw.html): 16 MW, 50 Hz, 2024, New. Price on request, subject to prior sale.
-- [LKS-GT-23: Solar Centaur 40 gas turbine generator sets, overhauled](https://lks360.com/units/gt-23-solar-centaur-40-gas-turbine-generator-sets-overhauled-3-5-mw.html): 3.5 MW, 60 Hz, Overhauled. Price on request, subject to prior sale.
+- [LKS-GT-23: Solar Centaur 40 gas turbine generator sets, overhauled](https://lks360.com/units/gt-23-solar-centaur-40-gas-turbine-generator-sets-overhauled-3-5-mw.html): 3.5 MW, 60 Hz, Overhauled, 0 h. Price on request, subject to prior sale.
 - [LKS-GT-24: Mitsubishi MF111 gas turbine generator sets with HRSG](https://lks360.com/units/gt-24-mitsubishi-mf111-gas-turbine-generator-sets-with-hrsg-13-mw.html): 13 MW, 50 Hz. Price on request, subject to prior sale.
-- [LKS-ST-01: Siemens SST-400 steam turbine generator sets](https://lks360.com/units/st-01-siemens-sst-400-steam-turbine-generator-sets-30-mw.html): 30 MW, 50 Hz, 2012. Price on request, subject to prior sale.
+- [LKS-ST-01: Siemens SST-400 steam turbine generator sets](https://lks360.com/units/st-01-siemens-sst-400-steam-turbine-generator-sets-30-mw.html): 30 MW, 50 Hz, 2012, 0 h. Price on request, subject to prior sale.
 - [LKS-ST-02: Steam turbine generators, 54, 60 and 62 MW](https://lks360.com/units/st-02-steam-turbine-generators-54-60-and-62-mw-54-60-and-62-mw.html): 54, 60 and 62 MW, 60 Hz, Low hours. Price on request, subject to prior sale.
 - [LKS-GS-01: Caterpillar G20CM34 gas generator sets, new](https://lks360.com/units/gs-01-caterpillar-g20cm34-gas-generator-sets-new-9-8-mw.html): 9.8 MW, 60 Hz, New from current production. Price on request, subject to prior sale.
-- [LKS-GS-02: Caterpillar G20CM34 gas generator set](https://lks360.com/units/gs-02-caterpillar-g20cm34-gas-generator-set-9-830-ekw.html): 9,830 ekW, 60 Hz, 2020. Price on request, subject to prior sale.
-- [LKS-GS-03: Wärtsilä 20V34SG gas engine CHP plant](https://lks360.com/units/gs-03-wartsila-20v34sg-gas-engine-chp-plant-approx-10-mwe.html): approx. 10 MWe, 50 Hz, 2013. Price on request, subject to prior sale.
+- [LKS-GS-02: Caterpillar G20CM34 gas generator set](https://lks360.com/units/gs-02-caterpillar-g20cm34-gas-generator-set-9-830-ekw.html): 9,830 ekW, 60 Hz, 2020, 0 h. Price on request, subject to prior sale.
+- [LKS-GS-03: Wärtsilä 20V34SG gas engine CHP plant](https://lks360.com/units/gs-03-wartsila-20v34sg-gas-engine-chp-plant-approx-10-mwe.html): approx. 10 MWe, 50 Hz, 2013, approx. 68,000 h. Price on request, subject to prior sale.
 - [LKS-GS-04: STX MAN B&W 14V32/40 diesel generator sets](https://lks360.com/units/gs-04-stx-man-b-w-14v32-40-diesel-generator-sets-6-720-kw.html): 6,720 kW, 2010. Price on request, subject to prior sale.
-- [LKS-GS-05: Caterpillar 3516C generator sets](https://lks360.com/units/gs-05-caterpillar-3516c-generator-sets-2-mw.html): 2 MW, 50 Hz, 2014. Price on request, subject to prior sale.
-- [LKS-GS-06: Cummins C2000 N6CB gas generator sets, unused](https://lks360.com/units/gs-06-cummins-c2000-n6cb-gas-generator-sets-unused-2-000-kw.html): 2,000 kW, 60 Hz, 2019, Unused. Price on request, subject to prior sale.
+- [LKS-GS-05: Caterpillar 3516C generator sets](https://lks360.com/units/gs-05-caterpillar-3516c-generator-sets-2-mw.html): 2 MW, 50 Hz, 2014, approx. 1,000 h. Price on request, subject to prior sale.
 - [LKS-GS-07: Caterpillar 3516B HD diesel generator sets](https://lks360.com/units/gs-07-caterpillar-3516b-hd-diesel-generator-sets-1-600-kwe.html): 1,600 kWe, 50 Hz. Price on request, subject to prior sale.
 - [LKS-GS-08: MTU 16V4000G63 diesel generator sets, containerised](https://lks360.com/units/gs-08-mtu-16v4000g63-diesel-generator-sets-containerised-2-250-kva.html): 2,250 kVA. Price on request, subject to prior sale.
 - [LKS-GS-09: Cummins KTA50-G3 diesel generator sets, new](https://lks360.com/units/gs-09-cummins-kta50-g3-diesel-generator-sets-new-1-250-kva.html): 1,250 kVA, New. Price on request, subject to prior sale.

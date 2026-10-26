@@ -15,7 +15,10 @@
 "qty": "2",
 "scope": "Sold with selected balance of plant. Stored boxed in a warehouse in Europe. Inspection possible. Payment through a third-party escrow agent, never through LKS 360-SCHREINER LLC.",
 "featured": true,
-"src": "gas-turbines.html (Lothar 23.10.2026)"
+"src": "gas-turbines.html (Lothar 23.10.2026)",
+"status": "available",
+"confirmed": "22.10.2026",
+"continent": "Europe"
 },
 {
 "id": "GT-02",
@@ -32,7 +35,9 @@
 "hours": "",
 "scope": "",
 "featured": true,
-"src": "lks360exim product 64"
+"src": "lks360exim product 64",
+"status": "reserved",
+"confirmed": "20.10.2026"
 },
 {
 "id": "GT-03",
@@ -48,7 +53,10 @@
 "condition": "",
 "hours": "",
 "scope": "Gas turbine with steam turbine per block.",
-"src": "lks360exim product 65"
+"src": "lks360exim product 65",
+"status": "available",
+"confirmed": "13.10.2026",
+"continent": "Asia"
 },
 {
 "id": "GT-04",
@@ -65,7 +73,10 @@
 "hours": "0",
 "scope": "",
 "featured": true,
-"src": "lks360exim product 59"
+"src": "lks360exim product 59",
+"status": "available",
+"confirmed": "22.10.2026",
+"continent": "Asia"
 },
 {
 "id": "GT-05",
@@ -81,7 +92,10 @@
 "condition": "",
 "hours": "233",
 "scope": "",
-"src": "lks360exim product 54"
+"src": "lks360exim product 54",
+"confirmed": "28.08.2026",
+"starts": "19",
+"continent": "Asia"
 },
 {
 "id": "GT-06",
@@ -98,7 +112,9 @@
 "hours": "",
 "scope": "",
 "featured": true,
-"src": "lks360exim product 50"
+"src": "lks360exim product 50",
+"confirmed": "16.10.2026",
+"continent": "Europe"
 },
 {
 "id": "GT-07",
@@ -112,9 +128,12 @@
 "fuel": "",
 "year": "",
 "condition": "",
-"hours": "",
+"hours": "85926",
 "scope": "With heat recovery steam generator.",
-"src": "lks360exim product 60"
+"src": "lks360exim product 60",
+"status": "available",
+"confirmed": "14.10.2026",
+"continent": "Asia"
 },
 {
 "id": "GT-08",
@@ -130,7 +149,9 @@
 "condition": "",
 "hours": "",
 "scope": "",
-"src": "lks360exim product 38"
+"src": "lks360exim product 38",
+"confirmed": "10.04.2026",
+"status": "hidden"
 },
 {
 "id": "GT-09",
@@ -146,7 +167,9 @@
 "condition": "",
 "hours": "",
 "scope": "",
-"src": "lks360exim product 37"
+"src": "lks360exim product 37",
+"confirmed": "30.09.2026",
+"continent": "Americas"
 },
 {
 "id": "GT-10",
@@ -163,7 +186,8 @@
 "hours": "",
 "scope": "",
 "featured": true,
-"src": "lks360exim product 39"
+"src": "lks360exim product 39",
+"confirmed": "05.10.2026"
 },
 {
 "id": "GT-11",
@@ -179,7 +203,9 @@
 "condition": "",
 "hours": "",
 "scope": "",
-"src": "lks360exim product 56"
+"src": "lks360exim product 56",
+"confirmed": "02.10.2026",
+"continent": "Americas"
 },
 {
 "id": "GT-12",
@@ -195,7 +221,9 @@
 "condition": "OEM overhauled",
 "hours": "",
 "scope": "",
-"src": "lks360exim product 66"
+"src": "lks360exim product 66",
+"status": "available",
+"confirmed": "15.10.2026"
 },
 {
 "id": "GT-13",
@@ -211,7 +239,8 @@
 "condition": "",
 "hours": "",
 "scope": "",
-"src": "lks360exim product 53"
+"src": "lks360exim product 53",
+"confirmed": "30.09.2026"
 },
 {
 "id": "GT-14",
@@ -227,7 +256,8 @@
 "condition": "",
 "hours": "",
 "scope": "",
-"src": "lks360exim product 51"
+"src": "lks360exim product 51",
+"confirmed": "30.09.2026"
 },
 {
 "id": "GT-15",
@@ -243,7 +273,9 @@
 "condition": "",
 "hours": "",
 "scope": "Installed on a power barge.",
-"src": "lks360exim product 62"
+"src": "lks360exim product 62",
+"confirmed": "21.10.2026",
+"continent": "Americas"
 },
 {
 "id": "GT-16",
@@ -259,7 +291,9 @@
 "condition": "Zero time since GE overhaul",
 "hours": "",
 "scope": "Mobile unit.",
-"src": "lks360exim product 58"
+"src": "lks360exim product 58",
+"confirmed": "05.10.2026",
+"status": "hidden"
 },
 {
 "id": "GT-17",
@@ -275,7 +309,8 @@
 "condition": "",
 "hours": "",
 "scope": "",
-"src": "lks360exim product 55"
+"src": "lks360exim product 55",
+"confirmed": "30.09.2026"
 },
 {
 "id": "GT-18",
@@ -291,7 +326,9 @@
 "condition": "",
 "hours": "",
 "scope": "Simple cycle.",
-"src": "lks360exim product 35"
+"src": "lks360exim product 35",
+"confirmed": "20.08.2026",
+"continent": "Americas"
 },
 {
 "id": "GT-19",
@@ -307,7 +344,9 @@
 "condition": "",
 "hours": "",
 "scope": "",
-"src": "lks360exim product 52"
+"src": "lks360exim product 52",
+"confirmed": "30.09.2026",
+"continent": "Americas"
 },
 {
 "id": "GT-20",
@@ -323,7 +362,9 @@
 "condition": "",
 "hours": "",
 "scope": "Trailer-mounted.",
-"src": "lks360exim product 36"
+"src": "lks360exim product 36",
+"confirmed": "16.08.2026",
+"continent": "Americas"
 },
 {
 "id": "GT-21",
@@ -339,7 +380,8 @@
 "condition": "Unused",
 "hours": "",
 "scope": "Mechanical drive.",
-"src": "lks360exim product 40"
+"src": "lks360exim product 40",
+"confirmed": "05.10.2026"
 },
 {
 "id": "GT-22",
@@ -355,7 +397,9 @@
 "condition": "New",
 "hours": "",
 "scope": "",
-"src": "lks360exim product 41"
+"src": "lks360exim product 41",
+"status": "available",
+"confirmed": "16.10.2026"
 },
 {
 "id": "GT-23",
@@ -371,7 +415,10 @@
 "condition": "Overhauled",
 "hours": "0",
 "scope": "",
-"src": "lks360exim product 69"
+"src": "lks360exim product 69",
+"status": "available",
+"confirmed": "15.10.2026",
+"continent": "Americas"
 },
 {
 "id": "GT-24",
@@ -387,7 +434,10 @@
 "condition": "",
 "hours": "",
 "scope": "With heat recovery steam generator.",
-"src": "lks360exim product 61"
+"src": "lks360exim product 61",
+"status": "available",
+"confirmed": "14.10.2026",
+"continent": "Asia"
 },
 {
 "id": "ST-01",
@@ -404,7 +454,10 @@
 "hours": "0",
 "scope": "",
 "featured": true,
-"src": "lks360exim product 70"
+"src": "lks360exim product 70",
+"status": "available",
+"confirmed": "13.10.2026",
+"continent": "Asia"
 },
 {
 "id": "ST-02",
@@ -420,7 +473,9 @@
 "condition": "Low hours",
 "hours": "",
 "scope": "",
-"src": "lks360exim product 49"
+"src": "lks360exim product 49",
+"confirmed": "22.09.2026",
+"continent": "Asia"
 },
 {
 "id": "GS-01",
@@ -436,7 +491,9 @@
 "condition": "New from current production",
 "hours": "",
 "scope": "",
-"src": "lks360exim product 63"
+"src": "lks360exim product 63",
+"status": "available",
+"confirmed": "15.10.2026"
 },
 {
 "id": "GS-02",
@@ -452,7 +509,9 @@
 "condition": "",
 "hours": "0",
 "scope": "",
-"src": "lks360exim product 57"
+"src": "lks360exim product 57",
+"confirmed": "28.07.2026",
+"continent": "Americas"
 },
 {
 "id": "GS-03",
@@ -466,9 +525,12 @@
 "fuel": "Gas",
 "year": "2013",
 "condition": "",
-"hours": "",
+"hours": "67862",
 "scope": "Combined heat and power plant.",
-"src": "lks360exim product 67"
+"src": "lks360exim product 67",
+"status": "available",
+"confirmed": "02.10.2026",
+"continent": "Europe"
 },
 {
 "id": "GS-04",
@@ -484,7 +546,9 @@
 "condition": "",
 "hours": "",
 "scope": "",
-"src": "lks360exim product 48"
+"src": "lks360exim product 48",
+"confirmed": "08.10.2026",
+"continent": "Asia"
 },
 {
 "id": "GS-05",
@@ -498,9 +562,10 @@
 "fuel": "",
 "year": "2014",
 "condition": "",
-"hours": "1,000",
+"hours": "1000",
 "scope": "",
-"src": "lks360exim product 68"
+"src": "lks360exim product 68",
+"confirmed": "14.10.2026"
 },
 {
 "id": "GS-06",
@@ -516,7 +581,9 @@
 "condition": "Unused",
 "hours": "",
 "scope": "",
-"src": "lks360exim product 43"
+"src": "lks360exim product 43",
+"status": "sold",
+"confirmed": "16.10.2026"
 },
 {
 "id": "GS-07",
@@ -532,7 +599,8 @@
 "condition": "",
 "hours": "",
 "scope": "",
-"src": "lks360exim product 42"
+"src": "lks360exim product 42",
+"confirmed": "07.10.2026"
 },
 {
 "id": "GS-08",
@@ -548,7 +616,9 @@
 "condition": "",
 "hours": "",
 "scope": "Containerised.",
-"src": "lks360exim product 47"
+"src": "lks360exim product 47",
+"confirmed": "22.09.2026",
+"continent": "Europe"
 },
 {
 "id": "GS-09",
@@ -564,6 +634,8 @@
 "condition": "New",
 "hours": "",
 "scope": "",
-"src": "lks360exim product 46"
+"src": "lks360exim product 46",
+"confirmed": "23.09.2026",
+"continent": "Middle East"
 }
 ]

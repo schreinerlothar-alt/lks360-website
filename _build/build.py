@@ -5,9 +5,11 @@ import json, re, html, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-UNITS = json.loads((ROOT / "_build" / "units.json").read_text(encoding="utf-8"))
+ALL_UNITS = json.loads((ROOT / "_build" / "units.json").read_text(encoding="utf-8"))
+# Sold units leave the site; reserved units stay with a badge.
+UNITS = [u for u in ALL_UNITS if u.get("status") not in ("sold", "hidden")]
 LISTED = "21 October 2026"
-UPDATED = "23 October 2026"
+UPDATED = "26 October 2026"
 TODAY = datetime.date.today().isoformat()
 SITE = "https://lks360.com"
 MAIL = "manager@lks360.com"
@@ -25,6 +27,34 @@ ICON = {
 }
 
 e = lambda s: html.escape(str(s), quote=True)
+WA = "https://wa.me/491704656619"
+MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "July", "August",
+               "September", "October", "November", "December"]
+
+
+def long_date(d):
+    # "26.10.2026" -> "26 October 2026"
+    day, mon, year = d.split(".")
+    return f"{int(day)} {MONTH_NAMES[int(mon) - 1]} {year}"
+
+
+def approx(n, unit):
+    # Owner rule: hours and starts only rounded ("approx. 86,000 h"); 0 stays exact.
+    if n in ("", None):
+        return ""
+    n = int(str(n).replace(",", ""))
+    if n == 0:
+        return f"0 {unit}"
+    step = 1000 if n >= 10000 else 100 if n >= 1000 else 10
+    return f"approx. {round(n / step) * step:,} {unit}"
+
+
+def badge(u):
+    return '<span class="badge reserved">Reserved</span>' if u.get("status") == "reserved" else ""
+
+
+def confirmed(u):
+    return f"Last confirmed {long_date(u['confirmed'])}" if u.get("confirmed") else f"Listed {LISTED}"
 
 
 def slug(u):
@@ -52,7 +82,8 @@ def footer():
   <div><p class="fh">Equipment</p><a href="/inventory.html">Inventory</a><a href="/gas-turbines.html">Gas turbines</a><a href="/steam-turbines.html">Steam turbines</a><a href="/generator-sets.html">Generator sets</a><a href="/sell.html">Sell equipment</a></div>
   <div><p class="fh">Company</p><a href="/news.html">News</a><a href="/how-we-work.html">How we work</a><a href="/compliance.html">Compliance</a><a href="/imprint.html">Imprint</a><a href="/privacy.html">Privacy Policy</a><a href="https://www.linkedin.com/company/142908032">LinkedIn</a></div>
   <div><p class="fh">Contact</p><a href="mailto:{MAIL}">{MAIL}</a><a href="tel:+491704656619">{PHONE}</a><a href="/contact.html">Contact form</a></div>
-</div><div class="wrap fbase">© 2026 LKS 360-SCHREINER LLC. Equipment is offered on behalf of its owners and subject to prior sale. Manufacturer names describe the equipment; we are not affiliated with any manufacturer.</div></footer>"""
+</div><div class="wrap fbase">© 2026 LKS 360-SCHREINER LLC. Equipment is offered on behalf of its owners and subject to prior sale. Manufacturer names describe the equipment; we are not affiliated with any manufacturer.</div></footer>
+<a class="wafloat" href="{WA}" aria-label="WhatsApp +49 170 4656619"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.3 3.4 14.6 14.6 0 0 0 5.6 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.2-.3-.3-.6-.4z"/></svg></a>"""
 
 
 def head(title, desc, path, extra=""):
@@ -78,7 +109,8 @@ def head(title, desc, path, extra=""):
 
 
 def chips(u):
-    out = [u["output"], u["hz"], u["year"], u["condition"]]
+    out = [u["output"], u["hz"], u["year"], u["condition"], approx(u.get("hours"), "h"),
+           approx(u.get("starts"), "starts"), u.get("continent", "")]
     return "".join(f"<span>{e(x)}</span>" for x in out if x)
 
 
@@ -88,9 +120,10 @@ def row(u):
     return f"""<article class="unit" data-cat="{u['cat']}" data-make="{e(u['make'] or 'Other')}" data-hz="{e(hz)}" data-mw="{u['mw'] if u['mw'] is not None else ''}" data-text="{e((u['id']+' '+u['name']+' '+u['model']).lower())}">
   <div class="uicon {u['cat']}">{ICON[u['cat']]}</div>
   <div class="ubody">
-    <p class="ustock">Stock No. LKS-{u['id']} · {cat}</p>
+    <p class="ustock">Stock No. LKS-{u['id']} · {cat} {badge(u)}</p>
     <h3><a href="{u['url']}">{e(u['name'])}</a></h3>
     <p class="chips">{chips(u)}</p>
+    <p class="confirmed">{confirmed(u)}</p>
   </div>
   <div class="uact"><p class="price">Price on request</p><a class="btn sm" href="{u['url']}">Details</a><a class="btn sm ghost" href="{mailto(u)}">Request offer</a></div>
 </article>"""
@@ -108,7 +141,9 @@ def spec_rows(u):
     rows = [("Stock No.", f"LKS-{u['id']}"), ("Type", CATS[u["cat"]][0]), ("Manufacturer", u["make"]),
             ("Model", u["model"] if u["make"] else ""), ("Quantity", u.get("qty", "")), ("Output", u["output"]),
             ("Frequency", u["hz"]), ("Fuel", u["fuel"]), ("Year", u["year"]), ("Condition", u["condition"]),
-            ("Operating hours", u["hours"]), ("Price", "On request"), ("Listed", LISTED if u["id"] != "GT-01" else "23 October 2026")]
+            ("Operating hours", approx(u.get("hours"), "h")), ("Starts", approx(u.get("starts"), "starts")),
+            ("Location", u.get("continent", "")), ("Status", "Reserved" if u.get("status") == "reserved" else "Available"),
+            ("Price", "On request"), ("Last confirmed", long_date(u["confirmed"]) if u.get("confirmed") else LISTED)]
     return "\n".join(f"<tr><th>{k}</th><td>{e(v) if v else '<span class=muted>On request</span>'}</td></tr>" for k, v in rows)
 
 
@@ -120,7 +155,8 @@ def unit_page(u):
             + ". Offered on behalf of the owner by LKS 360-SCHREINER LLC. Price on request.")
     props = [{"@type": "PropertyValue", "name": k, "value": v} for k, v in
              [("Output", u["output"]), ("Frequency", u["hz"]), ("Fuel", u["fuel"]), ("Year", u["year"]),
-              ("Condition", u["condition"]), ("Operating hours", u["hours"])] if v]
+              ("Condition", u["condition"]), ("Operating hours", approx(u.get("hours"), "h")),
+              ("Location", u.get("continent", ""))] if v]
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "Product", "name": u["name"], "sku": f"LKS-{u['id']}", "category": catname,
          "description": desc, "url": SITE + u["url"],
@@ -136,7 +172,7 @@ def unit_page(u):
 <div class="crumbs wrap"><a href="/">Home</a> / <a href="/inventory.html">Inventory</a> / <a href="{catpath}">{catplural}</a> / LKS-{u['id']}</div>
 <section class="unitpage"><div class="wrap two">
   <div>
-    <p class="kicker">{catname} · Stock No. LKS-{u['id']}</p>
+    <p class="kicker">{catname} · Stock No. LKS-{u['id']} {badge(u)}</p>
     <h1>{e(u['name'])}</h1>
     <p class="chips big">{chips(u)}</p>
     <table class="spec">{spec_rows(u)}</table>
@@ -147,6 +183,7 @@ def unit_page(u):
     <p class="price big">Price on request</p>
     <a class="btn full" href="{mailto(u)}">Request offer</a>
     <a class="btn ghost full" href="/contact.html?unit=LKS-{u['id']}">Contact form</a>
+    <a class="btn wa full" href="{WA}">WhatsApp</a>
     <h3>Next steps</h3>
     <ol class="nextsteps"><li>Send your requirement with company details.</li><li>You receive an offer with the owner's conditions.</li><li>With your letter of intent: full data and inspection.</li><li>Purchase contract between you and the owner.</li></ol>
     <p class="small">Questions: <a href="mailto:{MAIL}">{MAIL}</a><br>{PHONE}</p>
@@ -211,7 +248,7 @@ def cat_block(cat):
 def featured_block():
     fs = [u for u in UNITS if u.get("featured")]
     counts = {k: sum(1 for u in UNITS if u["cat"] == k) for k in CATS}
-    cards = "".join(f"""<a class="card fcard" href="{u['url']}"><div class="uicon {u['cat']}">{ICON[u['cat']]}</div><p class="ustock">LKS-{u['id']}</p><h3>{e(u['name'])}</h3><p class="chips">{chips(u)}</p></a>""" for u in fs)
+    cards = "".join(f"""<a class="card fcard" href="{u['url']}"><div class="uicon {u['cat']}">{ICON[u['cat']]}</div><p class="ustock">LKS-{u['id']} {badge(u)}</p><h3>{e(u['name'])}</h3><p class="chips">{chips(u)}</p></a>""" for u in fs)
     return f"""<!--FEATURED-->
 <section class="soft"><div class="wrap">
   <p class="kicker">Inventory</p>
@@ -221,6 +258,63 @@ def featured_block():
   <p style="margin-top:28px"><a class="btn" href="/inventory.html">View full inventory</a></p>
 </div></section>
 <!--/FEATURED-->"""
+
+
+MODELS = [
+    ("siemens-sgt-800-for-sale", "Siemens SGT-800", r"SGT-800",
+     "Siemens SGT-800 industrial gas turbines and combined cycle blocks, offered on behalf of their owners."),
+    ("ge-tm2500-for-sale", "GE TM2500", r"TM2500",
+     "GE TM2500 mobile aeroderivative gas turbine generators, offered on behalf of their owners."),
+    ("ge-lm2500-for-sale", "GE LM2500", r"\bLM2500",
+     "GE LM2500 aeroderivative gas turbines, including trailer-mounted packages, offered on behalf of their owners."),
+]
+
+
+def model_page(slugname, label, pattern, lead):
+    us = [u for u in UNITS if re.search(pattern, u["model"] + " " + u["name"])]
+    path = f"/{slugname}.html"
+    n = len(us)
+    plural = "s" if n != 1 else ""
+    title = f"{label} for Sale | LKS 360-SCHREINER LLC"
+    desc = (f"{label} for sale: {n} unit{plural} in our inventory with stock number, output, frequency and status. "
+            "Price on request. Letter of intent, data and inspection, payment through escrow.")
+    ld = {"@context": "https://schema.org", "@graph": [
+        {"@type": "ItemList", "name": f"{label} for sale", "numberOfItems": n, "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "url": SITE + u["url"], "name": u["name"]} for i, u in enumerate(us)]},
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Gas turbines", "item": SITE + "/gas-turbines.html"},
+            {"@type": "ListItem", "position": 3, "name": f"{label} for sale", "item": SITE + path}]}]}
+    units_html = "".join(row(u) for u in us) or '<p class="empty">No unit of this model is listed at the moment.</p>'
+    return head(title, desc, path, f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n') + header() + f"""
+<div class="crumbs wrap"><a href="/">Home</a> / <a href="/gas-turbines.html">Gas turbines</a> / {e(label)}</div>
+<div class="hero slim"><div class="wrap">
+  <p class="kicker light">Inventory · updated {UPDATED}</p>
+  <h1>{e(label)} for sale</h1>
+  <p>{e(lead)}</p>
+</div></div>
+<section><div class="wrap">
+  <p class="kicker">Units in our inventory</p>
+  <h2>{n} {e(label)} unit{plural} listed</h2>
+  <div class="ulist">{units_html}</div>
+  <p class="muted small">Each unit is offered on behalf of its owner and subject to prior sale. Serial numbers, unit location and full technical documents are released after receipt of a letter of intent.</p>
+</div></section>
+<section class="soft"><div class="wrap">
+  <p class="kicker">How a purchase works</p>
+  <h2>From letter of intent to contract</h2>
+  <div class="steps">
+    <div class="card"><div class="num">1</div><h3>Letter of intent</h3><p>You send a letter of intent with the stock number and the number of units.</p></div>
+    <div class="card"><div class="num">2</div><h3>Data and inspection</h3><p>You receive the technical documents and can inspect the unit.</p></div>
+    <div class="card"><div class="num">3</div><h3>Escrow</h3><p>Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.</p></div>
+    <div class="card"><div class="num">4</div><h3>Contract</h3><p>Buyer and owner sign the purchase contract.</p></div>
+  </div>
+</div></section>
+<div class="cta">
+  <h2>Looking for a {e(label)}?</h2>
+  <p>Send output, frequency, number of units and delivery country.</p>
+  <a class="btn alt" href="/contact.html">Send your requirement</a> <a class="btn wa" href="{WA}">WhatsApp</a>
+</div>
+""" + footer() + "\n</body>\n</html>\n"
 
 
 POSTS = json.loads((ROOT / "_build" / "posts.json").read_text(encoding="utf-8"))
@@ -299,6 +393,8 @@ for u in UNITS:
     (ROOT / "units" / f"{u['slug']}.html").write_text(unit_page(u), encoding="utf-8", newline="\n")
 (ROOT / "inventory.html").write_text(inventory_page(), encoding="utf-8", newline="\n")
 (ROOT / "news.html").write_text(news_page(), encoding="utf-8", newline="\n")
+for m in MODELS:
+    (ROOT / f"{m[0]}.html").write_text(model_page(*m), encoding="utf-8", newline="\n")
 (ROOT / "news").mkdir(exist_ok=True)
 for old in (ROOT / "news").glob("*.html"):
     old.unlink()
@@ -311,18 +407,19 @@ for name in STATIC:
 for name in ["404.html"]:
     patch_static(ROOT / name)
 
-urls = [f"{SITE}/"] + [f"{SITE}/{n}" for n in STATIC[1:] if (ROOT / n).exists()] + [SITE + u["url"] for u in UNITS] + [f"{SITE}/news/{p['slug']}.html" for p in POSTS]
+urls = [f"{SITE}/"] + [f"{SITE}/{n}" for n in STATIC[1:] if (ROOT / n).exists()] + [f"{SITE}/{m[0]}.html" for m in MODELS] + [SITE + u["url"] for u in UNITS] + [f"{SITE}/news/{p['slug']}.html" for p in POSTS]
 (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
                                   + "".join(f"  <url><loc>{x}</loc><lastmod>{TODAY}</lastmod></url>\n" for x in urls)
                                   + "</urlset>\n", encoding="utf-8", newline="\n")
 
 # llms.txt: keep the hand-written head, regenerate the unit and news lists so AI search finds every unit.
 llms_path = ROOT / "llms.txt"
-head = llms_path.read_text(encoding="utf-8").split("\n## Units for sale")[0].rstrip() + "\n"
+llms_head = llms_path.read_text(encoding="utf-8").split("\n## Units for sale")[0].rstrip() + "\n"
 def llms_line(u):
-    facts = ", ".join(x for x in [u["output"], u["hz"], str(u["year"] or ""), u["condition"]] if x)
+    facts = ", ".join(x for x in [u["output"], u["hz"], str(u["year"] or ""), u["condition"], approx(u.get("hours"), "h"),
+                                  "reserved" if u.get("status") == "reserved" else ""] if x)
     return f"- [LKS-{u['id']}: {u['name']}]({SITE}{u['url']}): {facts}. Price on request, subject to prior sale."
-llms = (head + f"\n## Units for sale (stock list, updated {TODAY})\n"
+llms = (llms_head + f"\n## Units for sale (stock list, updated {TODAY})\n"
         + "\n".join(llms_line(u) for u in UNITS)
         + "\n\n## News\n" + "\n".join(f"- [{p['title']}]({SITE}/news/{p['slug']}.html)" for p in POSTS) + "\n")
 llms_path.write_text(llms, encoding="utf-8", newline="\n")

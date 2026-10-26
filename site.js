@@ -41,19 +41,50 @@
     apply();
   }
 
+  // Web3Forms access key (free account, created by the owner). Empty = fall back to the visitor's email program.
+  var FORM_KEY = '';
+
   var form = document.getElementById('mailform');
   if (form) {
     if (qs.get('unit') && form.unit) form.unit.value = qs.get('unit');
+    var note = document.getElementById('formnote');
+    var say = function (text, ok) {
+      if (!note) return;
+      note.textContent = text;
+      note.className = 'formnote ' + (ok ? 'ok' : 'err');
+      note.hidden = false;
+    };
     form.addEventListener('submit', function (ev) {
       ev.preventDefault();
+      if (form.botcheck && form.botcheck.checked) return;
       var lines = [];
       Array.prototype.forEach.call(form.elements, function (el) {
-        if (el.name && el.value) lines.push((el.dataset.label || el.name) + ': ' + el.value);
+        if (el.name && el.name !== 'botcheck' && el.value) lines.push((el.dataset.label || el.name) + ': ' + el.value);
       });
       var subject = (form.dataset.subject || 'Inquiry') + (form.company && form.company.value ? ' from ' + form.company.value : '');
-      location.href = 'mailto:manager@lks360.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
-      var note = document.getElementById('formnote');
-      if (note) note.hidden = false;
+      var mailto = 'mailto:manager@lks360.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
+
+      if (!FORM_KEY) {
+        location.href = mailto;
+        say('Your email program opens with the message. Please press send there. If nothing opens, write to manager@lks360.com.', true);
+        return;
+      }
+      var btn = form.querySelector('button[type=submit]');
+      if (btn) btn.disabled = true;
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: FORM_KEY, subject: subject, from_name: 'lks360.com',
+          email: form.email ? form.email.value : '', message: lines.join('\n')
+        })
+      }).then(function (r) { return r.json(); }).then(function (d) {
+        if (!d.success) throw new Error(d.message || 'error');
+        form.reset();
+        say('Thank you. Your message has been sent to manager@lks360.com.', true);
+      }).catch(function () {
+        say('The message could not be sent. Please write to manager@lks360.com or use WhatsApp.', false);
+      }).then(function () { if (btn) btn.disabled = false; });
     });
   }
 })();
