@@ -373,6 +373,7 @@ def news_page():
 def patch_static(path):
     t = path.read_text(encoding="utf-8")
     t = re.sub(r"<header>.*?</header>", lambda m: header(), t, count=1, flags=re.S)
+    t = re.sub(r'\s*<a class="wafloat".*?</a>', "", t, flags=re.S)
     t = re.sub(r"<footer>.*?</footer>", lambda m: footer(), t, count=1, flags=re.S)
     t = t.replace('href="style.css"', 'href="/style.css"').replace('href="favicon.svg"', 'href="/favicon.svg"')
     cat = {"gas-turbines.html": "gas", "steam-turbines.html": "steam", "generator-sets.html": "genset"}.get(path.name)
