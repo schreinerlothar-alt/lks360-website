@@ -158,10 +158,9 @@ def unit_page(u):
               ("Condition", u["condition"]), ("Operating hours", approx(u.get("hours"), "h")),
               ("Location", u.get("continent", ""))] if v]
     ld = {"@context": "https://schema.org", "@graph": [
-        {"@type": "Product", "name": u["name"], "sku": f"LKS-{u['id']}", "category": catname,
-         "description": desc, "url": SITE + u["url"],
-         **({"brand": {"@type": "Brand", "name": u["make"]}} if u["make"] else {}),
-         "additionalProperty": props},
+        # ItemPage, not Product: Google requires offers/price for Product snippets, and prices stay on request.
+        {"@type": "ItemPage", "name": u["name"], "url": SITE + u["url"], "description": desc,
+         "about": {"@type": "Thing", "name": u["name"], "identifier": f"LKS-{u['id']}", "description": desc}},
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
             {"@type": "ListItem", "position": 2, "name": "Inventory", "item": SITE + "/inventory.html"},
