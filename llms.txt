@@ -38,11 +38,10 @@
 - [Imprint](https://lks360.com/imprint.html)
 - [Privacy Policy](https://lks360.com/privacy.html)
 
-## Units for sale (stock list, updated 2026-10-28)
+## Units for sale (stock list, updated 2026-10-29)
 - [LKS-GT-01: 2 x Siemens Westinghouse W701DS gas turbine generator sets](https://lks360.com/units/gt-01-2-x-siemens-westinghouse-w701ds-gas-turbine-generator-sets-127-8-mw-each-255-6-mw-to.html): 127.8 MW each, 255.6 MW total, 50 Hz, Rebuilt, unused since rebuild. Price on request, subject to prior sale.
 - [LKS-GT-02: Siemens SGT-800 gas turbines](https://lks360.com/units/gt-02-siemens-sgt-800-gas-turbines-51-9-mw.html): 51.9 MW, 50/60 Hz, 2024, New, reserved. Price on request, subject to prior sale.
 - [LKS-GT-03: Siemens SGT-800 combined cycle blocks](https://lks360.com/units/gt-03-siemens-sgt-800-combined-cycle-blocks-53-mw-gt-plus-25-mw-st.html): 53 MW GT + 25 MW ST, 50 Hz, 2017. Price on request, subject to prior sale.
-- [LKS-GT-04: Siemens SGT5-2000E combined cycle power plant modules](https://lks360.com/units/gt-04-siemens-sgt5-2000e-combined-cycle-power-plant-modules-245-mw.html): 245 MW, 50 Hz, 0 h. Price on request, subject to prior sale.
 - [LKS-GT-05: Siemens SGT-700 combined cycle units](https://lks360.com/units/gt-05-siemens-sgt-700-combined-cycle-units-45-mw.html): 45 MW, 50 Hz, approx. 230 h. Price on request, subject to prior sale.
 - [LKS-GT-06: Siemens SGT-600 gas turbines, never fired](https://lks360.com/units/gt-06-siemens-sgt-600-gas-turbines-never-fired-24-5-mw.html): 24.5 MW, 2021-2022, New, never fired. Price on request, subject to prior sale.
 - [LKS-GT-07: Siemens SGT-600 (GT10B1) gas turbine generator set with HRSG](https://lks360.com/units/gt-07-siemens-sgt-600-gt10b1-gas-turbine-generator-set-with-hrsg-24-6-mw.html): 24.6 MW, 50 Hz, approx. 86,000 h. Price on request, subject to prior sale.
