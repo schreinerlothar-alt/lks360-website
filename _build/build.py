@@ -6,9 +6,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 ALL_UNITS = json.loads((ROOT / "_build" / "units.json").read_text(encoding="utf-8"))
-# Sold units stay listed with a badge: they still bring inquiries (Lothar 02.11.2026). Only "hidden" units leave.
+# Sold units stay listed without any mark: they still bring inquiries (Lothar 02.11.2026). Only "hidden" units leave.
 UNITS = [u for u in ALL_UNITS if u.get("status") != "hidden"]
-OPEN_UNITS = [u for u in UNITS if u.get("status") != "sold"]
+OPEN_UNITS = UNITS
 LISTED = "21 October 2026"
 UPDATED = "2 November 2026"
 TODAY = datetime.date.today().isoformat()
@@ -51,8 +51,6 @@ def approx(n, unit):
 
 
 def badge(u):
-    if u.get("status") == "sold":
-        return '<span class="badge sold">Sold</span>'
     return '<span class="badge reserved">Reserved</span>' if u.get("status") == "reserved" else ""
 
 
@@ -128,13 +126,13 @@ def row(u):
     <p class="chips">{chips(u)}</p>
     <p class="confirmed">{confirmed(u)}</p>
   </div>
-  <div class="uact"><p class="price">{'Sold' if u.get('status') == 'sold' else 'Price on request'}</p><a class="btn sm" href="{u['url']}">Details</a><a class="btn sm ghost" href="{mailto(u)}">{'Ask for similar unit' if u.get('status') == 'sold' else 'Request offer'}</a></div>
+  <div class="uact"><p class="price">Price on request</p><a class="btn sm" href="{u['url']}">Details</a><a class="btn sm ghost" href="{mailto(u)}">Request offer</a></div>
 </article>"""
 
 
 def mailto(u):
     from urllib.parse import quote
-    subj = f"{'Similar to' if u.get('status') == 'sold' else 'Request'} LKS-{u['id']}: {u['name']}"
+    subj = f"Request LKS-{u['id']}: {u['name']}"
     body = (f"Stock No.: LKS-{u['id']}\nUnit: {u['name']}\n\nCompany:\nName:\nPhone:\n"
             "Delivery country:\nNumber of units:\nTimeline:\n")
     return f"mailto:{MAIL}?subject={quote(subj)}&body={quote(body)}"
@@ -145,8 +143,8 @@ def spec_rows(u):
             ("Model", u["model"] if u["make"] else ""), ("Quantity", u.get("qty", "")), ("Output", u["output"]),
             ("Frequency", u["hz"]), ("Fuel", u["fuel"]), ("Year", u["year"]), ("Condition", u["condition"]),
             ("Operating hours", approx(u.get("hours"), "h")), ("Starts", approx(u.get("starts"), "starts")),
-            ("Location", u.get("continent", "")), ("Status", {"reserved": "Reserved", "sold": "Sold"}.get(u.get("status"), "Available")),
-            ("Price", "" if u.get("status") == "sold" else "On request"), ("Last confirmed", long_date(u["confirmed"]) if u.get("confirmed") else LISTED)]
+            ("Location", u.get("continent", "")), ("Status", {"reserved": "Reserved", "sold": ""}.get(u.get("status"), "Available")),
+            ("Price", "On request"), ("Last confirmed", long_date(u["confirmed"]) if u.get("confirmed") else LISTED)]
     return "\n".join(f"<tr><th>{k}</th><td>{e(v) if v else '<span class=muted>On request</span>'}</td></tr>" for k, v in rows)
 
 
@@ -182,8 +180,8 @@ def unit_page(u):
     <p class="muted small">Offered on behalf of the owner and subject to prior sale. Serial numbers, unit location and full technical documents are released after receipt of a letter of intent.</p>
   </div>
   <aside class="card side">
-    <p class="price big">{'Sold' if u.get('status') == 'sold' else 'Price on request'}</p>
-    <a class="btn full" href="{mailto(u)}">{'Ask for similar unit' if u.get('status') == 'sold' else 'Request offer'}</a>
+    <p class="price big">Price on request</p>
+    <a class="btn full" href="{mailto(u)}">Request offer</a>
     <a class="btn ghost full" href="/contact.html?unit=LKS-{u['id']}">Contact form</a>
     <a class="btn wa full" href="{WA}">WhatsApp</a>
     <h3>Next steps</h3>
@@ -420,7 +418,7 @@ llms_path = ROOT / "llms.txt"
 llms_head = llms_path.read_text(encoding="utf-8").split("\n## Units for sale")[0].rstrip() + "\n"
 def llms_line(u):
     facts = ", ".join(x for x in [u["output"], u["hz"], str(u["year"] or ""), u["condition"], approx(u.get("hours"), "h"),
-                                  u.get("status") if u.get("status") in ("reserved", "sold") else ""] if x)
+                                  "reserved" if u.get("status") == "reserved" else ""] if x)
     return f"- [LKS-{u['id']}: {u['name']}]({SITE}{u['url']}): {facts}. Price on request, subject to prior sale."
 llms = (llms_head + f"\n## Units for sale (stock list, updated {TODAY})\n"
         + "\n".join(llms_line(u) for u in UNITS)
