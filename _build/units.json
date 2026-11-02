@@ -36,8 +36,8 @@
 "scope": "",
 "featured": true,
 "src": "lks360exim product 64",
-"status": "reserved",
-"confirmed": "20.10.2026"
+"status": "sold",
+"confirmed": "27.10.2026"
 },
 {
 "id": "GT-03",
@@ -528,8 +528,8 @@
 "hours": "67862",
 "scope": "Combined heat and power plant.",
 "src": "lks360exim product 67",
-"status": "available",
-"confirmed": "02.10.2026",
+"status": "sold",
+"confirmed": "31.10.2026",
 "continent": "Europe"
 },
 {

@@ -9,7 +9,7 @@ ALL_UNITS = json.loads((ROOT / "_build" / "units.json").read_text(encoding="utf-
 # Sold units leave the site; reserved units stay with a badge.
 UNITS = [u for u in ALL_UNITS if u.get("status") not in ("sold", "hidden")]
 LISTED = "21 October 2026"
-UPDATED = "26 October 2026"
+UPDATED = "2 November 2026"
 TODAY = datetime.date.today().isoformat()
 SITE = "https://lks360.com"
 MAIL = "manager@lks360.com"

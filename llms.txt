@@ -38,9 +38,8 @@
 - [Imprint](https://lks360.com/imprint.html)
 - [Privacy Policy](https://lks360.com/privacy.html)
 
-## Units for sale (stock list, updated 2026-10-29)
+## Units for sale (stock list, updated 2026-11-02)
 - [LKS-GT-01: 2 x Siemens Westinghouse W701DS gas turbine generator sets](https://lks360.com/units/gt-01-2-x-siemens-westinghouse-w701ds-gas-turbine-generator-sets-127-8-mw-each-255-6-mw-to.html): 127.8 MW each, 255.6 MW total, 50 Hz, Rebuilt, unused since rebuild. Price on request, subject to prior sale.
-- [LKS-GT-02: Siemens SGT-800 gas turbines](https://lks360.com/units/gt-02-siemens-sgt-800-gas-turbines-51-9-mw.html): 51.9 MW, 50/60 Hz, 2024, New, reserved. Price on request, subject to prior sale.
 - [LKS-GT-03: Siemens SGT-800 combined cycle blocks](https://lks360.com/units/gt-03-siemens-sgt-800-combined-cycle-blocks-53-mw-gt-plus-25-mw-st.html): 53 MW GT + 25 MW ST, 50 Hz, 2017. Price on request, subject to prior sale.
 - [LKS-GT-05: Siemens SGT-700 combined cycle units](https://lks360.com/units/gt-05-siemens-sgt-700-combined-cycle-units-45-mw.html): 45 MW, 50 Hz, approx. 230 h. Price on request, subject to prior sale.
 - [LKS-GT-06: Siemens SGT-600 gas turbines, never fired](https://lks360.com/units/gt-06-siemens-sgt-600-gas-turbines-never-fired-24-5-mw.html): 24.5 MW, 2021-2022, New, never fired. Price on request, subject to prior sale.
@@ -64,7 +63,6 @@
 - [LKS-ST-02: Steam turbine generators, 54, 60 and 62 MW](https://lks360.com/units/st-02-steam-turbine-generators-54-60-and-62-mw-54-60-and-62-mw.html): 54, 60 and 62 MW, 60 Hz, Low hours. Price on request, subject to prior sale.
 - [LKS-GS-01: Caterpillar G20CM34 gas generator sets, new](https://lks360.com/units/gs-01-caterpillar-g20cm34-gas-generator-sets-new-9-8-mw.html): 9.8 MW, 60 Hz, New from current production. Price on request, subject to prior sale.
 - [LKS-GS-02: Caterpillar G20CM34 gas generator set](https://lks360.com/units/gs-02-caterpillar-g20cm34-gas-generator-set-9-830-ekw.html): 9,830 ekW, 60 Hz, 2020, 0 h. Price on request, subject to prior sale.
-- [LKS-GS-03: Wärtsilä 20V34SG gas engine CHP plant](https://lks360.com/units/gs-03-wartsila-20v34sg-gas-engine-chp-plant-approx-10-mwe.html): approx. 10 MWe, 50 Hz, 2013, approx. 68,000 h. Price on request, subject to prior sale.
 - [LKS-GS-04: STX MAN B&W 14V32/40 diesel generator sets](https://lks360.com/units/gs-04-stx-man-b-w-14v32-40-diesel-generator-sets-6-720-kw.html): 6,720 kW, 2010. Price on request, subject to prior sale.
 - [LKS-GS-05: Caterpillar 3516C generator sets](https://lks360.com/units/gs-05-caterpillar-3516c-generator-sets-2-mw.html): 2 MW, 50 Hz, 2014, approx. 1,000 h. Price on request, subject to prior sale.
 - [LKS-GS-07: Caterpillar 3516B HD diesel generator sets](https://lks360.com/units/gs-07-caterpillar-3516b-hd-diesel-generator-sets-1-600-kwe.html): 1,600 kWe, 50 Hz. Price on request, subject to prior sale.
