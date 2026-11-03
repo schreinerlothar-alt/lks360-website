@@ -291,6 +291,20 @@ MODELS = [
      "Solar Turbines Centaur 40 gas turbine generator sets, offered on behalf of their owners."),
     ("mitsubishi-mf111-for-sale", "Mitsubishi MF111", r"MF111",
      "Mitsubishi MF111 gas turbine generator sets, offered on behalf of their owners."),
+    ("siemens-sst-400-for-sale", "Siemens SST-400", r"SST-400",
+     "Siemens SST-400 steam turbine generator sets, offered on behalf of their owners.", "steam"),
+    ("caterpillar-g20cm34-for-sale", "Caterpillar G20CM34", r"G20CM34",
+     "Caterpillar G20CM34 gas generator sets, offered on behalf of their owners.", "genset"),
+    ("caterpillar-3516-for-sale", "Caterpillar 3516", r"3516",
+     "Caterpillar 3516B and 3516C generator sets, offered on behalf of their owners.", "genset"),
+    ("wartsila-34sg-for-sale", "Wärtsilä 34SG", r"34SG",
+     "Wärtsilä 34SG gas engine power plants, offered on behalf of their owners.", "genset"),
+    ("man-32-40-for-sale", "MAN 32/40", r"32/40",
+     "MAN B&W 32/40 diesel generator sets, offered on behalf of their owners.", "genset"),
+    ("mtu-16v4000-for-sale", "MTU 16V4000", r"16V4000",
+     "MTU 16V4000 diesel generator sets, offered on behalf of their owners.", "genset"),
+    ("cummins-generator-sets-for-sale", "Cummins genset", r"Cummins",
+     "Cummins gas and diesel generator sets, offered on behalf of their owners.", "genset"),
 ]
 
 
@@ -310,7 +324,8 @@ def model_faq(label):
     ]
 
 
-def model_page(slugname, label, pattern, lead):
+def model_page(slugname, label, pattern, lead, cat="gas"):
+    cname, curl = CATS[cat][1], CATS[cat][2]
     us = [u for u in UNITS if re.search(pattern, u["model"] + " " + u["name"])]
     path = f"/{slugname}.html"
     n = len(us)
@@ -323,14 +338,14 @@ def model_page(slugname, label, pattern, lead):
             {"@type": "ListItem", "position": i + 1, "url": SITE + u["url"], "name": u["name"]} for i, u in enumerate(us)]},
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
-            {"@type": "ListItem", "position": 2, "name": "Gas turbines", "item": SITE + "/gas-turbines.html"},
+            {"@type": "ListItem", "position": 2, "name": cname, "item": SITE + curl},
             {"@type": "ListItem", "position": 3, "name": f"{label} for sale", "item": SITE + path}]},
         {"@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in model_faq(label)]}]}
     faq_html = "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in model_faq(label))
     units_html = "".join(row(u) for u in us) or '<p class="empty">No unit of this model is listed at the moment.</p>'
     return head(title, desc, path, f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n') + header() + f"""
-<div class="crumbs wrap"><a href="/">Home</a> / <a href="/gas-turbines.html">Gas turbines</a> / {e(label)}</div>
+<div class="crumbs wrap"><a href="/">Home</a> / <a href="{curl}">{cname}</a> / {e(label)}</div>
 <div class="hero slim"><div class="wrap">
   <p class="kicker light">Inventory · updated {UPDATED}</p>
   <h1>{e(label)} for sale</h1>
@@ -442,10 +457,19 @@ for u in UNITS:
     (ROOT / "units" / f"{u['slug']}.html").write_text(unit_page(u), encoding="utf-8", newline="\n")
 (ROOT / "inventory.html").write_text(inventory_page(), encoding="utf-8", newline="\n")
 (ROOT / "news.html").write_text(news_page(), encoding="utf-8", newline="\n")
-_gt = ROOT / "gas-turbines.html"
-_links = " · ".join(f'<a href="/{m[0]}.html">{m[1]} for sale</a>' for m in MODELS)
-_gtt = re.sub(r'<p class="modellinks">.*?</p>', f'<p class="modellinks">Model pages: {_links}</p>', _gt.read_text(encoding="utf-8"), count=1, flags=re.S)
-_gt.write_text(_gtt, encoding="utf-8", newline="\n")
+# keep the model link line on each category page in step with MODELS
+for _cat, (_s, _pl, _url) in CATS.items():
+    _ms = [m for m in MODELS if (m[4] if len(m) > 4 else "gas") == _cat]
+    if not _ms:
+        continue
+    _f = ROOT / _url.lstrip("/")
+    _line = '<p class="modellinks">Model pages: ' + " · ".join(f'<a href="/{m[0]}.html">{m[1]} for sale</a>' for m in _ms) + "</p>"
+    _tx = _f.read_text(encoding="utf-8")
+    if '<p class="modellinks">' in _tx:
+        _tx = re.sub(r'<p class="modellinks">.*?</p>', lambda _m: _line, _tx, count=1, flags=re.S)
+    else:
+        _tx = re.sub(r'(<h2>[^<]*</h2>\s*<p class="lead">.*?</p>)', lambda _m: _m.group(1) + "\n  " + _line, _tx, count=1, flags=re.S)
+    _f.write_text(_tx, encoding="utf-8", newline="\n")
 for m in MODELS:
     (ROOT / f"{m[0]}.html").write_text(model_page(*m), encoding="utf-8", newline="\n")
 (ROOT / "news").mkdir(exist_ok=True)
