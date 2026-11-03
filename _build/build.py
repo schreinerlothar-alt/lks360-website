@@ -10,7 +10,7 @@ ALL_UNITS = json.loads((ROOT / "_build" / "units.json").read_text(encoding="utf-
 UNITS = [u for u in ALL_UNITS if u.get("status") != "hidden"]
 OPEN_UNITS = UNITS
 LISTED = "21 October 2026"
-UPDATED = "2 November 2026"
+UPDATED = "3 November 2026"
 TODAY = datetime.date.today().isoformat()
 SITE = "https://lks360.com"
 MAIL = "manager@lks360.com"
@@ -267,7 +267,47 @@ MODELS = [
      "GE TM2500 mobile aeroderivative gas turbine generators, offered on behalf of their owners."),
     ("ge-lm2500-for-sale", "GE LM2500", r"\bLM2500",
      "GE LM2500 aeroderivative gas turbines, including trailer-mounted packages, offered on behalf of their owners."),
+    ("ge-lm6000-for-sale", "GE LM6000", r"LM6000",
+     "GE LM6000 aeroderivative gas turbines, offered on behalf of their owners."),
+    ("ge-lm5000-for-sale", "GE LM5000", r"LM5000",
+     "GE LM5000 aeroderivative gas turbine units, offered on behalf of their owners."),
+    ("ge-frame-6b-for-sale", "GE Frame 6B", r"Frame 6B",
+     "GE Frame 6B heavy duty gas turbines, offered on behalf of their owners."),
+    ("ge-7ea-for-sale", "GE 7EA", r"\b7EA",
+     "GE 7EA heavy duty gas turbines, offered on behalf of their owners."),
+    ("ge-frame-5-for-sale", "GE Frame 5 (MS5001)", r"Frame 5|MS5001",
+     "GE Frame 5 (MS5001) gas turbines, including power barge units, offered on behalf of their owners."),
+    ("ge-9ha-for-sale", "GE 9HA", r"9HA",
+     "GE 9HA heavy duty gas turbines, offered on behalf of their owners."),
+    ("siemens-sgt-600-for-sale", "Siemens SGT-600", r"SGT-600|GT10B",
+     "Siemens SGT-600 (GT10B) industrial gas turbines, offered on behalf of their owners."),
+    ("siemens-sgt-700-for-sale", "Siemens SGT-700", r"SGT-700",
+     "Siemens SGT-700 industrial gas turbines and combined cycle units, offered on behalf of their owners."),
+    ("siemens-westinghouse-w701-w501-for-sale", "Siemens Westinghouse W701 and W501", r"W701|W501",
+     "Siemens Westinghouse W701 and W501 heavy duty gas turbines, offered on behalf of their owners."),
+    ("solar-titan-for-sale", "Solar Titan", r"Titan",
+     "Solar Turbines Titan 130 and Titan 250 gas turbines, offered on behalf of their owners."),
+    ("solar-centaur-40-for-sale", "Solar Centaur 40", r"Centaur",
+     "Solar Turbines Centaur 40 gas turbine generator sets, offered on behalf of their owners."),
+    ("mitsubishi-mf111-for-sale", "Mitsubishi MF111", r"MF111",
+     "Mitsubishi MF111 gas turbine generator sets, offered on behalf of their owners."),
 ]
+
+
+def model_faq(label):
+    return [
+        (f"Who sells the {label} units listed here?",
+         "LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. "
+         "The purchase contract is made directly between buyer and owner."),
+        (f"Is the {label} still available?",
+         "Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status."),
+        (f"What does a used {label} cost?",
+         "Price on request. You receive the price and the data sheet after your letter of intent with model and quantity."),
+        ("Can I inspect the unit?",
+         "Yes. After your letter of intent you receive the technical documents and can inspect the unit."),
+        ("How is payment made?",
+         "Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them."),
+    ]
 
 
 def model_page(slugname, label, pattern, lead):
@@ -284,7 +324,10 @@ def model_page(slugname, label, pattern, lead):
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
             {"@type": "ListItem", "position": 2, "name": "Gas turbines", "item": SITE + "/gas-turbines.html"},
-            {"@type": "ListItem", "position": 3, "name": f"{label} for sale", "item": SITE + path}]}]}
+            {"@type": "ListItem", "position": 3, "name": f"{label} for sale", "item": SITE + path}]},
+        {"@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in model_faq(label)]}]}
+    faq_html = "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in model_faq(label))
     units_html = "".join(row(u) for u in us) or '<p class="empty">No unit of this model is listed at the moment.</p>'
     return head(title, desc, path, f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n') + header() + f"""
 <div class="crumbs wrap"><a href="/">Home</a> / <a href="/gas-turbines.html">Gas turbines</a> / {e(label)}</div>
@@ -308,6 +351,11 @@ def model_page(slugname, label, pattern, lead):
     <div class="card"><div class="num">3</div><h3>Escrow</h3><p>Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.</p></div>
     <div class="card"><div class="num">4</div><h3>Contract</h3><p>Buyer and owner sign the purchase contract.</p></div>
   </div>
+</div></section>
+<section><div class="wrap">
+  <p class="kicker">Questions and answers</p>
+  <h2>{e(label)}: frequent questions</h2>
+  {faq_html}
 </div></section>
 <div class="cta">
   <h2>Looking for a {e(label)}?</h2>
@@ -394,6 +442,10 @@ for u in UNITS:
     (ROOT / "units" / f"{u['slug']}.html").write_text(unit_page(u), encoding="utf-8", newline="\n")
 (ROOT / "inventory.html").write_text(inventory_page(), encoding="utf-8", newline="\n")
 (ROOT / "news.html").write_text(news_page(), encoding="utf-8", newline="\n")
+_gt = ROOT / "gas-turbines.html"
+_links = " · ".join(f'<a href="/{m[0]}.html">{m[1]} for sale</a>' for m in MODELS)
+_gtt = re.sub(r'<p class="modellinks">.*?</p>', f'<p class="modellinks">Model pages: {_links}</p>', _gt.read_text(encoding="utf-8"), count=1, flags=re.S)
+_gt.write_text(_gtt, encoding="utf-8", newline="\n")
 for m in MODELS:
     (ROOT / f"{m[0]}.html").write_text(model_page(*m), encoding="utf-8", newline="\n")
 (ROOT / "news").mkdir(exist_ok=True)
