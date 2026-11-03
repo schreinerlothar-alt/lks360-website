@@ -498,6 +498,7 @@ def llms_line(u):
     return f"- [LKS-{u['id']}: {u['name']}]({SITE}{u['url']}): {facts}. Price on request, subject to prior sale."
 llms = (llms_head + f"\n## Units for sale (stock list, updated {TODAY})\n"
         + "\n".join(llms_line(u) for u in UNITS)
+        + "\n\n## Model pages\n" + "\n".join(f"- [{m[1]} for sale]({SITE}/{m[0]}.html)" for m in MODELS)
         + "\n\n## News\n" + "\n".join(f"- [{p['title']}]({SITE}/news/{p['slug']}.html)" for p in POSTS) + "\n")
 llms_path.write_text(llms, encoding="utf-8", newline="\n")
 
