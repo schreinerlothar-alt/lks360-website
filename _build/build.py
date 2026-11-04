@@ -1,8 +1,11 @@
 # Builds inventory.html, units/*.html, sitemap.xml and the shared header/footer.
 # Run from the repo root:  python _build/build.py
 # Unit data: _build/units.json (source of each unit in field "src").
-import json, re, html, datetime
+import json, re, html, datetime, sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import make_images
 
 ROOT = Path(__file__).resolve().parent.parent
 ALL_UNITS = json.loads((ROOT / "_build" / "units.json").read_text(encoding="utf-8"))
@@ -10,7 +13,7 @@ ALL_UNITS = json.loads((ROOT / "_build" / "units.json").read_text(encoding="utf-
 UNITS = [u for u in ALL_UNITS if u.get("status") != "hidden"]
 OPEN_UNITS = UNITS
 LISTED = "21 October 2026"
-UPDATED = "3 November 2026"
+UPDATED = "4 November 2026"
 TODAY = datetime.date.today().isoformat()
 SITE = "https://lks360.com"
 MAIL = "manager@lks360.com"
@@ -87,7 +90,7 @@ def footer():
 <a class="wafloat" href="{WA}" aria-label="WhatsApp +49 170 4656619"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.3 3.4 14.6 14.6 0 0 0 5.6 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.2-.3-.3-.6-.4z"/></svg></a>"""
 
 
-def head(title, desc, path, extra=""):
+def head(title, desc, path, extra="", img="/img/gas-turbine-rotor.jpg"):
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -102,7 +105,11 @@ def head(title, desc, path, extra=""):
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{SITE}{path}">
-<meta property="og:image" content="{SITE}/img/gas-turbine-rotor.jpg">
+<meta property="og:image" content="{SITE}{img}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{SITE}{img}">
 <link rel="stylesheet" href="/style.css">
 {extra}</head>
 <body>
@@ -148,12 +155,24 @@ def spec_rows(u):
     return "\n".join(f"<tr><th>{k}</th><td>{e(v) if v else '<span class=muted>On request</span>'}</td></tr>" for k, v in rows)
 
 
+def unit_card(u):
+    # Share card with public listing data only (no price, location by continent).
+    img = f"/img/cards/lks-{u['id'].lower()}.jpg"
+    facts = [x for x in [u["output"], u["hz"], u["year"] and f"Year {u['year']}", u["condition"],
+                         approx(u.get("hours"), "h"), u.get("continent", "")] if x]
+    note = "Reserved" if u.get("status") == "reserved" else "Price on request"
+    make_images.card(str(ROOT / img.lstrip("/")), f"{CATS[u['cat']][0]} for sale · Stock No. LKS-{u['id']}",
+                     u["name"], facts[:6], note)
+    return img
+
+
 def unit_page(u):
     catname, catplural, catpath = CATS[u["cat"]]
     title = f"{u['name']}{', ' + u['output'] if u['output'] and u['output'] not in u['name'] else ''} | LKS-{u['id']}"
     desc = (f"{u['name']}" + (f", {u['output']}" if u['output'] else "") + (f", {u['hz']}" if u['hz'] else "")
             + (f", year {u['year']}" if u['year'] else "") + (f", {u['condition'].lower()}" if u['condition'] else "")
             + ". Offered on behalf of the owner by LKS 360-SCHREINER LLC. Price on request.")
+    img = unit_card(u)
     props = [{"@type": "PropertyValue", "name": k, "value": v} for k, v in
              [("Output", u["output"]), ("Frequency", u["hz"]), ("Fuel", u["fuel"]), ("Year", u["year"]),
               ("Condition", u["condition"]), ("Operating hours", approx(u.get("hours"), "h")),
@@ -161,19 +180,21 @@ def unit_page(u):
     ld = {"@context": "https://schema.org", "@graph": [
         # ItemPage, not Product: Google requires offers/price for Product snippets, and prices stay on request.
         {"@type": "ItemPage", "name": u["name"], "url": SITE + u["url"], "description": desc,
-         "about": {"@type": "Thing", "name": u["name"], "identifier": f"LKS-{u['id']}", "description": desc}},
+         "primaryImageOfPage": {"@type": "ImageObject", "url": SITE + img, "width": 1200, "height": 630},
+         "about": {"@type": "Thing", "name": u["name"], "identifier": f"LKS-{u['id']}", "description": desc, "image": SITE + img}},
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
             {"@type": "ListItem", "position": 2, "name": "Inventory", "item": SITE + "/inventory.html"},
             {"@type": "ListItem", "position": 3, "name": u["name"], "item": SITE + u["url"]}]}]}
     related = [x for x in UNITS if x["cat"] == u["cat"] and x["id"] != u["id"]][:3]
     scope = f"<h2>Scope</h2><p>{e(u['scope'])}</p>" if u["scope"] else ""
-    return head(title, desc, u["url"], f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n') + header() + f"""
+    return head(title, desc, u["url"], f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n', img) + header() + f"""
 <div class="crumbs wrap"><a href="/">Home</a> / <a href="/inventory.html">Inventory</a> / <a href="{catpath}">{catplural}</a> / LKS-{u['id']}</div>
 <section class="unitpage"><div class="wrap two">
   <div>
     <p class="kicker">{catname} · Stock No. LKS-{u['id']} {badge(u)}</p>
     <h1>{e(u['name'])}</h1>
+    <img class="ucard" src="{img}" width="1200" height="630" alt="{e(u['name'])}, stock number LKS-{u['id']}, {e(catname.lower())} for sale">
     <p class="chips big">{chips(u)}</p>
     <table class="spec">{spec_rows(u)}</table>
     {scope}
@@ -343,8 +364,12 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
         {"@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in model_faq(label)]}]}
     faq_html = "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in model_faq(label))
+    img = f"/img/cards/{slugname}.jpg"
+    make_images.card(str(ROOT / img.lstrip("/")), f"{CATS[cat][1]} · new and used", f"{label} for sale",
+                     [f"{n} unit{plural} in inventory", "Worldwide delivery", "Escrow payment"], "Price on request")
+    ld["@graph"][0]["image"] = SITE + img
     units_html = "".join(row(u) for u in us) or '<p class="empty">No unit of this model is listed at the moment.</p>'
-    return head(title, desc, path, f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n') + header() + f"""
+    return head(title, desc, path, f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n', img) + header() + f"""
 <div class="crumbs wrap"><a href="/">Home</a> / <a href="{curl}">{cname}</a> / {e(label)}</div>
 <div class="hero slim"><div class="wrap">
   <p class="kicker light">Inventory · updated {UPDATED}</p>
@@ -354,6 +379,7 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
 <section><div class="wrap">
   <p class="kicker">Units in our inventory</p>
   <h2>{n} {e(label)} unit{plural} listed</h2>
+  <img class="ucard" src="{img}" width="1200" height="630" alt="{e(label)} for sale, LKS 360-SCHREINER LLC" loading="lazy">
   <div class="ulist">{units_html}</div>
   <p class="muted small">Each unit is offered on behalf of its owner and subject to prior sale. Serial numbers, unit location and full technical documents are released after receipt of a letter of intent.</p>
 </div></section>
@@ -403,7 +429,11 @@ def post_page(p):
           "author": {"@type": "Person", "name": "Lothar Schreiner"},
           "publisher": {"@type": "Organization", "name": "LKS 360-SCHREINER LLC", "logo": {"@type": "ImageObject", "url": SITE + "/favicon.svg"}},
           **({"datePublished": iso} if iso else {})}
-    return head(p["title"] + " | LKS 360-SCHREINER LLC", desc, path, f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n') + header() + f"""
+    # Article image: first picture in the post, otherwise the site picture (Google wants an image for articles).
+    m = re.search(r'src="(/img/[^"]+)"', p["html"])
+    img = m.group(1) if m else "/img/gas-turbine-rotor.jpg"
+    ld["image"] = SITE + img
+    return head(p["title"] + " | LKS 360-SCHREINER LLC", desc, path, f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n', img) + header() + f"""
 <div class="crumbs wrap"><a href="/">Home</a> / <a href="/news.html">News</a></div>
 <section class="unitpage"><div class="wrap legal post">
   <p class="kicker">News{' · ' + shown if shown else ''}</p>
@@ -485,8 +515,12 @@ for name in ["404.html"]:
     patch_static(ROOT / name)
 
 urls = [f"{SITE}/"] + [f"{SITE}/{n}" for n in STATIC[1:] if (ROOT / n).exists()] + [f"{SITE}/{m[0]}.html" for m in MODELS] + [SITE + u["url"] for u in UNITS] + [f"{SITE}/news/{p['slug']}.html" for p in POSTS]
-(ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-                                  + "".join(f"  <url><loc>{x}</loc><lastmod>{TODAY}</lastmod></url>\n" for x in urls)
+IMGS = {**{f"{SITE}/{m[0]}.html": f"{SITE}/img/cards/{m[0]}.jpg" for m in MODELS},
+        **{SITE + u["url"]: f"{SITE}/img/cards/lks-{u['id'].lower()}.jpg" for u in UNITS}}
+def sm_img(x):
+    return f"<image:image><image:loc>{IMGS[x]}</image:loc></image:image>" if x in IMGS else ""
+(ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
+                                  + "".join(f"  <url><loc>{x}</loc><lastmod>{TODAY}</lastmod>{sm_img(x)}</url>\n" for x in urls)
                                   + "</urlset>\n", encoding="utf-8", newline="\n")
 
 # llms.txt: keep the hand-written head, regenerate the unit and news lists so AI search finds every unit.
