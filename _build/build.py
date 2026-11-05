@@ -166,6 +166,32 @@ def unit_card(u):
     return img
 
 
+def product_ld(u, desc, img):
+    # Product facts only. No offers (prices on request) and no ratings (none collected yet).
+    p = {"@type": "Product", "name": u["name"], "sku": f"LKS-{u['id']}", "mpn": f"LKS-{u['id']}",
+         "description": desc, "image": SITE + img, "category": CATS[u["cat"]][0],
+         "url": SITE + u["url"]}
+    if u.get("make"):
+        p["brand"] = {"@type": "Brand", "name": u["make"]}
+        p["manufacturer"] = {"@type": "Organization", "name": u["make"]}
+    if u.get("model"):
+        p["model"] = u["model"]
+    if u.get("year") and re.fullmatch(r"\d{4}", str(u["year"])):
+        p["productionDate"] = str(u["year"])
+    cond = (u.get("condition") or "").lower()
+    if cond.startswith(("new", "unused")):
+        p["itemCondition"] = "https://schema.org/NewCondition"
+    elif "overhaul" in cond or "rebuilt" in cond:
+        p["itemCondition"] = "https://schema.org/RefurbishedCondition"
+    props = [(k, v) for k, v in [("Output", u["output"]), ("Frequency", u["hz"]), ("Fuel", u["fuel"]),
+             ("Year", u["year"]), ("Condition", u["condition"]), ("Operating hours", approx(u.get("hours"), "h")),
+             ("Location", u.get("continent", ""))] if v]
+    if props:
+        p["additionalProperty"] = [{"@type": "PropertyValue", "name": k, "value": v} for k, v in props]
+    p["isRelatedTo"] = {"@type": "Organization", "name": "LKS 360-SCHREINER LLC", "url": SITE + "/"}
+    return p
+
+
 def unit_page(u):
     catname, catplural, catpath = CATS[u["cat"]]
     title = f"{u['name']}{', ' + u['output'] if u['output'] and u['output'] not in u['name'] else ''} | LKS-{u['id']}"
@@ -181,7 +207,7 @@ def unit_page(u):
         # ItemPage, not Product: Google requires offers/price for Product snippets, and prices stay on request.
         {"@type": "ItemPage", "name": u["name"], "url": SITE + u["url"], "description": desc,
          "primaryImageOfPage": {"@type": "ImageObject", "url": SITE + img, "width": 1200, "height": 630},
-         "about": {"@type": "Thing", "name": u["name"], "identifier": f"LKS-{u['id']}", "description": desc, "image": SITE + img}},
+         "about": product_ld(u, desc, img)},
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
             {"@type": "ListItem", "position": 2, "name": "Inventory", "item": SITE + "/inventory.html"},
