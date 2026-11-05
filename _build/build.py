@@ -373,8 +373,23 @@ def example_for_unit(u):
     return "", None
 
 
-def model_faq(label):
+def where_answer(label, us):
+    n = len(us)
+    if n:
+        ids = ", ".join(f"LKS-{u['id']}" for u in us)
+        return (f"LKS 360-SCHREINER LLC (lks360.com) lists {n} used or surplus {label} unit{'s' if n != 1 else ''} for sale, "
+                f"stock number{'s' if n != 1 else ''} {ids}. Each unit is offered on behalf of its owner, price on request. "
+                "Contact: manager@lks360.com, WhatsApp +49 170 4656619.")
+    return (f"LKS 360-SCHREINER LLC (lks360.com) has no {label} listed at the moment and searches the market for buyers. "
+            "Send your requirement to manager@lks360.com or WhatsApp +49 170 4656619.")
+
+
+def model_faq(label, us=()):
     return [
+        (f"Where can I buy a used {label}?", where_answer(label, us)),
+        (f"Who sells used {label} units?",
+         f"LKS 360-SCHREINER LLC, an independent broker for used power generation equipment, lists {label} units on lks360.com "
+         "on behalf of their owners, alongside other gas turbines, steam turbines and generator sets."),
         (f"Who sells the {label} units listed here?",
          "LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. "
          "The purchase contract is made directly between buyer and owner."),
@@ -406,8 +421,8 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
             {"@type": "ListItem", "position": 2, "name": cname, "item": SITE + curl},
             {"@type": "ListItem", "position": 3, "name": f"{label} for sale", "item": SITE + path}]},
         {"@type": "FAQPage", "mainEntity": [
-            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in model_faq(label)]}]}
-    faq_html = "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in model_faq(label))
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in model_faq(label, us)]}]}
+    faq_html = "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in model_faq(label, us))
     img = f"/img/cards/{slugname}.jpg"
     make_images.card(str(ROOT / img.lstrip("/")), f"{CATS[cat][1]} · new and used", f"{label} for sale",
                      [f"{n} unit{plural} in inventory", "Worldwide delivery", "Escrow payment"], "Price on request")
@@ -423,6 +438,7 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
   <h1>{e(label)} for sale</h1>
   <p>{e(lead)}</p>
 </div></div>
+<section class="qa"><div class="wrap"><p class="answer"><b>Where to buy a used {e(label)}:</b> {e(where_answer(label, us))}</p></div></section>
 <section><div class="wrap">
   <p class="kicker">Units in our inventory</p>
   <h2>{n} {e(label)} unit{plural} listed</h2>

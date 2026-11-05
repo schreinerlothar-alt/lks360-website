@@ -235,3 +235,4 @@ footer a{color:#dfe8f2;text-decoration:none;margin-right:18px}
 .fimg{display:block;width:calc(100% + 56px);max-width:none;height:auto;margin:-28px -28px 16px;border-radius:16px 16px 0 0}
 @media(max-width:760px){.unit{grid-template-columns:1fr}.uthumb{max-width:360px}}
 .exfig{margin:6px 0 20px}.exfig img{display:block;width:100%;height:auto;border-radius:10px}.exfig figcaption{font-size:13px;color:#5b6b7b;margin-top:6px}
+.qa{padding:22px 0 0}.answer{background:#eef6fa;border-left:4px solid var(--blue);border-radius:8px;padding:14px 18px;margin:0;font-size:17px}
