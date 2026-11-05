@@ -126,7 +126,7 @@ def row(u):
     cat = CATS[u["cat"]][0]
     hz = u["hz"].replace(" Hz", "") if u["hz"] else ""
     return f"""<article class="unit" data-cat="{u['cat']}" data-make="{e(u['make'] or 'Other')}" data-hz="{e(hz)}" data-mw="{u['mw'] if u['mw'] is not None else ''}" data-text="{e((u['id']+' '+u['name']+' '+u['model']).lower())}">
-  <div class="uicon {u['cat']}">{ICON[u['cat']]}</div>
+  <a class="uthumb" href="{u['url']}"><img src="/img/cards/lks-{u['id'].lower()}.jpg" width="1200" height="630" alt="{e(u['name'])}, stock number LKS-{u['id']}" loading="lazy"></a>
   <div class="ubody">
     <p class="ustock">Stock No. LKS-{u['id']} · {cat} {badge(u)}</p>
     <h3><a href="{u['url']}">{e(u['name'])}</a></h3>
@@ -269,7 +269,7 @@ def cat_block(cat):
 def featured_block():
     fs = [u for u in OPEN_UNITS if u.get("featured")]
     counts = {k: sum(1 for u in OPEN_UNITS if u["cat"] == k) for k in CATS}
-    cards = "".join(f"""<a class="card fcard" href="{u['url']}"><div class="uicon {u['cat']}">{ICON[u['cat']]}</div><p class="ustock">LKS-{u['id']} {badge(u)}</p><h3>{e(u['name'])}</h3><p class="chips">{chips(u)}</p></a>""" for u in fs)
+    cards = "".join(f"""<a class="card fcard" href="{u['url']}"><img class="fimg" src="/img/cards/lks-{u['id'].lower()}.jpg" width="1200" height="630" alt="{e(u['name'])}, stock number LKS-{u['id']}" loading="lazy"><p class="ustock">LKS-{u['id']} {badge(u)}</p><h3>{e(u['name'])}</h3><p class="chips">{chips(u)}</p></a>""" for u in fs)
     return f"""<!--FEATURED-->
 <section class="soft"><div class="wrap">
   <p class="kicker">Inventory</p>
