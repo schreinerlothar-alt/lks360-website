@@ -186,6 +186,9 @@ def unit_page(u):
             {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
             {"@type": "ListItem", "position": 2, "name": "Inventory", "item": SITE + "/inventory.html"},
             {"@type": "ListItem", "position": 3, "name": u["name"], "item": SITE + u["url"]}]}]}
+    exhtml, exobj = example_for_unit(u)
+    if exobj:
+        ld["@graph"][0]["about"]["image"] = [SITE + img, exobj]
     related = [x for x in UNITS if x["cat"] == u["cat"] and x["id"] != u["id"]][:3]
     scope = f"<h2>Scope</h2><p>{e(u['scope'])}</p>" if u["scope"] else ""
     return head(title, desc, u["url"], f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n', img) + header() + f"""
@@ -196,6 +199,7 @@ def unit_page(u):
     <h1>{e(u['name'])}</h1>
     <img class="ucard" src="{img}" width="1200" height="630" alt="{e(u['name'])}, stock number LKS-{u['id']}, {e(catname.lower())} for sale">
     <p class="chips big">{chips(u)}</p>
+    {exhtml}
     <table class="spec">{spec_rows(u)}</table>
     {scope}
     <p class="muted small">Offered on behalf of the owner and subject to prior sale. Serial numbers, unit location and full technical documents are released after receipt of a letter of intent.</p>
@@ -329,6 +333,46 @@ MODELS = [
 ]
 
 
+# Example photos of the model type from Wikimedia Commons (free licences). Not the unit offered; credited on the page.
+EXAMPLES = {
+    "ge-lm2500-for-sale": ("ge-lm2500.jpg", "GE LM2500 aeroderivative gas turbine", "Europepress", "CC0",
+                           "https://creativecommons.org/publicdomain/zero/1.0/", "https://commons.wikimedia.org/wiki/File:Lm2500.jpg"),
+    "ge-tm2500-for-sale": ("ge-lm2500.jpg", "GE LM2500 gas turbine, the engine of the TM2500 package", "Europepress", "CC0",
+                           "https://creativecommons.org/publicdomain/zero/1.0/", "https://commons.wikimedia.org/wiki/File:Lm2500.jpg"),
+    "ge-lm6000-for-sale": ("ge-lm6000.jpg", "GE LM6000 gas turbine in operation", "Pro-Per Energy Services", "CC BY-SA 4.0",
+                           "https://creativecommons.org/licenses/by-sa/4.0/", "https://commons.wikimedia.org/wiki/File:Gas_Turbine_4.jpg"),
+    "ge-frame-6b-for-sale": ("ge-frame-6b-ms6001b.jpg", "GE MS6001B (Frame 6B) gas turbines at a power plant", "Jochen Burgstaller", "CC BY-SA 3.0",
+                             "https://creativecommons.org/licenses/by-sa/3.0/", "https://commons.wikimedia.org/wiki/File:GTKWTHY_1.jpg"),
+    "siemens-sst-400-for-sale": ("siemens-steam-turbine-rotor.jpg", "Siemens steam turbine rotor during assembly", "Siemens Pressebild", "CC BY-SA 3.0",
+                                 "https://creativecommons.org/licenses/by-sa/3.0/", "https://commons.wikimedia.org/wiki/File:Dampfturbine_Montage01.jpg"),
+    "mtu-16v4000-for-sale": ("mtu-16v4000.jpg", "MTU 16V4000 diesel engine", "Linie29", "CC BY-SA 4.0",
+                             "https://creativecommons.org/licenses/by-sa/4.0/", "https://commons.wikimedia.org/wiki/File:MTU_4000_16V_R41_%C3%96BB_2016.jpg"),
+    "cummins-generator-sets-for-sale": ("cummins-generator-set.jpg", "Cummins generator set", "Mbrickn", "CC BY 4.0",
+                                        "https://creativecommons.org/licenses/by/4.0/", "https://commons.wikimedia.org/wiki/File:Cummins_Generator.jpg"),
+}
+
+
+def example_fig(slugname):
+    x = EXAMPLES.get(slugname)
+    if not x:
+        return "", None
+    f, cap, art, lic, licurl, page = x
+    src = f"/img/examples/{f}"
+    html = (f'<figure class="exfig"><img src="{src}" alt="{e(cap)}, example image of the type" loading="lazy">'
+            f'<figcaption>{e(cap)}. Example image of the type, not the unit offered. Photo: {e(art)}, '
+            f'<a href="{licurl}" rel="license nofollow">{e(lic)}</a>, via <a href="{page}" rel="nofollow">Wikimedia Commons</a>.</figcaption></figure>')
+    obj = {"@type": "ImageObject", "contentUrl": SITE + src, "caption": f"{cap} (example image of the type)",
+           "creator": {"@type": "Person", "name": art}, "license": licurl, "acquireLicensePage": page}
+    return html, obj
+
+
+def example_for_unit(u):
+    for m in MODELS:
+        if m[0] in EXAMPLES and re.search(m[2], u["model"] + " " + u["name"]):
+            return example_fig(m[0])
+    return "", None
+
+
 def model_faq(label):
     return [
         (f"Who sells the {label} units listed here?",
@@ -368,6 +412,9 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
     make_images.card(str(ROOT / img.lstrip("/")), f"{CATS[cat][1]} · new and used", f"{label} for sale",
                      [f"{n} unit{plural} in inventory", "Worldwide delivery", "Escrow payment"], "Price on request")
     ld["@graph"][0]["image"] = SITE + img
+    exhtml, exobj = example_fig(slugname)
+    if exobj:
+        ld["@graph"][0]["image"] = [SITE + img, exobj]
     units_html = "".join(row(u) for u in us) or '<p class="empty">No unit of this model is listed at the moment.</p>'
     return head(title, desc, path, f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n', img) + header() + f"""
 <div class="crumbs wrap"><a href="/">Home</a> / <a href="{curl}">{cname}</a> / {e(label)}</div>
@@ -380,6 +427,7 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
   <p class="kicker">Units in our inventory</p>
   <h2>{n} {e(label)} unit{plural} listed</h2>
   <img class="ucard" src="{img}" width="1200" height="630" alt="{e(label)} for sale, LKS 360-SCHREINER LLC" loading="lazy">
+  {exhtml}
   <div class="ulist">{units_html}</div>
   <p class="muted small">Each unit is offered on behalf of its owner and subject to prior sale. Serial numbers, unit location and full technical documents are released after receipt of a letter of intent.</p>
 </div></section>
