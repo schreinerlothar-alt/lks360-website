@@ -43,7 +43,7 @@
 - [Imprint](https://lks360.com/imprint.html)
 - [Privacy Policy](https://lks360.com/privacy.html)
 
-## Units for sale (stock list, updated 2026-11-06)
+## Units for sale (stock list, updated 2026-11-07)
 - [LKS-GT-01: 2 x Siemens Westinghouse W701DS gas turbine generator sets](https://lks360.com/units/gt-01-2-x-siemens-westinghouse-w701ds-gas-turbine-generator-sets-127-8-mw-each-255-6-mw-to.html): 127.8 MW each, 255.6 MW total, 50 Hz, Rebuilt, unused since rebuild. Price on request, subject to prior sale.
 - [LKS-GT-02: Siemens SGT-800 gas turbines](https://lks360.com/units/gt-02-siemens-sgt-800-gas-turbines-51-9-mw.html): 51.9 MW, 50/60 Hz, 2024, New. Price on request, subject to prior sale.
 - [LKS-GT-03: Siemens SGT-800 combined cycle blocks](https://lks360.com/units/gt-03-siemens-sgt-800-combined-cycle-blocks-53-mw-gt-plus-25-mw-st.html): 53 MW GT + 25 MW ST, 50 Hz, 2017. Price on request, subject to prior sale.
@@ -65,8 +65,16 @@
 - [LKS-GT-22: Solar Titan 130 SoLoNOx gas turbine generator set, new](https://lks360.com/units/gt-22-solar-titan-130-solonox-gas-turbine-generator-set-new-16-mw.html): 16 MW, 50 Hz, 2024, New. Price on request, subject to prior sale.
 - [LKS-GT-23: Solar Centaur 40 gas turbine generator sets, overhauled](https://lks360.com/units/gt-23-solar-centaur-40-gas-turbine-generator-sets-overhauled-3-5-mw.html): 3.5 MW, 60 Hz, Overhauled, 0 h. Price on request, subject to prior sale.
 - [LKS-GT-24: Mitsubishi MF111 gas turbine generator sets with HRSG](https://lks360.com/units/gt-24-mitsubishi-mf111-gas-turbine-generator-sets-with-hrsg-13-mw.html): 13 MW, 50 Hz. Price on request, subject to prior sale.
+- [LKS-GT-25: Siemens SGT-700 gas turbine train with dual-pressure HRSG](https://lks360.com/units/gt-25-siemens-sgt-700-gas-turbine-train-with-dual-pressure-hrsg-31-64-mw.html): 31.64 MW, 50 Hz, 2023, approx. 1,000 h. Price on request, subject to prior sale.
+- [LKS-GT-26: Siemens SGT-700 gas turbine, new](https://lks360.com/units/gt-26-siemens-sgt-700-gas-turbine-new-35-mw.html): 35 MW, 2021, New. Price on request, subject to prior sale.
+- [LKS-GT-27: Siemens SGT-400 DLE gas turbines](https://lks360.com/units/gt-27-siemens-sgt-400-dle-gas-turbines-14-4-mw.html): 14.4 MW, 50 Hz, 2019, approx. 240 h. Price on request, subject to prior sale.
+- [LKS-GT-28: Siemens SGT-300-1S gas turbines, unused](https://lks360.com/units/gt-28-siemens-sgt-300-1s-gas-turbines-unused-7-8-mw.html): 7.8 MW, 2021, Unused, 0 h. Price on request, subject to prior sale.
+- [LKS-GT-29: Siemens SGT-100 gas turbine generator sets](https://lks360.com/units/gt-29-siemens-sgt-100-gas-turbine-generator-sets-4-9-mw.html): 4.9 MW, 50 Hz, 2012, approx. 10,000 h. Price on request, subject to prior sale.
+- [LKS-GT-30: GE Frame 9E PG9171E gas turbine](https://lks360.com/units/gt-30-ge-frame-9e-pg9171e-gas-turbine-126-mw.html): 126 MW, 50 Hz, 2009. Price on request, subject to prior sale.
 - [LKS-ST-01: Siemens SST-400 steam turbine generator sets](https://lks360.com/units/st-01-siemens-sst-400-steam-turbine-generator-sets-30-mw.html): 30 MW, 50 Hz, 2012, 0 h. Price on request, subject to prior sale.
 - [LKS-ST-02: Steam turbine generators, 54, 60 and 62 MW](https://lks360.com/units/st-02-steam-turbine-generators-54-60-and-62-mw-54-60-and-62-mw.html): 54, 60 and 62 MW, 60 Hz, Low hours. Price on request, subject to prior sale.
+- [LKS-ST-03: Siemens SST-300 steam turbine generator, new and unused](https://lks360.com/units/st-03-siemens-sst-300-steam-turbine-generator-new-and-unused-22-mw.html): 22 MW, 50 Hz, 2021, Unused, 0 h. Price on request, subject to prior sale.
+- [LKS-ST-04: Siemens SST-400 industrial steam turbines, unused](https://lks360.com/units/st-04-siemens-sst-400-industrial-steam-turbines-unused.html): 2011, Unused, 0 h. Price on request, subject to prior sale.
 - [LKS-GS-01: Caterpillar G20CM34 gas generator sets, new](https://lks360.com/units/gs-01-caterpillar-g20cm34-gas-generator-sets-new-9-8-mw.html): 9.8 MW, 60 Hz, New from current production. Price on request, subject to prior sale.
 - [LKS-GS-02: Caterpillar G20CM34 gas generator set](https://lks360.com/units/gs-02-caterpillar-g20cm34-gas-generator-set-9-830-ekw.html): 9,830 ekW, 60 Hz, 2020, 0 h. Price on request, subject to prior sale.
 - [LKS-GS-03: Wärtsilä 20V34SG gas engine CHP plant](https://lks360.com/units/gs-03-wartsila-20v34sg-gas-engine-chp-plant-approx-10-mwe.html): approx. 10 MWe, 50 Hz, 2013, approx. 68,000 h. Price on request, subject to prior sale.
@@ -89,11 +97,16 @@
 - [GE 9HA for sale](https://lks360.com/ge-9ha-for-sale.html)
 - [Siemens SGT-600 for sale](https://lks360.com/siemens-sgt-600-for-sale.html)
 - [Siemens SGT-700 for sale](https://lks360.com/siemens-sgt-700-for-sale.html)
+- [Siemens SGT-400 for sale](https://lks360.com/siemens-sgt-400-for-sale.html)
+- [Siemens SGT-300 for sale](https://lks360.com/siemens-sgt-300-for-sale.html)
+- [Siemens SGT-100 for sale](https://lks360.com/siemens-sgt-100-for-sale.html)
+- [GE Frame 9E for sale](https://lks360.com/ge-frame-9e-for-sale.html)
 - [Siemens Westinghouse W701 and W501 for sale](https://lks360.com/siemens-westinghouse-w701-w501-for-sale.html)
 - [Solar Titan for sale](https://lks360.com/solar-titan-for-sale.html)
 - [Solar Centaur 40 for sale](https://lks360.com/solar-centaur-40-for-sale.html)
 - [Mitsubishi MF111 for sale](https://lks360.com/mitsubishi-mf111-for-sale.html)
 - [Siemens SST-400 for sale](https://lks360.com/siemens-sst-400-for-sale.html)
+- [Siemens SST-300 for sale](https://lks360.com/siemens-sst-300-for-sale.html)
 - [Caterpillar G20CM34 for sale](https://lks360.com/caterpillar-g20cm34-for-sale.html)
 - [Caterpillar 3516 for sale](https://lks360.com/caterpillar-3516-for-sale.html)
 - [Wärtsilä 34SG for sale](https://lks360.com/wartsila-34sg-for-sale.html)

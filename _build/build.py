@@ -13,7 +13,7 @@ ALL_UNITS = json.loads((ROOT / "_build" / "units.json").read_text(encoding="utf-
 UNITS = [u for u in ALL_UNITS if u.get("status") != "hidden"]
 OPEN_UNITS = UNITS
 LISTED = "21 October 2026"
-UPDATED = "4 November 2026"
+UPDATED = "7 November 2026"
 TODAY = datetime.date.today().isoformat()
 SITE = "https://lks360.com"
 MAIL = "manager@lks360.com"
@@ -334,6 +334,14 @@ MODELS = [
      "Siemens SGT-600 (GT10B) industrial gas turbines, offered on behalf of their owners."),
     ("siemens-sgt-700-for-sale", "Siemens SGT-700", r"SGT-700",
      "Siemens SGT-700 industrial gas turbines and combined cycle units, offered on behalf of their owners."),
+    ("siemens-sgt-400-for-sale", "Siemens SGT-400", r"SGT-400",
+     "Siemens SGT-400 industrial gas turbines, offered on behalf of their owners."),
+    ("siemens-sgt-300-for-sale", "Siemens SGT-300", r"SGT-300",
+     "Siemens SGT-300 industrial gas turbines, offered on behalf of their owners."),
+    ("siemens-sgt-100-for-sale", "Siemens SGT-100", r"SGT-100",
+     "Siemens SGT-100 industrial gas turbine generator sets, offered on behalf of their owners."),
+    ("ge-frame-9e-for-sale", "GE Frame 9E", r"Frame 9E|9171E",
+     "GE Frame 9E heavy duty gas turbines, offered on behalf of their owners."),
     ("siemens-westinghouse-w701-w501-for-sale", "Siemens Westinghouse W701 and W501", r"W701|W501",
      "Siemens Westinghouse W701 and W501 heavy duty gas turbines, offered on behalf of their owners."),
     ("solar-titan-for-sale", "Solar Titan", r"Titan",
@@ -344,6 +352,8 @@ MODELS = [
      "Mitsubishi MF111 gas turbine generator sets, offered on behalf of their owners."),
     ("siemens-sst-400-for-sale", "Siemens SST-400", r"SST-400",
      "Siemens SST-400 steam turbine generator sets, offered on behalf of their owners.", "steam"),
+    ("siemens-sst-300-for-sale", "Siemens SST-300", r"SST-300",
+     "Siemens SST-300 steam turbine generators, offered on behalf of their owners.", "steam"),
     ("caterpillar-g20cm34-for-sale", "Caterpillar G20CM34", r"G20CM34",
      "Caterpillar G20CM34 gas generator sets, offered on behalf of their owners.", "genset"),
     ("caterpillar-3516-for-sale", "Caterpillar 3516", r"3516",
