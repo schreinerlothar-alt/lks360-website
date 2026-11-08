@@ -206,7 +206,9 @@ def unit_page(u):
     ld = {"@context": "https://schema.org", "@graph": [
         # ItemPage, not Product: Google requires offers/price for Product snippets, and prices stay on request.
         {"@type": "ItemPage", "name": u["name"], "url": SITE + u["url"], "description": desc,
-         "primaryImageOfPage": {"@type": "ImageObject", "url": SITE + img, "width": 1200, "height": 630},
+         "primaryImageOfPage": {"@type": "ImageObject", "url": SITE + img, "width": 1200, "height": 630,
+                                "creditText": "LKS 360-SCHREINER LLC", "copyrightNotice": "LKS 360-SCHREINER LLC",
+                                "creator": {"@type": "Organization", "name": "LKS 360-SCHREINER LLC"}},
          "about": product_ld(u, desc, img)},
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
@@ -398,7 +400,8 @@ def example_fig(slugname):
             f'<figcaption>{e(cap)}. Example image of the type, not the unit offered. Photo: {e(art)}, '
             f'<a href="{licurl}" rel="license nofollow">{e(lic)}</a>, via <a href="{page}" rel="nofollow">Wikimedia Commons</a>.</figcaption></figure>')
     obj = {"@type": "ImageObject", "contentUrl": SITE + src, "caption": f"{cap} (example image of the type)",
-           "creator": {"@type": "Person", "name": art}, "license": licurl, "acquireLicensePage": page}
+           "creator": {"@type": "Person", "name": art}, "license": licurl, "acquireLicensePage": page,
+           "creditText": f"{art} / Wikimedia Commons", "copyrightNotice": f"{art}, {lic}"}
     return html, obj
 
 
