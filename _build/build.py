@@ -208,7 +208,8 @@ def unit_page(u):
         {"@type": "ItemPage", "name": u["name"], "url": SITE + u["url"], "description": desc,
          "primaryImageOfPage": {"@type": "ImageObject", "url": SITE + img, "width": 1200, "height": 630,
                                 "creditText": "LKS 360-SCHREINER LLC", "copyrightNotice": "LKS 360-SCHREINER LLC",
-                                "creator": {"@type": "Organization", "name": "LKS 360-SCHREINER LLC"}},
+                                "creator": {"@type": "Organization", "name": "LKS 360-SCHREINER LLC"},
+                                "license": SITE + "/imprint.html#image-use", "acquireLicensePage": SITE + "/contact.html"},
          "about": product_ld(u, desc, img)},
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
@@ -530,7 +531,7 @@ def post_page(p):
     path = f"/news/{p['slug']}.html"
     ld = {"@context": "https://schema.org", "@type": "Article", "headline": p["title"][:110], "url": SITE + path,
           "author": {"@type": "Person", "name": "Lothar Schreiner"},
-          "publisher": {"@type": "Organization", "name": "LKS 360-SCHREINER LLC", "logo": {"@type": "ImageObject", "url": SITE + "/favicon.svg"}},
+          "publisher": {"@type": "Organization", "name": "LKS 360-SCHREINER LLC", "logo": {"@type": "ImageObject", "url": SITE + "/favicon.svg", "creditText": "LKS 360-SCHREINER LLC", "copyrightNotice": "LKS 360-SCHREINER LLC", "creator": {"@type": "Organization", "name": "LKS 360-SCHREINER LLC"}, "license": SITE + "/imprint.html#image-use", "acquireLicensePage": SITE + "/contact.html"}},
           **({"datePublished": iso} if iso else {})}
     # Article image: first picture in the post, otherwise the site picture (Google wants an image for articles).
     m = re.search(r'src="(/img/[^"]+)"', p["html"])
