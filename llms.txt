@@ -2,6 +2,8 @@
 
 > Florida limited liability company (Document No. L26000221347, founded 20 April 2026). Independent broker for used and surplus power generation equipment: gas turbines, steam turbines and generator sets, offered on behalf of their owners. Managed by Lothar Schreiner, Managing Member.
 
+Full text with all unit data and answers: https://lks360.com/llms-full.txt
+
 ## Company facts
 - Legal name: LKS 360-SCHREINER LLC
 - Legal form: Florida limited liability company
@@ -31,13 +33,13 @@
 
 ## Pages
 - [Home](https://lks360.com/)
-- [Inventory](https://lks360.com/inventory.html): 35 listed units with stock numbers (24 gas turbines, 2 steam turbines, 9 generator sets), each with its own page under https://lks360.com/units/, filter by type, manufacturer, frequency and output. Prices on request.
-- [News](https://lks360.com/news.html): 5 posts with offers, wanted lists and market notes on gas turbines, steam turbines and gensets
-- [Siemens SGT-800 for sale](https://lks360.com/siemens-sgt-800-for-sale.html), [GE TM2500 for sale](https://lks360.com/ge-tm2500-for-sale.html), [GE LM2500 for sale](https://lks360.com/ge-lm2500-for-sale.html): model pages with listed units
+- [Inventory](https://lks360.com/inventory.html): 40 listed units with stock numbers (27 gas turbines, 4 steam turbines, 9 generator sets), each with its own page under https://lks360.com/units/, filter by type, manufacturer, frequency and output. Prices on request.
+- [News](https://lks360.com/news.html): 9 posts with offers, wanted lists and market notes on gas turbines, steam turbines and gensets
+- Model pages: 27 pages, one per turbine or engine model, see Model pages below
 - [Sell equipment](https://lks360.com/sell.html): how owners list a unit confidentially
 - [Contact](https://lks360.com/contact.html): requirement form, email and phone
-- [Gas turbines](https://lks360.com/gas-turbines.html): Siemens SGT-600/700/800, SGT5-2000E, W501D5, 701DU; GE Frame 5, 6B, 6F.03, 7EA, LM2500, LM5000, LM6000, TM2500+; Solar Centaur 40, Taurus 60, Titan 130, Titan 250; Mitsubishi MF111
-- [Steam turbines](https://lks360.com/steam-turbines.html): Siemens SST-400 and other steam turbine generator sets
+- [Gas turbines](https://lks360.com/gas-turbines.html): Siemens SGT-100/300/400/600/700/800, SGT5-2000E, W501D5, 701DU; GE Frame 5, 6B, 6F.03, 7EA, 9E, LM2500, LM5000, LM6000, TM2500+; Solar Centaur 40, Taurus 60, Titan 130, Titan 250; Mitsubishi MF111
+- [Steam turbines](https://lks360.com/steam-turbines.html): Siemens SST-300, SST-400 and other steam turbine generator sets
 - [Generator sets](https://lks360.com/generator-sets.html): Caterpillar, Wärtsilä, MTU, Cummins, MAN
 - [How we work and FAQ](https://lks360.com/how-we-work.html)
 - [Buyer guide: buying a used gas turbine](https://lks360.com/buying-used-gas-turbines.html): data, records, condition, scope of supply, inspection, transport, compliance
@@ -45,7 +47,7 @@
 - [Imprint](https://lks360.com/imprint.html)
 - [Privacy Policy](https://lks360.com/privacy.html)
 
-## Units for sale (stock list, updated 2026-11-08)
+## Units for sale (stock list, updated 2026-11-09)
 - [LKS-GT-01: 2 x Siemens Westinghouse W701DS gas turbine generator sets](https://lks360.com/units/gt-01-2-x-siemens-westinghouse-w701ds-gas-turbine-generator-sets-127-8-mw-each-255-6-mw-to.html): 127.8 MW each, 255.6 MW total, 50 Hz, Rebuilt, unused since rebuild. Price on request, subject to prior sale.
 - [LKS-GT-02: Siemens SGT-800 gas turbines](https://lks360.com/units/gt-02-siemens-sgt-800-gas-turbines-51-9-mw.html): 51.9 MW, 50/60 Hz, 2024, New. Price on request, subject to prior sale.
 - [LKS-GT-03: Siemens SGT-800 combined cycle blocks](https://lks360.com/units/gt-03-siemens-sgt-800-combined-cycle-blocks-53-mw-gt-plus-25-mw-st.html): 53 MW GT + 25 MW ST, 50 Hz, 2017. Price on request, subject to prior sale.

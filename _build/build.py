@@ -629,6 +629,10 @@ def sm_img(x):
 # llms.txt: keep the hand-written head, regenerate the unit and news lists so AI search finds every unit.
 llms_path = ROOT / "llms.txt"
 llms_head = llms_path.read_text(encoding="utf-8").split("\n## Units for sale")[0].rstrip() + "\n"
+_cnt = {c: sum(1 for u in UNITS if u["cat"] == c) for c in ("gas", "steam", "genset")}
+llms_head = re.sub(r"^- \[Inventory\].*$", lambda m: f"- [Inventory]({SITE}/inventory.html): {len(UNITS)} listed units with stock numbers ({_cnt['gas']} gas turbines, {_cnt['steam']} steam turbines, {_cnt['genset']} generator sets), each with its own page under {SITE}/units/, filter by type, manufacturer, frequency and output. Prices on request.", llms_head, flags=re.M)
+llms_head = re.sub(r"^- \[News\].*$", lambda m: f"- [News]({SITE}/news.html): {len(POSTS)} posts with offers, wanted lists and market notes on gas turbines, steam turbines and gensets", llms_head, flags=re.M)
+llms_head = re.sub(r"^- \[Siemens SGT-800 for sale\].*model pages with listed units$", lambda m: f"- Model pages: {len(MODELS)} pages, one per turbine or engine model, see Model pages below", llms_head, flags=re.M)
 def llms_line(u):
     facts = ", ".join(x for x in [u["output"], u["hz"], str(u["year"] or ""), u["condition"], approx(u.get("hours"), "h"),
                                   "reserved" if u.get("status") == "reserved" else ""] if x)
@@ -638,5 +642,32 @@ llms = (llms_head + f"\n## Units for sale (stock list, updated {TODAY})\n"
         + "\n\n## Model pages\n" + "\n".join(f"- [{m[1]} for sale]({SITE}/{m[0]}.html)" for m in MODELS)
         + "\n\n## News\n" + "\n".join(f"- [{p['title']}]({SITE}/news/{p['slug']}.html)" for p in POSTS) + "\n")
 llms_path.write_text(llms, encoding="utf-8", newline="\n")
+
+# llms-full.txt: everything an AI assistant needs in one plain text file (no prices, no sellers, regions only by continent).
+def _plain(name):
+    import html as _h
+    s = (ROOT / name).read_text(encoding="utf-8")
+    s = re.sub(r"<(script|style|header|footer|nav)\b.*?</\1>", " ", s, flags=re.S)
+    s = re.sub(r"<(h[1-3])[^>]*>(.*?)</\1>", lambda m: "\n\n### " + re.sub(r"<[^>]+>", "", m.group(2)) + "\n", s, flags=re.S)
+    s = re.sub(r"<(p|li|div)[^>]*>", "\n", s)
+    s = _h.unescape(re.sub(r"<[^>]+>", "", s))
+    s = re.sub(r"[ \t]+", " ", s)
+    return re.sub(r"\n\s*\n+", "\n\n", s).strip()
+def _unit_full(u):
+    rows = [("Stock number", "LKS-" + u["id"]), ("Manufacturer", u.get("make")), ("Model", u.get("model")), ("Output", u.get("output")),
+            ("Frequency", u.get("hz")), ("Fuel", u.get("fuel")), ("Year", str(u.get("year") or "")), ("Condition", u.get("condition")),
+            ("Operating hours", approx(u.get("hours"), "h")), ("Quantity", str(u.get("qty") or "")), ("Scope", u.get("scope")),
+            ("Region", u.get("continent")), ("Status", "reserved" if u.get("status") == "reserved" else "offered, subject to prior sale"),
+            ("Price", "on request"), ("Page", SITE + u["url"])]
+    return f"### {u['name']}\n" + "\n".join(f"- {k}: {v}" for k, v in rows if v)
+_full = [llms_head.strip(), f"## Units for sale, full data (updated {TODAY})"] + [_unit_full(u) for u in UNITS]
+_full.append("## Questions and answers per model")
+for m in MODELS:
+    _us = [u for u in UNITS if re.search(m[2], u["model"] + " " + u["name"])]
+    _full.append(f"### {m[1]} ({SITE}/{m[0]}.html)\n" + "\n".join(f"Q: {q}\nA: {a}" for q, a in model_faq(m[1], _us)))
+for _n in ("how-we-work.html", "buying-used-gas-turbines.html", "compliance.html", "sell.html"):
+    if (ROOT / _n).exists():
+        _full.append(f"## Page: {SITE}/{_n}\n\n" + _plain(_n))
+(ROOT / "llms-full.txt").write_text("\n\n".join(_full) + "\n", encoding="utf-8", newline="\n")
 
 print(len(UNITS), "unit pages,", len(POSTS), "posts,", len(urls), "sitemap URLs")
