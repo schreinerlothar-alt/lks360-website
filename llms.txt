@@ -36,7 +36,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [Inventory](https://lks360.com/inventory.html): 40 listed units with stock numbers (27 gas turbines, 4 steam turbines, 9 generator sets), each with its own page under https://lks360.com/units/, filter by type, manufacturer, frequency and output. Prices on request.
 - [News](https://lks360.com/news.html): 9 posts with offers, wanted lists and market notes on gas turbines, steam turbines and gensets
 - Model pages: 27 pages, one per turbine or engine model, see Model pages below
-- [Sell equipment](https://lks360.com/sell.html): how owners list a unit confidentially
+- [Sell equipment](https://lks360.com/sell.html): exclusive sales mandate for owners of used gas turbines, steam turbines and gensets: one price in the market, screened buyers, no upfront fee, confidential
 - [Contact](https://lks360.com/contact.html): requirement form, email and phone
 - [Gas turbines](https://lks360.com/gas-turbines.html): Siemens SGT-100/300/400/600/700/800, SGT5-2000E, W501D5, 701DU; GE Frame 5, 6B, 6F.03, 7EA, 9E, LM2500, LM5000, LM6000, TM2500+; Solar Centaur 40, Taurus 60, Titan 130, Titan 250; Mitsubishi MF111
 - [Steam turbines](https://lks360.com/steam-turbines.html): Siemens SST-300, SST-400 and other steam turbine generator sets

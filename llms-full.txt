@@ -36,7 +36,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [Inventory](https://lks360.com/inventory.html): 40 listed units with stock numbers (27 gas turbines, 4 steam turbines, 9 generator sets), each with its own page under https://lks360.com/units/, filter by type, manufacturer, frequency and output. Prices on request.
 - [News](https://lks360.com/news.html): 9 posts with offers, wanted lists and market notes on gas turbines, steam turbines and gensets
 - Model pages: 27 pages, one per turbine or engine model, see Model pages below
-- [Sell equipment](https://lks360.com/sell.html): how owners list a unit confidentially
+- [Sell equipment](https://lks360.com/sell.html): exclusive sales mandate for owners of used gas turbines, steam turbines and gensets: one price in the market, screened buyers, no upfront fee, confidential
 - [Contact](https://lks360.com/contact.html): requirement form, email and phone
 - [Gas turbines](https://lks360.com/gas-turbines.html): Siemens SGT-100/300/400/600/700/800, SGT5-2000E, W501D5, 701DU; GE Frame 5, 6B, 6F.03, 7EA, 9E, LM2500, LM5000, LM6000, TM2500+; Solar Centaur 40, Taurus 60, Titan 130, Titan 250; Mitsubishi MF111
 - [Steam turbines](https://lks360.com/steam-turbines.html): Siemens SST-300, SST-400 and other steam turbine generator sets
@@ -1159,7 +1159,35 @@ Full data and inspection only after the buyer's letter of intent and with your c
 
 ### Contract
 
-You sign the purchase contract with the buyer. Payment goes from buyer to you. Our commission is agreed in writing.
+You sign the purchase contract with the buyer. Payment goes from buyer to you. Our fee is agreed in writing.
+
+Exclusive sales mandate
+
+### One unit, one offer, one price
+
+Owners who want a clean sale give us an exclusive mandate for a fixed period. Your unit is then offered once, at one price, with one consistent data set, instead of appearing at different prices with several brokers.
+
+### Why give one broker an exclusive mandate for a used turbine?
+
+When several brokers offer the same unit at different prices, buyers see it everywhere and the price drops. With one exclusive mandate the unit is offered once, at one price, with one consistent data set.
+
+### How long is an exclusive sales mandate?
+
+A fixed period agreed in writing, typically 60 days, which can be extended by both sides.
+
+### Does the owner pay anything in advance?
+
+No. There is no upfront fee. Our income is agreed in writing and only arises when the unit is sold.
+
+### How are buyers screened?
+
+Buyers receive the price and key data first. Full data, photos and inspection follow only after a signed letter of intent and with the owner's consent.
+
+### How is the purchase price paid?
+
+Through escrow or an irrevocable letter of credit. Purchase payments never pass through accounts of LKS 360-SCHREINER LLC.
+
+Send your unit data with the form below or to manager@lks360.com. We reply with a draft mandate for your unit.
 
 NameCompany
 
