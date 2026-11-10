@@ -444,6 +444,31 @@ def model_faq(label, us=()):
     ]
 
 
+SPECS = json.loads((ROOT / "_build" / "model_specs.json").read_text(encoding="utf-8"))
+
+
+def spec_block(slugname, label):
+    s = SPECS.get(slugname)
+    if not s:
+        return "", None
+    rows = [("Type", s["type"]), ("Manufacturer", s["manufacturer"]), ("Output", s["output"]), ("Frequency", s["frequency"]),
+            ("Fuel", s["fuel"]), ("Applications", s["applications"])]
+    rows = [(k, v) for k, v in rows if v]
+    tbl = "".join(f"<tr><th>{k}</th><td>{e(v)}</td></tr>" for k, v in rows)
+    note = f"<p>{e(s['notes'])}</p>" if s["notes"] else ""
+    html = (f'<section><div class="wrap"><p class="kicker">Model overview</p><h2>About the {e(label)}</h2>'
+            f'<table class="spec">{tbl}</table>{note}'
+            f'<p class="muted small">Manufacturer data for the model type, not the data of a specific unit offered. Source: '
+            f'<a href="{s["source_url"]}" rel="nofollow">{e(s["source_name"])}</a>. Values of a used unit depend on its version, site and condition.</p></div></section>')
+    ans = f"The {label} is {'an' if s['type'][0] in 'aeiou' else 'a'} {s['type']} by {s['manufacturer']}."
+    if s["output"]:
+        ans += f" Output: {s['output']}."
+    if s["applications"]:
+        ans += f" Typical applications: {s['applications']}."
+    ans += f" Source: {s['source_name']}."
+    return html, (f"What is the {label}?", ans)
+
+
 FAQLINK = {"gas": '<a href="/gas-turbine-faq.html">used gas turbine FAQ</a>', "steam": '<a href="/steam-turbine-faq.html">used steam turbine FAQ</a>', "genset": '<a href="/generator-set-faq.html">used generator set FAQ</a>'}
 
 
@@ -451,6 +476,8 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
     cname, curl = CATS[cat][1], CATS[cat][2]
     us = [u for u in UNITS if re.search(pattern, u["model"] + " " + u["name"])]
     path = f"/{slugname}.html"
+    spec_html, spec_qa = spec_block(slugname, label)
+    faqs = ([spec_qa] if spec_qa else []) + model_faq(label, us)
     n = len(us)
     plural = "s" if n != 1 else ""
     title = f"{label} for Sale | LKS 360-SCHREINER LLC"
@@ -464,8 +491,8 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
             {"@type": "ListItem", "position": 2, "name": cname, "item": SITE + curl},
             {"@type": "ListItem", "position": 3, "name": f"{label} for sale", "item": SITE + path}]},
         {"@type": "FAQPage", "mainEntity": [
-            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in model_faq(label, us)]}]}
-    faq_html = "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in model_faq(label, us))
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]}]}
+    faq_html = "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in faqs)
     img = f"/img/cards/{slugname}.jpg"
     make_images.card(str(ROOT / img.lstrip("/")), f"{CATS[cat][1]} · new and used", f"{label} for sale",
                      [f"{n} unit{plural} in inventory", "Worldwide delivery", "Escrow payment"], "Price on request")
@@ -490,6 +517,7 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
   <div class="ulist">{units_html}</div>
   <p class="muted small">Each unit is offered on behalf of its owner and subject to prior sale. Serial numbers, unit location and full technical documents are released after receipt of a letter of intent.</p>
 </div></section>
+{spec_html}
 <section class="soft"><div class="wrap">
   <p class="kicker">How a purchase works</p>
   <h2>From letter of intent to contract</h2>
@@ -669,7 +697,7 @@ _full = [llms_head.strip(), f"## Units for sale, full data (updated {TODAY})"] +
 _full.append("## Questions and answers per model")
 for m in MODELS:
     _us = [u for u in UNITS if re.search(m[2], u["model"] + " " + u["name"])]
-    _full.append(f"### {m[1]} ({SITE}/{m[0]}.html)\n" + "\n".join(f"Q: {q}\nA: {a}" for q, a in model_faq(m[1], _us)))
+    _full.append(f"### {m[1]} ({SITE}/{m[0]}.html)\n" + "\n".join(f"Q: {q}\nA: {a}" for q, a in ([spec_block(m[0], m[1])[1]] if m[0] in SPECS else []) + model_faq(m[1], _us)))
 for _n in ("how-we-work.html", "buying-used-gas-turbines.html", "gas-turbine-faq.html", "steam-turbine-faq.html", "generator-set-faq.html", "power-generation-glossary.html", "compliance.html", "sell.html"):
     if (ROOT / _n).exists():
         _full.append(f"## Page: {SITE}/{_n}\n\n" + _plain(_n))
