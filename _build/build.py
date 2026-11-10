@@ -83,7 +83,7 @@ def header():
 def footer():
     return f"""<footer><div class="wrap fcols">
   <div><p class="fbrand">LKS <span>360</span>-SCHREINER LLC</p><p>Florida limited liability company<br>Document No. L26000221347<br>7901 4th St N, Ste 300<br>St. Petersburg, FL 33702, USA</p></div>
-  <div><p class="fh">Equipment</p><a href="/inventory.html">Inventory</a><a href="/gas-turbines.html">Gas turbines</a><a href="/steam-turbines.html">Steam turbines</a><a href="/generator-sets.html">Generator sets</a><a href="/sell.html">Sell equipment</a></div>
+  <div><p class="fh">Equipment</p><a href="/inventory.html">Inventory</a><a href="/gas-turbines.html">Gas turbines</a><a href="/steam-turbines.html">Steam turbines</a><a href="/generator-sets.html">Generator sets</a><a href="/sell.html">Sell equipment</a><a href="/used-60-hz-gas-turbines-generators-americas.html">60 Hz for the Americas</a></div>
   <div><p class="fh">Company</p><a href="/news.html">News</a><a href="/how-we-work.html">How we work</a><a href="/buying-used-gas-turbines.html">Buyer guide</a><a href="/gas-turbine-faq.html">Gas turbine FAQ</a><a href="/steam-turbine-faq.html">Steam turbine FAQ</a><a href="/generator-set-faq.html">Genset FAQ</a><a href="/power-generation-glossary.html">Glossary</a><a href="/compliance.html">Compliance</a><a href="/imprint.html">Imprint</a><a href="/privacy.html">Privacy Policy</a><a href="https://www.linkedin.com/company/142908032">LinkedIn</a><a href="https://www.facebook.com/groups/606333518127054">Facebook</a><a href="https://www.pinterest.com/schreinerlothar/">Pinterest</a><a href="https://x.com/lothar81795958">X</a><a href="https://www.instagram.com/lotschrei/">Instagram</a><a href="https://www.youtube.com/channel/UCP2-Bw2a4iCVZOgQC1tMshQ">YouTube</a></div>
   <div><p class="fh">Contact</p><a href="mailto:{MAIL}">{MAIL}</a><a href="tel:+491704656619">{PHONE}</a><a href="/contact.html">Contact form</a></div>
 </div><div class="wrap fbase">© 2026 LKS 360-SCHREINER LLC. Equipment is offered on behalf of its owners and subject to prior sale. Manufacturer names describe the equipment; we are not affiliated with any manufacturer.</div></footer>
@@ -621,6 +621,68 @@ def patch_static(path):
     path.write_text(t, encoding="utf-8", newline="\n")
 
 
+HZ_SLUG = "used-60-hz-gas-turbines-generators-americas"
+
+
+def hz_page():
+    us = [u for u in UNITS if "60" in (u.get("hz") or "")]
+    am = [u for u in us if u.get("continent") == "Americas"]
+    path = f"/{HZ_SLUG}.html"
+    n = len(us)
+    title = "Used 60 Hz Gas Turbines, Steam Turbines and Generator Sets for the USA and the Americas | LKS 360-SCHREINER LLC"
+    desc = (f"{n} used and surplus 60 Hz units for the United States, Canada, Mexico and Latin America: gas turbines, steam turbines "
+            "and generator sets with stock number. Price on request. Florida LLC, letter of intent, inspection, escrow.")
+    faqs = [
+        ("Where can I buy a used 60 Hz gas turbine in the USA?",
+         f"LKS 360-SCHREINER LLC, a Florida limited liability company, lists {n} used or surplus 60 Hz units on lks360.com, "
+         f"{len(am)} of them located in the Americas. Each unit is offered on behalf of its owner. Send the stock number to manager@lks360.com "
+         "and we reply with the price."),
+        ("Can a 50 Hz unit be used in the United States?",
+         "The US grid runs at 60 Hz. A 50 Hz unit usually needs a different gearbox or generator, so buyers in the Americas normally look for "
+         "60 Hz units or units specified for both frequencies. See the used gas turbine FAQ for details."),
+        ("Who is the contracting party for buyers in the Americas?",
+         "LKS 360-SCHREINER LLC, 7901 4th St N, Ste 300, St. Petersburg, FL 33702, acts as independent broker. The purchase contract is made "
+         "directly between buyer and owner, and payment runs through escrow or a letter of credit."),
+        ("What does a buyer need to receive full data and inspection?",
+         "A letter of intent with the stock number, buyer company, end user and site. Full documents, serial numbers and inspection follow the LOI."),
+    ]
+    ld = {"@context": "https://schema.org", "@graph": [
+        {"@type": "CollectionPage", "name": "Used 60 Hz power generation equipment for the Americas", "url": SITE + path,
+         "about": "Used 60 Hz gas turbines, steam turbines and generator sets", "areaServed": ["United States", "Canada", "Mexico", "Latin America"],
+         "provider": {"@type": "Organization", "name": "LKS 360-SCHREINER LLC", "url": SITE + "/"}},
+        {"@type": "ItemList", "name": "60 Hz units for sale", "numberOfItems": n, "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "url": SITE + u["url"], "name": u["name"]} for i, u in enumerate(us)]},
+        {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]}]}
+    faq_html = "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in faqs)
+    units_html = "".join(row(u) for u in us)
+    return head(title, desc, path, f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n') + header() + f"""
+<div class="crumbs wrap"><a href="/">Home</a> / <a href="/inventory.html">Inventory</a> / 60 Hz for the Americas</div>
+<div class="hero slim"><div class="wrap">
+  <p class="kicker light">USA · Canada · Mexico · Latin America · updated {UPDATED}</p>
+  <h1>Used 60 Hz gas turbines, steam turbines and generator sets</h1>
+  <p>Units for 60 Hz grids, offered on behalf of their owners by LKS 360-SCHREINER LLC, a Florida limited liability company.</p>
+</div></div>
+<section class="qa"><div class="wrap"><p class="answer"><b>Short answer:</b> {e(faqs[0][1])}</p></div></section>
+<section><div class="wrap">
+  <p class="kicker">60 Hz units in our inventory</p>
+  <h2>{n} units listed, {len(am)} located in the Americas</h2>
+  <div class="ulist">{units_html}</div>
+  <p class="muted small">Each unit is offered on behalf of its owner and subject to prior sale. Location is shown by continent only. Serial numbers and full documents follow a letter of intent.</p>
+</div></section>
+<section class="soft"><div class="wrap">
+  <p class="kicker">Questions and answers</p>
+  <h2>Buying 60 Hz equipment in the Americas</h2>
+  {faq_html}
+  <p>More answers: <a href="/gas-turbine-faq.html">used gas turbine FAQ</a>, <a href="/buying-used-gas-turbines.html">buyer guide</a>, <a href="/generator-set-faq.html">generator set FAQ</a>. Owners in the Americas: <a href="/sell.html">exclusive sales mandate</a>.</p>
+</div></section>
+<div class="cta">
+  <h2>Looking for a 60 Hz unit?</h2>
+  <p>Send output, fuel, number of units and delivery country.</p>
+  <a class="btn alt" href="/contact.html">Send your requirement</a> <a class="btn wa" href="{WA}">WhatsApp</a>
+</div>
+""" + footer() + "\n</body>\n</html>\n"
+
+
 STATIC = ["index.html", "inventory.html", "gas-turbines.html", "steam-turbines.html", "generator-sets.html",
           "sell.html", "news.html", "how-we-work.html", "buying-used-gas-turbines.html", "gas-turbine-faq.html", "steam-turbine-faq.html", "generator-set-faq.html", "power-generation-glossary.html", "contact.html", "compliance.html", "imprint.html", "privacy.html"]
 
@@ -646,6 +708,7 @@ for _cat, (_s, _pl, _url) in CATS.items():
     _f.write_text(_tx, encoding="utf-8", newline="\n")
 for m in MODELS:
     (ROOT / f"{m[0]}.html").write_text(model_page(*m), encoding="utf-8", newline="\n")
+(ROOT / f"{HZ_SLUG}.html").write_text(hz_page(), encoding="utf-8", newline="\n")
 (ROOT / "news").mkdir(exist_ok=True)
 for old in (ROOT / "news").glob("*.html"):
     old.unlink()
@@ -658,7 +721,7 @@ for name in STATIC:
 for name in ["404.html"]:
     patch_static(ROOT / name)
 
-urls = [f"{SITE}/"] + [f"{SITE}/{n}" for n in STATIC[1:] if (ROOT / n).exists()] + [f"{SITE}/{m[0]}.html" for m in MODELS] + [SITE + u["url"] for u in UNITS] + [f"{SITE}/news/{p['slug']}.html" for p in POSTS]
+urls = [f"{SITE}/"] + [f"{SITE}/{n}" for n in STATIC[1:] if (ROOT / n).exists()] + [f"{SITE}/{m[0]}.html" for m in MODELS] + [f"{SITE}/{HZ_SLUG}.html"] + [SITE + u["url"] for u in UNITS] + [f"{SITE}/news/{p['slug']}.html" for p in POSTS]
 IMGS = {**{f"{SITE}/{m[0]}.html": f"{SITE}/img/cards/{m[0]}.jpg" for m in MODELS},
         **{SITE + u["url"]: f"{SITE}/img/cards/lks-{u['id'].lower()}.jpg" for u in UNITS}}
 def sm_img(x):
@@ -680,7 +743,7 @@ def llms_line(u):
     return f"- [LKS-{u['id']}: {u['name']}]({SITE}{u['url']}): {facts}. Price on request, subject to prior sale."
 llms = (llms_head + f"\n## Units for sale (stock list, updated {TODAY})\n"
         + "\n".join(llms_line(u) for u in UNITS)
-        + "\n\n## Model pages\n" + "\n".join(f"- [{m[1]} for sale]({SITE}/{m[0]}.html)" for m in MODELS)
+        + "\n\n## Model pages\n" + "\n".join(f"- [{m[1]} for sale]({SITE}/{m[0]}.html)" for m in MODELS) + f"\n- [Used 60 Hz gas turbines, steam turbines and generator sets for the USA and the Americas]({SITE}/{HZ_SLUG}.html)"
         + "\n\n## News\n" + "\n".join(f"- [{p['title']}]({SITE}/news/{p['slug']}.html)" for p in POSTS) + "\n")
 llms_path.write_text(llms, encoding="utf-8", newline="\n")
 
