@@ -42,12 +42,13 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [Steam turbines](https://lks360.com/steam-turbines.html): Siemens SST-300, SST-400 and other steam turbine generator sets
 - [Generator sets](https://lks360.com/generator-sets.html): Caterpillar, Wärtsilä, MTU, Cummins, MAN
 - [How we work and FAQ](https://lks360.com/how-we-work.html)
+- [Used gas turbine FAQ](https://lks360.com/gas-turbine-faq.html): aeroderivative vs heavy duty, manufacturers, 50/60 Hz, simple and combined cycle, DLE, price factors, documents, LOI, proof of funds, payment
 - [Buyer guide: buying a used gas turbine](https://lks360.com/buying-used-gas-turbines.html): data, records, condition, scope of supply, inspection, transport, compliance
 - [Compliance policy](https://lks360.com/compliance.html): counterparty identification, no handling of purchase funds
 - [Imprint](https://lks360.com/imprint.html)
 - [Privacy Policy](https://lks360.com/privacy.html)
 
-## Units for sale, full data (updated 2026-11-09)
+## Units for sale, full data (updated 2026-11-10)
 
 ### 2 x Siemens Westinghouse W701DS gas turbine generator sets
 - Stock number: LKS-GT-01
@@ -1091,6 +1092,75 @@ Buyer, owner and end use are screened against sanctions lists, and export contro
 See the inventory, or browse gas turbines, steam turbines and generator sets.
 
 ### Looking for a unit?
+
+Send type, output, frequency and fuel. We reply with matching offers.
+ Contact
+
+## Page: https://lks360.com/gas-turbine-faq.html
+
+Used Gas Turbine FAQ | Aeroderivative, Heavy Duty, 50/60 Hz, LOI | LKS 360-SCHREINER LLC
+
+Knowledge
+
+### Used gas turbine FAQ
+
+Plain answers to the questions buyers and owners ask about used and surplus gas turbines, steam turbines and generator sets.
+
+### What is the difference between an aeroderivative and a heavy duty gas turbine?
+
+Aeroderivative gas turbines are derived from aircraft engines. They are compact, light, start quickly and are often used for peaking, mobile and oil and gas applications, for example the GE LM2500, LM6000 and TM2500. Heavy duty or industrial gas turbines are built for continuous base load operation and long intervals between overhauls, for example the GE Frame 6B, 7EA and 9E or the Siemens SGT5-2000E and Westinghouse 501 and 701 series.
+
+### Which manufacturers build the gas turbines traded on the used market?
+
+The units most often traded come from GE (GE Vernova), Siemens (Siemens Energy, including former Westinghouse and Alstom lines), Mitsubishi Power, Solar Turbines (Titan, Taurus, Centaur, Mars), Kawasaki, Ansaldo Energia and Baker Hughes (Nuovo Pignone).
+
+### Can a 50 Hz gas turbine be used in a 60 Hz grid?
+
+Not without changes. Generator frequency follows shaft speed, so a unit built for 50 Hz usually needs a different gearbox or generator, or a design that is specified for both frequencies. Check the generator nameplate data and ask the owner before making an offer.
+
+### What is the difference between simple cycle and combined cycle?
+
+In simple cycle the gas turbine drives the generator and the exhaust heat leaves through the stack. In combined cycle the exhaust heat goes into a heat recovery steam generator (HRSG), and the steam drives a steam turbine that produces additional power from the same fuel.
+
+### What does DLE or DLN mean on a gas turbine?
+
+DLE (dry low emissions) and DLN (dry low NOx) are combustion systems that reduce nitrogen oxide emissions without injecting water or steam. Whether a unit has DLE or DLN matters when the site has strict emission limits.
+
+### What determines the price of a used gas turbine?
+
+Model and output, operating hours and starts since new and since the last overhaul, condition (unused, preserved or running), the completeness of the maintenance records, the scope of supply (generator, controls, auxiliaries, HRSG, spare parts), frequency and fuel options, and the cost and effort of dismantling and transport from its location.
+
+### Which documents should a buyer ask for?
+
+Operating hours and starts, the maintenance and overhaul history, recent borescope or inspection reports, preservation records for stored units, the scope of supply list and generator data. Full documents are normally released after a letter of intent.
+
+### What is an LOI in an equipment purchase?
+
+A letter of intent is a written statement from the buyer that names the unit, the price offered, the buyer company, the end user and country of installation and the intended payment route. It is the step that releases full data and inspection. See the LOI step in the buyer guide.
+
+### What is proof of funds (POF)?
+
+Proof of funds is a bank letter confirming that the buyer can pay the purchase price. It is usually requested before contract or inspection, not with the first enquiry.
+
+### How is a used turbine paid safely?
+
+Through an escrow agent or an irrevocable letter of credit agreed between buyer and owner. LKS 360-SCHREINER LLC never receives purchase payments.
+
+### Gas engine generator set or gas turbine: which fits better?
+
+Gas engine generator sets (for example Caterpillar, Wartsila, MTU, MAN or Jenbacher) suit smaller and modular plants and keep high efficiency at part load. Gas turbines suit larger outputs, combined cycle plants and sites that need high power density. The decision depends on output, load profile, fuel, emissions and site.
+
+### Where can I buy a used gas turbine?
+
+Used gas turbines are sold by their owners directly, through brokers and through equipment marketplaces. LKS 360-SCHREINER LLC is an independent broker and lists units on behalf of their owners at lks360.com/inventory.html, with model pages for each turbine type.
+
+### How do I sell a used or surplus gas turbine?
+
+Collect model, year, hours, condition, scope and your price idea, then offer the unit through one broker with an exclusive mandate or through several channels. LKS 360-SCHREINER LLC offers owners an exclusive sales mandate with one price in the market, screened buyers and no upfront fee: lks360.com/sell.html
+
+More detail: buyer guide, how we work, inventory.
+
+### Looking for a unit or selling one?
 
 Send type, output, frequency and fuel. We reply with matching offers.
  Contact
