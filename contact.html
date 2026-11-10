@@ -27,17 +27,17 @@
     <div class="frow"><label>Name<input name="name" data-label="Name" required></label><label>Company<input name="company" data-label="Company" required></label></div>
     <div class="frow"><label>Email<input type="email" name="email" data-label="Email" required></label><label>Phone<input type="tel" name="phone" data-label="Phone"></label></div>
     <div class="frow"><label>I am
-      <select name="role" data-label="Role"><option>Buyer</option><option>Equipment owner</option><option>Other</option></select></label>
+      <select name="role" data-label="Role"><option value="Buyer">Buyer</option><option value="Equipment owner">Equipment owner</option><option value="Other">Other</option></select></label>
       <label>Stock No. (optional)<input name="unit" data-label="Stock No." placeholder="LKS-GT-02"></label></div>
     <div class="frow"><label>Equipment type
-      <select name="type" data-label="Type" required><option value="">Please select</option><option>Gas turbine</option><option>Steam turbine</option><option>Generator set</option><option>Complete power plant</option></select></label>
+      <select name="type" data-label="Type" required><option value="">Please select</option><option value="Gas turbine">Gas turbine</option><option value="Steam turbine">Steam turbine</option><option value="Generator set">Generator set</option><option value="Complete power plant">Complete power plant</option></select></label>
       <label>Output (MW)<input name="output" data-label="Output" required placeholder="e.g. 25"></label></div>
     <div class="frow"><label>Frequency
-      <select name="hz" data-label="Frequency" required><option value="">Please select</option><option>50 Hz</option><option>60 Hz</option></select></label>
+      <select name="hz" data-label="Frequency" required><option value="">Please select</option><option value="50 Hz">50 Hz</option><option value="60 Hz">60 Hz</option></select></label>
       <label>Delivery country<input name="country" data-label="Delivery country" data-buyer required></label></div>
     <div class="frow buyeronly"><label>End user or project<input name="enduser" data-label="End user / project" data-buyer required placeholder="Company or plant that will operate the unit"></label>
       <label>Timeline
-      <select name="timeline" data-label="Timeline" data-buyer required><option value="">Please select</option><option>Purchase within 3 months</option><option>Purchase within 12 months</option><option>Budget or feasibility study</option></select></label></div>
+      <select name="timeline" data-label="Timeline" data-buyer required><option value="">Please select</option><option value="Purchase within 3 months">Purchase within 3 months</option><option value="Purchase within 12 months">Purchase within 12 months</option><option value="Budget or feasibility study">Budget or feasibility study</option></select></label></div>
     <label>Message<textarea name="message" data-label="Message" rows="5" placeholder="Fuel, timeline, number of units, scope"></textarea></label>
     <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
     <button class="btn" type="submit">Send message</button>
