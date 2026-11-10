@@ -47,6 +47,13 @@
   var form = document.getElementById('mailform');
   if (form) {
     if (qs.get('unit') && form.unit) form.unit.value = qs.get('unit');
+    var buyerOnly = function () {
+      var buyer = !form.role || form.role.value === 'Buyer';
+      Array.prototype.forEach.call(form.querySelectorAll('[data-buyer]'), function (el) { el.required = buyer; });
+      Array.prototype.forEach.call(form.querySelectorAll('.buyeronly'), function (el) { el.hidden = !buyer; });
+    };
+    if (form.role) form.role.addEventListener('change', buyerOnly);
+    buyerOnly();
     var note = document.getElementById('formnote');
     var say = function (text, ok) {
       if (!note) return;

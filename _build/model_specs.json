@@ -240,5 +240,49 @@
   "notes": "",
   "source_url": "https://www.cummins.com/generators/above-600-kva",
   "source_name": "Cummins, 600 to 3750 kVA generator sets"
+ },
+ "siemens-sgt5-2000e-for-sale": {
+  "type": "heavy duty gas turbine",
+  "manufacturer": "Siemens Energy",
+  "output": "198 MW gas turbine; SCC5-2000E combined cycle 290 MW (1x1) and 581 MW (2x1)",
+  "frequency": "50 Hz",
+  "fuel": "natural gas, LNG, syngas, distillate, heavy and crude oils and many other fuels; up to 30 vol% hydrogen",
+  "applications": "simple cycle for peak load or standby, combined cycle for base load and cogeneration",
+  "notes": "",
+  "source_url": "https://www.siemens-energy.com/global/en/home/products-services/product/sgt5-2000e.html",
+  "source_name": "Siemens Energy, SGT5-2000E product page"
+ },
+ "ge-7fa-for-sale": {
+  "type": "heavy duty gas turbine",
+  "manufacturer": "GE Vernova",
+  "output": "201 MW (7F.04) to 239 MW (7F.05), simple cycle",
+  "frequency": "60 Hz (ratings shown)",
+  "fuel": "gas only or dual fuel (natural gas or distillate)",
+  "applications": "",
+  "notes": "7FA is a former name of the GE Vernova 7F gas turbine.",
+  "source_url": "https://www.gevernova.com/gas-power/products/gas-turbines/7f",
+  "source_name": "GE Vernova, 7F product page"
+ },
+ "siemens-sgt-750-for-sale": {
+  "type": "lightweight industrial gas turbine",
+  "manufacturer": "Siemens Energy",
+  "output": "38.9 to 41.1 MW(e) gross (simple cycle)",
+  "frequency": "50 Hz and 60 Hz",
+  "fuel": "natural gas, liquid fuel, dual fuel",
+  "applications": "industrial power, oil and gas, mechanical drive, combined cycle and CHP",
+  "notes": "",
+  "source_url": "https://www.siemens-energy.com/global/en/home/products-services/product/sgt-750.html",
+  "source_name": "Siemens Energy, SGT-750 product page"
+ },
+ "jenbacher-j620-for-sale": {
+  "type": "gas engine generator set",
+  "manufacturer": "INNIO Jenbacher",
+  "output": "up to 3,509 kW",
+  "frequency": "50 Hz and 60 Hz",
+  "fuel": "natural gas, biogas, sewage gas, landfill gas, coal mine gas, associated petroleum gas",
+  "applications": "power generation and combined heat and power",
+  "notes": "Member of the Jenbacher Type 6 engine family.",
+  "source_url": "https://www.jenbacher.com/en/gas-engines/type-6",
+  "source_name": "INNIO Jenbacher, Type 6 gas engines"
  }
 }

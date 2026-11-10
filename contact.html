@@ -30,11 +30,14 @@
       <select name="role" data-label="Role"><option>Buyer</option><option>Equipment owner</option><option>Other</option></select></label>
       <label>Stock No. (optional)<input name="unit" data-label="Stock No." placeholder="LKS-GT-02"></label></div>
     <div class="frow"><label>Equipment type
-      <select name="type" data-label="Type"><option value="">Please select</option><option>Gas turbine</option><option>Steam turbine</option><option>Generator set</option><option>Complete power plant</option></select></label>
-      <label>Output (MW)<input name="output" data-label="Output"></label></div>
+      <select name="type" data-label="Type" required><option value="">Please select</option><option>Gas turbine</option><option>Steam turbine</option><option>Generator set</option><option>Complete power plant</option></select></label>
+      <label>Output (MW)<input name="output" data-label="Output" required placeholder="e.g. 25"></label></div>
     <div class="frow"><label>Frequency
-      <select name="hz" data-label="Frequency"><option value="">Please select</option><option>50 Hz</option><option>60 Hz</option></select></label>
-      <label>Delivery country<input name="country" data-label="Delivery country"></label></div>
+      <select name="hz" data-label="Frequency" required><option value="">Please select</option><option>50 Hz</option><option>60 Hz</option></select></label>
+      <label>Delivery country<input name="country" data-label="Delivery country" data-buyer required></label></div>
+    <div class="frow buyeronly"><label>End user or project<input name="enduser" data-label="End user / project" data-buyer required placeholder="Company or plant that will operate the unit"></label>
+      <label>Timeline
+      <select name="timeline" data-label="Timeline" data-buyer required><option value="">Please select</option><option>Purchase within 3 months</option><option>Purchase within 12 months</option><option>Budget or feasibility study</option></select></label></div>
     <label>Message<textarea name="message" data-label="Message" rows="5" placeholder="Fuel, timeline, number of units, scope"></textarea></label>
     <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
     <button class="btn" type="submit">Send message</button>
@@ -51,6 +54,8 @@
     </ul>
     <h3 style="margin-top:32px">What helps us answer</h3>
     <p class="muted">Type and output, 50 or 60 Hz, fuel, delivery country, timeline and whether you need a single unit or a complete plant. Company details let us prepare an offer with the owner.</p>
+    <h3 style="margin-top:32px">Prices and data</h3>
+    <p class="muted">Send the stock number and we reply with the price. Full technical documents, serial numbers and inspection follow your letter of intent. Purchase payments go directly to the owner or through escrow.</p>
     <p class="muted">We use your data only to answer your inquiry. See our <a href="/privacy.html">privacy policy</a>.</p>
   </div>
 </div></section>
