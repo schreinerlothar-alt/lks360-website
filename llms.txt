@@ -43,6 +43,9 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [Generator sets](https://lks360.com/generator-sets.html): Caterpillar, Wärtsilä, MTU, Cummins, MAN
 - [How we work and FAQ](https://lks360.com/how-we-work.html)
 - [Used gas turbine FAQ](https://lks360.com/gas-turbine-faq.html): aeroderivative vs heavy duty, manufacturers, 50/60 Hz, simple and combined cycle, DLE, price factors, documents, LOI, proof of funds, payment
+- [Used steam turbine FAQ](https://lks360.com/steam-turbine-faq.html): condensing, back pressure, extraction, steam data, combined cycle, documents, buying and selling
+- [Used generator set FAQ](https://lks360.com/generator-set-faq.html): prime, continuous and standby rating, gas engine vs diesel, high and medium speed, 50/60 Hz, documents
+- [Power generation equipment glossary](https://lks360.com/power-generation-glossary.html): ISO rating, heat rate, HRSG, DLE, borescope, EOH, LOI, POF, NCNDA, escrow, Incoterms
 - [Buyer guide: buying a used gas turbine](https://lks360.com/buying-used-gas-turbines.html): data, records, condition, scope of supply, inspection, transport, compliance
 - [Compliance policy](https://lks360.com/compliance.html): counterparty identification, no handling of purchase funds
 - [Imprint](https://lks360.com/imprint.html)

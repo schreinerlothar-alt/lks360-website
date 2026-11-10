@@ -43,6 +43,9 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [Generator sets](https://lks360.com/generator-sets.html): Caterpillar, Wärtsilä, MTU, Cummins, MAN
 - [How we work and FAQ](https://lks360.com/how-we-work.html)
 - [Used gas turbine FAQ](https://lks360.com/gas-turbine-faq.html): aeroderivative vs heavy duty, manufacturers, 50/60 Hz, simple and combined cycle, DLE, price factors, documents, LOI, proof of funds, payment
+- [Used steam turbine FAQ](https://lks360.com/steam-turbine-faq.html): condensing, back pressure, extraction, steam data, combined cycle, documents, buying and selling
+- [Used generator set FAQ](https://lks360.com/generator-set-faq.html): prime, continuous and standby rating, gas engine vs diesel, high and medium speed, 50/60 Hz, documents
+- [Power generation equipment glossary](https://lks360.com/power-generation-glossary.html): ISO rating, heat rate, HRSG, DLE, borescope, EOH, LOI, POF, NCNDA, escrow, Incoterms
 - [Buyer guide: buying a used gas turbine](https://lks360.com/buying-used-gas-turbines.html): data, records, condition, scope of supply, inspection, transport, compliance
 - [Compliance policy](https://lks360.com/compliance.html): counterparty identification, no handling of purchase funds
 - [Imprint](https://lks360.com/imprint.html)
@@ -560,7 +563,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the Siemens SGT-800 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used Siemens SGT-800 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -576,7 +579,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the GE TM2500 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used GE TM2500 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -592,7 +595,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the GE LM2500 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used GE LM2500 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -608,7 +611,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the GE LM6000 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used GE LM6000 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -624,7 +627,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the GE LM5000 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used GE LM5000 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -640,7 +643,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the GE Frame 6B still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used GE Frame 6B cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -656,7 +659,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the GE 7EA still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used GE 7EA cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -672,7 +675,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the GE Frame 5 (MS5001) still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used GE Frame 5 (MS5001) cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -688,7 +691,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the GE 9HA still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used GE 9HA cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -704,7 +707,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the Siemens SGT-600 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used Siemens SGT-600 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -720,7 +723,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the Siemens SGT-700 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used Siemens SGT-700 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -736,7 +739,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the Siemens SGT-400 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used Siemens SGT-400 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -752,7 +755,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the Siemens SGT-300 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used Siemens SGT-300 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -768,7 +771,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the Siemens SGT-100 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used Siemens SGT-100 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -784,7 +787,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the GE Frame 9E still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used GE Frame 9E cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -800,7 +803,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the Siemens Westinghouse W701 and W501 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used Siemens Westinghouse W701 and W501 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -816,7 +819,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the Solar Titan still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used Solar Titan cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -832,7 +835,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the Solar Centaur 40 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used Solar Centaur 40 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -848,7 +851,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the Mitsubishi MF111 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used Mitsubishi MF111 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -864,7 +867,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the Siemens SST-400 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used Siemens SST-400 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -880,7 +883,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the Siemens SST-300 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used Siemens SST-300 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -896,7 +899,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the Caterpillar G20CM34 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used Caterpillar G20CM34 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -912,7 +915,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the Caterpillar 3516 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used Caterpillar 3516 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -928,7 +931,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the Wärtsilä 34SG still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used Wärtsilä 34SG cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -944,7 +947,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the MAN 32/40 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used MAN 32/40 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -960,7 +963,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the MTU 16V4000 still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used MTU 16V4000 cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -976,7 +979,7 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the Cummins genset still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used Cummins genset cost?
-A: Price on request. You receive the price and the data sheet after your letter of intent with model and quantity.
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit.
 Q: How is payment made?
@@ -1158,7 +1161,189 @@ Used gas turbines are sold by their owners directly, through brokers and through
 
 Collect model, year, hours, condition, scope and your price idea, then offer the unit through one broker with an exclusive mandate or through several channels. LKS 360-SCHREINER LLC offers owners an exclusive sales mandate with one price in the market, screened buyers and no upfront fee: lks360.com/sell.html
 
-More detail: buyer guide, how we work, inventory.
+More detail: buyer guide, steam turbine FAQ, generator set FAQ, glossary, how we work, inventory.
+
+### Looking for a unit or selling one?
+
+Send type, output, frequency and fuel. We reply with matching offers.
+ Contact
+
+## Page: https://lks360.com/steam-turbine-faq.html
+
+Used Steam Turbine FAQ | Condensing, Back Pressure, Extraction | LKS 360-SCHREINER LLC
+
+Knowledge
+
+### Used steam turbine FAQ
+
+Plain answers to the questions buyers and owners ask about used and surplus steam turbines and steam turbine generator sets.
+
+### What types of steam turbines are traded on the used market?
+
+Condensing turbines exhaust into a condenser and turn as much steam energy as possible into power. Back pressure turbines exhaust steam at a pressure that a process can still use, for example in a paper mill, refinery or sugar factory. Extraction turbines take steam out at one or more stages for process heat and send the rest on to the exhaust.
+
+### Which manufacturers build the steam turbines sold used?
+
+Units most often traded come from Siemens Energy (SST series), GE Vernova (including former Alstom lines), Mitsubishi Power, Doosan Skoda, MAN Energy Solutions, Elliott, Dresser Rand, Shin Nippon and Triveni.
+
+### Which data define a steam turbine for a new site?
+
+Live steam pressure and temperature, steam mass flow, exhaust or back pressure, extraction pressures and flows, output, speed and generator frequency. A used turbine fits a new site only when these values match the boiler or heat recovery steam generator there, so buyers send their steam data first.
+
+### Can a steam turbine be added to an existing gas turbine?
+
+Yes. With a heat recovery steam generator behind the gas turbine, the exhaust heat makes steam that drives a steam turbine. This turns a simple cycle plant into a combined cycle plant and produces additional power from the same fuel.
+
+### What is a steam turbine generator set?
+
+A package of steam turbine, gearbox where needed, generator, lube oil system and controls on a common base or in a common scope. Buying the complete set saves engineering, because the parts are already matched.
+
+### Which documents should a buyer ask for?
+
+Heat balance and design steam data, operating hours and starts, the overhaul and inspection history, rotor and blade inspection reports, preservation records for stored units, the scope of supply list and generator data. Full documents are normally released after a letter of intent.
+
+### Is a used steam turbine worth it compared with a new one?
+
+A used or surplus turbine is usually available much sooner than a new build and costs less. It is a good choice when its design data fit the site and the documents show a sound maintenance history. A site visit or third party inspection before contract confirms the condition.
+
+### How is a used steam turbine bought and paid?
+
+The buyer sends a letter of intent, receives the full data and inspects the unit, then signs the purchase contract with the owner. Payment runs through an escrow agent or an irrevocable letter of credit. LKS 360-SCHREINER LLC never receives purchase payments.
+
+### Where can I buy a used steam turbine?
+
+LKS 360-SCHREINER LLC is an independent broker and lists steam turbines and steam turbine generator sets on behalf of their owners at lks360.com/steam-turbines.html
+
+### How do I sell a used steam turbine?
+
+Collect model, year, steam data, output, hours, condition, scope and your price idea. LKS 360-SCHREINER LLC offers owners an exclusive sales mandate with one price in the market, screened buyers and no upfront fee: lks360.com/sell.html
+
+More detail: buyer guide, gas turbine FAQ, steam turbine FAQ, generator set FAQ, glossary, how we work, inventory.
+
+### Looking for a unit or selling one?
+
+Send type, output, frequency and fuel. We reply with matching offers.
+ Contact
+
+## Page: https://lks360.com/generator-set-faq.html
+
+Used Generator Set FAQ | Gas and Diesel Gensets, Prime and Standby | LKS 360-SCHREINER LLC
+
+Knowledge
+
+### Used generator set FAQ
+
+Plain answers to the questions buyers and owners ask about used and surplus gas and diesel generator sets and engine power plants.
+
+### What is the difference between prime, continuous and standby rating?
+
+Standby rating is for emergency use when the grid fails, with limited running hours per year. Prime rating allows unlimited hours at variable load. Continuous rating allows unlimited hours at constant full load. Always compare generator sets at the same rating, because the same set has a different kW value for each.
+
+### Gas engine or diesel generator set: which fits better?
+
+Gas engine sets suit continuous operation where pipeline gas, biogas or associated gas is available, and they produce lower emissions. Diesel sets start fast and run on stored fuel, so they are common for standby, remote sites and islands. The choice depends on fuel, running hours, emissions and site.
+
+### What is the difference between high speed and medium speed engines?
+
+High speed engines, for example the Caterpillar 3516, MTU 4000 series or Cummins QSK, are compact and quick to install. Medium speed engines, for example the Wartsila 34SG, MAN 32/40 or Caterpillar G20CM34, are larger and heavier, run at lower speed and are built for long continuous operation in power plants.
+
+### Can a 50 Hz generator set be used in a 60 Hz grid?
+
+Usually only after changes. Engine speed and generator are matched to one frequency, so a 50 Hz set often needs a different generator or speed setting, and the output changes. Check the nameplate data and ask the owner before making an offer.
+
+### Which manufacturers build the generator sets traded used?
+
+Common makes are Caterpillar, Cummins, MTU (Rolls Royce Power Systems), Wartsila, MAN Energy Solutions, INNIO Jenbacher, MWM, Kohler and Perkins.
+
+### Which documents should a buyer ask for?
+
+Running hours, the overhaul history with dates and hours, oil analysis reports, load test records, the scope of supply (engine, generator, switchgear, radiators, controls, container) and the generator data. Full documents are normally released after a letter of intent.
+
+### What determines the price of a used generator set?
+
+Make and model, output and rating, running hours since new and since the last overhaul, condition, scope of supply, fuel and frequency, emission equipment, and the cost of dismantling and transport from its location.
+
+### How is a used generator set bought and paid?
+
+The buyer sends a letter of intent, receives the full data and inspects the set, then signs the purchase contract with the owner. Payment runs through an escrow agent or an irrevocable letter of credit. LKS 360-SCHREINER LLC never receives purchase payments.
+
+### Where can I buy a used generator set?
+
+LKS 360-SCHREINER LLC is an independent broker and lists gas and diesel generator sets on behalf of their owners at lks360.com/generator-sets.html
+
+### How do I sell a used generator set or engine power plant?
+
+Collect make, model, output, hours, condition, scope and your price idea. LKS 360-SCHREINER LLC offers owners an exclusive sales mandate with one price in the market, screened buyers and no upfront fee: lks360.com/sell.html
+
+More detail: buyer guide, gas turbine FAQ, steam turbine FAQ, generator set FAQ, glossary, how we work, inventory.
+
+### Looking for a unit or selling one?
+
+Send type, output, frequency and fuel. We reply with matching offers.
+ Contact
+
+## Page: https://lks360.com/power-generation-glossary.html
+
+Power Generation Equipment Glossary | Gas Turbine, Steam Turbine, Genset Terms | LKS 360-SCHREINER LLC
+
+Knowledge
+
+### Power generation equipment glossary
+
+Short definitions of the terms used when buying and selling used gas turbines, steam turbines and generator sets.
+
+ Aeroderivative gas turbine
+ A gas turbine derived from an aircraft engine, light and quick to start, for example the GE LM2500 and LM6000.
+ Heavy duty gas turbine
+ An industrial gas turbine built for continuous operation and long overhaul intervals, for example the GE Frame 9E or Siemens Westinghouse W501.
+ ISO rating
+ The output and efficiency of a gas turbine at standard conditions of 15 degrees Celsius, sea level and 60 percent relative humidity. Real output falls at higher ambient temperature and altitude.
+ Heat rate
+ The fuel energy needed to produce one unit of electricity, for example in kJ per kWh or Btu per kWh. A lower heat rate means higher efficiency.
+ Simple cycle
+ A plant where the gas turbine drives the generator and the exhaust heat leaves through the stack.
+ Combined cycle (CCGT, CCPP)
+ A plant where the exhaust heat of the gas turbine makes steam in a heat recovery steam generator and the steam drives a steam turbine for additional power.
+ HRSG
+ Heat recovery steam generator. The boiler behind a gas turbine that uses its exhaust heat to make steam.
+ DLE and DLN
+ Dry low emissions and dry low NOx. Combustion systems that cut nitrogen oxide emissions without water or steam injection.
+ Dual fuel
+ A turbine or engine that can run on two fuels, usually natural gas and diesel or light fuel oil.
+ Hot gas path inspection
+ A scheduled inspection of the combustion and turbine parts exposed to the hottest gas.
+ Major overhaul
+ The largest scheduled maintenance event, where the turbine or engine is opened completely and worn parts are replaced. Hours since the last major overhaul are a key value for buyers.
+ Borescope inspection
+ An inspection of the inside of a turbine or engine through small ports with an optical probe, without opening the casing.
+ Equivalent operating hours (EOH)
+ A count that adds operating hours and a weighting for starts, trips and fuel, used by some manufacturers to plan maintenance.
+ Preservation
+ Measures that protect a stored unit against corrosion, for example dry air, desiccant and sealed packaging. Buyers of stored units ask for the preservation records.
+ Condensing steam turbine
+ A steam turbine that exhausts into a condenser to produce as much power as possible.
+ Back pressure steam turbine
+ A steam turbine that exhausts at a pressure a process can still use for heat.
+ Prime, continuous and standby rating
+ Generator set ratings for unlimited variable load, unlimited constant load and limited emergency use.
+ Power barge
+ A floating power plant on a barge or ship hull, often with gas turbines or engines, that can be moved to a new site.
+ LOI
+ Letter of intent. A written statement by the buyer naming the unit, offered price, buyer company, end user, country of installation and payment route. It releases full data and inspection.
+ POF
+ Proof of funds. A bank letter confirming that the buyer can pay the purchase price.
+ NCNDA
+ Non circumvention and non disclosure agreement between the parties of a deal.
+ Escrow
+ A neutral third party that holds the purchase payment until the agreed conditions, for example delivery or transfer of title, are met.
+ Letter of credit (L/C)
+ A bank undertaking to pay the seller when the documents named in the credit are presented.
+ Incoterms (EXW, FOB, CIF, DAP)
+ Standard trade terms of the International Chamber of Commerce that define where risk and cost pass from seller to buyer.
+ Exclusive sales mandate
+ An agreement where an owner gives one broker the sole right to market a unit, so the unit appears with one price and one contact in the market.
+
+More detail: buyer guide, gas turbine FAQ, steam turbine FAQ, generator set FAQ, glossary, how we work, inventory.
 
 ### Looking for a unit or selling one?
 
