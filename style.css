@@ -236,3 +236,8 @@ footer a{color:#dfe8f2;text-decoration:none;margin-right:18px}
 @media(max-width:760px){.unit{grid-template-columns:1fr}.uthumb{max-width:360px}}
 .exfig{margin:6px 0 20px}.exfig img{display:block;width:100%;height:auto;border-radius:10px}.exfig figcaption{font-size:13px;color:#5b6b7b;margin-top:6px}
 .qa{padding:22px 0 0}.answer{background:#eef6fa;border-left:4px solid var(--blue);border-radius:8px;padding:14px 18px;margin:0;font-size:17px}
+
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0}
+.spec.cmp{min-width:640px}
+.spec.cmp th{width:auto}
+.spec.cmp thead th{color:var(--ink,inherit);font-weight:700;border-bottom:2px solid var(--line)}

@@ -84,7 +84,7 @@ def footer():
     return f"""<footer><div class="wrap fcols">
   <div><p class="fbrand">LKS <span>360</span>-SCHREINER LLC</p><p>Florida limited liability company<br>Document No. L26000221347<br>7901 4th St N, Ste 300<br>St. Petersburg, FL 33702, USA</p></div>
   <div><p class="fh">Equipment</p><a href="/inventory.html">Inventory</a><a href="/gas-turbines.html">Gas turbines</a><a href="/steam-turbines.html">Steam turbines</a><a href="/generator-sets.html">Generator sets</a><a href="/sell.html">Sell equipment</a><a href="/used-60-hz-gas-turbines-generators-americas.html">60 Hz for the Americas</a></div>
-  <div><p class="fh">Company</p><a href="/news.html">News</a><a href="/how-we-work.html">How we work</a><a href="/buying-used-gas-turbines.html">Buyer guide</a><a href="/gas-turbine-faq.html">Gas turbine FAQ</a><a href="/steam-turbine-faq.html">Steam turbine FAQ</a><a href="/generator-set-faq.html">Genset FAQ</a><a href="/power-generation-glossary.html">Glossary</a><a href="/compliance.html">Compliance</a><a href="/imprint.html">Imprint</a><a href="/privacy.html">Privacy Policy</a><a href="https://www.linkedin.com/company/142908032">LinkedIn</a><a href="https://www.facebook.com/groups/606333518127054">Facebook</a><a href="https://www.pinterest.com/schreinerlothar/">Pinterest</a><a href="https://x.com/lothar81795958">X</a><a href="https://www.instagram.com/lotschrei/">Instagram</a><a href="https://www.youtube.com/channel/UCP2-Bw2a4iCVZOgQC1tMshQ">YouTube</a></div>
+  <div><p class="fh">Company</p><a href="/news.html">News</a><a href="/how-we-work.html">How we work</a><a href="/buying-used-gas-turbines.html">Buyer guide</a><a href="/gas-turbine-faq.html">Gas turbine FAQ</a><a href="/steam-turbine-faq.html">Steam turbine FAQ</a><a href="/generator-set-faq.html">Genset FAQ</a><a href="/power-generation-glossary.html">Glossary</a><a href="/power-generation-equipment-models-compared.html">Models compared</a><a href="/compliance.html">Compliance</a><a href="/imprint.html">Imprint</a><a href="/privacy.html">Privacy Policy</a><a href="https://www.linkedin.com/company/142908032">LinkedIn</a><a href="https://www.facebook.com/groups/606333518127054">Facebook</a><a href="https://www.pinterest.com/schreinerlothar/">Pinterest</a><a href="https://x.com/lothar81795958">X</a><a href="https://www.instagram.com/lotschrei/">Instagram</a><a href="https://www.youtube.com/channel/UCP2-Bw2a4iCVZOgQC1tMshQ">YouTube</a></div>
   <div><p class="fh">Contact</p><a href="mailto:{MAIL}">{MAIL}</a><a href="tel:+491704656619">{PHONE}</a><a href="/contact.html">Contact form</a></div>
 </div><div class="wrap fbase">© 2026 LKS 360-SCHREINER LLC. Equipment is offered on behalf of its owners and subject to prior sale. Manufacturer names describe the equipment; we are not affiliated with any manufacturer.</div></footer>
 <a class="wafloat" href="{WA}" aria-label="WhatsApp +49 170 4656619"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.3 3.4 14.6 14.6 0 0 0 5.6 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.2-.3-.3-.6-.4z"/></svg></a>"""
@@ -540,7 +540,7 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
   <p class="kicker">Questions and answers</p>
   <h2>{e(label)}: frequent questions</h2>
   {faq_html}
-  <p>More answers: <a href="/buying-used-gas-turbines.html">buyer guide</a>, {FAQLINK[cat]} and <a href="/power-generation-glossary.html">glossary of terms</a>. Owners: <a href="/sell.html">exclusive sales mandate</a>.</p>
+  <p>More answers: <a href="/buying-used-gas-turbines.html">buyer guide</a>, {FAQLINK[cat]} , <a href="/power-generation-glossary.html">glossary of terms</a> and <a href="/power-generation-equipment-models-compared.html">models compared</a>. Owners: <a href="/sell.html">exclusive sales mandate</a>.</p>
 </div></section>
 <div class="cta">
   <h2>Looking for a {e(label)}?</h2>
@@ -683,6 +683,132 @@ def hz_page():
 """ + footer() + "\n</body>\n</html>\n"
 
 
+COMPARE = [
+    ("ge-lm6000-vs-lm2500", "ge-lm6000-for-sale", "ge-lm2500-for-sale"),
+    ("ge-lm2500-vs-tm2500", "ge-lm2500-for-sale", "ge-tm2500-for-sale"),
+    ("siemens-sgt-800-vs-sgt-700", "siemens-sgt-800-for-sale", "siemens-sgt-700-for-sale"),
+    ("siemens-sgt-400-vs-sgt-300", "siemens-sgt-400-for-sale", "siemens-sgt-300-for-sale"),
+    ("ge-frame-9e-vs-7ea", "ge-frame-9e-for-sale", "ge-7ea-for-sale"),
+    ("wartsila-34sg-vs-jenbacher-j620", "wartsila-34sg-for-sale", "jenbacher-j620-for-sale"),
+]
+CMP_SLUG = "power-generation-equipment-models-compared"
+_MINFO = {m[0]: (m[1], m[2], m[4] if len(m) > 4 else "gas") for m in MODELS}
+_FIELDS = [("Type", "type"), ("Manufacturer", "manufacturer"), ("Output", "output"), ("Frequency", "frequency"),
+           ("Fuel", "fuel"), ("Applications", "applications")]
+
+
+def _units_of(slugname):
+    pat = _MINFO[slugname][1]
+    return [u for u in UNITS if re.search(pat, u["model"] + " " + u["name"])]
+
+
+def _src(s):
+    return f'<a href="{s["source_url"]}" rel="nofollow">{e(s["source_name"])}</a>'
+
+
+def compare_overview():
+    path = f"/{CMP_SLUG}.html"
+    title = "Gas Turbine, Steam Turbine and Generator Set Models Compared | Output, Frequency, Fuel | LKS 360-SCHREINER LLC"
+    desc = (f"Comparison table of {len(SPECS)} power generation models: GE LM2500, LM6000, Frame 9E, 7FA, Siemens SGT-800, "
+            "SGT-700, SGT-400, steam turbines and gas engines with output, frequency, fuel and manufacturer source.")
+    groups = [("gas", "Gas turbines"), ("steam", "Steam turbines"), ("genset", "Generator sets and engines")]
+    body, items = "", []
+    for cat, name in groups:
+        rows = ""
+        for slugname, s in SPECS.items():
+            if slugname not in _MINFO or _MINFO[slugname][2] != cat:
+                continue
+            label = _MINFO[slugname][0]
+            n = len(_units_of(slugname))
+            items.append((label, slugname))
+            rows += (f'<tr><th><a href="/{slugname}.html">{e(label)}</a></th><td>{e(s["type"])}</td><td>{e(s["output"])}</td>'
+                     f'<td>{e(s["frequency"]) or "<span class=muted>see source</span>"}</td><td>{n}</td><td>{_src(s)}</td></tr>')
+        if rows:
+            body += (f'<h2>{name}</h2><div class="tablewrap"><table class="spec cmp"><thead><tr><th>Model</th><th>Type</th><th>Output</th>'
+                     f'<th>Frequency</th><th>Units listed</th><th>Source</th></tr></thead><tbody>{rows}</tbody></table></div>')
+    pairs = "".join(f'<li><a href="/{c[0]}.html">{e(_MINFO[c[1]][0])} vs {e(_MINFO[c[2]][0])}</a></li>' for c in COMPARE)
+    ld = {"@context": "https://schema.org", "@graph": [
+        {"@type": "WebPage", "name": "Power generation equipment models compared", "url": SITE + path,
+         "publisher": {"@type": "Organization", "name": "LKS 360-SCHREINER LLC", "url": SITE + "/"}},
+        {"@type": "ItemList", "name": "Models compared", "numberOfItems": len(items), "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": l, "url": f"{SITE}/{sl}.html"} for i, (l, sl) in enumerate(items)]}]}
+    return head(title, desc, path, f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n') + header() + f"""
+<div class="crumbs wrap"><a href="/">Home</a> / <a href="/inventory.html">Inventory</a> / Models compared</div>
+<div class="hero slim"><div class="wrap">
+  <p class="kicker light">Knowledge · updated {UPDATED}</p>
+  <h1>Gas turbine, steam turbine and generator set models compared</h1>
+  <p>Manufacturer data for the model types we trade, side by side, each value with its source. The last column shows how many used or surplus units of the model are listed on lks360.com.</p>
+</div></div>
+<section><div class="wrap">
+  {body}
+  <p class="muted small">Manufacturer data for the model type, not the data of a specific unit offered. Values of a used unit depend on its version, site and condition. Prices on request with the stock number.</p>
+  <h2>Direct comparisons</h2><ul>{pairs}</ul>
+  <p>More answers: <a href="/gas-turbine-faq.html">gas turbine FAQ</a>, <a href="/steam-turbine-faq.html">steam turbine FAQ</a>, <a href="/generator-set-faq.html">generator set FAQ</a>, <a href="/power-generation-glossary.html">glossary</a>. Owners: <a href="/sell.html">exclusive sales mandate</a>.</p>
+</div></section>
+""" + footer() + "\n</body>\n</html>\n"
+
+
+def compare_page(slug, a, b):
+    sa, sb = SPECS[a], SPECS[b]
+    la, lb = _MINFO[a][0], _MINFO[b][0]
+    ua, ub = _units_of(a), _units_of(b)
+    path = f"/{slug}.html"
+    title = f"{la} vs {lb}: Output, Frequency, Fuel and Used Units for Sale | LKS 360-SCHREINER LLC"
+    desc = f"{la} compared with {lb}: type, output, frequency, fuel and applications from manufacturer data, plus used units listed for sale."
+    rows = "".join(f"<tr><th>{k}</th><td>{e(sa[f]) or '<span class=muted>not stated</span>'}</td><td>{e(sb[f]) or '<span class=muted>not stated</span>'}</td></tr>" for k, f in _FIELDS)
+    rows += f"<tr><th>Units listed on lks360.com</th><td>{len(ua)}</td><td>{len(ub)}</td></tr>"
+    rows += f"<tr><th>Source</th><td>{_src(sa)}</td><td>{_src(sb)}</td></tr>"
+    diff = (f"The {la} is {'an' if sa['type'][0] in 'aeiou' else 'a'} {sa['type']} by {sa['manufacturer']} with an output of {sa['output']}. "
+            f"The {lb} is {'an' if sb['type'][0] in 'aeiou' else 'a'} {sb['type']} by {sb['manufacturer']} with an output of {sb['output']}.")
+    if sa["frequency"] and sb["frequency"]:
+        diff += f" Frequency: {la} {sa['frequency']}, {lb} {sb['frequency']}."
+    diff += f" Sources: {sa['source_name']}; {sb['source_name']}."
+    have = (f"LKS 360-SCHREINER LLC lists {len(ua)} used or surplus {la} unit{'s' if len(ua) != 1 else ''} and {len(ub)} {lb} "
+            f"unit{'s' if len(ub) != 1 else ''} on lks360.com, each offered on behalf of its owner. Send the stock number to manager@lks360.com and we reply with the price.")
+    faqs = [(f"What is the difference between the {la} and the {lb}?", diff),
+            (f"Where can I buy a used {la} or {lb}?", have),
+            ("Which one fits my project?",
+             "That depends on the output you need, grid frequency, fuel, emission limits and whether the plant runs base load, peaking or combined cycle. Send these values and we propose matching units from the market.")]
+    ld = {"@context": "https://schema.org", "@graph": [
+        {"@type": "WebPage", "name": f"{la} vs {lb}", "url": SITE + path,
+         "about": [{"@type": "Product", "name": la, "url": f"{SITE}/{a}.html"}, {"@type": "Product", "name": lb, "url": f"{SITE}/{b}.html"}],
+         "publisher": {"@type": "Organization", "name": "LKS 360-SCHREINER LLC", "url": SITE + "/"}},
+        {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": x}} for q, x in faqs]},
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Models compared", "item": f"{SITE}/{CMP_SLUG}.html"},
+            {"@type": "ListItem", "position": 3, "name": f"{la} vs {lb}", "item": SITE + path}]}]}
+    faq_html = "".join(f"<h3>{e(q)}</h3><p>{e(x)}</p>" for q, x in faqs)
+    units_html = "".join(row(u) for u in ua + ub) or '<p class="empty">No unit of these models is listed at the moment.</p>'
+    return head(title, desc, path, f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n') + header() + f"""
+<div class="crumbs wrap"><a href="/">Home</a> / <a href="/{CMP_SLUG}.html">Models compared</a> / {e(la)} vs {e(lb)}</div>
+<div class="hero slim"><div class="wrap">
+  <p class="kicker light">Comparison · updated {UPDATED}</p>
+  <h1>{e(la)} vs {e(lb)}</h1>
+  <p>Manufacturer data side by side, with the used units of both models listed on lks360.com.</p>
+</div></div>
+<section class="qa"><div class="wrap"><p class="answer"><b>Short answer:</b> {e(diff)}</p></div></section>
+<section><div class="wrap">
+  <div class="tablewrap"><table class="spec cmp"><thead><tr><th></th><th><a href="/{a}.html">{e(la)}</a></th><th><a href="/{b}.html">{e(lb)}</a></th></tr></thead><tbody>{rows}</tbody></table></div>
+  <p class="muted small">Manufacturer data for the model types, not the data of a specific unit offered.</p>
+</div></section>
+<section class="soft"><div class="wrap">
+  <p class="kicker">Units in our inventory</p>
+  <div class="ulist">{units_html}</div>
+</div></section>
+<section><div class="wrap">
+  <p class="kicker">Questions and answers</p>
+  {faq_html}
+  <p>All models: <a href="/{CMP_SLUG}.html">models compared</a>. More answers: <a href="/gas-turbine-faq.html">gas turbine FAQ</a>, <a href="/buying-used-gas-turbines.html">buyer guide</a>. Owners: <a href="/sell.html">exclusive sales mandate</a>.</p>
+</div></section>
+<div class="cta">
+  <h2>Looking for one of these models?</h2>
+  <p>Send output, frequency, fuel and delivery country.</p>
+  <a class="btn alt" href="/contact.html">Send your requirement</a> <a class="btn wa" href="{WA}">WhatsApp</a>
+</div>
+""" + footer() + "\n</body>\n</html>\n"
+
+
 STATIC = ["index.html", "inventory.html", "gas-turbines.html", "steam-turbines.html", "generator-sets.html",
           "sell.html", "news.html", "how-we-work.html", "buying-used-gas-turbines.html", "gas-turbine-faq.html", "steam-turbine-faq.html", "generator-set-faq.html", "power-generation-glossary.html", "contact.html", "compliance.html", "imprint.html", "privacy.html"]
 
@@ -709,6 +835,9 @@ for _cat, (_s, _pl, _url) in CATS.items():
 for m in MODELS:
     (ROOT / f"{m[0]}.html").write_text(model_page(*m), encoding="utf-8", newline="\n")
 (ROOT / f"{HZ_SLUG}.html").write_text(hz_page(), encoding="utf-8", newline="\n")
+(ROOT / f"{CMP_SLUG}.html").write_text(compare_overview(), encoding="utf-8", newline="\n")
+for _c in COMPARE:
+    (ROOT / f"{_c[0]}.html").write_text(compare_page(*_c), encoding="utf-8", newline="\n")
 (ROOT / "news").mkdir(exist_ok=True)
 for old in (ROOT / "news").glob("*.html"):
     old.unlink()
@@ -721,7 +850,7 @@ for name in STATIC:
 for name in ["404.html"]:
     patch_static(ROOT / name)
 
-urls = [f"{SITE}/"] + [f"{SITE}/{n}" for n in STATIC[1:] if (ROOT / n).exists()] + [f"{SITE}/{m[0]}.html" for m in MODELS] + [f"{SITE}/{HZ_SLUG}.html"] + [SITE + u["url"] for u in UNITS] + [f"{SITE}/news/{p['slug']}.html" for p in POSTS]
+urls = [f"{SITE}/"] + [f"{SITE}/{n}" for n in STATIC[1:] if (ROOT / n).exists()] + [f"{SITE}/{m[0]}.html" for m in MODELS] + [f"{SITE}/{HZ_SLUG}.html"] + [f"{SITE}/{CMP_SLUG}.html"] + [f"{SITE}/{_c[0]}.html" for _c in COMPARE] + [SITE + u["url"] for u in UNITS] + [f"{SITE}/news/{p['slug']}.html" for p in POSTS]
 IMGS = {**{f"{SITE}/{m[0]}.html": f"{SITE}/img/cards/{m[0]}.jpg" for m in MODELS},
         **{SITE + u["url"]: f"{SITE}/img/cards/lks-{u['id'].lower()}.jpg" for u in UNITS}}
 def sm_img(x):
@@ -743,7 +872,7 @@ def llms_line(u):
     return f"- [LKS-{u['id']}: {u['name']}]({SITE}{u['url']}): {facts}. Price on request, subject to prior sale."
 llms = (llms_head + f"\n## Units for sale (stock list, updated {TODAY})\n"
         + "\n".join(llms_line(u) for u in UNITS)
-        + "\n\n## Model pages\n" + "\n".join(f"- [{m[1]} for sale]({SITE}/{m[0]}.html)" for m in MODELS) + f"\n- [Used 60 Hz gas turbines, steam turbines and generator sets for the USA and the Americas]({SITE}/{HZ_SLUG}.html)"
+        + "\n\n## Model pages\n" + "\n".join(f"- [{m[1]} for sale]({SITE}/{m[0]}.html)" for m in MODELS) + f"\n- [Used 60 Hz gas turbines, steam turbines and generator sets for the USA and the Americas]({SITE}/{HZ_SLUG}.html)" + f"\n- [Power generation equipment models compared (output, frequency, fuel, sources)]({SITE}/{CMP_SLUG}.html)" + "".join(f"\n- [{_MINFO[_c[1]][0]} vs {_MINFO[_c[2]][0]}]({SITE}/{_c[0]}.html)" for _c in COMPARE)
         + "\n\n## News\n" + "\n".join(f"- [{p['title']}]({SITE}/news/{p['slug']}.html)" for p in POSTS) + "\n")
 llms_path.write_text(llms, encoding="utf-8", newline="\n")
 

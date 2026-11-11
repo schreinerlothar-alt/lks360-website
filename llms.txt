@@ -51,7 +51,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [Imprint](https://lks360.com/imprint.html)
 - [Privacy Policy](https://lks360.com/privacy.html)
 
-## Units for sale (stock list, updated 2026-11-10)
+## Units for sale (stock list, updated 2026-11-11)
 - [LKS-GT-01: 2 x Siemens Westinghouse W701DS gas turbine generator sets](https://lks360.com/units/gt-01-2-x-siemens-westinghouse-w701ds-gas-turbine-generator-sets-127-8-mw-each-255-6-mw-to.html): 127.8 MW each, 255.6 MW total, 50 Hz, Rebuilt, unused since rebuild. Price on request, subject to prior sale.
 - [LKS-GT-02: Siemens SGT-800 gas turbines](https://lks360.com/units/gt-02-siemens-sgt-800-gas-turbines-51-9-mw.html): 51.9 MW, 50/60 Hz, 2024, New. Price on request, subject to prior sale.
 - [LKS-GT-03: Siemens SGT-800 combined cycle blocks](https://lks360.com/units/gt-03-siemens-sgt-800-combined-cycle-blocks-53-mw-gt-plus-25-mw-st.html): 53 MW GT + 25 MW ST, 50 Hz, 2017. Price on request, subject to prior sale.
@@ -126,6 +126,13 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [Jenbacher J620 for sale](https://lks360.com/jenbacher-j620-for-sale.html)
 - [Cummins genset for sale](https://lks360.com/cummins-generator-sets-for-sale.html)
 - [Used 60 Hz gas turbines, steam turbines and generator sets for the USA and the Americas](https://lks360.com/used-60-hz-gas-turbines-generators-americas.html)
+- [Power generation equipment models compared (output, frequency, fuel, sources)](https://lks360.com/power-generation-equipment-models-compared.html)
+- [GE LM6000 vs GE LM2500](https://lks360.com/ge-lm6000-vs-lm2500.html)
+- [GE LM2500 vs GE TM2500](https://lks360.com/ge-lm2500-vs-tm2500.html)
+- [Siemens SGT-800 vs Siemens SGT-700](https://lks360.com/siemens-sgt-800-vs-sgt-700.html)
+- [Siemens SGT-400 vs Siemens SGT-300](https://lks360.com/siemens-sgt-400-vs-sgt-300.html)
+- [GE Frame 9E vs GE 7EA](https://lks360.com/ge-frame-9e-vs-7ea.html)
+- [Wärtsilä 34SG vs Jenbacher J620](https://lks360.com/wartsila-34sg-vs-jenbacher-j620.html)
 
 ## News
 - [New: Siemens SGT-700 with HRSG, SST-300, 2 x SST-400, and 5 x SGT-300 at a reduced price](https://lks360.com/news/new-sgt-700-with-hrsg-sst-300-sst-400-and-sgt-300-price-reduced-4-november-2026.html)
