@@ -551,16 +551,19 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - Price: on request
 - Page: https://lks360.com/units/gs-09-cummins-kta50-g3-diesel-generator-sets-new-1-250-kva.html
 
-### Solar Taurus 60 gas turbine generator package with alternator, used (ex FPSO)
+### 4 x Solar Taurus 60 gas turbine generator sets with KATO alternator, used (ex FPSO)
 - Stock number: LKS-GT-31
 - Manufacturer: Solar Turbines
 - Model: Taurus 60
 - Output: 4,950 kWe ISO
+- Frequency: 60 Hz
 - Condition: Used
+- Quantity: 4
+- Scope: Turbine, gear, pump and alternator (4,750 kW, 6.6 kV) on skid
 - Region: Asia
 - Status: offered, subject to prior sale
 - Price: on request
-- Page: https://lks360.com/units/gt-31-solar-taurus-60-gas-turbine-generator-package-with-alternator-used-ex-fpso-4-950-kwe.html
+- Page: https://lks360.com/units/gt-31-4-x-solar-taurus-60-gas-turbine-generator-sets-with-kato-alternator-used-ex-fpso-4-9.html
 
 ### GE LM6000PA aeroderivative gas turbine generator set
 - Stock number: LKS-GT-32
