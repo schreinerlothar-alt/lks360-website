@@ -241,3 +241,6 @@ footer a{color:#dfe8f2;text-decoration:none;margin-right:18px}
 .spec.cmp{min-width:640px}
 .spec.cmp th{width:auto}
 .spec.cmp thead th{color:var(--ink,inherit);font-weight:700;border-bottom:2px solid var(--line)}
+
+.ugallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;margin:12px 0}
+.ugallery img{width:100%;height:120px;object-fit:cover;border-radius:6px}

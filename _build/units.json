@@ -813,7 +813,13 @@
   "confirmed": "10.11.2026",
   "id": "GT-31",
   "continent": "Asia",
-  "qty": 4
+  "qty": 4,
+  "photos": [
+   "lks-gt-31-photo-1.jpg",
+   "lks-gt-31-photo-2.jpg",
+   "lks-gt-31-photo-3.jpg",
+   "lks-gt-31-photo-4.jpg"
+  ]
  },
  {
   "cat": "gas",

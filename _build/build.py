@@ -133,8 +133,22 @@ def row(u):
     <p class="chips">{chips(u)}</p>
     <p class="confirmed">{confirmed(u)}</p>
   </div>
-  <div class="uact"><p class="price">Price on request</p><a class="btn sm" href="{u['url']}">Details</a><a class="btn sm ghost" href="{mailto(u)}">Request offer</a></div>
+  <div class="uact"><p class="price">Price on request</p><a class="btn sm" href="{u['url']}">Details</a><a class="btn sm ghost" href="{mailto(u)}">Request offer</a><a class="btn sm wa" href="{wa_link(u)}">WhatsApp</a></div>
 </article>"""
+
+
+def wa_link(u):
+    from urllib.parse import quote
+    msg = f"Hello Lothar, I am interested in LKS-{u['id']}: {u['name']}. Please send me the price. Company: "
+    return f"{WA}?text={quote(msg)}"
+
+
+def photos_html(u):
+    ps = u.get("photos") or []
+    if not ps:
+        return ""
+    figs = "".join(f'<a href="/img/units/{f}"><img src="/img/units/{f}" alt="{e(u["name"])}, photo {i + 1}, stock number LKS-{u["id"]}" loading="lazy"></a>' for i, f in enumerate(ps))
+    return f'<div class="ugallery">{figs}</div><p class="muted small">Photos of the offered unit provided by the owner side. Nameplates and serial numbers are shared after LOI.</p>'
 
 
 def mailto(u):
@@ -228,6 +242,7 @@ def unit_page(u):
     <h1>{e(u['name'])}</h1>
     <img class="ucard" src="{img}" width="1200" height="630" alt="{e(u['name'])}, stock number LKS-{u['id']}, {e(catname.lower())} for sale">
     <p class="chips big">{chips(u)}</p>
+    {photos_html(u)}
     {exhtml}
     <table class="spec">{spec_rows(u)}</table>
     {scope}
@@ -237,7 +252,7 @@ def unit_page(u):
     <p class="price big">Price on request</p>
     <a class="btn full" href="{mailto(u)}">Request offer</a>
     <a class="btn ghost full" href="/contact.html?unit=LKS-{u['id']}">Contact form</a>
-    <a class="btn wa full" href="{WA}">WhatsApp</a>
+    <a class="btn wa full" href="{wa_link(u)}">Ask on WhatsApp (LKS-{u['id']})</a>
     <h3>Next steps</h3>
     <ol class="nextsteps"><li>Send your requirement with company details.</li><li>You receive an offer with the owner's conditions.</li><li>With your letter of intent: full data and inspection.</li><li>Purchase contract between you and the owner.</li></ol>
     <p class="small">Questions: <a href="mailto:{MAIL}">{MAIL}</a><br>{PHONE}</p>
