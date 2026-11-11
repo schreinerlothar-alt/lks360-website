@@ -847,10 +847,11 @@
   "hours": "3000",
   "scope": "Combined cycle plant, DLN",
   "src": "asiandragon VIP-Mailer 09.11.2026 Nr 11",
-  "status": "available",
+  "status": "hidden",
   "confirmed": "09.11.2026",
   "id": "GT-33",
-  "continent": "Asia"
+  "continent": "Asia",
+  "hidden_reason": "11.11.2026 Lothar: nur verifizierte Quellen (Ranga-Flag / asiandragon-Mailer)"
  },
  {
   "cat": "gas",
@@ -866,11 +867,12 @@
   "hours": "",
   "scope": "",
   "src": "asiandragon VIP-Mailer 09.11.2026 Nr 24",
-  "status": "available",
+  "status": "hidden",
   "confirmed": "09.11.2026",
   "id": "GT-34",
   "qty": 2,
-  "continent": "Americas"
+  "continent": "Americas",
+  "hidden_reason": "11.11.2026 Lothar: nur verifizierte Quellen (Ranga-Flag / asiandragon-Mailer)"
  },
  {
   "cat": "genset",
@@ -886,10 +888,11 @@
   "hours": "6000",
   "scope": "",
   "src": "Mail Sambandan 09.11.2026 18:04",
-  "status": "available",
+  "status": "hidden",
   "confirmed": "09.11.2026",
   "id": "GS-10",
-  "qty": 4
+  "qty": 4,
+  "hidden_reason": "11.11.2026 Lothar: nur verifizierte Quellen (Ranga-Flag / asiandragon-Mailer)"
  },
  {
   "cat": "genset",
@@ -905,11 +908,12 @@
   "hours": "",
   "scope": "Engine, generator, radiators, control, MCC, gas train, transformers",
   "src": "Bestand Ranga J624 (PDF 15.09.2026, update 09.11.2026)",
-  "status": "available",
+  "status": "hidden",
   "confirmed": "09.11.2026",
   "id": "GS-11",
   "qty": 2,
-  "continent": "Asia"
+  "continent": "Asia",
+  "hidden_reason": "11.11.2026 Lothar: nur verifizierte Quellen (Ranga-Flag / asiandragon-Mailer)"
  },
  {
   "cat": "genset",
@@ -963,11 +967,12 @@
   "hours": "",
   "scope": "",
   "src": "asiandragon VIP-Mailer 09.11.2026 Nr 49",
-  "status": "available",
+  "status": "hidden",
   "confirmed": "09.11.2026",
   "id": "ST-05",
   "qty": 3,
-  "continent": "Europe"
+  "continent": "Europe",
+  "hidden_reason": "11.11.2026 Lothar: nur verifizierte Quellen (Ranga-Flag / asiandragon-Mailer)"
  },
  {
   "cat": "steam",
@@ -983,11 +988,12 @@
   "hours": "",
   "scope": "",
   "src": "asiandragon VIP-Mailer 09.11.2026 Nr 50",
-  "status": "available",
+  "status": "hidden",
   "confirmed": "09.11.2026",
   "id": "ST-06",
   "qty": 2,
-  "continent": "Americas"
+  "continent": "Americas",
+  "hidden_reason": "11.11.2026 Lothar: nur verifizierte Quellen (Ranga-Flag / asiandragon-Mailer)"
  },
  {
   "cat": "steam",
@@ -1003,9 +1009,10 @@
   "hours": "",
   "scope": "",
   "src": "asiandragon VIP-Mailer 09.11.2026 Nr 52",
-  "status": "available",
+  "status": "hidden",
   "confirmed": "09.11.2026",
   "id": "ST-07",
-  "continent": "Americas"
+  "continent": "Americas",
+  "hidden_reason": "11.11.2026 Lothar: nur verifizierte Quellen (Ranga-Flag / asiandragon-Mailer)"
  }
 ]
