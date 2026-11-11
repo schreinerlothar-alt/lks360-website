@@ -13,7 +13,7 @@ ALL_UNITS = json.loads((ROOT / "_build" / "units.json").read_text(encoding="utf-
 UNITS = [u for u in ALL_UNITS if u.get("status") != "hidden"]
 OPEN_UNITS = UNITS
 LISTED = "21 October 2026"
-UPDATED = "8 November 2026"
+UPDATED = "11 November 2026"
 TODAY = datetime.date.today().isoformat()
 SITE = "https://lks360.com"
 MAIL = "manager@lks360.com"

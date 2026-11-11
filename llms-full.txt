@@ -33,8 +33,8 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 
 ## Pages
 - [Home](https://lks360.com/)
-- [Inventory](https://lks360.com/inventory.html): 40 listed units with stock numbers (27 gas turbines, 4 steam turbines, 9 generator sets), each with its own page under https://lks360.com/units/, filter by type, manufacturer, frequency and output. Prices on request.
-- [News](https://lks360.com/news.html): 9 posts with offers, wanted lists and market notes on gas turbines, steam turbines and gensets
+- [Inventory](https://lks360.com/inventory.html): 51 listed units with stock numbers (31 gas turbines, 7 steam turbines, 13 generator sets), each with its own page under https://lks360.com/units/, filter by type, manufacturer, frequency and output. Prices on request.
+- [News](https://lks360.com/news.html): 10 posts with offers, wanted lists and market notes on gas turbines, steam turbines and gensets
 - Model pages: 27 pages, one per turbine or engine model, see Model pages below
 - [Sell equipment](https://lks360.com/sell.html): exclusive sales mandate for owners of used gas turbines, steam turbines and gensets: one price in the market, screened buyers, no upfront fee, confidential
 - [Contact](https://lks360.com/contact.html): requirement form, email and phone
@@ -551,6 +551,150 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - Price: on request
 - Page: https://lks360.com/units/gs-09-cummins-kta50-g3-diesel-generator-sets-new-1-250-kva.html
 
+### Solar Taurus 60 gas turbine generator package with alternator, used (ex FPSO)
+- Stock number: LKS-GT-31
+- Manufacturer: Solar Turbines
+- Model: Taurus 60
+- Output: 4,950 kWe ISO
+- Condition: Used
+- Region: Asia
+- Status: offered, subject to prior sale
+- Price: on request
+- Page: https://lks360.com/units/gt-31-solar-taurus-60-gas-turbine-generator-package-with-alternator-used-ex-fpso-4-950-kwe.html
+
+### GE LM6000PA aeroderivative gas turbine generator set
+- Stock number: LKS-GT-32
+- Manufacturer: GE
+- Model: LM6000PA
+- Output: 42.3 MW
+- Year: 1994
+- Condition: Used
+- Operating hours: approx. 17,000 h
+- Status: offered, subject to prior sale
+- Price: on request
+- Page: https://lks360.com/units/gt-32-ge-lm6000pa-aeroderivative-gas-turbine-generator-set-42-3-mw.html
+
+### GE Frame 9FA combined cycle power plant with Alstom steam turbine
+- Stock number: LKS-GT-33
+- Manufacturer: GE
+- Model: Frame 9FA
+- Output: 810 MW
+- Frequency: 50 Hz
+- Fuel: Natural gas
+- Condition: Used
+- Operating hours: approx. 3,000 h
+- Scope: Combined cycle plant, DLN
+- Region: Asia
+- Status: offered, subject to prior sale
+- Price: on request
+- Page: https://lks360.com/units/gt-33-ge-frame-9fa-combined-cycle-power-plant-with-alstom-steam-turbine-810-mw.html
+
+### 2 x Pratt & Whitney GG4A-9 gas turbines, rebuilt
+- Stock number: LKS-GT-34
+- Manufacturer: Pratt & Whitney
+- Model: GG4A-9
+- Output: 39 MW
+- Frequency: 60 Hz
+- Fuel: Dual fuel
+- Condition: Rebuilt, approx. 2,000 h since rebuild
+- Quantity: 2
+- Region: Americas
+- Status: offered, subject to prior sale
+- Price: on request
+- Page: https://lks360.com/units/gt-34-2-x-pratt-whitney-gg4a-9-gas-turbines-rebuilt-39-mw.html
+
+### 4 x Kawasaki KG18T gas engine generator sets, 31.2 MW power plant
+- Stock number: LKS-GS-10
+- Manufacturer: Kawasaki
+- Model: KG18T
+- Output: 4 x 7,800 kW
+- Fuel: Gas
+- Year: 2023
+- Condition: Used
+- Operating hours: approx. 6,000 h
+- Quantity: 4
+- Status: offered, subject to prior sale
+- Price: on request
+- Page: https://lks360.com/units/gs-10-4-x-kawasaki-kg18t-gas-engine-generator-sets-31-2-mw-power-plant-4-x-7-800-kw.html
+
+### 2 x Jenbacher J624 gas engine CHP sets, installed but never operated
+- Stock number: LKS-GS-11
+- Manufacturer: INNIO Jenbacher
+- Model: J624 GS-H101
+- Output: 2 x 4,491 kW
+- Frequency: 50 Hz
+- Fuel: Natural gas
+- Year: 2018
+- Condition: Unused
+- Quantity: 2
+- Scope: Engine, generator, radiators, control, MCC, gas train, transformers
+- Region: Asia
+- Status: offered, subject to prior sale
+- Price: on request
+- Page: https://lks360.com/units/gs-11-2-x-jenbacher-j624-gas-engine-chp-sets-installed-but-never-operated-2-x-4-491-kw.html
+
+### 8 x MWM gas engine generator sets, 2007, under 5,000 hours
+- Stock number: LKS-GS-12
+- Manufacturer: MWM
+- Year: 2007
+- Condition: Used, under 5,000 h
+- Quantity: 8
+- Status: offered, subject to prior sale
+- Price: on request
+- Page: https://lks360.com/units/gs-12-8-x-mwm-gas-engine-generator-sets-2007-under-5-000-hours.html
+
+### 3 x Caterpillar G3520H gas generator sets, new surplus
+- Stock number: LKS-GS-13
+- Manufacturer: Caterpillar
+- Model: G3520H
+- Output: 2,500 kW
+- Fuel: Gas
+- Condition: New surplus
+- Quantity: 3
+- Status: offered, subject to prior sale
+- Price: on request
+- Page: https://lks360.com/units/gs-13-3-x-caterpillar-g3520h-gas-generator-sets-new-surplus-2-500-kw.html
+
+### 3 x Dresser Rand RD9MOQ steam turbine generators, unused
+- Stock number: LKS-ST-05
+- Manufacturer: Dresser Rand
+- Model: RD9MOQ
+- Output: 12 MW
+- Frequency: 60 Hz
+- Year: 2009
+- Condition: Unused
+- Quantity: 3
+- Region: Europe
+- Status: offered, subject to prior sale
+- Price: on request
+- Page: https://lks360.com/units/st-05-3-x-dresser-rand-rd9moq-steam-turbine-generators-unused-12-mw.html
+
+### 2 x Siemens steam turbines 12.4 MW, unused
+- Stock number: LKS-ST-06
+- Manufacturer: Siemens
+- Output: 12.4 MW
+- Frequency: 60 Hz
+- Year: 2009
+- Condition: Unused
+- Quantity: 2
+- Region: Americas
+- Status: offered, subject to prior sale
+- Price: on request
+- Page: https://lks360.com/units/st-06-2-x-siemens-steam-turbines-12-4-mw-unused-12-4-mw.html
+
+### Siemens SST-600 condensing steam turbine, unused
+- Stock number: LKS-ST-07
+- Manufacturer: Siemens
+- Model: SST-600
+- Output: 22 MW (12 MW compressor drive, 10 MW STG)
+- Frequency: 60 Hz
+- Year: 2011
+- Condition: Unused
+- Region: Americas
+- Status: offered, subject to prior sale
+- Price: on request
+- Page: https://lks360.com/units/st-07-siemens-sst-600-condensing-steam-turbine-unused-22-mw-12-mw-compressor-drive-10-mw-s.html
+
 ## Questions and answers per model
 
 ### Siemens SGT-800 (https://lks360.com/siemens-sgt-800-for-sale.html)
@@ -611,7 +755,7 @@ A: Payment goes directly from buyer to owner, or through a third-party escrow ag
 Q: What is the GE LM6000?
 A: The GE LM6000 is an aeroderivative gas turbine by GE Vernova. Output: about 57 MW simple cycle (51.1 MW PC Sprint, 56.9 MW PF+ Sprint net). Typical applications: fast start and grid support, backup power, flexible generation and CHP. Source: GE Vernova, LM6000 product page.
 Q: Where can I buy a used GE LM6000?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus GE LM6000 unit for sale, stock number LKS-GT-19. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+A: LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus GE LM6000 units for sale, stock numbers LKS-GT-19, LKS-GT-32. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: Who sells used GE LM6000 units?
 A: LKS 360-SCHREINER LLC, an independent broker for used power generation equipment, lists GE LM6000 units on lks360.com on behalf of their owners, alongside other gas turbines, steam turbines and generator sets.
 Q: Who sells the GE LM6000 units listed here?
@@ -1069,7 +1213,7 @@ A: Payment goes directly from buyer to owner, or through a third-party escrow ag
 Q: What is the Jenbacher J620?
 A: The Jenbacher J620 is a gas engine generator set by INNIO Jenbacher. Output: up to 3,509 kW. Typical applications: power generation and combined heat and power. Source: INNIO Jenbacher, Type 6 gas engines.
 Q: Where can I buy a used Jenbacher J620?
-A: LKS 360-SCHREINER LLC (lks360.com) has no Jenbacher J620 listed at the moment and searches the market for buyers. Send your requirement to manager@lks360.com or WhatsApp +49 170 4656619.
+A: LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus Jenbacher J620 unit for sale, stock number LKS-GS-11. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: Who sells used Jenbacher J620 units?
 A: LKS 360-SCHREINER LLC, an independent broker for used power generation equipment, lists Jenbacher J620 units on lks360.com on behalf of their owners, alongside other gas turbines, steam turbines and generator sets.
 Q: Who sells the Jenbacher J620 units listed here?

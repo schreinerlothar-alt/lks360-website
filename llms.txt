@@ -33,8 +33,8 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 
 ## Pages
 - [Home](https://lks360.com/)
-- [Inventory](https://lks360.com/inventory.html): 40 listed units with stock numbers (27 gas turbines, 4 steam turbines, 9 generator sets), each with its own page under https://lks360.com/units/, filter by type, manufacturer, frequency and output. Prices on request.
-- [News](https://lks360.com/news.html): 9 posts with offers, wanted lists and market notes on gas turbines, steam turbines and gensets
+- [Inventory](https://lks360.com/inventory.html): 51 listed units with stock numbers (31 gas turbines, 7 steam turbines, 13 generator sets), each with its own page under https://lks360.com/units/, filter by type, manufacturer, frequency and output. Prices on request.
+- [News](https://lks360.com/news.html): 10 posts with offers, wanted lists and market notes on gas turbines, steam turbines and gensets
 - Model pages: 27 pages, one per turbine or engine model, see Model pages below
 - [Sell equipment](https://lks360.com/sell.html): exclusive sales mandate for owners of used gas turbines, steam turbines and gensets: one price in the market, screened buyers, no upfront fee, confidential
 - [Contact](https://lks360.com/contact.html): requirement form, email and phone
@@ -92,6 +92,17 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [LKS-GS-07: Caterpillar 3516B HD diesel generator sets](https://lks360.com/units/gs-07-caterpillar-3516b-hd-diesel-generator-sets-1-600-kwe.html): 1,600 kWe, 50 Hz. Price on request, subject to prior sale.
 - [LKS-GS-08: MTU 16V4000G63 diesel generator sets, containerised](https://lks360.com/units/gs-08-mtu-16v4000g63-diesel-generator-sets-containerised-2-250-kva.html): 2,250 kVA. Price on request, subject to prior sale.
 - [LKS-GS-09: Cummins KTA50-G3 diesel generator sets, new](https://lks360.com/units/gs-09-cummins-kta50-g3-diesel-generator-sets-new-1-250-kva.html): 1,250 kVA, New. Price on request, subject to prior sale.
+- [LKS-GT-31: Solar Taurus 60 gas turbine generator package with alternator, used (ex FPSO)](https://lks360.com/units/gt-31-solar-taurus-60-gas-turbine-generator-package-with-alternator-used-ex-fpso-4-950-kwe.html): 4,950 kWe ISO, Used. Price on request, subject to prior sale.
+- [LKS-GT-32: GE LM6000PA aeroderivative gas turbine generator set](https://lks360.com/units/gt-32-ge-lm6000pa-aeroderivative-gas-turbine-generator-set-42-3-mw.html): 42.3 MW, 1994, Used, approx. 17,000 h. Price on request, subject to prior sale.
+- [LKS-GT-33: GE Frame 9FA combined cycle power plant with Alstom steam turbine](https://lks360.com/units/gt-33-ge-frame-9fa-combined-cycle-power-plant-with-alstom-steam-turbine-810-mw.html): 810 MW, 50 Hz, Used, approx. 3,000 h. Price on request, subject to prior sale.
+- [LKS-GT-34: 2 x Pratt & Whitney GG4A-9 gas turbines, rebuilt](https://lks360.com/units/gt-34-2-x-pratt-whitney-gg4a-9-gas-turbines-rebuilt-39-mw.html): 39 MW, 60 Hz, Rebuilt, approx. 2,000 h since rebuild. Price on request, subject to prior sale.
+- [LKS-GS-10: 4 x Kawasaki KG18T gas engine generator sets, 31.2 MW power plant](https://lks360.com/units/gs-10-4-x-kawasaki-kg18t-gas-engine-generator-sets-31-2-mw-power-plant-4-x-7-800-kw.html): 4 x 7,800 kW, 2023, Used, approx. 6,000 h. Price on request, subject to prior sale.
+- [LKS-GS-11: 2 x Jenbacher J624 gas engine CHP sets, installed but never operated](https://lks360.com/units/gs-11-2-x-jenbacher-j624-gas-engine-chp-sets-installed-but-never-operated-2-x-4-491-kw.html): 2 x 4,491 kW, 50 Hz, 2018, Unused. Price on request, subject to prior sale.
+- [LKS-GS-12: 8 x MWM gas engine generator sets, 2007, under 5,000 hours](https://lks360.com/units/gs-12-8-x-mwm-gas-engine-generator-sets-2007-under-5-000-hours.html): 2007, Used, under 5,000 h. Price on request, subject to prior sale.
+- [LKS-GS-13: 3 x Caterpillar G3520H gas generator sets, new surplus](https://lks360.com/units/gs-13-3-x-caterpillar-g3520h-gas-generator-sets-new-surplus-2-500-kw.html): 2,500 kW, New surplus. Price on request, subject to prior sale.
+- [LKS-ST-05: 3 x Dresser Rand RD9MOQ steam turbine generators, unused](https://lks360.com/units/st-05-3-x-dresser-rand-rd9moq-steam-turbine-generators-unused-12-mw.html): 12 MW, 60 Hz, 2009, Unused. Price on request, subject to prior sale.
+- [LKS-ST-06: 2 x Siemens steam turbines 12.4 MW, unused](https://lks360.com/units/st-06-2-x-siemens-steam-turbines-12-4-mw-unused-12-4-mw.html): 12.4 MW, 60 Hz, 2009, Unused. Price on request, subject to prior sale.
+- [LKS-ST-07: Siemens SST-600 condensing steam turbine, unused](https://lks360.com/units/st-07-siemens-sst-600-condensing-steam-turbine-unused-22-mw-12-mw-compressor-drive-10-mw-s.html): 22 MW (12 MW compressor drive, 10 MW STG), 60 Hz, 2011, Unused. Price on request, subject to prior sale.
 
 ## Model pages
 - [Siemens SGT-800 for sale](https://lks360.com/siemens-sgt-800-for-sale.html)
@@ -135,6 +146,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [Wärtsilä 34SG vs Jenbacher J620](https://lks360.com/wartsila-34sg-vs-jenbacher-j620.html)
 
 ## News
+- [New Arrivals: Gas Turbines, Steam Turbines and Generator Sets, 11 November 2026](https://lks360.com/news/new-arrivals-gas-turbines-steam-turbines-generator-sets-11-november-2026.html)
 - [New: Siemens SGT-700 with HRSG, SST-300, 2 x SST-400, and 5 x SGT-300 at a reduced price](https://lks360.com/news/new-sgt-700-with-hrsg-sst-300-sst-400-and-sgt-300-price-reduced-4-november-2026.html)
 - [New this week: gas turbines, combined-cycle plants and gensets, 14 positions](https://lks360.com/news/new-this-week-gas-turbines-combined-cycle-plants-and-gensets-4-november-2026.html)
 - [New this week: gas turbines and gensets, 50 and 60 Hz](https://lks360.com/news/new-this-week-gas-turbines-and-gensets-50-and-60-hz-2-november-2026.html)
