@@ -46,12 +46,15 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [Used steam turbine FAQ](https://lks360.com/steam-turbine-faq.html): condensing, back pressure, extraction, steam data, combined cycle, documents, buying and selling
 - [Used generator set FAQ](https://lks360.com/generator-set-faq.html): prime, continuous and standby rating, gas engine vs diesel, high and medium speed, 50/60 Hz, documents
 - [Power generation equipment glossary](https://lks360.com/power-generation-glossary.html): ISO rating, heat rate, HRSG, DLE, borescope, EOH, LOI, POF, NCNDA, escrow, Incoterms
+- [How do I sell a used gas turbine?](https://lks360.com/how-to-sell-a-used-gas-turbine.html): step by step guide for owners of used gas turbines, steam turbines and generator sets
+- [Broker for used gas turbines and generator sets](https://lks360.com/used-gas-turbine-broker.html): what a turbine broker does, how to check one, warning signs
+- [Condensing vs back pressure steam turbine](https://lks360.com/condensing-vs-back-pressure-steam-turbine.html): differences, uses and the data a buyer needs
 - [Buyer guide: buying a used gas turbine](https://lks360.com/buying-used-gas-turbines.html): data, records, condition, scope of supply, inspection, transport, compliance
 - [Compliance policy](https://lks360.com/compliance.html): counterparty identification, no handling of purchase funds
 - [Imprint](https://lks360.com/imprint.html)
 - [Privacy Policy](https://lks360.com/privacy.html)
 
-## Units for sale, full data (updated 2026-11-11)
+## Units for sale, full data (updated 2026-11-13)
 
 ### 2 x Siemens Westinghouse W701DS gas turbine generator sets
 - Stock number: LKS-GT-01
@@ -1508,6 +1511,162 @@ Short definitions of the terms used when buying and selling used gas turbines, s
  An agreement where an owner gives one broker the sole right to market a unit, so the unit appears with one price and one contact in the market.
 
 More detail: buyer guide, gas turbine FAQ, steam turbine FAQ, generator set FAQ, glossary, how we work, inventory.
+
+### Looking for a unit or selling one?
+
+Send type, output, frequency and fuel. We reply with matching offers.
+ Contact
+
+## Page: https://lks360.com/how-to-sell-a-used-gas-turbine.html
+
+How to Sell a Used Gas Turbine | Step by Step Guide for Owners | LKS 360-SCHREINER LLC
+
+Knowledge
+
+### How do I sell a used gas turbine?
+
+A step by step guide for owners of used and surplus gas turbines.
+
+Short answer: Collect the unit data, set your net price, offer the unit through one sales route at one price, release full data only to buyers who sign a letter of intent, sign the purchase contract directly with the buyer and receive payment through escrow or an irrevocable letter of credit. The same steps apply to steam turbines and generator sets.
+
+### Step by step
+
+Collect the unit data. Manufacturer and model, output, year, operating hours since new and since the last overhaul, frequency, fuel, condition, scope of supply (generator, HRSG, balance of plant, spare parts) and the documents and photos you have.
+
+Set your net price. Decide the amount you want to receive for the unit as it stands, and whether dismantling, loading and transport are included or are for the buyer.
+
+Choose one sales route. You can sell directly, through a dealer who buys the unit, or through a broker. If several brokers offer the same unit at different prices, buyers see it everywhere and the price drops. One exclusive mandate keeps one price and one data set in the market.
+
+Screen buyers. Give price and key data first. Release serial numbers, site, full documents and inspection only after a signed letter of intent and with your consent.
+
+Inspection and contract. The buyer inspects the unit on site under terms you agree. Buyer and owner sign the purchase contract directly.
+
+Payment and handover. The purchase price is paid through an escrow agent or an irrevocable letter of credit before the unit leaves the site.
+
+### Which data does a buyer need first?
+
+Model, output, year, operating hours since new and since the last overhaul, frequency, fuel, condition, scope of supply and the region of the site. Serial numbers and the exact site follow after a letter of intent.
+
+### Should I give my turbine to several brokers?
+
+It usually lowers the price. The same unit then appears at different prices with different data, and serious buyers start to doubt it. An exclusive mandate for a fixed period gives one offer, one price and one consistent data set.
+
+### Do I pay anything in advance to sell through LKS 360-SCHREINER LLC?
+
+No. There is no upfront fee. Our income is agreed in writing and only arises when the unit is sold. Details: exclusive sales mandate
+
+### Will my company name and site be published?
+
+No. The unit is presented with its technical data and a stock number only. Name and site stay confidential until a buyer has signed a letter of intent and you agree.
+
+### How is the purchase price paid to the owner?
+
+Through escrow or an irrevocable letter of credit agreed in the purchase contract. Purchase payments never pass through accounts of LKS 360-SCHREINER LLC.
+
+### Can I sell a steam turbine or generator set the same way?
+
+Yes. The steps are the same for steam turbines, generator sets and complete power plants. Send the unit data at exclusive sales mandate
+
+More detail: buyer guide, how we work, inventory.
+
+### Looking for a unit or selling one?
+
+Send type, output, frequency and fuel. We reply with matching offers.
+ Contact
+
+## Page: https://lks360.com/used-gas-turbine-broker.html
+
+Broker for Used Gas Turbines and Generator Sets | What a Turbine Broker Does | LKS 360-SCHREINER LLC
+
+Knowledge
+
+### Broker for used gas turbines and generator sets
+
+What a broker for used turbines and generator sets does, and how to check one.
+
+Short answer: A broker for used gas turbines and generator sets brings owners of surplus equipment and buyers together, presents the technical data, screens buyers by letter of intent, coordinates inspection and lets buyer and owner sign the purchase contract directly. LKS 360-SCHREINER LLC is an independent broker that lists gas turbines, steam turbines and generator sets on behalf of their owners.
+
+### What does a turbine broker do?
+
+Collects and checks the unit data from the owner, gives each unit a stock number, sends offers to matching buyers, receives the letter of intent, arranges full data and inspection, and supports buyer and owner until the purchase contract is signed.
+
+### Does the broker own the equipment?
+
+Not at LKS 360-SCHREINER LLC. The equipment belongs to its owner until the sale, and the broker does not take title to it.
+
+### How do I check a broker before I send an LOI?
+
+Ask for the company registration, a written fee agreement, a clear statement of who signs the purchase contract and how the purchase price is paid. A reliable broker confirms availability with the owner before every offer and never asks the buyer to pay the purchase price to the broker.
+
+### What are warning signs in the used turbine market?
+
+Requests for advance fees or deposits to the broker, long chains of intermediaries who have never seen the unit, the same unit offered at many different prices, refusal to allow an inspection, and payment instructions that change during the deal.
+
+### How is LKS 360-SCHREINER LLC paid?
+
+By commission agreed in writing before the deal is closed. Purchase payments go from buyer to owner, or through an escrow agent or letter of credit agreed between them, and never pass through accounts of LKS 360-SCHREINER LLC. More: how we work
+
+### Which equipment does LKS 360-SCHREINER LLC broker?
+
+Used and surplus gas turbines, steam turbines, generator sets and complete power plants: inventory
+
+### I am looking for a unit. How do I start?
+
+Send type, output, frequency, fuel and delivery country through the contact form or to manager@lks360.com.
+
+### I own a unit. How do I list it?
+
+Send model, year, output, hours, condition, scope and your price idea. Owners can choose an exclusive sales mandate with no upfront fee.
+
+More detail: buyer guide, how we work, inventory.
+
+### Looking for a unit or selling one?
+
+Send type, output, frequency and fuel. We reply with matching offers.
+ Contact
+
+## Page: https://lks360.com/condensing-vs-back-pressure-steam-turbine.html
+
+Condensing vs Back Pressure Steam Turbine | Differences and Uses | LKS 360-SCHREINER LLC
+
+Knowledge
+
+### Condensing vs back pressure steam turbine
+
+How condensing and back pressure steam turbines differ, and which one fits a site.
+
+Short answer: A condensing steam turbine exhausts into a condenser below atmospheric pressure and turns as much steam energy as possible into electricity. A back pressure steam turbine exhausts steam at a pressure a process can still use, so it produces less power per tonne of steam but supplies heat to the plant at the same time. Extraction turbines combine both by taking process steam out at one or more stages.
+
+ Condensing turbineBack pressure turbine
+
+ ExhaustInto a condenser, below atmospheric pressureAt a process pressure above atmospheric
+ Main productElectricityProcess steam and electricity
+ Power per tonne of steamHigherLower
+ Cooling systemNeeds condenser and cooling water or air coolingNo condenser for the exhaust steam
+ Typical sitesPower plants, combined cycle plants, waste to energyPaper mills, refineries, chemical plants, sugar and palm oil mills
+ Runs best whenPower demand is high and heat has no useThe site needs steam all the time
+
+### Which one should I choose for my site?
+
+If the site needs process steam continuously, a back pressure or extraction turbine uses the steam twice, first for power and then for heat. If only electricity is needed, a condensing turbine gives more power from the same steam.
+
+### What is an extraction condensing turbine?
+
+A condensing turbine that also takes steam out at one or more stages for process heat. It can follow changing heat and power demand.
+
+### Can a used back pressure turbine be converted to condensing?
+
+Usually not in a simple way. Blading, exhaust casing and the steam path are designed for the original exhaust pressure. Choose the type that matches the site from the start.
+
+### Which data does a seller need from a buyer?
+
+Live steam pressure and temperature, steam mass flow, the required exhaust or back pressure, extraction pressures and flows, generator frequency and the site cooling conditions. A used turbine fits only when these values match the boiler and the process.
+
+### Where can I buy a used condensing or back pressure steam turbine?
+
+LKS 360-SCHREINER LLC lists used steam turbines and steam turbine generator sets on behalf of their owners: steam turbines. More answers in the steam turbine FAQ
+
+More detail: buyer guide, how we work, inventory.
 
 ### Looking for a unit or selling one?
 
