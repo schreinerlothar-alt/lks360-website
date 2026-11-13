@@ -818,7 +818,11 @@
    "lks-gt-31-photo-1.jpg",
    "lks-gt-31-photo-2.jpg",
    "lks-gt-31-photo-3.jpg",
-   "lks-gt-31-photo-4.jpg"
+   "lks-gt-31-photo-4.jpg",
+   "lks-gt-31-photo-5.jpg",
+   "lks-gt-31-photo-6.jpg",
+   "lks-gt-31-photo-7.jpg",
+   "lks-gt-31-photo-8.jpg"
   ]
  },
  {
@@ -837,7 +841,14 @@
   "src": "WA Santiago Ferrer 11.11.2026 09:34, PDF",
   "status": "available",
   "confirmed": "11.11.2026",
-  "id": "GT-32"
+  "id": "GT-32",
+  "photos": [
+   "lks-gt-32-photo-1.jpg",
+   "lks-gt-32-photo-2.jpg",
+   "lks-gt-32-photo-3.jpg",
+   "lks-gt-32-photo-4.jpg",
+   "lks-gt-32-photo-5.jpg"
+  ]
  },
  {
   "cat": "gas",
@@ -938,7 +949,21 @@
   "status": "available",
   "confirmed": "10.11.2026",
   "id": "GS-12",
-  "qty": 8
+  "qty": 8,
+  "example_photos": [
+   [
+    "lks-gs-12-example-1.jpg",
+    "MWM gas engine generator set"
+   ],
+   [
+    "lks-gs-12-example-2.jpg",
+    "MWM gas engine generator set"
+   ],
+   [
+    "lks-gs-12-example-3.jpg",
+    "MWM gas engine generator set"
+   ]
+  ]
  },
  {
   "cat": "genset",
@@ -957,7 +982,21 @@
   "status": "available",
   "confirmed": "10.11.2026",
   "id": "GS-13",
-  "qty": 3
+  "qty": 3,
+  "example_photos": [
+   [
+    "lks-gs-13-example-1.jpg",
+    "Caterpillar G3520 series gas generator sets"
+   ],
+   [
+    "lks-gs-13-example-2.jpg",
+    "Caterpillar G3520 series gas generator sets"
+   ],
+   [
+    "lks-gs-13-example-3.jpg",
+    "Caterpillar G3520 series gas generator sets"
+   ]
+  ]
  },
  {
   "cat": "steam",

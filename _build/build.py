@@ -145,10 +145,15 @@ def wa_link(u):
 
 def photos_html(u):
     ps = u.get("photos") or []
-    if not ps:
-        return ""
-    figs = "".join(f'<a href="/img/units/{f}"><img src="/img/units/{f}" alt="{e(u["name"])}, photo {i + 1}, stock number LKS-{u["id"]}" loading="lazy"></a>' for i, f in enumerate(ps))
-    return f'<div class="ugallery">{figs}</div><p class="muted small">Photos of the offered unit provided by the owner side. Nameplates and serial numbers are shared after LOI.</p>'
+    exs = u.get("example_photos") or []
+    out = ""
+    if ps:
+        figs = "".join(f'<a href="/img/units/{f}"><img src="/img/units/{f}" alt="{e(u["name"])}, photo {i + 1}, stock number LKS-{u["id"]}" loading="lazy"></a>' for i, f in enumerate(ps))
+        out += f'<div class="ugallery">{figs}</div><p class="muted small">Photos of the offered unit provided by the owner side. Nameplates and serial numbers are shared after LOI.</p>'
+    if exs:
+        figs = "".join(f'<a href="/img/units/{x[0]}"><img src="/img/units/{x[0]}" alt="{e(x[1])}, example image, not the offered unit" loading="lazy"></a>' for x in exs)
+        out += f'<div class="ugallery">{figs}</div><p class="muted small">Example images: {e(exs[0][1])}. They show the same type from an earlier offer, not the offered unit. Photos of the offered unit are shared after LOI.</p>'
+    return out
 
 
 def mailto(u):
@@ -232,6 +237,10 @@ def unit_page(u):
     exhtml, exobj = example_for_unit(u)
     if exobj:
         ld["@graph"][0]["about"]["image"] = [SITE + img, exobj]
+    if u.get("photos"):
+        ims = ld["@graph"][0]["about"]["image"]
+        ld["@graph"][0]["about"]["image"] = (ims if isinstance(ims, list) else [ims]) + [
+            {"@type": "ImageObject", "contentUrl": f"{SITE}/img/units/{f}", "caption": f"{u['name']}, photo {i + 1}, stock number LKS-{u['id']}"} for i, f in enumerate(u["photos"])]
     related = [x for x in UNITS if x["cat"] == u["cat"] and x["id"] != u["id"]][:3]
     scope = f"<h2>Scope</h2><p>{e(u['scope'])}</p>" if u["scope"] else ""
     return head(title, desc, u["url"], f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n', img) + header() + f"""
@@ -868,8 +877,9 @@ for name in ["404.html"]:
 urls = [f"{SITE}/"] + [f"{SITE}/{n}" for n in STATIC[1:] if (ROOT / n).exists()] + [f"{SITE}/{m[0]}.html" for m in MODELS] + [f"{SITE}/{HZ_SLUG}.html"] + [f"{SITE}/{CMP_SLUG}.html"] + [f"{SITE}/{_c[0]}.html" for _c in COMPARE] + [SITE + u["url"] for u in UNITS] + [f"{SITE}/news/{p['slug']}.html" for p in POSTS]
 IMGS = {**{f"{SITE}/{m[0]}.html": f"{SITE}/img/cards/{m[0]}.jpg" for m in MODELS},
         **{SITE + u["url"]: f"{SITE}/img/cards/lks-{u['id'].lower()}.jpg" for u in UNITS}}
+PHOTOS = {SITE + u["url"]: [f"{SITE}/img/units/{f}" for f in (u.get("photos") or [])] for u in UNITS}
 def sm_img(x):
-    return f"<image:image><image:loc>{IMGS[x]}</image:loc></image:image>" if x in IMGS else ""
+    return "".join(f"<image:image><image:loc>{i}</image:loc></image:image>" for i in ([IMGS[x]] if x in IMGS else []) + PHOTOS.get(x, []))
 (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
                                   + "".join(f"  <url><loc>{x}</loc><lastmod>{TODAY}</lastmod>{sm_img(x)}</url>\n" for x in urls)
                                   + "</urlset>\n", encoding="utf-8", newline="\n")
