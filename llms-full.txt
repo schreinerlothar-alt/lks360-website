@@ -92,7 +92,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - Year: 2017
 - Scope: Gas turbine with steam turbine per block.
 - Region: Asia
-- Status: offered, subject to prior sale
+- Status: reserved
 - Price: on request
 - Page: https://lks360.com/units/gt-03-siemens-sgt-800-combined-cycle-blocks-53-mw-gt-plus-25-mw-st.html
 

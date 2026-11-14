@@ -53,8 +53,8 @@
   "condition": "",
   "hours": "",
   "scope": "Gas turbine with steam turbine per block.",
-  "src": "lks360exim product 65; sold per Lothar Mail an Fazli Verdi 13.11.2026 22:00 (manager@ Gesendet)",
-  "status": "sold",
+  "src": "lks360exim product 65; reserved per Lothar 14.11.2026 (statt sold, Kaeuferkontakte sammeln); vorher: nicht mehr verfuegbar laut Mail an Fazli Verdi 13.11.2026 22:00 (manager@ Gesendet)",
+  "status": "reserved",
   "confirmed": "13.10.2026",
   "continent": "Asia"
  },
