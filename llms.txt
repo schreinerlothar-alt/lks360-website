@@ -33,7 +33,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 
 ## Pages
 - [Home](https://lks360.com/)
-- [Inventory](https://lks360.com/inventory.html): 44 listed units with stock numbers (29 gas turbines, 4 steam turbines, 11 generator sets), each with its own page under https://lks360.com/units/, filter by type, manufacturer, frequency and output. Prices on request.
+- [Inventory](https://lks360.com/inventory.html): 51 listed units with stock numbers (32 gas turbines, 6 steam turbines, 13 generator sets), each with its own page under https://lks360.com/units/, filter by type, manufacturer, frequency and output. Prices on request.
 - [News](https://lks360.com/news.html): 10 posts with offers, wanted lists and market notes on gas turbines, steam turbines and gensets
 - Model pages: 27 pages, one per turbine or engine model, see Model pages below
 - [Sell equipment](https://lks360.com/sell.html): exclusive sales mandate for owners of used gas turbines, steam turbines and gensets: one price in the market, screened buyers, no upfront fee, confidential
@@ -54,7 +54,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [Imprint](https://lks360.com/imprint.html)
 - [Privacy Policy](https://lks360.com/privacy.html)
 
-## Units for sale (stock list, updated 2026-11-14)
+## Units for sale (stock list, updated 2026-11-15)
 - [LKS-GT-01: 2 x Siemens Westinghouse W701DS gas turbine generator sets](https://lks360.com/units/gt-01-2-x-siemens-westinghouse-w701ds-gas-turbine-generator-sets-127-8-mw-each-255-6-mw-to.html): 127.8 MW each, 255.6 MW total, 50 Hz, Rebuilt, unused since rebuild. Price on request, subject to prior sale.
 - [LKS-GT-02: Siemens SGT-800 gas turbines](https://lks360.com/units/gt-02-siemens-sgt-800-gas-turbines-51-9-mw.html): 51.9 MW, 50/60 Hz, 2024, New. Price on request, subject to prior sale.
 - [LKS-GT-03: Siemens SGT-800 combined cycle blocks](https://lks360.com/units/gt-03-siemens-sgt-800-combined-cycle-blocks-53-mw-gt-plus-25-mw-st.html): 53 MW GT + 25 MW ST, 50 Hz, 2017, reserved. Price on request, subject to prior sale.
@@ -99,6 +99,13 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [LKS-GT-32: GE LM6000PA aeroderivative gas turbine generator set](https://lks360.com/units/gt-32-ge-lm6000pa-aeroderivative-gas-turbine-generator-set-42-3-mw.html): 42.3 MW, 1994, Used, approx. 17,000 h. Price on request, subject to prior sale.
 - [LKS-GS-12: 8 x MWM gas engine generator sets, 2007, under 5,000 hours](https://lks360.com/units/gs-12-8-x-mwm-gas-engine-generator-sets-2007-under-5-000-hours.html): 2007, Used, under 5,000 h. Price on request, subject to prior sale.
 - [LKS-GS-13: 3 x Caterpillar G3520H gas generator sets, new surplus](https://lks360.com/units/gs-13-3-x-caterpillar-g3520h-gas-generator-sets-new-surplus-2-500-kw.html): 2,500 kW, New surplus. Price on request, subject to prior sale.
+- [LKS-GT-35: GE LM6000 PD Sprint gas turbine power plant with HRSG, used](https://lks360.com/units/gt-35-ge-lm6000-pd-sprint-gas-turbine-power-plant-with-hrsg-used-approx-46-mw.html): approx. 46 MW, 50 Hz, Used. Price on request, subject to prior sale.
+- [LKS-GT-36: 2 x GE Frame 9E (9171) dual fuel simple cycle gas turbines, 243 MW plant, used](https://lks360.com/units/gt-36-2-x-ge-frame-9e-9171-dual-fuel-simple-cycle-gas-turbines-243-mw-plant-used-243-mw-tw.html): 243 MW (two units combined), 50 Hz, 2000, Used. Price on request, subject to prior sale.
+- [LKS-GT-37: Solar Taurus 65 gas turbine generator set, 6.3 MW, used](https://lks360.com/units/gt-37-solar-taurus-65-gas-turbine-generator-set-6-3-mw-used-6-300-kw.html): 6,300 kW, 50 Hz, 2022, Used, approx. 2,000 h. Price on request, subject to prior sale.
+- [LKS-ST-08: ABB VEE 40 double extraction condensing steam turbine generator, 30 MW, used](https://lks360.com/units/st-08-abb-vee-40-double-extraction-condensing-steam-turbine-generator-30-mw-used-30-2-mw.html): 30.2 MW, 50 Hz, 1996, Used, approx. 87,000 h. Price on request, subject to prior sale.
+- [LKS-ST-09: Siemens SST-060 condensing steam turbine generator, 2.4 MW, used](https://lks360.com/units/st-09-siemens-sst-060-condensing-steam-turbine-generator-2-4-mw-used-2-430-kw.html): 2,430 kW, 50 Hz, 2009, Used, approx. 2,000 h. Price on request, subject to prior sale.
+- [LKS-GS-14: 4 x Wärtsilä 20V34SG natural gas generator sets, used](https://lks360.com/units/gs-14-4-x-wartsila-20v34sg-natural-gas-generator-sets-used.html): 50 Hz, 2007, Used. Price on request, subject to prior sale.
+- [LKS-GS-15: 3 x Deutz BV16M640 HFO generator sets, 6.35 MW each, used](https://lks360.com/units/gs-15-3-x-deutz-bv16m640-hfo-generator-sets-6-35-mw-each-used-6-350-kw.html): 6,350 kW, 50 Hz, 1990–1993, Used. Price on request, subject to prior sale.
 
 ## Model pages
 - [Siemens SGT-800 for sale](https://lks360.com/siemens-sgt-800-for-sale.html)
