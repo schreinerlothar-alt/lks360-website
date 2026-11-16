@@ -33,7 +33,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 
 ## Pages
 - [Home](https://lks360.com/)
-- [Inventory](https://lks360.com/inventory.html): 51 listed units with stock numbers (32 gas turbines, 6 steam turbines, 13 generator sets), each with its own page under https://lks360.com/units/, filter by type, manufacturer, frequency and output. Prices on request.
+- [Inventory](https://lks360.com/inventory.html): 54 listed units with stock numbers (34 gas turbines, 7 steam turbines, 13 generator sets), each with its own page under https://lks360.com/units/, filter by type, manufacturer, frequency and output. Prices on request.
 - [News](https://lks360.com/news.html): 10 posts with offers, wanted lists and market notes on gas turbines, steam turbines and gensets
 - Model pages: 27 pages, one per turbine or engine model, see Model pages below
 - [Sell equipment](https://lks360.com/sell.html): exclusive sales mandate for owners of used gas turbines, steam turbines and gensets: one price in the market, screened buyers, no upfront fee, confidential
@@ -54,7 +54,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [Imprint](https://lks360.com/imprint.html)
 - [Privacy Policy](https://lks360.com/privacy.html)
 
-## Units for sale, full data (updated 2026-11-15)
+## Units for sale, full data (updated 2026-11-16)
 
 ### 2 x Siemens Westinghouse W701DS gas turbine generator sets
 - Stock number: LKS-GT-01
@@ -691,6 +691,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - Year: 2007
 - Condition: Used
 - Quantity: 4
+- Scope: 4 sets of approx. 8 MW each (32 MW, seller-stated), complete plant with auxiliaries, 11 kV; approx. 10,000 h since last overhaul (seller-stated)
 - Region: Asia
 - Status: offered, subject to prior sale
 - Price: on request
@@ -711,6 +712,51 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - Status: offered, subject to prior sale
 - Price: on request
 - Page: https://lks360.com/units/gs-15-3-x-deutz-bv16m640-hfo-generator-sets-6-35-mw-each-used-6-350-kw.html
+
+### 2 x GE TM2500+ Gen 6 mobile gas turbine generators, 2013
+- Stock number: LKS-GT-38
+- Manufacturer: GE
+- Model: TM2500+ Gen 6
+- Output: 26.2 / 29 MW (reported)
+- Frequency: 50/60 Hz
+- Fuel: Gas
+- Year: 2013
+- Condition: Used
+- Quantity: 2
+- Scope: Trailer-mounted TM2500+ Gen 6, in service since 2015; generator 29,111 kVA 11.5 kV (50 Hz) or 35,556 kVA 13.8 kV (60 Hz)
+- Status: offered, subject to prior sale
+- Price: on request
+- Page: https://lks360.com/units/gt-38-2-x-ge-tm2500-plus-gen-6-mobile-gas-turbine-generators-2013-26-2-29-mw-reported.html
+
+### Siemens SGT-300 Tempest gas turbine generator with heat recovery train
+- Stock number: LKS-GT-45
+- Manufacturer: Siemens
+- Model: SGT-300 Tempest
+- Output: 7.9 MW ISO
+- Frequency: 50 Hz
+- Fuel: Gas
+- Year: 2007
+- Condition: Used
+- Quantity: 1
+- Scope: Commissioned 2008, operated until November 2025; Converteam generator 9,800 kVA 6.3 kV; H210-H430 heat recovery train, two exhaust stacks, spare parts, documentation; as is, to be dismantled
+- Region: Europe
+- Status: offered, subject to prior sale
+- Price: on request
+- Page: https://lks360.com/units/gt-45-siemens-sgt-300-tempest-gas-turbine-generator-with-heat-recovery-train-7-9-mw-iso.html
+
+### Alstom condensing steam turbine generator, 7.5 MW, 2002
+- Stock number: LKS-ST-10
+- Manufacturer: Alstom
+- Model: Condensing steam turbine 7.5 MW
+- Output: 7,500 kW
+- Fuel: Steam 64 ata, 480 °C, 30.75 t/h
+- Year: 2002
+- Condition: Used
+- Quantity: 1
+- Scope: Alstom Power India condensing turbine, Triveni gearbox, TDPS generator
+- Status: offered, subject to prior sale
+- Price: on request
+- Page: https://lks360.com/units/st-10-alstom-condensing-steam-turbine-generator-7-5-mw-2002-7-500-kw.html
 
 ## Questions and answers per model
 
@@ -736,7 +782,7 @@ A: Payment goes directly from buyer to owner, or through a third-party escrow ag
 Q: What is the GE TM2500?
 A: The GE TM2500 is a mobile aeroderivative gas turbine by GE Vernova. Output: 34.5 MW net (DLE) and 34.6 MW net (SAC) at 50 Hz. Typical applications: bridge to permanent power, emergency and backup power, isolated locations. Source: GE Vernova, TM2500 product page.
 Q: Where can I buy a used GE TM2500?
-A: LKS 360-SCHREINER LLC (lks360.com) has no GE TM2500 listed at the moment and searches the market for buyers. Send your requirement to manager@lks360.com or WhatsApp +49 170 4656619.
+A: LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus GE TM2500 unit for sale, stock number LKS-GT-38. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: Who sells used GE TM2500 units?
 A: LKS 360-SCHREINER LLC, an independent broker for used power generation equipment, lists GE TM2500 units on lks360.com on behalf of their owners, alongside other gas turbines, steam turbines and generator sets.
 Q: Who sells the GE TM2500 units listed here?
@@ -932,7 +978,7 @@ A: Payment goes directly from buyer to owner, or through a third-party escrow ag
 Q: What is the Siemens SGT-300?
 A: The Siemens SGT-300 is an industrial gas turbine by Siemens Energy. Output: 8.0 MW(e) (single shaft, simple cycle). Typical applications: simple and combined cycle, industrial cogeneration, district heating, oil and gas on and offshore. Source: Siemens Energy, SGT-300 product page.
 Q: Where can I buy a used Siemens SGT-300?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus Siemens SGT-300 unit for sale, stock number LKS-GT-28. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+A: LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Siemens SGT-300 units for sale, stock numbers LKS-GT-28, LKS-GT-45. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: Who sells used Siemens SGT-300 units?
 A: LKS 360-SCHREINER LLC, an independent broker for used power generation equipment, lists Siemens SGT-300 units on lks360.com on behalf of their owners, alongside other gas turbines, steam turbines and generator sets.
 Q: Who sells the Siemens SGT-300 units listed here?
