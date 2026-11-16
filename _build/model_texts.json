@@ -1,0 +1,833 @@
+{
+  "_note": "Own text per model page (Lothar 16.11.2026, indexing). No prices, no numbers without source: output values are taken from model_specs.json at build time. Neighbours are model page slugs.",
+  "siemens-sgt-100-for-sale": {
+    "intro": "The SGT-100 is the smallest gas turbine in the Siemens Energy industrial range. It goes back to the Ruston Typhoon design and is built as a compact package for sites that need a few megawatts of power and heat.",
+    "uses": [
+      "Combined heat and power for factories, hospitals and district heating",
+      "Power for oil and gas platforms and production sites",
+      "Island operation where no grid is available"
+    ],
+    "neighbours": [
+      "siemens-sgt-300-for-sale",
+      "solar-centaur-40-for-sale",
+      "siemens-sgt-400-for-sale"
+    ],
+    "diff": "Compared with the SGT-300 and SGT-400 the SGT-100 is the choice for small loads. Buyers who need more output per unit usually move up to the SGT-300; buyers who compare across brands often look at the Solar Centaur 40 in the same small output class.",
+    "checks": [
+      "Package scope: enclosure, generator, gearbox, control system and auxiliaries included or not",
+      "Combustion system: conventional or DLE low emission, which decides the emission values at the new site",
+      "Overhaul history of the gas generator and the documents of the last inspection"
+    ],
+    "faq": [
+      [
+        "What was the SGT-100 called before?",
+        "The SGT-100 goes back to the Ruston Typhoon gas turbine. Siemens took over the range and renamed it SGT-100."
+      ],
+      [
+        "Is the SGT-100 suitable for combined heat and power?",
+        "Yes. The exhaust heat of the SGT-100 is commonly used in a heat recovery boiler for steam or hot water, which is a main reason why the model is used in industry and district heating."
+      ]
+    ]
+  },
+  "siemens-sgt-300-for-sale": {
+    "intro": "The SGT-300 is a Siemens Energy industrial gas turbine in the small output class. It goes back to the Tempest design and is used both for power generation and, in its twin shaft version, for driving compressors.",
+    "uses": [
+      "Industrial cogeneration and district heating",
+      "Power generation on oil and gas sites, on and offshore",
+      "Simple cycle power for remote sites"
+    ],
+    "neighbours": [
+      "siemens-sgt-100-for-sale",
+      "siemens-sgt-400-for-sale",
+      "siemens-sgt-600-for-sale"
+    ],
+    "diff": "The SGT-300 sits between the SGT-100 and the SGT-400. It is chosen when the SGT-100 is too small and the site load does not justify an SGT-400.",
+    "checks": [
+      "Single shaft version (generator drive) or twin shaft version (mainly mechanical drive)",
+      "Preservation records if the unit is unused or stored",
+      "DLE combustion configuration and the fuel the unit was set up for"
+    ],
+    "faq": [
+      [
+        "What was the SGT-300 called before?",
+        "The SGT-300 goes back to the Tempest gas turbine from the former Ruston and Alstom industrial range, now part of Siemens Energy."
+      ],
+      [
+        "What is the difference between the SGT-300 and the SGT-400?",
+        "Both are Siemens Energy industrial gas turbines. The SGT-400 has the higher output; the SGT-300 suits smaller loads. See the comparison page SGT-400 vs SGT-300 for the manufacturer data side by side."
+      ]
+    ]
+  },
+  "siemens-sgt-400-for-sale": {
+    "intro": "The SGT-400 is a Siemens Energy industrial gas turbine in the lower medium output class. It goes back to the Cyclone design and is widely used offshore and in industrial cogeneration.",
+    "uses": [
+      "Offshore platforms and FPSO power generation",
+      "Industrial cogeneration with heat recovery",
+      "Combined cycle for small power plants"
+    ],
+    "neighbours": [
+      "siemens-sgt-300-for-sale",
+      "siemens-sgt-600-for-sale",
+      "ge-lm2500-for-sale"
+    ],
+    "diff": "The SGT-400 is the step above the SGT-300 and below the SGT-600. It is offered in two output versions, so the exact rating of a used unit should always be checked on the data sheet.",
+    "checks": [
+      "Which output version the unit is",
+      "DLE combustion and the emission values guaranteed by the original supplier",
+      "Offshore or onshore package design, since offshore skids and enclosures differ"
+    ],
+    "faq": [
+      [
+        "What was the SGT-400 called before?",
+        "The SGT-400 goes back to the Cyclone gas turbine from the former Alstom industrial range, now part of Siemens Energy."
+      ],
+      [
+        "Is the SGT-400 used offshore?",
+        "Yes. The manufacturer lists offshore platforms and FPSO among the typical applications of the SGT-400."
+      ]
+    ]
+  },
+  "siemens-sgt-600-for-sale": {
+    "intro": "The SGT-600 is a Siemens Energy industrial gas turbine in the medium output class. It goes back to the ABB GT10B and is still often searched under that name.",
+    "uses": [
+      "Combined cycle and cogeneration plants",
+      "Industrial power and steam supply",
+      "Heating applications with heat recovery boilers"
+    ],
+    "neighbours": [
+      "siemens-sgt-400-for-sale",
+      "siemens-sgt-700-for-sale",
+      "siemens-sgt-800-for-sale"
+    ],
+    "diff": "The SGT-600 sits below the SGT-700, which was developed from the GT10C of the same family. Buyers who need more output per unit with the same family background usually compare it with the SGT-700.",
+    "checks": [
+      "Whether the unit is a GT10B, GT10B1 or later SGT-600 version",
+      "Hours and starts since the last major overhaul",
+      "Scope of the heat recovery steam generator if one is included"
+    ],
+    "faq": [
+      [
+        "Is the SGT-600 the same as the GT10B?",
+        "Yes. The SGT-600 goes back to the ABB GT10B. Units are traded under both names, and older units are often still listed as GT10B."
+      ],
+      [
+        "Can an SGT-600 be used in combined cycle?",
+        "Yes. Simple cycle, combined cycle and cogeneration are listed by the manufacturer as typical applications."
+      ]
+    ]
+  },
+  "siemens-sgt-700-for-sale": {
+    "intro": "The SGT-700 is a Siemens Energy industrial gas turbine in the medium output class. It was developed from the GT10C and is used for power generation, cogeneration and mechanical drive.",
+    "uses": [
+      "Combined cycle blocks with heat recovery steam generator",
+      "Industrial cogeneration",
+      "Oil and gas power and compressor drive"
+    ],
+    "neighbours": [
+      "siemens-sgt-600-for-sale",
+      "siemens-sgt-800-for-sale",
+      "ge-lm2500-for-sale"
+    ],
+    "diff": "The SGT-700 sits between the SGT-600 and the SGT-800. Compared with aeroderivatives in a similar output class, such as the GE LM2500, it is an industrial design with longer intervals between overhauls but heavier packages.",
+    "checks": [
+      "Complete train scope: gas turbine, generator, HRSG and steam turbine if sold as a block",
+      "Fuel system: gas only or dual fuel",
+      "Status of the warranty or OEM service agreement if the unit is new"
+    ],
+    "faq": [
+      [
+        "What was the SGT-700 called before?",
+        "The SGT-700 goes back to the GT10C gas turbine, developed from the GT10B family."
+      ],
+      [
+        "What is the difference between the SGT-700 and the SGT-800?",
+        "Both are Siemens Energy industrial gas turbines. The SGT-800 has the higher output. See the comparison page SGT-800 vs SGT-700 for manufacturer data side by side."
+      ]
+    ]
+  },
+  "siemens-sgt-800-for-sale": {
+    "intro": "The SGT-800 is a Siemens Energy industrial gas turbine at the top of the industrial output range. It goes back to the GTX100 and is often installed in combined cycle and cogeneration plants.",
+    "uses": [
+      "Combined cycle power plants",
+      "Industrial cogeneration and district heating",
+      "Simple cycle power for industry"
+    ],
+    "neighbours": [
+      "siemens-sgt-700-for-sale",
+      "siemens-sgt-750-for-sale",
+      "siemens-sgt5-2000e-for-sale"
+    ],
+    "diff": "The SGT-800 is the largest industrial gas turbine in the Siemens Energy range; above it start the heavy duty utility gas turbines such as the SGT5-2000E. Several ratings exist, so the rating of a used unit matters for the comparison.",
+    "checks": [
+      "Rating of the unit and the year of the upgrade if any",
+      "Whether a steam turbine and HRSG come with the gas turbine",
+      "Hours, starts and the date of the last combustion and hot gas path inspection"
+    ],
+    "faq": [
+      [
+        "What was the SGT-800 called before?",
+        "The SGT-800 goes back to the GTX100 gas turbine developed by ABB and later Alstom, now part of Siemens Energy."
+      ],
+      [
+        "Is the SGT-800 used in combined cycle?",
+        "Yes. Combined cycle and cogeneration are main applications. Several units listed on lks360.com are combined cycle blocks with gas turbine and steam turbine."
+      ]
+    ]
+  },
+  "siemens-sgt-750-for-sale": {
+    "intro": "The SGT-750 is a newer Siemens Energy industrial gas turbine in the medium output class, designed for power generation as well as mechanical drive in oil and gas.",
+    "uses": [
+      "Industrial power generation and cogeneration",
+      "Compressor drive for pipelines and LNG",
+      "Oil and gas production sites"
+    ],
+    "neighbours": [
+      "siemens-sgt-700-for-sale",
+      "siemens-sgt-800-for-sale"
+    ],
+    "diff": "The SGT-750 sits in output between the SGT-700 and the SGT-800. It is a later design than both, so fewer used units reach the market.",
+    "checks": [
+      "Generator drive or mechanical drive configuration",
+      "OEM service agreement status and transferability",
+      "Commissioning date and operating hours"
+    ],
+    "faq": [
+      [
+        "Are used SGT-750 units available?",
+        "Used SGT-750 units come to the market rarely because the model is comparatively new. We search the market on request and report what owners offer."
+      ]
+    ]
+  },
+  "siemens-sgt5-2000e-for-sale": {
+    "intro": "The SGT5-2000E is a Siemens Energy heavy duty gas turbine for 50 Hz grids. It goes back to the V94.2 and is one of the established E class turbines in utility power plants.",
+    "uses": [
+      "Utility combined cycle power plants",
+      "Simple cycle peaking and base load plants",
+      "Cogeneration for large industrial sites"
+    ],
+    "neighbours": [
+      "siemens-sgt-800-for-sale",
+      "ge-frame-9e-for-sale",
+      "siemens-westinghouse-w701-w501-for-sale"
+    ],
+    "diff": "The SGT5-2000E is the 50 Hz version; the 60 Hz counterpart is the SGT6-2000E. In the E class it is usually compared with the GE Frame 9E.",
+    "checks": [
+      "Combustor type and emission values",
+      "Major inspection history in equivalent operating hours",
+      "Scope of the plant: generator, step up transformer, HRSG and steam turbine"
+    ],
+    "faq": [
+      [
+        "Is the SGT5-2000E the same as the V94.2?",
+        "The SGT5-2000E goes back to the Siemens V94.2. Older units are still listed under the V94.2 name."
+      ],
+      [
+        "Which gas turbine is comparable to the SGT5-2000E?",
+        "In the 50 Hz E class the GE Frame 9E is the usual comparison."
+      ]
+    ]
+  },
+  "siemens-westinghouse-w701-w501-for-sale": {
+    "intro": "W701 and W501 are heavy duty gas turbines from the Westinghouse fleet, which came to Siemens with the takeover of Westinghouse Power Generation. The W701 series runs on 50 Hz grids, the W501 series on 60 Hz grids.",
+    "uses": [
+      "Utility simple cycle and combined cycle plants",
+      "Base load power with dual fuel capability",
+      "Plant relocations to regions that need large blocks of power quickly"
+    ],
+    "neighbours": [
+      "siemens-sgt5-2000e-for-sale",
+      "ge-frame-9e-for-sale",
+      "ge-7ea-for-sale"
+    ],
+    "diff": "The frequency decides the series: W701 for 50 Hz and W501 for 60 Hz. Within each series the letter after the number marks the generation, for example D5 or DS.",
+    "checks": [
+      "Exact series and generation, for example W701DS or W501D5",
+      "Rebuild or overhaul reports and who carried them out",
+      "Balance of plant included in the sale"
+    ],
+    "faq": [
+      [
+        "What is the difference between the W701 and the W501?",
+        "The W701 series is built for 50 Hz grids and the W501 series for 60 Hz grids. Both come from the Westinghouse heavy duty fleet."
+      ],
+      [
+        "Who services W701 and W501 gas turbines today?",
+        "Siemens Energy and independent service providers support the fleet. The service history of the specific unit is part of the documents released after a letter of intent."
+      ]
+    ]
+  },
+  "ge-frame-5-for-sale": {
+    "intro": "The GE Frame 5 (MS5001) is a heavy duty gas turbine with one of the longest service histories in the industry. Many units still run in power plants, refineries and on power barges.",
+    "uses": [
+      "Simple cycle power generation",
+      "Cogeneration in refineries and industry",
+      "Power barges and mobile power plants"
+    ],
+    "neighbours": [
+      "ge-frame-6b-for-sale",
+      "siemens-sgt-600-for-sale",
+      "ge-lm2500-for-sale"
+    ],
+    "diff": "The MS5001 is the single shaft version for generator drive; the MS5002 is the two shaft version for mechanical drive. The Frame 6B is the next larger GE heavy duty model.",
+    "checks": [
+      "MS5001 model letter, for example N, P or R, which decides the rating",
+      "Control system type and whether it was upgraded",
+      "Hot gas path and major inspection records"
+    ],
+    "faq": [
+      [
+        "What is the difference between the MS5001 and the MS5002?",
+        "The MS5001 is a single shaft gas turbine used for generator drive. The MS5002 is a two shaft design used mainly for compressor and pump drive."
+      ],
+      [
+        "Are Frame 5 gas turbines still supported?",
+        "Yes. GE and independent service providers still supply parts and service for the Frame 5 fleet."
+      ]
+    ]
+  },
+  "ge-frame-6b-for-sale": {
+    "intro": "The GE Frame 6B (MS6001B) is a heavy duty gas turbine known for reliability and fuel flexibility. It is common in industrial cogeneration and in refineries.",
+    "uses": [
+      "Industrial cogeneration and process steam",
+      "Refinery and petrochemical power",
+      "Combined cycle plants in the lower utility range"
+    ],
+    "neighbours": [
+      "ge-frame-5-for-sale",
+      "ge-7ea-for-sale",
+      "siemens-sgt-800-for-sale"
+    ],
+    "diff": "The Frame 6B sits between the Frame 5 and the 7EA and 9E. Its fuel flexibility, including liquid fuels, makes it a frequent choice for industrial sites.",
+    "checks": [
+      "Model version, for example 6B or 6B.03, and the upgrades installed",
+      "Fuel system and combustor type",
+      "OEM or third party overhaul reports"
+    ],
+    "faq": [
+      [
+        "Is the Frame 6B the same as the MS6001B?",
+        "Yes. Frame 6B and MS6001B name the same GE heavy duty gas turbine. Upgraded versions are often marked 6B.03."
+      ],
+      [
+        "What fuels can a Frame 6B burn?",
+        "The Frame 6B is known for fuel flexibility. The fuel a specific unit can burn depends on its fuel system and combustors, which are listed in the unit documents."
+      ]
+    ]
+  },
+  "ge-7ea-for-sale": {
+    "intro": "The GE 7EA is a heavy duty E class gas turbine for 60 Hz grids. It is a common choice for peaking and combined cycle plants in the Americas and other 60 Hz regions.",
+    "uses": [
+      "Peaking and mid merit power plants",
+      "Combined cycle and cogeneration",
+      "Dual fuel plants with liquid fuel backup"
+    ],
+    "neighbours": [
+      "ge-frame-9e-for-sale",
+      "ge-frame-6b-for-sale",
+      "ge-7fa-for-sale"
+    ],
+    "diff": "The 7EA is the 60 Hz E class model; the Frame 9E is its 50 Hz counterpart. For larger output on 60 Hz grids buyers look at the F class 7FA.",
+    "checks": [
+      "Gas only or dual fuel",
+      "Combustion system and emission values",
+      "Major inspection status in equivalent operating hours"
+    ],
+    "faq": [
+      [
+        "What is the difference between the 7EA and the 9E?",
+        "The 7EA runs on 60 Hz grids and the 9E on 50 Hz grids. See the comparison page Frame 9E vs 7EA for manufacturer data side by side."
+      ],
+      [
+        "Is a 7EA suitable for the USA?",
+        "Yes. The 7EA is a 60 Hz gas turbine and fits the US grid without frequency conversion."
+      ]
+    ]
+  },
+  "ge-frame-9e-for-sale": {
+    "intro": "The GE Frame 9E (MS9001E, for example PG9171E) is a heavy duty E class gas turbine for 50 Hz grids. It has a large installed fleet and is known for burning a wide range of fuels.",
+    "uses": [
+      "Utility simple cycle and combined cycle plants",
+      "Plants burning gas and liquid fuels",
+      "Industrial power for large sites"
+    ],
+    "neighbours": [
+      "ge-7ea-for-sale",
+      "siemens-sgt5-2000e-for-sale",
+      "ge-9ha-for-sale"
+    ],
+    "diff": "The 9E is the 50 Hz counterpart of the 60 Hz 7EA. In the 50 Hz E class it is often compared with the Siemens SGT5-2000E. The 9HA is the much larger H class model.",
+    "checks": [
+      "Model designation, for example PG9171E, and the upgrades installed",
+      "Fuel system: gas, liquid or dual fuel",
+      "Balance of plant included, such as generator, transformer and stack"
+    ],
+    "faq": [
+      [
+        "What does PG9171E mean?",
+        "PG9171E is a GE model designation of the Frame 9E package for generator drive."
+      ],
+      [
+        "What is the difference between the Frame 9E and the 7EA?",
+        "The 9E is built for 50 Hz grids and the 7EA for 60 Hz grids. See Frame 9E vs 7EA for the manufacturer data."
+      ]
+    ]
+  },
+  "ge-7fa-for-sale": {
+    "intro": "The GE 7FA is a heavy duty F class gas turbine for 60 Hz grids. It is one of the most installed F class turbines in combined cycle plants.",
+    "uses": [
+      "Utility combined cycle plants",
+      "Simple cycle peaking plants",
+      "Repowering of older plants"
+    ],
+    "neighbours": [
+      "ge-7ea-for-sale",
+      "ge-9ha-for-sale"
+    ],
+    "diff": "The 7FA is the larger, more efficient 60 Hz step above the E class 7EA. The H class 9HA is the 50 Hz flagship.",
+    "checks": [
+      "Model version, for example 7FA.03 or 7FA.04, and the upgrades installed",
+      "Remaining life of the hot gas path parts",
+      "Contractual service agreement status"
+    ],
+    "faq": [
+      [
+        "Are used 7FA gas turbines available?",
+        "Used and surplus 7FA units come to the market from plant closures and upgrades. We search the market on request."
+      ]
+    ]
+  },
+  "ge-9ha-for-sale": {
+    "intro": "The GE 9HA is a heavy duty H class gas turbine for 50 Hz grids and one of the largest air cooled gas turbines on the market. It is built for large combined cycle power plants.",
+    "uses": [
+      "Large utility combined cycle plants",
+      "Base load power with high efficiency",
+      "New build plants that need a large block of power"
+    ],
+    "neighbours": [
+      "ge-frame-9e-for-sale",
+      "ge-7fa-for-sale",
+      "siemens-sgt5-2000e-for-sale"
+    ],
+    "diff": "The 9HA is far larger than the E class 9E. It is offered in the versions 9HA.01 and 9HA.02 with different outputs.",
+    "checks": [
+      "Version 9HA.01 or 9HA.02",
+      "Storage and preservation records if the unit is unused",
+      "Transfer of OEM warranty and service agreements"
+    ],
+    "faq": [
+      [
+        "What is the difference between the 9HA.01 and the 9HA.02?",
+        "Both are GE H class gas turbines for 50 Hz. The 9HA.02 is the larger version. The data sheet of the specific unit states which version is offered."
+      ],
+      [
+        "Can an unused 9HA be bought on the secondary market?",
+        "Yes, unused units become available when projects are cancelled or changed. Such units are offered by their owners and listed with stock number on lks360.com when available."
+      ]
+    ]
+  },
+  "ge-lm2500-for-sale": {
+    "intro": "The GE LM2500 is an aeroderivative gas turbine developed from the CF6 aircraft engine. It is used in industrial power generation, on ships and in oil and gas.",
+    "uses": [
+      "Power generation and cogeneration",
+      "Mechanical drive for compressors",
+      "Marine propulsion and offshore power"
+    ],
+    "neighbours": [
+      "ge-tm2500-for-sale",
+      "ge-lm6000-for-sale",
+      "siemens-sgt-700-for-sale"
+    ],
+    "diff": "The LM2500 family includes the base LM2500, the LM2500+ and the LM2500+G4 with higher output. The TM2500 is a trailer mounted package built around the LM2500. The LM6000 is the larger GE aeroderivative.",
+    "checks": [
+      "Exact version: LM2500, LM2500+ or LM2500+G4, and the combustor type (SAC or DLE)",
+      "Engine records and the depot where the last overhaul was done",
+      "Package scope: enclosure, generator, controls, trailer if mobile"
+    ],
+    "faq": [
+      [
+        "What is the difference between the LM2500, LM2500+ and LM2500+G4?",
+        "They are versions of the same aeroderivative family. The LM2500+ and LM2500+G4 have higher output than the base LM2500. The data sheet of each unit states the exact version."
+      ],
+      [
+        "Can an LM2500 engine be exchanged?",
+        "Aeroderivative engines can be removed and exchanged as a whole, which shortens outages. Engine exchange and lease options depend on the depot and are clarified case by case."
+      ]
+    ]
+  },
+  "ge-tm2500-for-sale": {
+    "intro": "The GE TM2500 is a trailer mounted gas turbine generator built around the LM2500 aeroderivative engine. It is designed to be moved by road and set up quickly where power is needed.",
+    "uses": [
+      "Emergency and temporary power",
+      "Grid support during plant outages",
+      "Fast track power for industrial projects"
+    ],
+    "neighbours": [
+      "ge-lm2500-for-sale",
+      "ge-lm6000-for-sale"
+    ],
+    "diff": "The TM2500 uses the same engine family as the stationary LM2500 package but comes on trailers. Buyers choose it when mobility and short installation time matter more than a permanent foundation.",
+    "checks": [
+      "Number of trailers and their road permits",
+      "Engine version and hours since overhaul",
+      "Auxiliary equipment for fast setup: fuel forwarding, step up transformer, controls"
+    ],
+    "faq": [
+      [
+        "What is the difference between the TM2500 and the LM2500?",
+        "The TM2500 is a mobile, trailer mounted package with an LM2500 family engine. The LM2500 is usually installed as a stationary package. See LM2500 vs TM2500 for the details."
+      ],
+      [
+        "How fast can a TM2500 be installed?",
+        "The TM2500 is designed for short installation times. The real time depends on site preparation, fuel supply and grid connection."
+      ]
+    ]
+  },
+  "ge-lm6000-for-sale": {
+    "intro": "The GE LM6000 is a two shaft aeroderivative gas turbine developed from the CF6-80C2 aircraft engine. It is widely used for peaking, cogeneration and fast start power plants.",
+    "uses": [
+      "Peaking plants with frequent starts",
+      "Cogeneration and combined cycle",
+      "Power barges and fast track plants"
+    ],
+    "neighbours": [
+      "ge-lm2500-for-sale",
+      "ge-lm5000-for-sale",
+      "ge-tm2500-for-sale"
+    ],
+    "diff": "The LM6000 is larger than the LM2500 and the successor of the LM5000. Versions include PA, PC, PD and PF; SPRINT units use water spray intercooling for more output on hot days.",
+    "checks": [
+      "Version PA, PC, PD or PF and whether SPRINT is installed",
+      "Combustor type: SAC, DLE or water injection",
+      "Engine records, hours and cycles since the last overhaul"
+    ],
+    "faq": [
+      [
+        "What does SPRINT mean on an LM6000?",
+        "SPRINT stands for spray intercooling. Water is sprayed into the compressor to cool the air, which raises output, mainly on hot days."
+      ],
+      [
+        "What is the difference between LM6000 PA, PC and PD?",
+        "They are generations of the LM6000. PC and PD versions came later than the PA and differ in output and combustion system. The data sheet of each unit states the version."
+      ]
+    ]
+  },
+  "ge-lm5000-for-sale": {
+    "intro": "The GE LM5000 is an aeroderivative gas turbine developed from the CF6-50 aircraft engine. It is the predecessor of the LM6000 and still runs in simple cycle and cogeneration plants.",
+    "uses": [
+      "Simple cycle power generation",
+      "Cogeneration",
+      "Plants that already run LM5000 units and need spares or extra capacity"
+    ],
+    "neighbours": [
+      "ge-lm6000-for-sale",
+      "ge-lm2500-for-sale"
+    ],
+    "diff": "The LM5000 was followed by the LM6000. Buyers often compare used LM5000 units with older LM6000 PA units in the same output range.",
+    "checks": [
+      "Engine overhaul records and parts availability",
+      "Package condition and control system",
+      "Hours since the last hot section inspection"
+    ],
+    "faq": [
+      [
+        "Is the LM5000 still supported?",
+        "Parts and service for the LM5000 are available from GE and independent providers. Availability of specific parts should be checked before purchase."
+      ]
+    ]
+  },
+  "solar-titan-for-sale": {
+    "intro": "Titan is the largest gas turbine family of Solar Turbines, a Caterpillar company. The Titan 130 and Titan 250 are used for power generation and for driving compressors in oil and gas.",
+    "uses": [
+      "Gas compression on pipelines and production sites",
+      "Industrial power generation and cogeneration",
+      "Offshore power and mechanical drive"
+    ],
+    "neighbours": [
+      "solar-centaur-40-for-sale",
+      "siemens-sgt-400-for-sale",
+      "siemens-sgt-700-for-sale"
+    ],
+    "diff": "The Titan 250 is larger than the Titan 130. Both are larger than the Solar Centaur, Mars and Taurus families. Many Titan units are built for mechanical drive, so the drive type matters when a buyer needs a generator set.",
+    "checks": [
+      "Mechanical drive or generator set package",
+      "SoLoNOx low emission combustion and the emission values",
+      "Overhaul history and service by Solar or third parties"
+    ],
+    "faq": [
+      [
+        "What is the difference between the Titan 130 and the Titan 250?",
+        "Both belong to the Titan family of Solar Turbines. The Titan 250 has the higher output. The data sheet of each unit states the rating."
+      ],
+      [
+        "Can a mechanical drive Titan be used for power generation?",
+        "A mechanical drive package is built to drive a compressor. Conversion to generator drive needs a different package and is assessed case by case."
+      ]
+    ]
+  },
+  "solar-centaur-40-for-sale": {
+    "intro": "The Centaur 40 is a small industrial gas turbine from Solar Turbines, a Caterpillar company, with one of the largest installed fleets in its class. It is used for power generation and for compressor and pump drive.",
+    "uses": [
+      "Generator sets for oil and gas sites",
+      "Small cogeneration plants",
+      "Compressor and pump drive"
+    ],
+    "neighbours": [
+      "siemens-sgt-100-for-sale",
+      "solar-titan-for-sale"
+    ],
+    "diff": "The Centaur 40 is the smaller sister of the Centaur 50 and sits below the Taurus and Titan families. Across brands it is compared with the Siemens SGT-100.",
+    "checks": [
+      "Overhaul by Solar or third party and the date",
+      "Combustion system: conventional or SoLoNOx",
+      "Package scope including generator and controls"
+    ],
+    "faq": [
+      [
+        "Is the Centaur 40 a good choice for small power needs?",
+        "The Centaur 40 is widely used for small loads in industry and oil and gas, and parts and service are available worldwide. Whether it fits depends on the site load and the fuel."
+      ]
+    ]
+  },
+  "mitsubishi-mf111-for-sale": {
+    "intro": "The MF111 is an industrial gas turbine from Mitsubishi Heavy Industries in the small to medium output class. It is mostly used for cogeneration with a heat recovery steam generator.",
+    "uses": [
+      "Industrial cogeneration with process steam",
+      "Combined cycle for industrial sites",
+      "Power for factories in Asia"
+    ],
+    "neighbours": [
+      "siemens-sgt-400-for-sale",
+      "solar-titan-for-sale"
+    ],
+    "diff": "The MF111 is a Mitsubishi industrial design; in the same output range buyers usually compare it with the Siemens SGT-400 and the Solar Titan family.",
+    "checks": [
+      "Scope of the heat recovery steam generator",
+      "Overhaul records and parts supply through the manufacturer",
+      "Fuel and emission configuration"
+    ],
+    "faq": [
+      [
+        "Where is the MF111 used?",
+        "The MF111 is mainly used in industrial cogeneration, often together with a heat recovery steam generator that supplies process steam."
+      ]
+    ]
+  },
+  "siemens-sst-400-for-sale": {
+    "intro": "The SST-400 is a Siemens Energy industrial steam turbine with a single casing. It is used as condensing or back pressure turbine, with or without steam extraction.",
+    "uses": [
+      "Industrial power plants and cogeneration",
+      "Waste to energy and biomass plants",
+      "Steam turbine in combined cycle blocks"
+    ],
+    "neighbours": [
+      "siemens-sst-300-for-sale"
+    ],
+    "diff": "The SST-400 is the larger of the two Siemens industrial steam turbines listed here; the SST-300 covers smaller outputs. Whether condensing or back pressure fits depends on whether the plant needs process steam.",
+    "checks": [
+      "Condensing or back pressure design and the extraction points",
+      "Live steam pressure and temperature on the data sheet",
+      "Scope: generator, gearbox, condenser, lube oil system"
+    ],
+    "faq": [
+      [
+        "Is the SST-400 a condensing or back pressure turbine?",
+        "The SST-400 is built in both designs. The data sheet of each unit states which design it is. See condensing vs back pressure steam turbine for the difference."
+      ]
+    ]
+  },
+  "siemens-sst-300-for-sale": {
+    "intro": "The SST-300 is a Siemens Energy industrial steam turbine with a single casing for small and medium outputs. It is used in industrial cogeneration, biomass and waste heat plants.",
+    "uses": [
+      "Biomass and waste to energy plants",
+      "Industrial cogeneration",
+      "Waste heat recovery"
+    ],
+    "neighbours": [
+      "siemens-sst-400-for-sale"
+    ],
+    "diff": "The SST-300 covers smaller outputs than the SST-400. It is offered as condensing or back pressure turbine and often with a gearbox between turbine and generator.",
+    "checks": [
+      "Steam conditions the turbine was designed for",
+      "Gearbox and generator included",
+      "Preservation records if new and unused"
+    ],
+    "faq": [
+      [
+        "Can a new and unused SST-300 be adapted to another plant?",
+        "The steam path is designed for given steam conditions. Whether a unit fits another plant depends on steam pressure, temperature and flow, which the buyer's engineer checks against the data sheet."
+      ]
+    ]
+  },
+  "caterpillar-g20cm34-for-sale": {
+    "intro": "The Caterpillar G20CM34 is a medium speed gas engine with 20 cylinders from the MaK engine line of Caterpillar. It is used in gas fired power plants and as generator set for industrial power.",
+    "uses": [
+      "Gas engine power plants",
+      "Industrial base load power",
+      "Flexible power to support grids"
+    ],
+    "neighbours": [
+      "wartsila-34sg-for-sale",
+      "jenbacher-j620-for-sale"
+    ],
+    "diff": "Compared with high speed gas engines such as the Jenbacher J620, the G20CM34 is a larger medium speed engine with higher output per unit. The Wärtsilä 34SG is a comparable medium speed gas engine.",
+    "checks": [
+      "Gas quality the engine is set up for",
+      "Scope: alternator, radiators, controls, exhaust system",
+      "Hours since major overhaul if used"
+    ],
+    "faq": [
+      [
+        "What type of engine is the G20CM34?",
+        "The G20CM34 is a medium speed spark ignited gas engine with 20 cylinders from the MaK line of Caterpillar."
+      ]
+    ]
+  },
+  "caterpillar-3516-for-sale": {
+    "intro": "The Caterpillar 3516 is a high speed engine with 16 cylinders in V arrangement. It is one of the most used engines for standby and prime power generator sets, in mining and in oil and gas.",
+    "uses": [
+      "Standby power for data centres and hospitals",
+      "Prime power for mines and remote sites",
+      "Rental power fleets"
+    ],
+    "neighbours": [
+      "mtu-16v4000-for-sale",
+      "cummins-generator-sets-for-sale"
+    ],
+    "diff": "The 3516B and 3516C are generations of the same engine; the C version came later with updated emission and control systems. Across brands the MTU 16V4000 and the Cummins QSK60 and KTA50 are common comparisons.",
+    "checks": [
+      "Engine version 3516B or 3516C and the rating (standby or prime)",
+      "Hours and the date of the last top end or major overhaul",
+      "Container or open skid, alternator make and controls"
+    ],
+    "faq": [
+      [
+        "What is the difference between the 3516B and the 3516C?",
+        "Both are Caterpillar 3516 engines with 16 cylinders. The 3516C is the later generation with updated emission and control systems."
+      ],
+      [
+        "Standby or prime rating: what is the difference?",
+        "A standby rating applies to emergency use with limited hours per year. A prime rating applies to continuous operation with variable load. The rating of each unit is stated on its data plate."
+      ]
+    ]
+  },
+  "wartsila-34sg-for-sale": {
+    "intro": "The Wärtsilä 34SG is a medium speed lean burn gas engine built in several cylinder versions. It is used in gas engine power plants for base load and for flexible grid balancing.",
+    "uses": [
+      "Gas engine power plants",
+      "Combined heat and power for industry and cities",
+      "Flexible generation to balance renewables"
+    ],
+    "neighbours": [
+      "caterpillar-g20cm34-for-sale",
+      "jenbacher-j620-for-sale"
+    ],
+    "diff": "The 34SG is larger per unit than high speed engines such as the Jenbacher J620. The 20V34SG is the largest cylinder version. The Caterpillar G20CM34 is a comparable medium speed gas engine.",
+    "checks": [
+      "Cylinder version, for example 20V34SG",
+      "Gas quality and methane number the engine is set up for",
+      "Plant scope: alternators, radiators, transformers, controls"
+    ],
+    "faq": [
+      [
+        "What is the difference between the Wärtsilä 34SG and the Jenbacher J620?",
+        "The 34SG is a medium speed gas engine with higher output per unit; the J620 is a high speed gas engine. See Wärtsilä 34SG vs Jenbacher J620 for manufacturer data side by side."
+      ]
+    ]
+  },
+  "man-32-40-for-sale": {
+    "intro": "The MAN 32/40 is a four stroke medium speed engine for diesel and heavy fuel oil. The designation refers to cylinder bore and stroke. It is used in power plants and in ship propulsion.",
+    "uses": [
+      "Diesel and HFO power plants",
+      "Power for islands and remote grids",
+      "Marine propulsion and auxiliary power"
+    ],
+    "neighbours": [
+      "wartsila-34sg-for-sale",
+      "mtu-16v4000-for-sale"
+    ],
+    "diff": "The 32/40 is a medium speed engine for liquid fuels, unlike the gas engines Wärtsilä 34SG and Caterpillar G20CM34. Engines of this line were also built under licence, for example by STX.",
+    "checks": [
+      "Fuel the engine runs on: diesel or HFO, and the fuel treatment plant included",
+      "Licence builder and year",
+      "Hours since major overhaul"
+    ],
+    "faq": [
+      [
+        "Can a MAN 32/40 run on heavy fuel oil?",
+        "The 32/40 line is designed for diesel and heavy fuel oil. HFO operation needs a fuel treatment system, which should be part of the scope."
+      ]
+    ]
+  },
+  "mtu-16v4000-for-sale": {
+    "intro": "The MTU 16V4000 is a high speed diesel engine with 16 cylinders from the MTU Series 4000. It is used for standby and prime power, in mining and in rail and marine applications.",
+    "uses": [
+      "Standby power for data centres and hospitals",
+      "Prime power for remote sites",
+      "Containerised rental power"
+    ],
+    "neighbours": [
+      "caterpillar-3516-for-sale",
+      "cummins-generator-sets-for-sale"
+    ],
+    "diff": "In the same class buyers usually compare the MTU 16V4000 with the Caterpillar 3516 and the Cummins QSK60. Series 4000 engines exist in several generations, for example G23 or G63.",
+    "checks": [
+      "Engine generation and rating (standby, prime, continuous)",
+      "Container scope and alternator",
+      "Hours and maintenance records"
+    ],
+    "faq": [
+      [
+        "What does G63 mean on an MTU 16V4000?",
+        "The G code marks the generation and application of the Series 4000 engine. The data sheet of each unit states the exact code and rating."
+      ]
+    ]
+  },
+  "jenbacher-j620-for-sale": {
+    "intro": "The Jenbacher J620 is a high speed gas engine with 20 cylinders from the Type 6 range of INNIO Jenbacher. It is used in combined heat and power plants, greenhouses and industrial power.",
+    "uses": [
+      "Combined heat and power for industry and district heating",
+      "Greenhouse power, heat and CO2 supply",
+      "Gas engine power plants"
+    ],
+    "neighbours": [
+      "wartsila-34sg-for-sale",
+      "caterpillar-g20cm34-for-sale"
+    ],
+    "diff": "The J620 is a high speed engine; medium speed engines such as the Wärtsilä 34SG and Caterpillar G20CM34 have a higher output per unit.",
+    "checks": [
+      "Engine version and gas type (natural gas or special gases)",
+      "Hours since major overhaul",
+      "Heat recovery scope"
+    ],
+    "faq": [
+      [
+        "Are used Jenbacher J620 units available?",
+        "Used J620 units come to the market from CHP plants that are upgraded or closed. We search the market on request."
+      ]
+    ]
+  },
+  "cummins-generator-sets-for-sale": {
+    "intro": "Cummins builds gas and diesel generator sets over a wide output range. Common engines in the used market are the KTA50 and QSK60 diesel engines and the C2000 N6CB gas generator set.",
+    "uses": [
+      "Standby and prime power",
+      "Gas fired power for industry",
+      "Rental and temporary power"
+    ],
+    "neighbours": [
+      "caterpillar-3516-for-sale",
+      "mtu-16v4000-for-sale"
+    ],
+    "diff": "Cummins diesel generator sets compete with the Caterpillar 3516 and the MTU 16V4000. The C2000 N6CB is a gas generator set and is compared with other gas engines in its class.",
+    "checks": [
+      "Engine model and fuel (diesel or gas)",
+      "Rating: standby or prime",
+      "New, unused or used, with hours"
+    ],
+    "faq": [
+      [
+        "What is the Cummins KTA50?",
+        "The KTA50 is a Cummins diesel engine used in generator sets for standby and prime power."
+      ]
+    ]
+  }
+}

@@ -215,8 +215,10 @@ def unit_page(u):
     catname, catplural, catpath = CATS[u["cat"]]
     title = f"{u['name']}{', ' + u['output'] if u['output'] and u['output'] not in u['name'] else ''} | LKS-{u['id']}"
     desc = (f"{u['name']}" + (f", {u['output']}" if u['output'] else "") + (f", {u['hz']}" if u['hz'] else "")
-            + (f", year {u['year']}" if u['year'] else "") + (f", {u['condition'].lower()}" if u['condition'] else "")
-            + ". Offered on behalf of the owner by LKS 360-SCHREINER LLC. Price on request.")
+            + (f", year {u['year']}" if u['year'] else "")
+            + (f", {u['condition'].lower()}" if u['condition'] and u['condition'].lower() not in u['name'].lower() else "")
+            + (f", located in {u['continent']}" if u.get('continent') else "")
+            + f". Stock No. LKS-{u['id']}, offered on behalf of the owner. Buyer checks and documents after LOI. Price on request.")
     img = unit_card(u)
     props = [{"@type": "PropertyValue", "name": k, "value": v} for k, v in
              [("Output", u["output"]), ("Frequency", u["hz"]), ("Fuel", u["fuel"]), ("Year", u["year"]),
@@ -241,10 +243,13 @@ def unit_page(u):
         ims = ld["@graph"][0]["about"]["image"]
         ld["@graph"][0]["about"]["image"] = (ims if isinstance(ims, list) else [ims]) + [
             {"@type": "ImageObject", "contentUrl": f"{SITE}/img/units/{f}", "caption": f"{u['name']}, photo {i + 1}, stock number LKS-{u['id']}"} for i, f in enumerate(u["photos"])]
-    related = [x for x in UNITS if x["cat"] == u["cat"] and x["id"] != u["id"]][:3]
+    related = related_units(u)
     scope = f"<h2>Scope</h2><p>{e(u['scope'])}</p>" if u["scope"] else ""
+    mod = unit_model(u)
+    modcrumb = f' / <a href="/{mod[0]}.html">{e(mod[1])}</a>' if mod else ""
+    about = unit_about(u, mod)
     return head(title, desc, u["url"], f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n', img) + header() + f"""
-<div class="crumbs wrap"><a href="/">Home</a> / <a href="/inventory.html">Inventory</a> / <a href="{catpath}">{catplural}</a> / LKS-{u['id']}</div>
+<div class="crumbs wrap"><a href="/">Home</a> / <a href="/inventory.html">Inventory</a> / <a href="{catpath}">{catplural}</a>{modcrumb} / LKS-{u['id']}</div>
 <section class="unitpage"><div class="wrap two">
   <div>
     <p class="kicker">{catname} · Stock No. LKS-{u['id']} {badge(u)}</p>
@@ -255,6 +260,7 @@ def unit_page(u):
     {exhtml}
     <table class="spec">{spec_rows(u)}</table>
     {scope}
+    {about}
     <p class="muted small">Offered on behalf of the owner and subject to prior sale. Serial numbers, unit location and full technical documents are released after receipt of a letter of intent.</p>
   </div>
   <aside class="card side">
@@ -270,10 +276,93 @@ def unit_page(u):
 <section class="soft"><div class="wrap">
   <p class="kicker">More {catplural.lower()}</p>
   <h2>Similar units</h2>
+  <p>Units of the same model come first, then {catplural.lower()} with the closest output.</p>
   <div class="ulist">{''.join(row(x) for x in related)}</div>
   <p><a href="/inventory.html?cat={u['cat']}">All {catplural.lower()} in our inventory</a></p>
 </div></section>
 """ + footer() + "\n</body>\n</html>\n"
+
+
+TEXTS = json.loads((ROOT / "_build" / "model_texts.json").read_text(encoding="utf-8"))
+
+
+def unit_model(u):
+    for m in MODELS:
+        if re.search(m[2], u["model"] + " " + u["name"]):
+            return m
+    return None
+
+
+def related_units(u):
+    mod = unit_model(u)
+    same = [x for x in UNITS if x["id"] != u["id"] and mod and unit_model(x) == mod]
+    rest = [x for x in UNITS if x["cat"] == u["cat"] and x["id"] != u["id"] and x not in same]
+    if u.get("mw") is not None:
+        rest.sort(key=lambda x: abs((x["mw"] if x.get("mw") is not None else 1e6) - u["mw"]))
+    return (same + rest)[:3]
+
+
+def unit_about(u, mod):
+    # Own text per unit, built only from units.json and model_texts.json (no prices, no owners, continent only).
+    qty = str(u.get("qty") or "").strip()
+    many = qty not in ("", "1")
+    s = [f"Stock number LKS-{u['id']} covers {qty + ' units' if many else 'one listing'}: {u['name']}."]
+    facts = []
+    if u["output"]:
+        facts.append(f"rated output {u['output']}")
+    if u["hz"]:
+        facts.append(f"frequency {u['hz']}")
+    if u["fuel"]:
+        facts.append(f"fuel {u['fuel'].lower()}")
+    if u["year"]:
+        facts.append(f"year {u['year']}")
+    if facts:
+        s.append("Listed data: " + ", ".join(facts) + ".")
+    cond = (u.get("condition") or "").lower()
+    if u["condition"]:
+        s.append(f"The owner side states the condition as {cond}.")
+    if u.get("continent"):
+        s.append(f"The equipment is located in {u['continent']}; the exact site is shared after a letter of intent.")
+    p1 = " ".join(s)
+    checks = []
+    if cond.startswith(("new", "unused")) or "never fired" in cond or "unused" in cond:
+        checks.append("Preservation and storage records, since an unused unit must have been kept under preservation")
+        checks.append("Factory test reports and the original scope of supply")
+    elif "overhaul" in cond or "rebuilt" in cond:
+        checks.append("The overhaul or rebuild report: who did the work, when, and which parts were replaced")
+        checks.append("Running hours and starts since the overhaul")
+    else:
+        checks.append("Operating hours and starts, together with the maintenance and inspection records")
+        checks.append("Reason for sale and the date the equipment was last in operation")
+    hz = u.get("hz") or ""
+    if hz == "50 Hz":
+        checks.append("Grid frequency: 50 Hz fits Europe, most of Asia, Africa and the Middle East; a 60 Hz grid needs a different generator or gearbox")
+    elif hz == "60 Hz":
+        checks.append("Grid frequency: 60 Hz fits most of the Americas and Saudi Arabia; a 50 Hz grid needs a different generator or gearbox")
+    if many:
+        checks.append("Whether the units are sold together or one by one, and the individual history of each unit")
+    if mod and TEXTS.get(mod[0]):
+        have = " ".join(checks).lower()
+        checks += [c for c in TEXTS[mod[0]]["checks"] if not ("preservation" in c.lower() and "preservation" in have)][:2]
+    out = f'<h2>About this listing</h2><p>{e(p1)}</p><h3>What a buyer should check for LKS-{u["id"]}</h3><ul>' + "".join(f"<li>{e(c)}</li>" for c in checks) + "</ul>"
+    if mod:
+        t = TEXTS.get(mod[0])
+        lead = (t["intro"].split(". ")[0].rstrip(".") + ".") if t else ""
+        out += (f'<p>{e(lead)} Uses, comparison with neighbouring models and answers to frequent questions: '
+                f'<a href="/{mod[0]}.html">{e(mod[1])} for sale and model guide</a>.</p>')
+    out += ('<p>New to buying used equipment? Read the <a href="/buying-used-gas-turbines.html">buyer guide</a> and '
+            '<a href="/how-we-work.html">how we work</a>.</p>')
+    return out
+
+
+def model_links_html():
+    # One block linking every model page; used on the inventory page to spread internal links.
+    groups = [("gas", "Gas turbine models"), ("steam", "Steam turbine models"), ("genset", "Generator set models")]
+    out = ""
+    for cat, name in groups:
+        ms = [m for m in MODELS if (m[4] if len(m) > 4 else "gas") == cat]
+        out += f'<h3>{name}</h3><p>' + " · ".join(f'<a href="/{m[0]}.html">{e(m[1])}</a>' for m in ms) + "</p>"
+    return out
 
 
 def inventory_page():
@@ -307,6 +396,13 @@ def inventory_page():
   </div>
   <p class="empty" id="empty" hidden>No unit matches. Send us your requirement and we match it with units offered by their owners: <a href="/contact.html">contact form</a>.</p>
   <p class="muted small">All units are offered on behalf of their owners and subject to prior sale. Serial numbers, unit location and full technical documents are released after receipt of a letter of intent.</p>
+</div></section>
+<section class="soft"><div class="wrap">
+  <p class="kicker">Browse by model</p>
+  <h2>Model guides with units for sale</h2>
+  <p>Each model page explains what the model is used for, how it compares with neighbouring models and what to check when buying it used.</p>
+  {model_links_html()}
+  <p>Owners: <a href="/used-gas-turbine-broker.html">how a turbine broker works</a> and <a href="/how-to-sell-a-used-gas-turbine.html">how to sell a used gas turbine</a>. Buyers: <a href="/buying-used-gas-turbines.html">buyer guide</a>, <a href="/power-generation-equipment-models-compared.html">models compared</a>.</p>
 </div></section>
 <div class="cta">
   <h2>Not on the list?</h2>
@@ -459,9 +555,6 @@ def where_answer(label, us):
 def model_faq(label, us=()):
     return [
         (f"Where can I buy a used {label}?", where_answer(label, us)),
-        (f"Who sells used {label} units?",
-         f"LKS 360-SCHREINER LLC, an independent broker for used power generation equipment, lists {label} units on lks360.com "
-         "on behalf of their owners, alongside other gas turbines, steam turbines and generator sets."),
         (f"Who sells the {label} units listed here?",
          "LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. "
          "The purchase contract is made directly between buyer and owner."),
@@ -469,10 +562,8 @@ def model_faq(label, us=()):
          "Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status."),
         (f"What does a used {label} cost?",
          "Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent."),
-        ("Can I inspect the unit?",
-         "Yes. After your letter of intent you receive the technical documents and can inspect the unit."),
-        ("How is payment made?",
-         "Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them."),
+        ("Can I inspect the unit, and how is payment made?",
+         "Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them."),
     ]
 
 
@@ -501,6 +592,39 @@ def spec_block(slugname, label):
     return html, (f"What is the {label}?", ans)
 
 
+def model_guide(slugname, label):
+    t = TEXTS.get(slugname)
+    if not t:
+        return ""
+    uses = "".join(f"<li>{e(x)}</li>" for x in t["uses"])
+    checks = "".join(f"<li>{e(x)}</li>" for x in t["checks"])
+    rows = ""
+    for nb in [slugname] + t.get("neighbours", []):
+        info = next((m for m in MODELS if m[0] == nb), None)
+        if not info:
+            continue
+        sp = SPECS.get(nb)
+        cell = e(sp["output"]) if sp else '<span class="muted">see model page</span>'
+        src = f'<a href="{sp["source_url"]}" rel="nofollow">{e(sp["source_name"])}</a>' if sp else ""
+        name = e(info[1]) if nb == slugname else f'<a href="/{nb}.html">{e(info[1])}</a>'
+        cnt = len([u for u in UNITS if re.search(info[2], u["model"] + " " + u["name"])])
+        rows += f"<tr><th>{name}</th><td>{cell}</td><td>{cnt}</td><td>{src}</td></tr>"
+    cmp = "".join(f'<li><a href="/{c[0]}.html">{e(_MINFO[c[1]][0])} vs {e(_MINFO[c[2]][0])}</a></li>' for c in COMPARE if slugname in (c[1], c[2]))
+    cmp = f"<p>Direct comparison:</p><ul>{cmp}</ul>" if cmp else ""
+    return f"""<section><div class="wrap">
+  <p class="kicker">Model guide</p>
+  <h2>What the {e(label)} is used for</h2>
+  <p>{e(t['intro'])}</p>
+  <ul>{uses}</ul>
+  <h2>{e(label)} compared with neighbouring models</h2>
+  <p>{e(t['diff'])}</p>
+  <div class="tablewrap"><table class="spec cmp"><thead><tr><th>Model</th><th>Output (manufacturer data)</th><th>Units listed</th><th>Source</th></tr></thead><tbody>{rows}</tbody></table></div>
+  {cmp}
+  <h2>What to check when buying a used {e(label)}</h2>
+  <ul>{checks}</ul>
+</div></section>"""
+
+
 FAQLINK = {"gas": '<a href="/gas-turbine-faq.html">used gas turbine FAQ</a>', "steam": '<a href="/steam-turbine-faq.html">used steam turbine FAQ</a>', "genset": '<a href="/generator-set-faq.html">used generator set FAQ</a>'}
 
 
@@ -509,12 +633,19 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
     us = [u for u in UNITS if re.search(pattern, u["model"] + " " + u["name"])]
     path = f"/{slugname}.html"
     spec_html, spec_qa = spec_block(slugname, label)
-    faqs = ([spec_qa] if spec_qa else []) + model_faq(label, us)
+    t = TEXTS.get(slugname)
+    own_faq = [tuple(x) for x in t["faq"]] if t else []
+    faqs = ([spec_qa] if spec_qa else []) + own_faq + model_faq(label, us)
     n = len(us)
     plural = "s" if n != 1 else ""
-    title = f"{label} for Sale | LKS 360-SCHREINER LLC"
-    desc = (f"{label} for sale: {n} unit{plural} in our inventory with stock number, output, frequency and status. "
-            "Price on request. Letter of intent, data and inspection, payment through escrow.")
+    title = f"{label} for Sale: Used Units, Uses and Buyer Checks | LKS 360"
+    if t:
+        first = t["intro"].split(". ")[0].rstrip(".")
+        desc = f"{first}. {n} unit{plural} listed with stock number. Uses, comparison and buyer checks. Price on request."
+    else:
+        desc = (f"{label} for sale: {n} unit{plural} in our inventory with stock number, output, frequency and status. "
+                "Price on request. Letter of intent, data and inspection, payment through escrow.")
+    guide_html = model_guide(slugname, label)
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "ItemList", "name": f"{label} for sale", "numberOfItems": n, "itemListElement": [
             {"@type": "ListItem", "position": i + 1, "url": SITE + u["url"], "name": u["name"]} for i, u in enumerate(us)]},
@@ -549,16 +680,11 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
   <div class="ulist">{units_html}</div>
   <p class="muted small">Each unit is offered on behalf of its owner and subject to prior sale. Serial numbers, unit location and full technical documents are released after receipt of a letter of intent.</p>
 </div></section>
+{guide_html}
 {spec_html}
 <section class="soft"><div class="wrap">
   <p class="kicker">How a purchase works</p>
-  <h2>From letter of intent to contract</h2>
-  <div class="steps">
-    <div class="card"><div class="num">1</div><h3>Letter of intent</h3><p>You send a letter of intent with the stock number and the number of units.</p></div>
-    <div class="card"><div class="num">2</div><h3>Data and inspection</h3><p>You receive the technical documents and can inspect the unit.</p></div>
-    <div class="card"><div class="num">3</div><h3>Escrow</h3><p>Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.</p></div>
-    <div class="card"><div class="num">4</div><h3>Contract</h3><p>Buyer and owner sign the purchase contract.</p></div>
-  </div>
+  <p>Letter of intent with the stock number, then technical documents and inspection, payment from buyer to owner or through escrow, and the purchase contract between buyer and owner. Details: <a href="/how-we-work.html">how we work</a>. Selling a {e(label)}? Read <a href="/how-to-sell-a-used-gas-turbine.html">how to sell a used turbine</a> and <a href="/used-gas-turbine-broker.html">what a turbine broker does</a>.</p>
 </div></section>
 <section><div class="wrap">
   <p class="kicker">Questions and answers</p>
@@ -878,10 +1004,23 @@ urls = [f"{SITE}/"] + [f"{SITE}/{n}" for n in STATIC[1:] if (ROOT / n).exists()]
 IMGS = {**{f"{SITE}/{m[0]}.html": f"{SITE}/img/cards/{m[0]}.jpg" for m in MODELS},
         **{SITE + u["url"]: f"{SITE}/img/cards/lks-{u['id'].lower()}.jpg" for u in UNITS}}
 PHOTOS = {SITE + u["url"]: [f"{SITE}/img/units/{f}" for f in (u.get("photos") or [])] for u in UNITS}
+LASTMOD_F = ROOT / "_build" / "lastmod.json"
+_lm = json.loads(LASTMOD_F.read_text(encoding="utf-8")) if LASTMOD_F.exists() else {}
+import hashlib
+def _file_of(x):
+    rel = x[len(SITE) + 1:] or "index.html"
+    return ROOT / rel
+_new_lm = {}
+for x in urls:
+    f = _file_of(x)
+    h = hashlib.sha1(re.sub(r"\d{4}-\d{2}-\d{2}", "", f.read_text(encoding="utf-8")).encode()).hexdigest()[:12] if f.exists() else ""
+    old = _lm.get(x, {})
+    _new_lm[x] = {"h": h, "d": old.get("d", TODAY) if old.get("h") == h else TODAY}
+LASTMOD_F.write_text(json.dumps(_new_lm, indent=0, sort_keys=True), encoding="utf-8", newline="\n")
 def sm_img(x):
     return "".join(f"<image:image><image:loc>{i}</image:loc></image:image>" for i in ([IMGS[x]] if x in IMGS else []) + PHOTOS.get(x, []))
 (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
-                                  + "".join(f"  <url><loc>{x}</loc><lastmod>{TODAY}</lastmod>{sm_img(x)}</url>\n" for x in urls)
+                                  + "".join(f"  <url><loc>{x}</loc><lastmod>{_new_lm[x]['d']}</lastmod>{sm_img(x)}</url>\n" for x in urls)
                                   + "</urlset>\n", encoding="utf-8", newline="\n")
 
 # llms.txt: keep the hand-written head, regenerate the unit and news lists so AI search finds every unit.
