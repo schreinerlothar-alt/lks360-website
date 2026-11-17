@@ -651,7 +651,22 @@ def model_guide(slugname, label):
   {cmp}
   <h2>What to check when buying a used {e(label)}</h2>
   <ul>{checks}</ul>
-</div></section>"""
+</div></section>""" + model_deep(t)
+
+
+def model_deep(t):
+    # Price factors (never a price) and versions with sources, for the pages with the next Google chances (Lothar 17.11.2026).
+    out = ""
+    p = t.get("price")
+    if p:
+        li = "".join(f"<li><b>{e(k)}:</b> {e(v)}</li>" for k, v in p["factors"])
+        out += f'<section class="soft" id="price"><div class="wrap"><p class="kicker">Price</p><h2>{e(p["title"])}</h2><p>{e(p["intro"])}</p><ul>{li}</ul><p>Send the stock number to manager@lks360.com and we reply with the owner\'s price and conditions.</p></div></section>'
+    v = t.get("variants")
+    if v:
+        rows = "".join(f"<tr><th>{e(k)}</th><td>{e(x)}</td></tr>" for k, x in v["rows"])
+        src = ", ".join(f'<a href="{u}" rel="nofollow">{e(n)}</a>' for n, u in v["sources"])
+        out += f'<section id="variants"><div class="wrap"><p class="kicker">Versions</p><h2>{e(v["title"])}</h2><p>{e(v["intro"])}</p><div class="tablewrap"><table class="spec">{rows}</table></div><p class="muted small">Manufacturer data for the model type, not the data of a specific unit offered. Sources: {src}.</p></div></section>'
+    return out
 
 
 FAQLINK = {"gas": '<a href="/gas-turbine-faq.html">used gas turbine FAQ</a>', "steam": '<a href="/steam-turbine-faq.html">used steam turbine FAQ</a>', "genset": '<a href="/generator-set-faq.html">used generator set FAQ</a>'}
@@ -665,11 +680,16 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
     t = TEXTS.get(slugname)
     own_faq = [tuple(x) for x in t["faq"]] if t else []
     faqs = [(f"Where can I buy a used {label}?", model_short(slugname, label, us))] + ([spec_qa] if spec_qa else []) + own_faq + model_faq(label, us)[1:]
+    _seen = set()
+    faqs = [x for x in faqs if not (x[0] in _seen or _seen.add(x[0]))]
     n = len(us)
     plural = "s" if n != 1 else ""
     noun = model_noun(slugname, cat)
     full = f"{label} {noun}".strip()
     title = f"Used {full.replace(noun, noun.title()) if noun else full} for Sale: Units, Uses, Buyer Checks | LKS 360"
+    if t and t.get("seo_title"):
+        title = t["seo_title"]
+    h1 = t["seo_h1"] if t and t.get("seo_h1") else f"Used {full} for sale"
     if t:
         first = t["intro"].split(". ")[0].rstrip(".")
         desc = f"{first}. {n} unit{plural} listed with stock number. Uses, comparison and buyer checks. Price on request."
@@ -699,7 +719,7 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
 <div class="crumbs wrap"><a href="/">Home</a> / <a href="{curl}">{cname}</a> / {e(label)}</div>
 <div class="hero slim"><div class="wrap">
   <p class="kicker light">Inventory · updated {UPDATED}</p>
-  <h1>Used {e(full)} for sale</h1>
+  <h1>{e(h1)}</h1>
   <p>{e(lead)}</p>
 </div></div>
 <section class="qa"><div class="wrap"><p class="answer"><b>Where to buy a used {e(label)}:</b> {e(model_short(slugname, label, us))}</p></div></section>
@@ -855,8 +875,32 @@ def fix_org_ld(t):
     return re.sub(r'<script type="application/ld\+json">(.*?)</script>', fix, t, flags=re.S)
 
 
+POPULAR_PAGES = {"index.html", "gas-turbines.html", "steam-turbines.html", "buying-used-gas-turbines.html", "gas-turbine-faq.html",
+                 "steam-turbine-faq.html", "how-to-sell-a-used-gas-turbine.html", "used-gas-turbine-broker.html", "sell.html"}
+
+
+def popular_block():
+    return ('<!--POPULAR--><section><div class="wrap"><p class="kicker">Most searched models</p><p class="modellinks">'
+            '<a href="/ge-tm2500-for-sale.html">GE TM2500 for sale</a> · <a href="/ge-tm2500-for-sale.html#price">GE TM2500 price</a> · '
+            '<a href="/ge-lm6000-for-sale.html">GE LM6000 for sale</a> · <a href="/ge-lm6000-for-sale.html#variants">GE LM6000 PA, PC, PD, PF Sprint</a> · '
+            '<a href="/siemens-sst-300-for-sale.html">Siemens SST-300 steam turbine</a> · <a href="/siemens-sgt-800-for-sale.html">Siemens SGT-800 for sale</a>'
+            '</p></div></section><!--/POPULAR-->')
+
+
+def add_popular(t, name):
+    if name not in POPULAR_PAGES:
+        return t
+    if "<!--POPULAR-->" in t:
+        return re.sub(r"<!--POPULAR-->.*?<!--/POPULAR-->", lambda m: popular_block(), t, flags=re.S)
+    i = t.find('<div class="cta"')
+    if i < 0:
+        i = t.find("<footer>")
+    return t[:i] + popular_block() + "\n" + t[i:]
+
+
 def patch_static(path):
     t = path.read_text(encoding="utf-8")
+    t = add_popular(t, path.name)
     t = add_answer(t, path.name)
     t = re.sub(r"<header>.*?</header>", lambda m: header(), t, count=1, flags=re.S)
     t = re.sub(r'\s*<a class="wafloat".*?</a>', "", t, flags=re.S)

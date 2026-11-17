@@ -171,8 +171,76 @@
       [
         "Is the SGT-800 used in combined cycle?",
         "Yes. Combined cycle and cogeneration are main applications. Several units listed on lks360.com are combined cycle blocks with gas turbine and steam turbine."
+      ],
+      [
+        "What does a Siemens SGT-800 cost?",
+        "LKS 360-SCHREINER LLC quotes the price of each listed SGT-800 on request with the stock number. It depends on rating, hours and starts, overhaul records, condition, scope, combined cycle equipment, frequency and location."
       ]
-    ]
+    ],
+    "seo_title": "Siemens SGT-800 for Sale: New and Used Gas Turbines | LKS 360",
+    "seo_h1": "Siemens SGT-800 for sale",
+    "price": {
+      "title": "Siemens SGT-800 price: what sets it",
+      "intro": "LKS 360-SCHREINER LLC does not publish prices; each Siemens SGT-800 is priced by its owner and quoted on request with the stock number. The price depends on these points:",
+      "factors": [
+        [
+          "Rating",
+          "The SGT-800 has been sold in several ratings; the rating of the unit decides the output and the comparison."
+        ],
+        [
+          "Hours and cycles since the last overhaul",
+          "Engine hours, starts and the date and scope of the last overhaul matter more than the year of manufacture."
+        ],
+        [
+          "Overhaul records",
+          "An engine back from the manufacturer or an authorised shop with full records sells faster than one without documents."
+        ],
+        [
+          "Condition",
+          "New and unused, zero time since overhaul, in operation or preserved: each condition is priced differently."
+        ],
+        [
+          "Scope of supply",
+          "Generator, enclosure, controls, fuel system, step up transformer and spare parts included or not."
+        ],
+        [
+          "Combined cycle scope",
+          "Whether a steam turbine, HRSG and balance of plant come with the gas turbine."
+        ],
+        [
+          "Frequency and voltage",
+          "A 60 Hz unit for the Americas and a 50 Hz unit for Europe, Africa or Asia are separate markets; dual frequency units widen the buyer group."
+        ],
+        [
+          "Emission system",
+          "DLE or water injected combustion decides whether a unit meets the emission limits at the buyer's site."
+        ],
+        [
+          "Location and logistics",
+          "Dismantling, transport, road permits and import duties are part of the buyer's total cost."
+        ]
+      ]
+    },
+    "variants": {
+      "title": "Siemens SGT-800 ratings and configurations",
+      "intro": "Siemens Energy states ratings from 45 to 62 MW in simple cycle, for 50 Hz and 60 Hz, with DLE combustion capable of up to 75 vol% hydrogen.",
+      "rows": [
+        [
+          "Simple cycle",
+          "Gas turbine generator set for industrial power."
+        ],
+        [
+          "Combined cycle and cogeneration",
+          "Gas turbine with HRSG and steam turbine; several units on lks360.com are combined cycle blocks."
+        ]
+      ],
+      "sources": [
+        [
+          "Siemens Energy, SGT-800 product page",
+          "https://www.siemens-energy.com/global/en/home/products-services/product/sgt-800.html"
+        ]
+      ]
+    }
   },
   "siemens-sgt-750-for-sale": {
     "intro": "The SGT-750 is a newer Siemens Energy industrial gas turbine in the medium output class, designed for power generation as well as mechanical drive in oil and gas.",
@@ -479,8 +547,96 @@
       [
         "How fast can a TM2500 be installed?",
         "The TM2500 is designed for short installation times. The real time depends on site preparation, fuel supply and grid connection."
+      ],
+      [
+        "What does a used GE TM2500 cost?",
+        "LKS 360-SCHREINER LLC quotes the price of each listed TM2500 on request with the stock number. It depends on version, hours and cycles since overhaul, overhaul records, condition, trailers and scope, frequency and location."
+      ],
+      [
+        "What is the difference between the TM2500 and the TM2500+?",
+        "According to GE, the TM2500+ introduced in 2008 is packaged on a two-trailer system and delivers up to 34 MW, with a 30 percent increase in power from a footprint 75 percent smaller than its predecessor."
+      ],
+      [
+        "What does Gen 6 mean on a TM2500?",
+        "Gen 4, Gen 5 and Gen 6 are generation labels used in the market for TM2500 units. A buyer checks the stated generation against the engine and generator documents, which follow the letter of intent."
       ]
-    ]
+    ],
+    "seo_title": "GE TM2500 for Sale: Used Mobile Gas Turbines, Price Factors | LKS 360",
+    "seo_h1": "GE TM2500 for sale",
+    "price": {
+      "title": "GE TM2500 price: what sets it",
+      "intro": "LKS 360-SCHREINER LLC does not publish prices; each GE TM2500 is priced by its owner and quoted on request with the stock number. The price of a used TM2500 depends on these points:",
+      "factors": [
+        [
+          "Generation or version",
+          "Later versions usually reach higher output and efficiency; the version stated by the owner is checked against the engine data plate and documents."
+        ],
+        [
+          "Hours and cycles since the last overhaul",
+          "Engine hours, starts and the date and scope of the last overhaul matter more than the year of manufacture."
+        ],
+        [
+          "Overhaul records",
+          "An engine back from the manufacturer or an authorised shop with full records sells faster than one without documents."
+        ],
+        [
+          "Condition",
+          "New and unused, zero time since overhaul, in operation or preserved: each condition is priced differently."
+        ],
+        [
+          "Scope of supply",
+          "Generator, enclosure, controls, fuel system, step up transformer and spare parts included or not."
+        ],
+        [
+          "Trailers and mobile equipment",
+          "Number and condition of trailers, road permits and the mobile balance of plant decide how fast the unit can move to a new site."
+        ],
+        [
+          "Frequency and voltage",
+          "A 60 Hz unit for the Americas and a 50 Hz unit for Europe, Africa or Asia are separate markets; dual frequency units widen the buyer group."
+        ],
+        [
+          "Emission system",
+          "DLE or water injected combustion decides whether a unit meets the emission limits at the buyer's site."
+        ],
+        [
+          "Location and logistics",
+          "Dismantling, transport, road permits and import duties are part of the buyer's total cost."
+        ]
+      ]
+    },
+    "variants": {
+      "title": "GE TM2500 versions: TM2500, TM2500+ and Gen 4, 5, 6",
+      "intro": "The TM2500 has been built in several versions. The version of a used unit is taken from its documents, not from the listing title.",
+      "rows": [
+        [
+          "TM2500",
+          "The first mobile package built around the LM2500 aeroderivative gas turbine; replaced by the TM2500+."
+        ],
+        [
+          "TM2500+",
+          "Introduced by GE in 2008: packaged on a two-trailer system, up to 34 MW, with the LM2500 gas turbine and a Brush 170ER generator. GE stated a 30 percent increase in power from a footprint 75 percent smaller than its predecessor."
+        ],
+        [
+          "Gen 4, Gen 5, Gen 6",
+          "Generation labels used by owners and traders for TM2500 units. They are not used on the current GE Vernova product page, so the generation stated by the owner is checked against the engine and generator documents."
+        ],
+        [
+          "TM2500 DLE and SAC",
+          "Current GE Vernova range: 34.5 MW net (DLE) and 34.6 MW net (SAC) at 50 Hz, ISO conditions."
+        ]
+      ],
+      "sources": [
+        [
+          "GE press release, 2 December 2008 (TM2500+)",
+          "https://www.geaerospace.com/news/press-releases/ge-energy-launches-new-upgrade-its-mobile-power-unit"
+        ],
+        [
+          "GE Vernova, TM2500 product page",
+          "https://www.gevernova.com/gas-power/products/gas-turbines/tm2500"
+        ]
+      ]
+    }
   },
   "ge-lm6000-for-sale": {
     "intro": "The GE LM6000 is a two shaft aeroderivative gas turbine developed from the CF6-80C2 aircraft engine. It is widely used for peaking, cogeneration and fast start power plants.",
@@ -508,8 +664,96 @@
       [
         "What is the difference between LM6000 PA, PC and PD?",
         "They are generations of the LM6000. PC and PD versions came later than the PA and differ in output and combustion system. The data sheet of each unit states the version."
+      ],
+      [
+        "What does a used GE LM6000 cost?",
+        "LKS 360-SCHREINER LLC quotes the price of each listed LM6000 on request with the stock number. It depends on version, hours and cycles since overhaul, overhaul records, condition, scope, frequency, emission system and location."
+      ],
+      [
+        "Is the wiring harness included with a used LM6000?",
+        "Harnesses, sensors and control cabling belong to the engine and package scope. The scope list of each unit states what is included; LKS 360-SCHREINER LLC lists complete units and packages, not single spare parts."
+      ],
+      [
+        "What is the difference between LM6000 SAC and DLE?",
+        "SAC is the single annular combustor, which GE Vernova describes as water injected; DLE is dry low emissions combustion. GE Vernova offers the current LM6000 in both configurations, and the data sheet of a used unit states which one it has."
       ]
-    ]
+    ],
+    "seo_title": "GE LM6000 for Sale: Used PA, PC, PD, PF Sprint Gas Turbines | LKS 360",
+    "seo_h1": "GE LM6000 for sale",
+    "price": {
+      "title": "Used GE LM6000 price: what sets it",
+      "intro": "LKS 360-SCHREINER LLC does not publish prices; each GE LM6000 is priced by its owner and quoted on request with the stock number. The price of a used LM6000 depends on these points:",
+      "factors": [
+        [
+          "Generation or version",
+          "Later versions usually reach higher output and efficiency; the version stated by the owner is checked against the engine data plate and documents."
+        ],
+        [
+          "Hours and cycles since the last overhaul",
+          "Engine hours, starts and the date and scope of the last overhaul matter more than the year of manufacture."
+        ],
+        [
+          "Overhaul records",
+          "An engine back from the manufacturer or an authorised shop with full records sells faster than one without documents."
+        ],
+        [
+          "Condition",
+          "New and unused, zero time since overhaul, in operation or preserved: each condition is priced differently."
+        ],
+        [
+          "Scope of supply",
+          "Generator, enclosure, controls, fuel system, step up transformer and spare parts included or not."
+        ],
+        [
+          "Frequency and voltage",
+          "A 60 Hz unit for the Americas and a 50 Hz unit for Europe, Africa or Asia are separate markets; dual frequency units widen the buyer group."
+        ],
+        [
+          "Emission system",
+          "DLE or water injected combustion decides whether a unit meets the emission limits at the buyer's site."
+        ],
+        [
+          "Location and logistics",
+          "Dismantling, transport, road permits and import duties are part of the buyer's total cost."
+        ]
+      ]
+    },
+    "variants": {
+      "title": "GE LM6000 versions: PA, PC, PD, PF, PG and SPRINT",
+      "intro": "The LM6000 has been built in several versions. The version, the combustor and whether SPRINT is installed are taken from the unit's data sheet.",
+      "rows": [
+        [
+          "LM6000 PA, PC, PD",
+          "Earlier LM6000 versions. Output and combustion system differ between versions; the data sheet of each unit states the version and the combustor (SAC or DLE)."
+        ],
+        [
+          "LM6000 PC Sprint",
+          "Current GE Vernova LM6000VELOX package: 51.1 MW net, 39.7 percent net efficiency (ISO, natural gas)."
+        ],
+        [
+          "LM6000 PF+ Sprint",
+          "Current GE Vernova LM6000VELOX package: 56.9 MW net, 41.0 percent net efficiency (ISO, natural gas)."
+        ],
+        [
+          "LM6000 PG and PH",
+          "Announced by GE in 2010: the PG with single annular combustor (SAC), the PH as its dry low emissions (DLE) equivalent."
+        ],
+        [
+          "SPRINT",
+          "Spray intercooling: water is sprayed into the compressor to cool the air, which raises output, mainly on hot days."
+        ]
+      ],
+      "sources": [
+        [
+          "GE Vernova, LM6000 product page",
+          "https://www.gevernova.com/gas-power/products/gas-turbines/lm6000"
+        ],
+        [
+          "GE press release, 7 October 2010 (LM6000-PG and PH)",
+          "https://www.geaerospace.com/news/press-releases/major-milestones-reached-newest-versions-ges-lm6000-aeroderivative-gas-turbines"
+        ]
+      ]
+    }
   },
   "ge-lm5000-for-sale": {
     "intro": "The GE LM5000 is an aeroderivative gas turbine developed from the CF6-50 aircraft engine. It is the predecessor of the LM6000 and still runs in simple cycle and cogeneration plants.",
@@ -655,8 +899,80 @@
       [
         "Can a new and unused SST-300 be adapted to another plant?",
         "The steam path is designed for given steam conditions. Whether a unit fits another plant depends on steam pressure, temperature and flow, which the buyer's engineer checks against the data sheet."
+      ],
+      [
+        "What is the output of a Siemens SST-300?",
+        "Siemens Energy states an output of up to 60 MW and a speed of up to 12,000 rpm for the SST-300 industrial steam turbine. The output of a given unit follows from its steam conditions and is shown on its data sheet."
+      ],
+      [
+        "What does a Siemens SST-300 cost?",
+        "LKS 360-SCHREINER LLC quotes the price of each listed SST-300 on request with the stock number. It depends on condition, steam conditions, type, scope, frequency, documents and location."
       ]
-    ]
+    ],
+    "seo_title": "Siemens SST-300 Steam Turbine for Sale: New, Unused, Used | LKS 360",
+    "seo_h1": "Siemens SST-300 steam turbine for sale",
+    "price": {
+      "title": "Siemens SST-300 price: what sets it",
+      "intro": "LKS 360-SCHREINER LLC does not publish prices; each Siemens SST-300 is priced by its owner and quoted on request with the stock number. The price depends on these points:",
+      "factors": [
+        [
+          "Condition",
+          "New and unused with preservation records, or used with operating hours: each is priced differently."
+        ],
+        [
+          "Steam conditions",
+          "How close the design inlet pressure, temperature, flow and exhaust pressure are to the buyer's plant."
+        ],
+        [
+          "Type",
+          "Condensing, back pressure or extraction turbine."
+        ],
+        [
+          "Scope of supply",
+          "Gearbox, generator, condenser, lube oil system and controls included or not."
+        ],
+        [
+          "Frequency and voltage",
+          "Generator frequency and voltage against the buyer's grid."
+        ],
+        [
+          "Documents",
+          "Data sheet, heat balance, test reports and preservation records."
+        ],
+        [
+          "Location and logistics",
+          "Dismantling, transport and import duties are part of the buyer's total cost."
+        ]
+      ]
+    },
+    "variants": {
+      "title": "Siemens SST-300 configurations",
+      "intro": "Siemens Energy states an output of up to 60 MW and a speed of up to 12,000 rpm for the SST-300. Each unit is built for given steam conditions:",
+      "rows": [
+        [
+          "Condensing",
+          "Exhausts into a condenser for maximum power output."
+        ],
+        [
+          "Back pressure",
+          "Exhausts steam at a pressure a process can still use, for cogeneration."
+        ],
+        [
+          "Extraction",
+          "Takes process steam out at one or more stages."
+        ],
+        [
+          "Drive",
+          "Often with a gearbox between the turbine and the generator."
+        ]
+      ],
+      "sources": [
+        [
+          "Siemens Energy, Industrial steam turbines",
+          "https://www.siemens-energy.com/global/en/home/products-services/product/industrial-steam-turbines.html"
+        ]
+      ]
+    }
   },
   "caterpillar-g20cm34-for-sale": {
     "intro": "The Caterpillar G20CM34 is a medium speed gas engine with 20 cylinders from the MaK engine line of Caterpillar. It is used in gas fired power plants and as generator set for industrial power.",

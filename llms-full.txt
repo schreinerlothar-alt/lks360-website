@@ -815,6 +815,8 @@ Q: What was the SGT-800 called before?
 A: The SGT-800 goes back to the GTX100 gas turbine developed by ABB and later Alstom, now part of Siemens Energy.
 Q: Is the SGT-800 used in combined cycle?
 A: Yes. Combined cycle and cogeneration are main applications. Several units listed on lks360.com are combined cycle blocks with gas turbine and steam turbine.
+Q: What does a Siemens SGT-800 cost?
+A: LKS 360-SCHREINER LLC quotes the price of each listed SGT-800 on request with the stock number. It depends on rating, hours and starts, overhaul records, condition, scope, combined cycle equipment, frequency and location.
 Q: Who sells the Siemens SGT-800 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Siemens SGT-800 still available?
@@ -835,6 +837,12 @@ Q: What is the difference between the TM2500 and the LM2500?
 A: The TM2500 is a mobile, trailer mounted package with an LM2500 family engine. The LM2500 is usually installed as a stationary package. See LM2500 vs TM2500 for the details.
 Q: How fast can a TM2500 be installed?
 A: The TM2500 is designed for short installation times. The real time depends on site preparation, fuel supply and grid connection.
+Q: What does a used GE TM2500 cost?
+A: LKS 360-SCHREINER LLC quotes the price of each listed TM2500 on request with the stock number. It depends on version, hours and cycles since overhaul, overhaul records, condition, trailers and scope, frequency and location.
+Q: What is the difference between the TM2500 and the TM2500+?
+A: According to GE, the TM2500+ introduced in 2008 is packaged on a two-trailer system and delivers up to 34 MW, with a 30 percent increase in power from a footprint 75 percent smaller than its predecessor.
+Q: What does Gen 6 mean on a TM2500?
+A: Gen 4, Gen 5 and Gen 6 are generation labels used in the market for TM2500 units. A buyer checks the stated generation against the engine and generator documents, which follow the letter of intent.
 Q: Who sells the GE TM2500 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the GE TM2500 still available?
@@ -875,6 +883,12 @@ Q: What does SPRINT mean on an LM6000?
 A: SPRINT stands for spray intercooling. Water is sprayed into the compressor to cool the air, which raises output, mainly on hot days.
 Q: What is the difference between LM6000 PA, PC and PD?
 A: They are generations of the LM6000. PC and PD versions came later than the PA and differ in output and combustion system. The data sheet of each unit states the version.
+Q: What does a used GE LM6000 cost?
+A: LKS 360-SCHREINER LLC quotes the price of each listed LM6000 on request with the stock number. It depends on version, hours and cycles since overhaul, overhaul records, condition, scope, frequency, emission system and location.
+Q: Is the wiring harness included with a used LM6000?
+A: Harnesses, sensors and control cabling belong to the engine and package scope. The scope list of each unit states what is included; LKS 360-SCHREINER LLC lists complete units and packages, not single spare parts.
+Q: What is the difference between LM6000 SAC and DLE?
+A: SAC is the single annular combustor, which GE Vernova describes as water injected; DLE is dry low emissions combustion. GE Vernova offers the current LM6000 in both configurations, and the data sheet of a used unit states which one it has.
 Q: Who sells the GE LM6000 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the GE LM6000 still available?
@@ -1253,6 +1267,10 @@ Q: What is the Siemens SST-300 used for?
 A: The SST-300 is a Siemens Energy industrial steam turbine with a single casing for small and medium outputs. It is used in industrial cogeneration, biomass and waste heat plants. Typical uses: biomass and waste to energy plants; industrial cogeneration; waste heat recovery.
 Q: Can a new and unused SST-300 be adapted to another plant?
 A: The steam path is designed for given steam conditions. Whether a unit fits another plant depends on steam pressure, temperature and flow, which the buyer's engineer checks against the data sheet.
+Q: What is the output of a Siemens SST-300?
+A: Siemens Energy states an output of up to 60 MW and a speed of up to 12,000 rpm for the SST-300 industrial steam turbine. The output of a given unit follows from its steam conditions and is shown on its data sheet.
+Q: What does a Siemens SST-300 cost?
+A: LKS 360-SCHREINER LLC quotes the price of each listed SST-300 on request with the stock number. It depends on condition, steam conditions, type, scope, frequency, documents and location.
 Q: Who sells the Siemens SST-300 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Siemens SST-300 still available?
@@ -1501,6 +1519,9 @@ Buyer, owner and end use are screened against sanctions lists, and export contro
 
 See the inventory, or browse gas turbines, steam turbines and generator sets.
 
+Most searched models
+GE TM2500 for sale · GE TM2500 price · GE LM6000 for sale · GE LM6000 PA, PC, PD, PF Sprint · Siemens SST-300 steam turbine · Siemens SGT-800 for sale
+
 ### Looking for a unit?
 
 Send type, output, frequency and fuel. We reply with matching offers.
@@ -1572,6 +1593,9 @@ Collect model, year, hours, condition, scope and your price idea, then offer the
 
 More detail: buyer guide, steam turbine FAQ, generator set FAQ, glossary, how we work, inventory.
 
+Most searched models
+GE TM2500 for sale · GE TM2500 price · GE LM6000 for sale · GE LM6000 PA, PC, PD, PF Sprint · Siemens SST-300 steam turbine · Siemens SGT-800 for sale
+
 ### Looking for a unit or selling one?
 
 Send type, output, frequency and fuel. We reply with matching offers.
@@ -1630,6 +1654,9 @@ LKS 360-SCHREINER LLC is an independent broker and lists steam turbines and stea
 Collect model, year, steam data, output, hours, condition, scope and your price idea. LKS 360-SCHREINER LLC offers owners an exclusive sales mandate with one price in the market, screened buyers and no upfront fee: lks360.com/sell.html
 
 More detail: buyer guide, gas turbine FAQ, steam turbine FAQ, generator set FAQ, glossary, how we work, inventory.
+
+Most searched models
+GE TM2500 for sale · GE TM2500 price · GE LM6000 for sale · GE LM6000 PA, PC, PD, PF Sprint · Siemens SST-300 steam turbine · Siemens SGT-800 for sale
 
 ### Looking for a unit or selling one?
 
@@ -1819,6 +1846,9 @@ Yes. The steps are the same for steam turbines, generator sets and complete powe
 
 More detail: buyer guide, how we work, inventory.
 
+Most searched models
+GE TM2500 for sale · GE TM2500 price · GE LM6000 for sale · GE LM6000 PA, PC, PD, PF Sprint · Siemens SST-300 steam turbine · Siemens SGT-800 for sale
+
 ### Looking for a unit or selling one?
 
 Send type, output, frequency and fuel. We reply with matching offers.
@@ -1871,6 +1901,9 @@ Send type, output, frequency, fuel and delivery country through the contact form
 Send model, year, output, hours, condition, scope and your price idea. Owners can choose an exclusive sales mandate with no upfront fee.
 
 More detail: buyer guide, how we work, inventory.
+
+Most searched models
+GE TM2500 for sale · GE TM2500 price · GE LM6000 for sale · GE LM6000 PA, PC, PD, PF Sprint · Siemens SST-300 steam turbine · Siemens SGT-800 for sale
 
 ### Looking for a unit or selling one?
 
@@ -2054,3 +2087,6 @@ Scope: generator, HRSG, balance of plant, spare parts
 Available documents and photos
 
 We confirm availability with you before every offer and remove sold units from our inventory.
+
+Most searched models
+GE TM2500 for sale · GE TM2500 price · GE LM6000 for sale · GE LM6000 PA, PC, PD, PF Sprint · Siemens SST-300 steam turbine · Siemens SGT-800 for sale
