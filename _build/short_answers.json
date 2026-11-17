@@ -1,0 +1,59 @@
+{
+  "_note": "Short, quotable answer at the top of each guide page (GEO/AEO, Lothar 17.11.2026). Also added as first question to the page's FAQPage schema and to llms.txt. {n}, {n_gas}, {n_steam}, {n_genset} are filled at build time. No prices, no numbers without source.",
+  "index.html": [
+    "What is LKS 360-SCHREINER LLC?",
+    "LKS 360-SCHREINER LLC is an independent broker for used and surplus gas turbines, steam turbines and generator sets, organised as a Florida limited liability company in St. Petersburg, Florida. It lists {n} units on behalf of their owners on lks360.com, screens buyers by letter of intent and lets buyer and owner sign the purchase contract directly."
+  ],
+  "used-gas-turbine-broker.html": [
+    "What does a used gas turbine broker do?",
+    "A used gas turbine broker brings owners of surplus turbines and buyers together, presents the technical data, screens buyers by letter of intent and coordinates inspection, while buyer and owner sign the purchase contract directly. LKS 360-SCHREINER LLC is an independent broker for used gas turbines, steam turbines and generator sets, paid by a commission agreed in writing; purchase payments never pass through its accounts."
+  ],
+  "how-to-sell-a-used-gas-turbine.html": [
+    "How do I sell a used gas turbine?",
+    "Collect the unit data (model, output, frequency, year, hours, starts, condition and documents), set your net price and offer the unit through one sales route at one price. Release serial numbers, site and full documents only to buyers who sign a letter of intent, then sign the purchase contract directly with the buyer and receive payment through escrow or an irrevocable letter of credit. LKS 360-SCHREINER LLC sells used gas turbines, steam turbines and generator sets for owners without an upfront fee."
+  ],
+  "condensing-vs-back-pressure-steam-turbine.html": [
+    "What is the difference between a condensing and a back pressure steam turbine?",
+    "A condensing steam turbine exhausts into a condenser below atmospheric pressure and turns as much steam energy as possible into electricity. A back pressure steam turbine exhausts steam at a pressure a process can still use, so it makes less power per tonne of steam but supplies heat to the plant at the same time. Extraction turbines combine both by taking process steam out at one or more stages."
+  ],
+  "steam-turbine-faq.html": [
+    "Used steam turbine FAQ: condensing or back pressure, what should a buyer know?",
+    "A condensing steam turbine exhausts into a condenser and turns as much steam as possible into power; a back pressure steam turbine exhausts steam at a pressure a process can still use, so it delivers power and process heat at the same time. A used steam turbine is further defined by its steam data (inlet pressure, inlet temperature, flow and exhaust pressure), extraction points and generator frequency. LKS 360-SCHREINER LLC lists {n_steam} used steam turbines and steam turbine generator sets on behalf of their owners."
+  ],
+  "gas-turbine-faq.html": [
+    "What should I know before buying a used gas turbine?",
+    "Start with the output you need, grid frequency (50 or 60 Hz), fuel, emission limits at the site and whether the plant runs simple or combined cycle. Then check hours, starts, overhaul records and the scope of the package. Aeroderivative gas turbines suit peaking and mobile power, heavy duty gas turbines suit continuous base load."
+  ],
+  "generator-set-faq.html": [
+    "What should I know before buying a used generator set?",
+    "Compare generator sets at the same rating (standby, prime or continuous), then check fuel (gas, diesel or heavy fuel oil), grid frequency and running hours since the last overhaul. Medium speed engines give more output per unit, high speed engines are compact and quick to install. LKS 360-SCHREINER LLC lists {n_genset} used gas and diesel generator sets on behalf of their owners."
+  ],
+  "buying-used-gas-turbines.html": [
+    "How do I buy a used gas turbine safely?",
+    "Send your requirement (output, frequency, fuel, site and timeline), compare offers by stock number, then sign a letter of intent to receive full data and inspect the unit. Sign the purchase contract directly with the owner and pay through escrow or a letter of credit, never in advance to an intermediary."
+  ],
+  "sell.html": [
+    "How can I sell my used turbine or generator set?",
+    "Give one broker an exclusive sales mandate for a limited time at your net price, so the unit is offered once, at one price, with one data set. LKS 360-SCHREINER LLC presents the unit to screened buyers, keeps your name and site confidential until a letter of intent and charges no upfront fee."
+  ],
+  "how-we-work.html": [
+    "How does LKS 360-SCHREINER LLC work?",
+    "LKS 360-SCHREINER LLC lists each unit on behalf of its owner, sends buyers an offer with the owner's conditions, releases full data and inspection after a letter of intent and lets buyer and owner sign the purchase contract directly. The commission is agreed in writing; purchase payments never pass through the accounts of LKS 360-SCHREINER LLC."
+  ],
+  "power-generation-glossary.html": [
+    "What do the common terms in used turbine trading mean?",
+    "This glossary defines the terms used when buying and selling used gas turbines, steam turbines and generator sets, such as LOI, proof of funds, escrow, aeroderivative, heavy duty, combined cycle, DLE and HRSG, in one or two plain sentences each."
+  ],
+  "gas-turbines.html": [
+    "Where can I buy a used gas turbine?",
+    "LKS 360-SCHREINER LLC (lks360.com) lists {n_gas} used and surplus gas turbines from Siemens, GE, Solar Turbines, Mitsubishi and Siemens Westinghouse, 50 and 60 Hz, each with a stock number and its own page. Units are offered on behalf of their owners, price on request; full data and inspection follow a letter of intent."
+  ],
+  "steam-turbines.html": [
+    "Where can I buy a used steam turbine?",
+    "LKS 360-SCHREINER LLC (lks360.com) lists {n_steam} used and surplus steam turbines and steam turbine generator sets, condensing and back pressure, each with a stock number and its own page. Units are offered on behalf of their owners, price on request; full data and inspection follow a letter of intent."
+  ],
+  "generator-sets.html": [
+    "Where can I buy a used generator set?",
+    "LKS 360-SCHREINER LLC (lks360.com) lists {n_genset} used and surplus gas, diesel and heavy fuel oil generator sets, including Caterpillar, Wärtsilä, MTU, Cummins and MAN engines, each with a stock number and its own page. Units are offered on behalf of their owners, price on request; full data and inspection follow a letter of intent."
+  ]
+}

@@ -31,6 +31,13 @@ ICON = {
 }
 
 e = lambda s: html.escape(str(s), quote=True)
+# One set of company data for every JSON-LD block (GEO/AEO, Lothar 17.11.2026). sameAs only with public, checked URLs.
+SAMEAS = ["https://www.wikidata.org/wiki/Q142084953", "https://www.linkedin.com/company/142908032",
+          "https://www.crunchbase.com/organization/lks-360-schreiner-llc", "https://www.facebook.com/groups/606333518127054",
+          "https://www.pinterest.com/schreinerlothar/", "https://x.com/lothar81795958", "https://www.instagram.com/lotschrei/",
+          "https://www.youtube.com/channel/UCP2-Bw2a4iCVZOgQC1tMshQ"]
+ORG_ADDRESS = {"@type": "PostalAddress", "streetAddress": "7901 4th St N, Ste 300", "addressLocality": "St. Petersburg",
+               "addressRegion": "FL", "postalCode": "33702", "addressCountry": "US"}
 WA = "https://wa.me/491704656619"
 MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "July", "August",
                "September", "October", "November", "December"]
@@ -381,6 +388,7 @@ def inventory_page():
   <h1>Gas turbines, steam turbines and generator sets for sale</h1>
   <p>{n} units from owners in our network: {counts['gas']} gas turbines, {counts['steam']} steam turbines and {counts['genset']} generator sets. Each listing has a stock number. Prices on request.</p>
 </div></div>
+<section class="qa"><div class="wrap"><p class="answer"><b>Short answer:</b> LKS 360-SCHREINER LLC (lks360.com) lists {n} used and surplus units for sale: {counts['gas']} gas turbines, {counts['steam']} steam turbines and {counts['genset']} generator sets, each with a stock number and its own page. Units are offered on behalf of their owners, price on request; full data and inspection follow a letter of intent.</p></div></section>
 <section class="inv"><div class="wrap">
   <form class="filters" id="filters" onsubmit="return false">
     <input type="search" id="q" placeholder="Search model or stock no." aria-label="Search">
@@ -592,6 +600,27 @@ def spec_block(slugname, label):
     return html, (f"What is the {label}?", ans)
 
 
+NOUN_OVERRIDE = {"caterpillar-g20cm34-for-sale": "gas engine", "wartsila-34sg-for-sale": "gas engine",
+                 "jenbacher-j620-for-sale": "gas engine", "caterpillar-3516-for-sale": "generator set",
+                 "mtu-16v4000-for-sale": "diesel generator set", "man-32-40-for-sale": "engine",
+                 "cummins-generator-sets-for-sale": ""}
+
+
+def model_noun(slugname, cat):
+    if slugname in NOUN_OVERRIDE:
+        return NOUN_OVERRIDE[slugname]
+    return {"gas": "gas turbine", "steam": "steam turbine", "genset": "generator set"}[cat]
+
+
+def model_short(slugname, label, us):
+    # Two or three quotable sentences: who lists it, how many, what it is.
+    t = TEXTS.get(slugname)
+    out = where_answer(label, us)
+    if t:
+        out = t["intro"].split(". ")[0].rstrip(".") + ". " + out
+    return out
+
+
 def model_guide(slugname, label):
     t = TEXTS.get(slugname)
     if not t:
@@ -635,10 +664,12 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
     spec_html, spec_qa = spec_block(slugname, label)
     t = TEXTS.get(slugname)
     own_faq = [tuple(x) for x in t["faq"]] if t else []
-    faqs = ([spec_qa] if spec_qa else []) + own_faq + model_faq(label, us)
+    faqs = [(f"Where can I buy a used {label}?", model_short(slugname, label, us))] + ([spec_qa] if spec_qa else []) + own_faq + model_faq(label, us)[1:]
     n = len(us)
     plural = "s" if n != 1 else ""
-    title = f"{label} for Sale: Used Units, Uses and Buyer Checks | LKS 360"
+    noun = model_noun(slugname, cat)
+    full = f"{label} {noun}".strip()
+    title = f"Used {full.replace(noun, noun.title()) if noun else full} for Sale: Units, Uses, Buyer Checks | LKS 360"
     if t:
         first = t["intro"].split(". ")[0].rstrip(".")
         desc = f"{first}. {n} unit{plural} listed with stock number. Uses, comparison and buyer checks. Price on request."
@@ -668,10 +699,10 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
 <div class="crumbs wrap"><a href="/">Home</a> / <a href="{curl}">{cname}</a> / {e(label)}</div>
 <div class="hero slim"><div class="wrap">
   <p class="kicker light">Inventory · updated {UPDATED}</p>
-  <h1>{e(label)} for sale</h1>
+  <h1>Used {e(full)} for sale</h1>
   <p>{e(lead)}</p>
 </div></div>
-<section class="qa"><div class="wrap"><p class="answer"><b>Where to buy a used {e(label)}:</b> {e(where_answer(label, us))}</p></div></section>
+<section class="qa"><div class="wrap"><p class="answer"><b>Where to buy a used {e(label)}:</b> {e(model_short(slugname, label, us))}</p></div></section>
 <section><div class="wrap">
   <p class="kicker">Units in our inventory</p>
   <h2>{n} {e(label)} unit{plural} listed</h2>
@@ -757,8 +788,76 @@ def news_page():
 """ + footer() + "\n</body>\n</html>\n"
 
 
+SHORT = {k: v for k, v in json.loads((ROOT / "_build" / "short_answers.json").read_text(encoding="utf-8")).items() if not k.startswith("_")}
+
+
+def short_answer(name):
+    if name not in SHORT:
+        return None
+    q, a = SHORT[name]
+    c = {k: sum(1 for u in UNITS if u["cat"] == k) for k in CATS}
+    a = a.format(n=len(UNITS), n_gas=c["gas"], n_steam=c["steam"], n_genset=c["genset"])
+    return q, a
+
+
+def add_answer(t, name):
+    qa = short_answer(name)
+    if not qa:
+        return t
+    q, a = qa
+    box = f'<!--ANSWER--><section class="qa"><div class="wrap"><p class="answer"><b>{e(q)}</b> {e(a)}</p></div></section><!--/ANSWER-->'
+    if "<!--ANSWER-->" in t:
+        t = re.sub(r"<!--ANSWER-->.*?<!--/ANSWER-->", lambda m: box, t, flags=re.S)
+    else:
+        i = t.index("</header>") + len("</header>")
+        m = re.match(r'\s*(<div class="crumbs[^>]*>.*?</div>\s*)?<div class="hero.*?</div></div>', t[i:], re.S)
+        j = i + (m.end() if m else 0)
+        t = t[:j] + "\n" + box + t[j:]
+    # first question of the FAQPage schema = the short answer (create the FAQPage if the page has none)
+    def fix(mm):
+        d = json.loads(mm.group(1))
+        items = d["@graph"] if isinstance(d, dict) and "@graph" in d else (d if isinstance(d, list) else [d])
+        faq = next((x for x in items if isinstance(x, dict) and x.get("@type") == "FAQPage"), None)
+        if faq is None:
+            return mm.group(0)
+        faq["mainEntity"] = [x for x in faq["mainEntity"] if x.get("name") != q]
+        faq["mainEntity"].insert(0, {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}})
+        return f'<script type="application/ld+json">{json.dumps(d, ensure_ascii=False)}</script>'
+    t2 = re.sub(r'<script type="application/ld\+json">(.*?)</script>', fix, t, flags=re.S)
+    if t2 == t and '"FAQPage"' not in t:
+        ld = {"@context": "https://schema.org", "@type": "FAQPage",
+              "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}}]}
+        t2 = t.replace("</head>", f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n</head>', 1)
+    return t2
+
+
+def fix_org_ld(t):
+    # Same company name, url, address and sameAs in every Organization block of the page.
+    def walk(x):
+        if isinstance(x, dict):
+            if x.get("@type") == "Organization" and x.get("name") == "LKS 360-SCHREINER LLC":
+                x["url"] = SITE + "/"
+                x["sameAs"] = SAMEAS
+                if not isinstance(x.get("address"), dict):
+                    x["address"] = ORG_ADDRESS
+            for v in x.values():
+                walk(v)
+        elif isinstance(x, list):
+            for v in x:
+                walk(v)
+    def fix(mm):
+        try:
+            d = json.loads(mm.group(1))
+        except ValueError:
+            return mm.group(0)
+        walk(d)
+        return f'<script type="application/ld+json">{json.dumps(d, ensure_ascii=False)}</script>'
+    return re.sub(r'<script type="application/ld\+json">(.*?)</script>', fix, t, flags=re.S)
+
+
 def patch_static(path):
     t = path.read_text(encoding="utf-8")
+    t = add_answer(t, path.name)
     t = re.sub(r"<header>.*?</header>", lambda m: header(), t, count=1, flags=re.S)
     t = re.sub(r'\s*<a class="wafloat".*?</a>', "", t, flags=re.S)
     t = re.sub(r"<footer>.*?</footer>", lambda m: footer(), t, count=1, flags=re.S)
@@ -1000,6 +1099,12 @@ for name in STATIC:
 for name in ["404.html"]:
     patch_static(ROOT / name)
 
+for _p in list(ROOT.glob("*.html")) + list((ROOT / "units").glob("*.html")) + list((ROOT / "news").glob("*.html")):
+    _t = _p.read_text(encoding="utf-8")
+    _t2 = fix_org_ld(_t)
+    if _t2 != _t:
+        _p.write_text(_t2, encoding="utf-8", newline="\n")
+
 urls = [f"{SITE}/"] + [f"{SITE}/{n}" for n in STATIC[1:] if (ROOT / n).exists()] + [f"{SITE}/{m[0]}.html" for m in MODELS] + [f"{SITE}/{HZ_SLUG}.html"] + [f"{SITE}/{CMP_SLUG}.html"] + [f"{SITE}/{_c[0]}.html" for _c in COMPARE] + [SITE + u["url"] for u in UNITS] + [f"{SITE}/news/{p['slug']}.html" for p in POSTS]
 IMGS = {**{f"{SITE}/{m[0]}.html": f"{SITE}/img/cards/{m[0]}.jpg" for m in MODELS},
         **{SITE + u["url"]: f"{SITE}/img/cards/lks-{u['id'].lower()}.jpg" for u in UNITS}}
@@ -1037,7 +1142,9 @@ def llms_line(u):
 llms = (llms_head + f"\n## Units for sale (stock list, updated {TODAY})\n"
         + "\n".join(llms_line(u) for u in UNITS)
         + "\n\n## Model pages\n" + "\n".join(f"- [{m[1]} for sale]({SITE}/{m[0]}.html)" for m in MODELS) + f"\n- [Used 60 Hz gas turbines, steam turbines and generator sets for the USA and the Americas]({SITE}/{HZ_SLUG}.html)" + f"\n- [Power generation equipment models compared (output, frequency, fuel, sources)]({SITE}/{CMP_SLUG}.html)" + "".join(f"\n- [{_MINFO[_c[1]][0]} vs {_MINFO[_c[2]][0]}]({SITE}/{_c[0]}.html)" for _c in COMPARE)
-        + "\n\n## News\n" + "\n".join(f"- [{p['title']}]({SITE}/news/{p['slug']}.html)" for p in POSTS) + "\n")
+        + "\n\n## News\n" + "\n".join(f"- [{p['title']}]({SITE}/news/{p['slug']}.html)" for p in POSTS)
+        + "\n\n## Short answers\n" + "\n".join(f"- {short_answer(k)[0]} {short_answer(k)[1]} ({SITE}/{'' if k == 'index.html' else k})" for k in SHORT)
+        + "\n" + "\n".join(f"- Where can I buy a used {m[1]}? {model_short(m[0], m[1], [u for u in UNITS if re.search(m[2], u['model'] + ' ' + u['name'])])} ({SITE}/{m[0]}.html)" for m in MODELS) + "\n")
 llms_path.write_text(llms, encoding="utf-8", newline="\n")
 
 # llms-full.txt: everything an AI assistant needs in one plain text file (no prices, no sellers, regions only by continent).
@@ -1057,11 +1164,14 @@ def _unit_full(u):
             ("Region", u.get("continent")), ("Status", "reserved" if u.get("status") == "reserved" else "offered, subject to prior sale"),
             ("Price", "on request"), ("Page", SITE + u["url"])]
     return f"### {u['name']}\n" + "\n".join(f"- {k}: {v}" for k, v in rows if v)
-_full = [llms_head.strip(), f"## Units for sale, full data (updated {TODAY})"] + [_unit_full(u) for u in UNITS]
+_full = [llms_head.strip(), "## Short answers\n" + "\n".join(f"Q: {short_answer(k)[0]}\nA: {short_answer(k)[1]}\nPage: {SITE}/{'' if k == 'index.html' else k}" for k in SHORT),
+         f"## Units for sale, full data (updated {TODAY})"] + [_unit_full(u) for u in UNITS]
 _full.append("## Questions and answers per model")
 for m in MODELS:
     _us = [u for u in UNITS if re.search(m[2], u["model"] + " " + u["name"])]
-    _full.append(f"### {m[1]} ({SITE}/{m[0]}.html)\n" + "\n".join(f"Q: {q}\nA: {a}" for q, a in ([spec_block(m[0], m[1])[1]] if m[0] in SPECS else []) + model_faq(m[1], _us)))
+    _own = [tuple(x) for x in TEXTS[m[0]]["faq"]] if m[0] in TEXTS else []
+    _intro = [(f"What is the {m[1]} used for?", TEXTS[m[0]]["intro"] + " Typical uses: " + "; ".join(TEXTS[m[0]]["uses"]).lower() + ".")] if m[0] in TEXTS else []
+    _full.append(f"### {m[1]} ({SITE}/{m[0]}.html)\n" + "\n".join(f"Q: {q}\nA: {a}" for q, a in [(f"Where can I buy a used {m[1]}?", model_short(m[0], m[1], _us))] + ([spec_block(m[0], m[1])[1]] if m[0] in SPECS else []) + _intro + _own + model_faq(m[1], _us)[1:]))
 for _n in ("how-we-work.html", "buying-used-gas-turbines.html", "gas-turbine-faq.html", "steam-turbine-faq.html", "generator-set-faq.html", "power-generation-glossary.html", "how-to-sell-a-used-gas-turbine.html", "used-gas-turbine-broker.html", "condensing-vs-back-pressure-steam-turbine.html", "compliance.html", "sell.html"):
     if (ROOT / _n).exists():
         _full.append(f"## Page: {SITE}/{_n}\n\n" + _plain(_n))

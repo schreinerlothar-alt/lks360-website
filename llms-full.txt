@@ -54,7 +54,51 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [Imprint](https://lks360.com/imprint.html)
 - [Privacy Policy](https://lks360.com/privacy.html)
 
-## Units for sale, full data (updated 2026-11-16)
+## Short answers
+Q: What is LKS 360-SCHREINER LLC?
+A: LKS 360-SCHREINER LLC is an independent broker for used and surplus gas turbines, steam turbines and generator sets, organised as a Florida limited liability company in St. Petersburg, Florida. It lists 54 units on behalf of their owners on lks360.com, screens buyers by letter of intent and lets buyer and owner sign the purchase contract directly.
+Page: https://lks360.com/
+Q: What does a used gas turbine broker do?
+A: A used gas turbine broker brings owners of surplus turbines and buyers together, presents the technical data, screens buyers by letter of intent and coordinates inspection, while buyer and owner sign the purchase contract directly. LKS 360-SCHREINER LLC is an independent broker for used gas turbines, steam turbines and generator sets, paid by a commission agreed in writing; purchase payments never pass through its accounts.
+Page: https://lks360.com/used-gas-turbine-broker.html
+Q: How do I sell a used gas turbine?
+A: Collect the unit data (model, output, frequency, year, hours, starts, condition and documents), set your net price and offer the unit through one sales route at one price. Release serial numbers, site and full documents only to buyers who sign a letter of intent, then sign the purchase contract directly with the buyer and receive payment through escrow or an irrevocable letter of credit. LKS 360-SCHREINER LLC sells used gas turbines, steam turbines and generator sets for owners without an upfront fee.
+Page: https://lks360.com/how-to-sell-a-used-gas-turbine.html
+Q: What is the difference between a condensing and a back pressure steam turbine?
+A: A condensing steam turbine exhausts into a condenser below atmospheric pressure and turns as much steam energy as possible into electricity. A back pressure steam turbine exhausts steam at a pressure a process can still use, so it makes less power per tonne of steam but supplies heat to the plant at the same time. Extraction turbines combine both by taking process steam out at one or more stages.
+Page: https://lks360.com/condensing-vs-back-pressure-steam-turbine.html
+Q: Used steam turbine FAQ: condensing or back pressure, what should a buyer know?
+A: A condensing steam turbine exhausts into a condenser and turns as much steam as possible into power; a back pressure steam turbine exhausts steam at a pressure a process can still use, so it delivers power and process heat at the same time. A used steam turbine is further defined by its steam data (inlet pressure, inlet temperature, flow and exhaust pressure), extraction points and generator frequency. LKS 360-SCHREINER LLC lists 7 used steam turbines and steam turbine generator sets on behalf of their owners.
+Page: https://lks360.com/steam-turbine-faq.html
+Q: What should I know before buying a used gas turbine?
+A: Start with the output you need, grid frequency (50 or 60 Hz), fuel, emission limits at the site and whether the plant runs simple or combined cycle. Then check hours, starts, overhaul records and the scope of the package. Aeroderivative gas turbines suit peaking and mobile power, heavy duty gas turbines suit continuous base load.
+Page: https://lks360.com/gas-turbine-faq.html
+Q: What should I know before buying a used generator set?
+A: Compare generator sets at the same rating (standby, prime or continuous), then check fuel (gas, diesel or heavy fuel oil), grid frequency and running hours since the last overhaul. Medium speed engines give more output per unit, high speed engines are compact and quick to install. LKS 360-SCHREINER LLC lists 13 used gas and diesel generator sets on behalf of their owners.
+Page: https://lks360.com/generator-set-faq.html
+Q: How do I buy a used gas turbine safely?
+A: Send your requirement (output, frequency, fuel, site and timeline), compare offers by stock number, then sign a letter of intent to receive full data and inspect the unit. Sign the purchase contract directly with the owner and pay through escrow or a letter of credit, never in advance to an intermediary.
+Page: https://lks360.com/buying-used-gas-turbines.html
+Q: How can I sell my used turbine or generator set?
+A: Give one broker an exclusive sales mandate for a limited time at your net price, so the unit is offered once, at one price, with one data set. LKS 360-SCHREINER LLC presents the unit to screened buyers, keeps your name and site confidential until a letter of intent and charges no upfront fee.
+Page: https://lks360.com/sell.html
+Q: How does LKS 360-SCHREINER LLC work?
+A: LKS 360-SCHREINER LLC lists each unit on behalf of its owner, sends buyers an offer with the owner's conditions, releases full data and inspection after a letter of intent and lets buyer and owner sign the purchase contract directly. The commission is agreed in writing; purchase payments never pass through the accounts of LKS 360-SCHREINER LLC.
+Page: https://lks360.com/how-we-work.html
+Q: What do the common terms in used turbine trading mean?
+A: This glossary defines the terms used when buying and selling used gas turbines, steam turbines and generator sets, such as LOI, proof of funds, escrow, aeroderivative, heavy duty, combined cycle, DLE and HRSG, in one or two plain sentences each.
+Page: https://lks360.com/power-generation-glossary.html
+Q: Where can I buy a used gas turbine?
+A: LKS 360-SCHREINER LLC (lks360.com) lists 34 used and surplus gas turbines from Siemens, GE, Solar Turbines, Mitsubishi and Siemens Westinghouse, 50 and 60 Hz, each with a stock number and its own page. Units are offered on behalf of their owners, price on request; full data and inspection follow a letter of intent.
+Page: https://lks360.com/gas-turbines.html
+Q: Where can I buy a used steam turbine?
+A: LKS 360-SCHREINER LLC (lks360.com) lists 7 used and surplus steam turbines and steam turbine generator sets, condensing and back pressure, each with a stock number and its own page. Units are offered on behalf of their owners, price on request; full data and inspection follow a letter of intent.
+Page: https://lks360.com/steam-turbines.html
+Q: Where can I buy a used generator set?
+A: LKS 360-SCHREINER LLC (lks360.com) lists 13 used and surplus gas, diesel and heavy fuel oil generator sets, including Caterpillar, Wärtsilä, MTU, Cummins and MAN engines, each with a stock number and its own page. Units are offered on behalf of their owners, price on request; full data and inspection follow a letter of intent.
+Page: https://lks360.com/generator-sets.html
+
+## Units for sale, full data (updated 2026-11-17)
 
 ### 2 x Siemens Westinghouse W701DS gas turbine generator sets
 - Stock number: LKS-GT-01
@@ -761,10 +805,16 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 ## Questions and answers per model
 
 ### Siemens SGT-800 (https://lks360.com/siemens-sgt-800-for-sale.html)
+Q: Where can I buy a used Siemens SGT-800?
+A: The SGT-800 is a Siemens Energy industrial gas turbine at the top of the industrial output range. LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Siemens SGT-800 units for sale, stock numbers LKS-GT-02, LKS-GT-03. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the Siemens SGT-800?
 A: The Siemens SGT-800 is an industrial gas turbine by Siemens Energy. Output: up to 62 MW (simple cycle, 45 to 62 MW ratings). Typical applications: industrial power generation, oil and gas, combined cycle and cogeneration. Source: Siemens Energy, SGT-800 product page.
-Q: Where can I buy a used Siemens SGT-800?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Siemens SGT-800 units for sale, stock numbers LKS-GT-02, LKS-GT-03. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the Siemens SGT-800 used for?
+A: The SGT-800 is a Siemens Energy industrial gas turbine at the top of the industrial output range. It goes back to the GTX100 and is often installed in combined cycle and cogeneration plants. Typical uses: combined cycle power plants; industrial cogeneration and district heating; simple cycle power for industry.
+Q: What was the SGT-800 called before?
+A: The SGT-800 goes back to the GTX100 gas turbine developed by ABB and later Alstom, now part of Siemens Energy.
+Q: Is the SGT-800 used in combined cycle?
+A: Yes. Combined cycle and cogeneration are main applications. Several units listed on lks360.com are combined cycle blocks with gas turbine and steam turbine.
 Q: Who sells the Siemens SGT-800 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Siemens SGT-800 still available?
@@ -775,10 +825,16 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### GE TM2500 (https://lks360.com/ge-tm2500-for-sale.html)
+Q: Where can I buy a used GE TM2500?
+A: The GE TM2500 is a trailer mounted gas turbine generator built around the LM2500 aeroderivative engine. LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus GE TM2500 unit for sale, stock number LKS-GT-38. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the GE TM2500?
 A: The GE TM2500 is a mobile aeroderivative gas turbine by GE Vernova. Output: 34.5 MW net (DLE) and 34.6 MW net (SAC) at 50 Hz. Typical applications: bridge to permanent power, emergency and backup power, isolated locations. Source: GE Vernova, TM2500 product page.
-Q: Where can I buy a used GE TM2500?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus GE TM2500 unit for sale, stock number LKS-GT-38. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the GE TM2500 used for?
+A: The GE TM2500 is a trailer mounted gas turbine generator built around the LM2500 aeroderivative engine. It is designed to be moved by road and set up quickly where power is needed. Typical uses: emergency and temporary power; grid support during plant outages; fast track power for industrial projects.
+Q: What is the difference between the TM2500 and the LM2500?
+A: The TM2500 is a mobile, trailer mounted package with an LM2500 family engine. The LM2500 is usually installed as a stationary package. See LM2500 vs TM2500 for the details.
+Q: How fast can a TM2500 be installed?
+A: The TM2500 is designed for short installation times. The real time depends on site preparation, fuel supply and grid connection.
 Q: Who sells the GE TM2500 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the GE TM2500 still available?
@@ -789,10 +845,16 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### GE LM2500 (https://lks360.com/ge-lm2500-for-sale.html)
+Q: Where can I buy a used GE LM2500?
+A: The GE LM2500 is an aeroderivative gas turbine developed from the CF6 aircraft engine. LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus GE LM2500 units for sale, stock numbers LKS-GT-17, LKS-GT-20. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the GE LM2500?
 A: The GE LM2500 is an aeroderivative gas turbine by GE Vernova. Output: about 37 MW simple cycle (LM2500XPRESS+ G4 34.5 MW, G5 36.3 MW net, 50 Hz). Typical applications: fast power and cycling, grid support, data centers, reserve power, CHP, industrial. Source: GE Vernova, LM2500 product page.
-Q: Where can I buy a used GE LM2500?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus GE LM2500 units for sale, stock numbers LKS-GT-17, LKS-GT-20. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the GE LM2500 used for?
+A: The GE LM2500 is an aeroderivative gas turbine developed from the CF6 aircraft engine. It is used in industrial power generation, on ships and in oil and gas. Typical uses: power generation and cogeneration; mechanical drive for compressors; marine propulsion and offshore power.
+Q: What is the difference between the LM2500, LM2500+ and LM2500+G4?
+A: They are versions of the same aeroderivative family. The LM2500+ and LM2500+G4 have higher output than the base LM2500. The data sheet of each unit states the exact version.
+Q: Can an LM2500 engine be exchanged?
+A: Aeroderivative engines can be removed and exchanged as a whole, which shortens outages. Engine exchange and lease options depend on the depot and are clarified case by case.
 Q: Who sells the GE LM2500 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the GE LM2500 still available?
@@ -803,10 +865,16 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### GE LM6000 (https://lks360.com/ge-lm6000-for-sale.html)
+Q: Where can I buy a used GE LM6000?
+A: The GE LM6000 is a two shaft aeroderivative gas turbine developed from the CF6-80C2 aircraft engine. LKS 360-SCHREINER LLC (lks360.com) lists 3 used or surplus GE LM6000 units for sale, stock numbers LKS-GT-19, LKS-GT-32, LKS-GT-35. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the GE LM6000?
 A: The GE LM6000 is an aeroderivative gas turbine by GE Vernova. Output: about 57 MW simple cycle (51.1 MW PC Sprint, 56.9 MW PF+ Sprint net). Typical applications: fast start and grid support, backup power, flexible generation and CHP. Source: GE Vernova, LM6000 product page.
-Q: Where can I buy a used GE LM6000?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 3 used or surplus GE LM6000 units for sale, stock numbers LKS-GT-19, LKS-GT-32, LKS-GT-35. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the GE LM6000 used for?
+A: The GE LM6000 is a two shaft aeroderivative gas turbine developed from the CF6-80C2 aircraft engine. It is widely used for peaking, cogeneration and fast start power plants. Typical uses: peaking plants with frequent starts; cogeneration and combined cycle; power barges and fast track plants.
+Q: What does SPRINT mean on an LM6000?
+A: SPRINT stands for spray intercooling. Water is sprayed into the compressor to cool the air, which raises output, mainly on hot days.
+Q: What is the difference between LM6000 PA, PC and PD?
+A: They are generations of the LM6000. PC and PD versions came later than the PA and differ in output and combustion system. The data sheet of each unit states the version.
 Q: Who sells the GE LM6000 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the GE LM6000 still available?
@@ -818,7 +886,11 @@ A: Yes. After your letter of intent you receive the technical documents and can 
 
 ### GE LM5000 (https://lks360.com/ge-lm5000-for-sale.html)
 Q: Where can I buy a used GE LM5000?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus GE LM5000 unit for sale, stock number LKS-GT-18. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+A: The GE LM5000 is an aeroderivative gas turbine developed from the CF6-50 aircraft engine. LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus GE LM5000 unit for sale, stock number LKS-GT-18. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the GE LM5000 used for?
+A: The GE LM5000 is an aeroderivative gas turbine developed from the CF6-50 aircraft engine. It is the predecessor of the LM6000 and still runs in simple cycle and cogeneration plants. Typical uses: simple cycle power generation; cogeneration; plants that already run lm5000 units and need spares or extra capacity.
+Q: Is the LM5000 still supported?
+A: Parts and service for the LM5000 are available from GE and independent providers. Availability of specific parts should be checked before purchase.
 Q: Who sells the GE LM5000 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the GE LM5000 still available?
@@ -829,10 +901,16 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### GE Frame 6B (https://lks360.com/ge-frame-6b-for-sale.html)
+Q: Where can I buy a used GE Frame 6B?
+A: The GE Frame 6B (MS6001B) is a heavy duty gas turbine known for reliability and fuel flexibility. LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus GE Frame 6B units for sale, stock numbers LKS-GT-12, LKS-GT-13. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the GE Frame 6B?
 A: The GE Frame 6B is an industrial heavy duty gas turbine by GE Vernova. Output: 45 MW (simple cycle, ISO, natural gas). Typical applications: refineries, LNG, CHP, industrial power, island mode and remote sites. Source: GE Vernova, 6B product page.
-Q: Where can I buy a used GE Frame 6B?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus GE Frame 6B units for sale, stock numbers LKS-GT-12, LKS-GT-13. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the GE Frame 6B used for?
+A: The GE Frame 6B (MS6001B) is a heavy duty gas turbine known for reliability and fuel flexibility. It is common in industrial cogeneration and in refineries. Typical uses: industrial cogeneration and process steam; refinery and petrochemical power; combined cycle plants in the lower utility range.
+Q: Is the Frame 6B the same as the MS6001B?
+A: Yes. Frame 6B and MS6001B name the same GE heavy duty gas turbine. Upgraded versions are often marked 6B.03.
+Q: What fuels can a Frame 6B burn?
+A: The Frame 6B is known for fuel flexibility. The fuel a specific unit can burn depends on its fuel system and combustors, which are listed in the unit documents.
 Q: Who sells the GE Frame 6B units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the GE Frame 6B still available?
@@ -843,10 +921,16 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### GE 7EA (https://lks360.com/ge-7ea-for-sale.html)
+Q: Where can I buy a used GE 7EA?
+A: The GE 7EA is a heavy duty E class gas turbine for 60 Hz grids. LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus GE 7EA unit for sale, stock number LKS-GT-11. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the GE 7EA?
 A: The GE 7EA is an industrial heavy duty gas turbine by GE Vernova. Output: 90 MW (7E.03, simple cycle, ISO, natural gas). Typical applications: peaking, cyclic and baseload, mechanical drive, CHP and cogeneration, LNG. Source: GE Vernova, 7E product page.
-Q: Where can I buy a used GE 7EA?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus GE 7EA unit for sale, stock number LKS-GT-11. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the GE 7EA used for?
+A: The GE 7EA is a heavy duty E class gas turbine for 60 Hz grids. It is a common choice for peaking and combined cycle plants in the Americas and other 60 Hz regions. Typical uses: peaking and mid merit power plants; combined cycle and cogeneration; dual fuel plants with liquid fuel backup.
+Q: What is the difference between the 7EA and the 9E?
+A: The 7EA runs on 60 Hz grids and the 9E on 50 Hz grids. See the comparison page Frame 9E vs 7EA for manufacturer data side by side.
+Q: Is a 7EA suitable for the USA?
+A: Yes. The 7EA is a 60 Hz gas turbine and fits the US grid without frequency conversion.
 Q: Who sells the GE 7EA units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the GE 7EA still available?
@@ -857,10 +941,16 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### GE Frame 5 (MS5001) (https://lks360.com/ge-frame-5-for-sale.html)
+Q: Where can I buy a used GE Frame 5 (MS5001)?
+A: The GE Frame 5 (MS5001) is a heavy duty gas turbine with one of the longest service histories in the industry. LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus GE Frame 5 (MS5001) units for sale, stock numbers LKS-GT-14, LKS-GT-15. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the GE Frame 5 (MS5001)?
 A: The GE Frame 5 (MS5001) is an industrial heavy duty gas turbine by GE (now GE Vernova). Output: 13.3 MW (early MS5001D) to 21 MW (MS5001N) in cited installations. Typical applications: power generation in simple cycle, cogeneration and combined cycle; peaking, black start; mechanical drive. Source: Combined Cycle Journal, Special report: The venerable Frame 5 gas turbine.
-Q: Where can I buy a used GE Frame 5 (MS5001)?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus GE Frame 5 (MS5001) units for sale, stock numbers LKS-GT-14, LKS-GT-15. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the GE Frame 5 (MS5001) used for?
+A: The GE Frame 5 (MS5001) is a heavy duty gas turbine with one of the longest service histories in the industry. Many units still run in power plants, refineries and on power barges. Typical uses: simple cycle power generation; cogeneration in refineries and industry; power barges and mobile power plants.
+Q: What is the difference between the MS5001 and the MS5002?
+A: The MS5001 is a single shaft gas turbine used for generator drive. The MS5002 is a two shaft design used mainly for compressor and pump drive.
+Q: Are Frame 5 gas turbines still supported?
+A: Yes. GE and independent service providers still supply parts and service for the Frame 5 fleet.
 Q: Who sells the GE Frame 5 (MS5001) units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the GE Frame 5 (MS5001) still available?
@@ -871,10 +961,16 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### GE 9HA (https://lks360.com/ge-9ha-for-sale.html)
+Q: Where can I buy a used GE 9HA?
+A: The GE 9HA is a heavy duty H class gas turbine for 50 Hz grids and one of the largest air cooled gas turbines on the market. LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus GE 9HA unit for sale, stock number LKS-GT-10. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the GE 9HA?
 A: The GE 9HA is an industrial heavy duty gas turbine by GE Vernova. Output: 448 MW (9HA.01) and 571 MW (9HA.02), simple cycle net. Typical applications: combined cycle power plants. Source: GE Vernova, 9HA product page.
-Q: Where can I buy a used GE 9HA?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus GE 9HA unit for sale, stock number LKS-GT-10. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the GE 9HA used for?
+A: The GE 9HA is a heavy duty H class gas turbine for 50 Hz grids and one of the largest air cooled gas turbines on the market. It is built for large combined cycle power plants. Typical uses: large utility combined cycle plants; base load power with high efficiency; new build plants that need a large block of power.
+Q: What is the difference between the 9HA.01 and the 9HA.02?
+A: Both are GE H class gas turbines for 50 Hz. The 9HA.02 is the larger version. The data sheet of the specific unit states which version is offered.
+Q: Can an unused 9HA be bought on the secondary market?
+A: Yes, unused units become available when projects are cancelled or changed. Such units are offered by their owners and listed with stock number on lks360.com when available.
 Q: Who sells the GE 9HA units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the GE 9HA still available?
@@ -885,10 +981,16 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### Siemens SGT-600 (https://lks360.com/siemens-sgt-600-for-sale.html)
+Q: Where can I buy a used Siemens SGT-600?
+A: The SGT-600 is a Siemens Energy industrial gas turbine in the medium output class. LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Siemens SGT-600 units for sale, stock numbers LKS-GT-06, LKS-GT-07. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the Siemens SGT-600?
 A: The Siemens SGT-600 is an industrial gas turbine by Siemens Energy. Output: 24.5 MW(e) gross (simple cycle). Typical applications: simple cycle, combined cycle, cogeneration and other heating applications. Source: Siemens Energy, SGT-600 product page.
-Q: Where can I buy a used Siemens SGT-600?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Siemens SGT-600 units for sale, stock numbers LKS-GT-06, LKS-GT-07. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the Siemens SGT-600 used for?
+A: The SGT-600 is a Siemens Energy industrial gas turbine in the medium output class. It goes back to the ABB GT10B and is still often searched under that name. Typical uses: combined cycle and cogeneration plants; industrial power and steam supply; heating applications with heat recovery boilers.
+Q: Is the SGT-600 the same as the GT10B?
+A: Yes. The SGT-600 goes back to the ABB GT10B. Units are traded under both names, and older units are often still listed as GT10B.
+Q: Can an SGT-600 be used in combined cycle?
+A: Yes. Simple cycle, combined cycle and cogeneration are listed by the manufacturer as typical applications.
 Q: Who sells the Siemens SGT-600 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Siemens SGT-600 still available?
@@ -899,10 +1001,16 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### Siemens SGT-700 (https://lks360.com/siemens-sgt-700-for-sale.html)
+Q: Where can I buy a used Siemens SGT-700?
+A: The SGT-700 is a Siemens Energy industrial gas turbine in the medium output class. LKS 360-SCHREINER LLC (lks360.com) lists 3 used or surplus Siemens SGT-700 units for sale, stock numbers LKS-GT-05, LKS-GT-25, LKS-GT-26. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the Siemens SGT-700?
 A: The Siemens SGT-700 is an industrial gas turbine by Siemens Energy. Output: 32.6 to 35.2 MW(e) gross (simple cycle). Typical applications: simple cycle, combined cycle, cogeneration, oil and gas, mechanical drive. Source: Siemens Energy, SGT-700 product page.
-Q: Where can I buy a used Siemens SGT-700?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 3 used or surplus Siemens SGT-700 units for sale, stock numbers LKS-GT-05, LKS-GT-25, LKS-GT-26. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the Siemens SGT-700 used for?
+A: The SGT-700 is a Siemens Energy industrial gas turbine in the medium output class. It was developed from the GT10C and is used for power generation, cogeneration and mechanical drive. Typical uses: combined cycle blocks with heat recovery steam generator; industrial cogeneration; oil and gas power and compressor drive.
+Q: What was the SGT-700 called before?
+A: The SGT-700 goes back to the GT10C gas turbine, developed from the GT10B family.
+Q: What is the difference between the SGT-700 and the SGT-800?
+A: Both are Siemens Energy industrial gas turbines. The SGT-800 has the higher output. See the comparison page SGT-800 vs SGT-700 for manufacturer data side by side.
 Q: Who sells the Siemens SGT-700 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Siemens SGT-700 still available?
@@ -913,10 +1021,16 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### Siemens SGT-400 (https://lks360.com/siemens-sgt-400-for-sale.html)
+Q: Where can I buy a used Siemens SGT-400?
+A: The SGT-400 is a Siemens Energy industrial gas turbine in the lower medium output class. LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus Siemens SGT-400 unit for sale, stock number LKS-GT-27. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the Siemens SGT-400?
 A: The Siemens SGT-400 is an industrial gas turbine by Siemens Energy. Output: 12.9 MW(e) and 14.3 MW(e) (13 MW and 15 MW versions). Typical applications: simple cycle, combined cycle, cogeneration; offshore platforms and FPSO. Source: Siemens Energy, SGT-400 product page.
-Q: Where can I buy a used Siemens SGT-400?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus Siemens SGT-400 unit for sale, stock number LKS-GT-27. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the Siemens SGT-400 used for?
+A: The SGT-400 is a Siemens Energy industrial gas turbine in the lower medium output class. It goes back to the Cyclone design and is widely used offshore and in industrial cogeneration. Typical uses: offshore platforms and fpso power generation; industrial cogeneration with heat recovery; combined cycle for small power plants.
+Q: What was the SGT-400 called before?
+A: The SGT-400 goes back to the Cyclone gas turbine from the former Alstom industrial range, now part of Siemens Energy.
+Q: Is the SGT-400 used offshore?
+A: Yes. The manufacturer lists offshore platforms and FPSO among the typical applications of the SGT-400.
 Q: Who sells the Siemens SGT-400 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Siemens SGT-400 still available?
@@ -927,10 +1041,16 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### Siemens SGT-300 (https://lks360.com/siemens-sgt-300-for-sale.html)
+Q: Where can I buy a used Siemens SGT-300?
+A: The SGT-300 is a Siemens Energy industrial gas turbine in the small output class. LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Siemens SGT-300 units for sale, stock numbers LKS-GT-28, LKS-GT-45. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the Siemens SGT-300?
 A: The Siemens SGT-300 is an industrial gas turbine by Siemens Energy. Output: 8.0 MW(e) (single shaft, simple cycle). Typical applications: simple and combined cycle, industrial cogeneration, district heating, oil and gas on and offshore. Source: Siemens Energy, SGT-300 product page.
-Q: Where can I buy a used Siemens SGT-300?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Siemens SGT-300 units for sale, stock numbers LKS-GT-28, LKS-GT-45. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the Siemens SGT-300 used for?
+A: The SGT-300 is a Siemens Energy industrial gas turbine in the small output class. It goes back to the Tempest design and is used both for power generation and, in its twin shaft version, for driving compressors. Typical uses: industrial cogeneration and district heating; power generation on oil and gas sites, on and offshore; simple cycle power for remote sites.
+Q: What was the SGT-300 called before?
+A: The SGT-300 goes back to the Tempest gas turbine from the former Ruston and Alstom industrial range, now part of Siemens Energy.
+Q: What is the difference between the SGT-300 and the SGT-400?
+A: Both are Siemens Energy industrial gas turbines. The SGT-400 has the higher output; the SGT-300 suits smaller loads. See the comparison page SGT-400 vs SGT-300 for the manufacturer data side by side.
 Q: Who sells the Siemens SGT-300 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Siemens SGT-300 still available?
@@ -941,10 +1061,16 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### Siemens SGT-100 (https://lks360.com/siemens-sgt-100-for-sale.html)
+Q: Where can I buy a used Siemens SGT-100?
+A: The SGT-100 is the smallest gas turbine in the Siemens Energy industrial range. LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus Siemens SGT-100 unit for sale, stock number LKS-GT-29. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the Siemens SGT-100?
 A: The Siemens SGT-100 is an industrial gas turbine by Siemens Energy. Output: 5.1 MW(e) and 5.4 MW(e). Typical applications: simple and combined cycle including cogeneration; oil and gas on and offshore. Source: Siemens Energy, SGT-100 product page.
-Q: Where can I buy a used Siemens SGT-100?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus Siemens SGT-100 unit for sale, stock number LKS-GT-29. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the Siemens SGT-100 used for?
+A: The SGT-100 is the smallest gas turbine in the Siemens Energy industrial range. It goes back to the Ruston Typhoon design and is built as a compact package for sites that need a few megawatts of power and heat. Typical uses: combined heat and power for factories, hospitals and district heating; power for oil and gas platforms and production sites; island operation where no grid is available.
+Q: What was the SGT-100 called before?
+A: The SGT-100 goes back to the Ruston Typhoon gas turbine. Siemens took over the range and renamed it SGT-100.
+Q: Is the SGT-100 suitable for combined heat and power?
+A: Yes. The exhaust heat of the SGT-100 is commonly used in a heat recovery boiler for steam or hot water, which is a main reason why the model is used in industry and district heating.
 Q: Who sells the Siemens SGT-100 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Siemens SGT-100 still available?
@@ -955,10 +1081,16 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### GE Frame 9E (https://lks360.com/ge-frame-9e-for-sale.html)
+Q: Where can I buy a used GE Frame 9E?
+A: The GE Frame 9E (MS9001E, for example PG9171E) is a heavy duty E class gas turbine for 50 Hz grids. LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus GE Frame 9E units for sale, stock numbers LKS-GT-30, LKS-GT-36. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the GE Frame 9E?
 A: The GE Frame 9E is an industrial heavy duty gas turbine by GE Vernova. Output: 132 MW (9E.03) to 147 MW (9E.04), simple cycle net. Typical applications: simple cycle, combined cycle, industrial CHP and mechanical drive. Source: GE Vernova, 9E product page.
-Q: Where can I buy a used GE Frame 9E?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus GE Frame 9E units for sale, stock numbers LKS-GT-30, LKS-GT-36. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the GE Frame 9E used for?
+A: The GE Frame 9E (MS9001E, for example PG9171E) is a heavy duty E class gas turbine for 50 Hz grids. It has a large installed fleet and is known for burning a wide range of fuels. Typical uses: utility simple cycle and combined cycle plants; plants burning gas and liquid fuels; industrial power for large sites.
+Q: What does PG9171E mean?
+A: PG9171E is a GE model designation of the Frame 9E package for generator drive.
+Q: What is the difference between the Frame 9E and the 7EA?
+A: The 9E is built for 50 Hz grids and the 7EA for 60 Hz grids. See Frame 9E vs 7EA for the manufacturer data.
 Q: Who sells the GE Frame 9E units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the GE Frame 9E still available?
@@ -969,10 +1101,16 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### Siemens Westinghouse W701 and W501 (https://lks360.com/siemens-westinghouse-w701-w501-for-sale.html)
+Q: Where can I buy a used Siemens Westinghouse W701 and W501?
+A: W701 and W501 are heavy duty gas turbines from the Westinghouse fleet, which came to Siemens with the takeover of Westinghouse Power Generation. LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Siemens Westinghouse W701 and W501 units for sale, stock numbers LKS-GT-01, LKS-GT-09. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the Siemens Westinghouse W701 and W501?
 A: The Siemens Westinghouse W701 and W501 is an industrial heavy duty gas turbine by Siemens Energy (Westinghouse design); Mitsubishi Power for M501/M701. Output: W501: about 40 MW (W501A, 1968) to 120 MW (W501D5A); 501F about 150 MW class. Source: Wikipedia, Westinghouse Combustion Turbine Systems Division.
-Q: Where can I buy a used Siemens Westinghouse W701 and W501?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Siemens Westinghouse W701 and W501 units for sale, stock numbers LKS-GT-01, LKS-GT-09. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the Siemens Westinghouse W701 and W501 used for?
+A: W701 and W501 are heavy duty gas turbines from the Westinghouse fleet, which came to Siemens with the takeover of Westinghouse Power Generation. The W701 series runs on 50 Hz grids, the W501 series on 60 Hz grids. Typical uses: utility simple cycle and combined cycle plants; base load power with dual fuel capability; plant relocations to regions that need large blocks of power quickly.
+Q: What is the difference between the W701 and the W501?
+A: The W701 series is built for 50 Hz grids and the W501 series for 60 Hz grids. Both come from the Westinghouse heavy duty fleet.
+Q: Who services W701 and W501 gas turbines today?
+A: Siemens Energy and independent service providers support the fleet. The service history of the specific unit is part of the documents released after a letter of intent.
 Q: Who sells the Siemens Westinghouse W701 and W501 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Siemens Westinghouse W701 and W501 still available?
@@ -984,7 +1122,13 @@ A: Yes. After your letter of intent you receive the technical documents and can 
 
 ### Solar Titan (https://lks360.com/solar-titan-for-sale.html)
 Q: Where can I buy a used Solar Titan?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Solar Titan units for sale, stock numbers LKS-GT-21, LKS-GT-22. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+A: Titan is the largest gas turbine family of Solar Turbines, a Caterpillar company. LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Solar Titan units for sale, stock numbers LKS-GT-21, LKS-GT-22. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the Solar Titan used for?
+A: Titan is the largest gas turbine family of Solar Turbines, a Caterpillar company. The Titan 130 and Titan 250 are used for power generation and for driving compressors in oil and gas. Typical uses: gas compression on pipelines and production sites; industrial power generation and cogeneration; offshore power and mechanical drive.
+Q: What is the difference between the Titan 130 and the Titan 250?
+A: Both belong to the Titan family of Solar Turbines. The Titan 250 has the higher output. The data sheet of each unit states the rating.
+Q: Can a mechanical drive Titan be used for power generation?
+A: A mechanical drive package is built to drive a compressor. Conversion to generator drive needs a different package and is assessed case by case.
 Q: Who sells the Solar Titan units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Solar Titan still available?
@@ -996,7 +1140,11 @@ A: Yes. After your letter of intent you receive the technical documents and can 
 
 ### Solar Centaur 40 (https://lks360.com/solar-centaur-40-for-sale.html)
 Q: Where can I buy a used Solar Centaur 40?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus Solar Centaur 40 unit for sale, stock number LKS-GT-23. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+A: The Centaur 40 is a small industrial gas turbine from Solar Turbines, a Caterpillar company, with one of the largest installed fleets in its class. LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus Solar Centaur 40 unit for sale, stock number LKS-GT-23. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the Solar Centaur 40 used for?
+A: The Centaur 40 is a small industrial gas turbine from Solar Turbines, a Caterpillar company, with one of the largest installed fleets in its class. It is used for power generation and for compressor and pump drive. Typical uses: generator sets for oil and gas sites; small cogeneration plants; compressor and pump drive.
+Q: Is the Centaur 40 a good choice for small power needs?
+A: The Centaur 40 is widely used for small loads in industry and oil and gas, and parts and service are available worldwide. Whether it fits depends on the site load and the fuel.
 Q: Who sells the Solar Centaur 40 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Solar Centaur 40 still available?
@@ -1008,7 +1156,11 @@ A: Yes. After your letter of intent you receive the technical documents and can 
 
 ### Mitsubishi MF111 (https://lks360.com/mitsubishi-mf111-for-sale.html)
 Q: Where can I buy a used Mitsubishi MF111?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus Mitsubishi MF111 unit for sale, stock number LKS-GT-24. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+A: The MF111 is an industrial gas turbine from Mitsubishi Heavy Industries in the small to medium output class. LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus Mitsubishi MF111 unit for sale, stock number LKS-GT-24. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the Mitsubishi MF111 used for?
+A: The MF111 is an industrial gas turbine from Mitsubishi Heavy Industries in the small to medium output class. It is mostly used for cogeneration with a heat recovery steam generator. Typical uses: industrial cogeneration with process steam; combined cycle for industrial sites; power for factories in asia.
+Q: Where is the MF111 used?
+A: The MF111 is mainly used in industrial cogeneration, often together with a heat recovery steam generator that supplies process steam.
 Q: Who sells the Mitsubishi MF111 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Mitsubishi MF111 still available?
@@ -1019,10 +1171,16 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### Siemens SGT5-2000E (https://lks360.com/siemens-sgt5-2000e-for-sale.html)
+Q: Where can I buy a used Siemens SGT5-2000E?
+A: The SGT5-2000E is a Siemens Energy heavy duty gas turbine for 50 Hz grids. LKS 360-SCHREINER LLC (lks360.com) has no Siemens SGT5-2000E listed at the moment and searches the market for buyers. Send your requirement to manager@lks360.com or WhatsApp +49 170 4656619.
 Q: What is the Siemens SGT5-2000E?
 A: The Siemens SGT5-2000E is a heavy duty gas turbine by Siemens Energy. Output: 198 MW gas turbine; SCC5-2000E combined cycle 290 MW (1x1) and 581 MW (2x1). Typical applications: simple cycle for peak load or standby, combined cycle for base load and cogeneration. Source: Siemens Energy, SGT5-2000E product page.
-Q: Where can I buy a used Siemens SGT5-2000E?
-A: LKS 360-SCHREINER LLC (lks360.com) has no Siemens SGT5-2000E listed at the moment and searches the market for buyers. Send your requirement to manager@lks360.com or WhatsApp +49 170 4656619.
+Q: What is the Siemens SGT5-2000E used for?
+A: The SGT5-2000E is a Siemens Energy heavy duty gas turbine for 50 Hz grids. It goes back to the V94.2 and is one of the established E class turbines in utility power plants. Typical uses: utility combined cycle power plants; simple cycle peaking and base load plants; cogeneration for large industrial sites.
+Q: Is the SGT5-2000E the same as the V94.2?
+A: The SGT5-2000E goes back to the Siemens V94.2. Older units are still listed under the V94.2 name.
+Q: Which gas turbine is comparable to the SGT5-2000E?
+A: In the 50 Hz E class the GE Frame 9E is the usual comparison.
 Q: Who sells the Siemens SGT5-2000E units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Siemens SGT5-2000E still available?
@@ -1033,10 +1191,14 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### GE 7FA (7F) (https://lks360.com/ge-7fa-for-sale.html)
+Q: Where can I buy a used GE 7FA (7F)?
+A: The GE 7FA is a heavy duty F class gas turbine for 60 Hz grids. LKS 360-SCHREINER LLC (lks360.com) has no GE 7FA (7F) listed at the moment and searches the market for buyers. Send your requirement to manager@lks360.com or WhatsApp +49 170 4656619.
 Q: What is the GE 7FA (7F)?
 A: The GE 7FA (7F) is a heavy duty gas turbine by GE Vernova. Output: 201 MW (7F.04) to 239 MW (7F.05), simple cycle. Source: GE Vernova, 7F product page.
-Q: Where can I buy a used GE 7FA (7F)?
-A: LKS 360-SCHREINER LLC (lks360.com) has no GE 7FA (7F) listed at the moment and searches the market for buyers. Send your requirement to manager@lks360.com or WhatsApp +49 170 4656619.
+Q: What is the GE 7FA (7F) used for?
+A: The GE 7FA is a heavy duty F class gas turbine for 60 Hz grids. It is one of the most installed F class turbines in combined cycle plants. Typical uses: utility combined cycle plants; simple cycle peaking plants; repowering of older plants.
+Q: Are used 7FA gas turbines available?
+A: Used and surplus 7FA units come to the market from plant closures and upgrades. We search the market on request.
 Q: Who sells the GE 7FA (7F) units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the GE 7FA (7F) still available?
@@ -1047,10 +1209,14 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### Siemens SGT-750 (https://lks360.com/siemens-sgt-750-for-sale.html)
+Q: Where can I buy a used Siemens SGT-750?
+A: The SGT-750 is a newer Siemens Energy industrial gas turbine in the medium output class, designed for power generation as well as mechanical drive in oil and gas. LKS 360-SCHREINER LLC (lks360.com) has no Siemens SGT-750 listed at the moment and searches the market for buyers. Send your requirement to manager@lks360.com or WhatsApp +49 170 4656619.
 Q: What is the Siemens SGT-750?
 A: The Siemens SGT-750 is a lightweight industrial gas turbine by Siemens Energy. Output: 38.9 to 41.1 MW(e) gross (simple cycle). Typical applications: industrial power, oil and gas, mechanical drive, combined cycle and CHP. Source: Siemens Energy, SGT-750 product page.
-Q: Where can I buy a used Siemens SGT-750?
-A: LKS 360-SCHREINER LLC (lks360.com) has no Siemens SGT-750 listed at the moment and searches the market for buyers. Send your requirement to manager@lks360.com or WhatsApp +49 170 4656619.
+Q: What is the Siemens SGT-750 used for?
+A: The SGT-750 is a newer Siemens Energy industrial gas turbine in the medium output class, designed for power generation as well as mechanical drive in oil and gas. Typical uses: industrial power generation and cogeneration; compressor drive for pipelines and lng; oil and gas production sites.
+Q: Are used SGT-750 units available?
+A: Used SGT-750 units come to the market rarely because the model is comparatively new. We search the market on request and report what owners offer.
 Q: Who sells the Siemens SGT-750 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Siemens SGT-750 still available?
@@ -1061,10 +1227,14 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### Siemens SST-400 (https://lks360.com/siemens-sst-400-for-sale.html)
+Q: Where can I buy a used Siemens SST-400?
+A: The SST-400 is a Siemens Energy industrial steam turbine with a single casing. LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Siemens SST-400 units for sale, stock numbers LKS-ST-01, LKS-ST-04. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the Siemens SST-400?
 A: The Siemens SST-400 is a steam turbine by Siemens Energy. Output: up to 65 MW. Typical applications: combined cycle, biomass and waste to energy, industrial power, waste heat recovery, district heating, mechanical drive. Source: Siemens Energy, Industrial steam turbines.
-Q: Where can I buy a used Siemens SST-400?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Siemens SST-400 units for sale, stock numbers LKS-ST-01, LKS-ST-04. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the Siemens SST-400 used for?
+A: The SST-400 is a Siemens Energy industrial steam turbine with a single casing. It is used as condensing or back pressure turbine, with or without steam extraction. Typical uses: industrial power plants and cogeneration; waste to energy and biomass plants; steam turbine in combined cycle blocks.
+Q: Is the SST-400 a condensing or back pressure turbine?
+A: The SST-400 is built in both designs. The data sheet of each unit states which design it is. See condensing vs back pressure steam turbine for the difference.
 Q: Who sells the Siemens SST-400 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Siemens SST-400 still available?
@@ -1075,10 +1245,14 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### Siemens SST-300 (https://lks360.com/siemens-sst-300-for-sale.html)
+Q: Where can I buy a used Siemens SST-300?
+A: The SST-300 is a Siemens Energy industrial steam turbine with a single casing for small and medium outputs. LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus Siemens SST-300 unit for sale, stock number LKS-ST-03. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the Siemens SST-300?
 A: The Siemens SST-300 is a steam turbine by Siemens Energy. Output: up to 60 MW. Typical applications: combined cycle, CHP, waste to energy, cement industry. Source: Siemens Energy, Industrial steam turbines.
-Q: Where can I buy a used Siemens SST-300?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus Siemens SST-300 unit for sale, stock number LKS-ST-03. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the Siemens SST-300 used for?
+A: The SST-300 is a Siemens Energy industrial steam turbine with a single casing for small and medium outputs. It is used in industrial cogeneration, biomass and waste heat plants. Typical uses: biomass and waste to energy plants; industrial cogeneration; waste heat recovery.
+Q: Can a new and unused SST-300 be adapted to another plant?
+A: The steam path is designed for given steam conditions. Whether a unit fits another plant depends on steam pressure, temperature and flow, which the buyer's engineer checks against the data sheet.
 Q: Who sells the Siemens SST-300 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Siemens SST-300 still available?
@@ -1090,7 +1264,11 @@ A: Yes. After your letter of intent you receive the technical documents and can 
 
 ### Caterpillar G20CM34 (https://lks360.com/caterpillar-g20cm34-for-sale.html)
 Q: Where can I buy a used Caterpillar G20CM34?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Caterpillar G20CM34 units for sale, stock numbers LKS-GS-01, LKS-GS-02. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+A: The Caterpillar G20CM34 is a medium speed gas engine with 20 cylinders from the MaK engine line of Caterpillar. LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Caterpillar G20CM34 units for sale, stock numbers LKS-GS-01, LKS-GS-02. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the Caterpillar G20CM34 used for?
+A: The Caterpillar G20CM34 is a medium speed gas engine with 20 cylinders from the MaK engine line of Caterpillar. It is used in gas fired power plants and as generator set for industrial power. Typical uses: gas engine power plants; industrial base load power; flexible power to support grids.
+Q: What type of engine is the G20CM34?
+A: The G20CM34 is a medium speed spark ignited gas engine with 20 cylinders from the MaK line of Caterpillar.
 Q: Who sells the Caterpillar G20CM34 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Caterpillar G20CM34 still available?
@@ -1101,10 +1279,16 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### Caterpillar 3516 (https://lks360.com/caterpillar-3516-for-sale.html)
+Q: Where can I buy a used Caterpillar 3516?
+A: The Caterpillar 3516 is a high speed engine with 16 cylinders in V arrangement. LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Caterpillar 3516 units for sale, stock numbers LKS-GS-05, LKS-GS-07. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the Caterpillar 3516?
 A: The Caterpillar 3516 is a diesel engine by Caterpillar. Output: 1,450 to 1,750 ekW (60 Hz; standby 1,750 ekW, prime 1,600 ekW). Typical applications: emergency standby such as healthcare and data centers, continuous power for remote sites. Source: Caterpillar, 3516 (60 Hz) diesel generator set.
-Q: Where can I buy a used Caterpillar 3516?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Caterpillar 3516 units for sale, stock numbers LKS-GS-05, LKS-GS-07. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the Caterpillar 3516 used for?
+A: The Caterpillar 3516 is a high speed engine with 16 cylinders in V arrangement. It is one of the most used engines for standby and prime power generator sets, in mining and in oil and gas. Typical uses: standby power for data centres and hospitals; prime power for mines and remote sites; rental power fleets.
+Q: What is the difference between the 3516B and the 3516C?
+A: Both are Caterpillar 3516 engines with 16 cylinders. The 3516C is the later generation with updated emission and control systems.
+Q: Standby or prime rating: what is the difference?
+A: A standby rating applies to emergency use with limited hours per year. A prime rating applies to continuous operation with variable load. The rating of each unit is stated on its data plate.
 Q: Who sells the Caterpillar 3516 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Caterpillar 3516 still available?
@@ -1115,10 +1299,14 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### Wärtsilä 34SG (https://lks360.com/wartsila-34sg-for-sale.html)
+Q: Where can I buy a used Wärtsilä 34SG?
+A: The Wärtsilä 34SG is a medium speed lean burn gas engine built in several cylinder versions. LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Wärtsilä 34SG units for sale, stock numbers LKS-GS-03, LKS-GS-14. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the Wärtsilä 34SG?
 A: The Wärtsilä 34SG is a gas engine by Wärtsilä. Output: 5.6 to 9.8 MW (12V, 16V, 20V). Typical applications: flexible baseload power, balancing renewable generation. Source: Wärtsilä, 34SG gas engine.
-Q: Where can I buy a used Wärtsilä 34SG?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Wärtsilä 34SG units for sale, stock numbers LKS-GS-03, LKS-GS-14. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the Wärtsilä 34SG used for?
+A: The Wärtsilä 34SG is a medium speed lean burn gas engine built in several cylinder versions. It is used in gas engine power plants for base load and for flexible grid balancing. Typical uses: gas engine power plants; combined heat and power for industry and cities; flexible generation to balance renewables.
+Q: What is the difference between the Wärtsilä 34SG and the Jenbacher J620?
+A: The 34SG is a medium speed gas engine with higher output per unit; the J620 is a high speed gas engine. See Wärtsilä 34SG vs Jenbacher J620 for manufacturer data side by side.
 Q: Who sells the Wärtsilä 34SG units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Wärtsilä 34SG still available?
@@ -1129,10 +1317,14 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### MAN 32/40 (https://lks360.com/man-32-40-for-sale.html)
+Q: Where can I buy a used MAN 32/40?
+A: The MAN 32/40 is a four stroke medium speed engine for diesel and heavy fuel oil. LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus MAN 32/40 unit for sale, stock number LKS-GS-04. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the MAN 32/40?
 A: The MAN 32/40 is a diesel engine by Everllence (formerly MAN Energy Solutions). Output: 3,000 to 9,000 kW (2,895 to 8,730 kWe), 6 to 18 cylinders. Typical applications: power for large vessels (marine GenSet). Source: Everllence, Marine GenSets.
-Q: Where can I buy a used MAN 32/40?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus MAN 32/40 unit for sale, stock number LKS-GS-04. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the MAN 32/40 used for?
+A: The MAN 32/40 is a four stroke medium speed engine for diesel and heavy fuel oil. The designation refers to cylinder bore and stroke. It is used in power plants and in ship propulsion. Typical uses: diesel and hfo power plants; power for islands and remote grids; marine propulsion and auxiliary power.
+Q: Can a MAN 32/40 run on heavy fuel oil?
+A: The 32/40 line is designed for diesel and heavy fuel oil. HFO operation needs a fuel treatment system, which should be part of the scope.
 Q: Who sells the MAN 32/40 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the MAN 32/40 still available?
@@ -1143,10 +1335,14 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### MTU 16V4000 (https://lks360.com/mtu-16v4000-for-sale.html)
+Q: Where can I buy a used MTU 16V4000?
+A: The MTU 16V4000 is a high speed diesel engine with 16 cylinders from the MTU Series 4000. LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus MTU 16V4000 unit for sale, stock number LKS-GS-08. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the MTU 16V4000?
 A: The MTU 16V4000 is a diesel engine by mtu (Rolls Royce Power Systems). Output: Series 4000 range: 1,600 to 4,000 kVA (50 Hz), 1,125 to 3,250 kWe (60 Hz). Typical applications: data centers, hospitals, airports, industrial plants, decentralized power, microgrids. Source: mtu (Rolls-Royce), Diesel generator sets Series 4000.
-Q: Where can I buy a used MTU 16V4000?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 1 used or surplus MTU 16V4000 unit for sale, stock number LKS-GS-08. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the MTU 16V4000 used for?
+A: The MTU 16V4000 is a high speed diesel engine with 16 cylinders from the MTU Series 4000. It is used for standby and prime power, in mining and in rail and marine applications. Typical uses: standby power for data centres and hospitals; prime power for remote sites; containerised rental power.
+Q: What does G63 mean on an MTU 16V4000?
+A: The G code marks the generation and application of the Series 4000 engine. The data sheet of each unit states the exact code and rating.
 Q: Who sells the MTU 16V4000 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the MTU 16V4000 still available?
@@ -1157,10 +1353,14 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### Jenbacher J620 (https://lks360.com/jenbacher-j620-for-sale.html)
+Q: Where can I buy a used Jenbacher J620?
+A: The Jenbacher J620 is a high speed gas engine with 20 cylinders from the Type 6 range of INNIO Jenbacher. LKS 360-SCHREINER LLC (lks360.com) has no Jenbacher J620 listed at the moment and searches the market for buyers. Send your requirement to manager@lks360.com or WhatsApp +49 170 4656619.
 Q: What is the Jenbacher J620?
 A: The Jenbacher J620 is a gas engine generator set by INNIO Jenbacher. Output: up to 3,509 kW. Typical applications: power generation and combined heat and power. Source: INNIO Jenbacher, Type 6 gas engines.
-Q: Where can I buy a used Jenbacher J620?
-A: LKS 360-SCHREINER LLC (lks360.com) has no Jenbacher J620 listed at the moment and searches the market for buyers. Send your requirement to manager@lks360.com or WhatsApp +49 170 4656619.
+Q: What is the Jenbacher J620 used for?
+A: The Jenbacher J620 is a high speed gas engine with 20 cylinders from the Type 6 range of INNIO Jenbacher. It is used in combined heat and power plants, greenhouses and industrial power. Typical uses: combined heat and power for industry and district heating; greenhouse power, heat and co2 supply; gas engine power plants.
+Q: Are used Jenbacher J620 units available?
+A: Used J620 units come to the market from CHP plants that are upgraded or closed. We search the market on request.
 Q: Who sells the Jenbacher J620 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Jenbacher J620 still available?
@@ -1171,10 +1371,14 @@ Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
 
 ### Cummins genset (https://lks360.com/cummins-generator-sets-for-sale.html)
+Q: Where can I buy a used Cummins genset?
+A: Cummins builds gas and diesel generator sets over a wide output range. LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Cummins genset units for sale, stock numbers LKS-GS-06, LKS-GS-09. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
 Q: What is the Cummins genset?
 A: The Cummins genset is a range of diesel and gas generator sets by Cummins. Output: 600 to 3,750 kVA range (diesel 640 to 3,570 kVA, gas 1,244 to 3,570 kVA at 50 Hz). Source: Cummins, 600 to 3750 kVA generator sets.
-Q: Where can I buy a used Cummins genset?
-A: LKS 360-SCHREINER LLC (lks360.com) lists 2 used or surplus Cummins genset units for sale, stock numbers LKS-GS-06, LKS-GS-09. Each unit is offered on behalf of its owner, price on request. Contact: manager@lks360.com, WhatsApp +49 170 4656619.
+Q: What is the Cummins genset used for?
+A: Cummins builds gas and diesel generator sets over a wide output range. Common engines in the used market are the KTA50 and QSK60 diesel engines and the C2000 N6CB gas generator set. Typical uses: standby and prime power; gas fired power for industry; rental and temporary power.
+Q: What is the Cummins KTA50?
+A: The KTA50 is a Cummins diesel engine used in generator sets for standby and prime power.
 Q: Who sells the Cummins genset units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Cummins genset still available?
@@ -1187,6 +1391,8 @@ A: Yes. After your letter of intent you receive the technical documents and can 
 ## Page: https://lks360.com/how-we-work.html
 
 How We Work | Turbine Brokerage Process and FAQ | LKS 360-SCHREINER LLC
+
+How does LKS 360-SCHREINER LLC work? LKS 360-SCHREINER LLC lists each unit on behalf of its owner, sends buyers an offer with the owner's conditions, releases full data and inspection after a letter of intent and lets buyer and owner sign the purchase contract directly. The commission is agreed in writing; purchase payments never pass through the accounts of LKS 360-SCHREINER LLC.
 
 How we work
 
@@ -1261,6 +1467,8 @@ Buyer guide
 
 What to ask for, what to check and how a purchase of used or surplus power generation equipment runs. The same points apply to steam turbines and generator sets.
 
+How do I buy a used gas turbine safely? Send your requirement (output, frequency, fuel, site and timeline), compare offers by stock number, then sign a letter of intent to receive full data and inspect the unit. Sign the purchase contract directly with the owner and pay through escrow or a letter of credit, never in advance to an intermediary.
+
 ### 1. Define the requirement
 
 Send required output, grid frequency (50 or 60 Hz), fuel (natural gas, liquid fuel or dual fuel), emission limits at the site, simple cycle or combined cycle, delivery country and planned start of operation. With these points owners can answer with a concrete offer instead of a general list.
@@ -1307,6 +1515,8 @@ Knowledge
 ### Used gas turbine FAQ
 
 Plain answers to the questions buyers and owners ask about used and surplus gas turbines, steam turbines and generator sets.
+
+What should I know before buying a used gas turbine? Start with the output you need, grid frequency (50 or 60 Hz), fuel, emission limits at the site and whether the plant runs simple or combined cycle. Then check hours, starts, overhaul records and the scope of the package. Aeroderivative gas turbines suit peaking and mobile power, heavy duty gas turbines suit continuous base load.
 
 ### What is the difference between an aeroderivative and a heavy duty gas turbine?
 
@@ -1377,6 +1587,8 @@ Knowledge
 
 Plain answers to the questions buyers and owners ask about used and surplus steam turbines and steam turbine generator sets.
 
+Used steam turbine FAQ: condensing or back pressure, what should a buyer know? A condensing steam turbine exhausts into a condenser and turns as much steam as possible into power; a back pressure steam turbine exhausts steam at a pressure a process can still use, so it delivers power and process heat at the same time. A used steam turbine is further defined by its steam data (inlet pressure, inlet temperature, flow and exhaust pressure), extraction points and generator frequency. LKS 360-SCHREINER LLC lists 7 used steam turbines and steam turbine generator sets on behalf of their owners.
+
 ### What types of steam turbines are traded on the used market?
 
 Condensing turbines exhaust into a condenser and turn as much steam energy as possible into power. Back pressure turbines exhaust steam at a pressure that a process can still use, for example in a paper mill, refinery or sugar factory. Extraction turbines take steam out at one or more stages for process heat and send the rest on to the exhaust.
@@ -1434,6 +1646,8 @@ Knowledge
 
 Plain answers to the questions buyers and owners ask about used and surplus gas and diesel generator sets and engine power plants.
 
+What should I know before buying a used generator set? Compare generator sets at the same rating (standby, prime or continuous), then check fuel (gas, diesel or heavy fuel oil), grid frequency and running hours since the last overhaul. Medium speed engines give more output per unit, high speed engines are compact and quick to install. LKS 360-SCHREINER LLC lists 13 used gas and diesel generator sets on behalf of their owners.
+
 ### What is the difference between prime, continuous and standby rating?
 
 Standby rating is for emergency use when the grid fails, with limited running hours per year. Prime rating allows unlimited hours at variable load. Continuous rating allows unlimited hours at constant full load. Always compare generator sets at the same rating, because the same set has a different kW value for each.
@@ -1490,6 +1704,8 @@ Knowledge
 ### Power generation equipment glossary
 
 Short definitions of the terms used when buying and selling used gas turbines, steam turbines and generator sets.
+
+What do the common terms in used turbine trading mean? This glossary defines the terms used when buying and selling used gas turbines, steam turbines and generator sets, such as LOI, proof of funds, escrow, aeroderivative, heavy duty, combined cycle, DLE and HRSG, in one or two plain sentences each.
 
  Aeroderivative gas turbine
  A gas turbine derived from an aircraft engine, light and quick to start, for example the GE LM2500 and LM6000.
@@ -1559,6 +1775,8 @@ Knowledge
 
 A step by step guide for owners of used and surplus gas turbines.
 
+How do I sell a used gas turbine? Collect the unit data (model, output, frequency, year, hours, starts, condition and documents), set your net price and offer the unit through one sales route at one price. Release serial numbers, site and full documents only to buyers who sign a letter of intent, then sign the purchase contract directly with the buyer and receive payment through escrow or an irrevocable letter of credit. LKS 360-SCHREINER LLC sells used gas turbines, steam turbines and generator sets for owners without an upfront fee.
+
 Short answer: Collect the unit data, set your net price, offer the unit through one sales route at one price, release full data only to buyers who sign a letter of intent, sign the purchase contract directly with the buyer and receive payment through escrow or an irrevocable letter of credit. The same steps apply to steam turbines and generator sets.
 
 ### Step by step
@@ -1616,6 +1834,8 @@ Knowledge
 
 What a broker for used turbines and generator sets does, and how to check one.
 
+What does a used gas turbine broker do? A used gas turbine broker brings owners of surplus turbines and buyers together, presents the technical data, screens buyers by letter of intent and coordinates inspection, while buyer and owner sign the purchase contract directly. LKS 360-SCHREINER LLC is an independent broker for used gas turbines, steam turbines and generator sets, paid by a commission agreed in writing; purchase payments never pass through its accounts.
+
 Short answer: A broker for used gas turbines and generator sets brings owners of surplus equipment and buyers together, presents the technical data, screens buyers by letter of intent, coordinates inspection and lets buyer and owner sign the purchase contract directly. LKS 360-SCHREINER LLC is an independent broker that lists gas turbines, steam turbines and generator sets on behalf of their owners.
 
 ### What does a turbine broker do?
@@ -1666,6 +1886,8 @@ Knowledge
 ### Condensing vs back pressure steam turbine
 
 How condensing and back pressure steam turbines differ, and which one fits a site.
+
+What is the difference between a condensing and a back pressure steam turbine? A condensing steam turbine exhausts into a condenser below atmospheric pressure and turns as much steam energy as possible into electricity. A back pressure steam turbine exhausts steam at a pressure a process can still use, so it makes less power per tonne of steam but supplies heat to the plant at the same time. Extraction turbines combine both by taking process steam out at one or more stages.
 
 Short answer: A condensing steam turbine exhausts into a condenser below atmospheric pressure and turns as much steam energy as possible into electricity. A back pressure steam turbine exhausts steam at a pressure a process can still use, so it produces less power per tonne of steam but supplies heat to the plant at the same time. Extraction turbines combine both by taking process steam out at one or more stages.
 
@@ -1742,6 +1964,8 @@ For equipment owners
 ### Sell your surplus power equipment
 
 Gas turbines, steam turbines, generator sets and complete plants. We present your unit to buyers with its technical data. Your name and site stay confidential.
+
+How can I sell my used turbine or generator set? Give one broker an exclusive sales mandate for a limited time at your net price, so the unit is offered once, at one price, with one data set. LKS 360-SCHREINER LLC presents the unit to screened buyers, keeps your name and site confidential until a letter of intent and charges no upfront fee.
 
 How it works for owners
 
