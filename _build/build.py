@@ -91,7 +91,7 @@ def footer():
     return f"""<footer><div class="wrap fcols">
   <div><p class="fbrand">LKS <span>360</span>-SCHREINER LLC</p><p>Florida limited liability company<br>Document No. L26000221347<br>7901 4th St N, Ste 300<br>St. Petersburg, FL 33702, USA</p></div>
   <div><p class="fh">Equipment</p><a href="/inventory.html">Inventory</a><a href="/gas-turbines.html">Gas turbines</a><a href="/steam-turbines.html">Steam turbines</a><a href="/generator-sets.html">Generator sets</a><a href="/sell.html">Sell equipment</a><a href="/used-60-hz-gas-turbines-generators-americas.html">60 Hz for the Americas</a></div>
-  <div><p class="fh">Company</p><a href="/news.html">News</a><a href="/how-we-work.html">How we work</a><a href="/buying-used-gas-turbines.html">Buyer guide</a><a href="/gas-turbine-faq.html">Gas turbine FAQ</a><a href="/steam-turbine-faq.html">Steam turbine FAQ</a><a href="/generator-set-faq.html">Genset FAQ</a><a href="/power-generation-glossary.html">Glossary</a><a href="/how-to-sell-a-used-gas-turbine.html">How to sell a turbine</a><a href="/used-gas-turbine-broker.html">Turbine broker</a><a href="/condensing-vs-back-pressure-steam-turbine.html">Condensing vs back pressure</a><a href="/power-generation-equipment-models-compared.html">Models compared</a><a href="/compliance.html">Compliance</a><a href="/imprint.html">Imprint</a><a href="/privacy.html">Privacy Policy</a><a href="https://www.linkedin.com/company/142908032">LinkedIn</a><a href="https://www.facebook.com/groups/606333518127054">Facebook</a><a href="https://www.pinterest.com/schreinerlothar/">Pinterest</a><a href="https://x.com/lothar81795958">X</a><a href="https://www.instagram.com/lotschrei/">Instagram</a><a href="https://www.youtube.com/channel/UCP2-Bw2a4iCVZOgQC1tMshQ">YouTube</a></div>
+  <div><p class="fh">Company</p><a href="/news.html">News</a><a href="/how-we-work.html">How we work</a><a href="/buying-used-gas-turbines.html">Buyer guide</a><a href="/gas-turbine-faq.html">Gas turbine FAQ</a><a href="/steam-turbine-faq.html">Steam turbine FAQ</a><a href="/generator-set-faq.html">Genset FAQ</a><a href="/power-generation-glossary.html">Glossary</a><a href="/how-to-sell-a-used-gas-turbine.html">How to sell a turbine</a><a href="/used-gas-turbine-broker.html">Turbine broker</a><a href="/condensing-vs-back-pressure-steam-turbine.html">Condensing vs back pressure</a><a href="/coal-to-gas-repowering.html">Coal-to-gas repowering</a><a href="/power-generation-equipment-models-compared.html">Models compared</a><a href="/compliance.html">Compliance</a><a href="/imprint.html">Imprint</a><a href="/privacy.html">Privacy Policy</a><a href="https://www.linkedin.com/company/142908032">LinkedIn</a><a href="https://www.facebook.com/groups/606333518127054">Facebook</a><a href="https://www.pinterest.com/schreinerlothar/">Pinterest</a><a href="https://x.com/lothar81795958">X</a><a href="https://www.instagram.com/lotschrei/">Instagram</a><a href="https://www.youtube.com/channel/UCP2-Bw2a4iCVZOgQC1tMshQ">YouTube</a></div>
   <div><p class="fh">Contact</p><a href="mailto:{MAIL}">{MAIL}</a><a href="tel:+491704656619">{PHONE}</a><a href="/contact.html">Contact form</a></div>
 </div><div class="wrap fbase">© 2026 LKS 360-SCHREINER LLC. Equipment is offered on behalf of its owners and subject to prior sale. Manufacturer names describe the equipment; we are not affiliated with any manufacturer.</div></footer>
 <a class="wafloat" href="{WA}" aria-label="WhatsApp +49 170 4656619"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.3 3.4 14.6 14.6 0 0 0 5.6 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.2-.3-.3-.6-.4z"/></svg></a>"""
@@ -357,9 +357,15 @@ def unit_about(u, mod):
         lead = (t["intro"].split(". ")[0].rstrip(".") + ".") if t else ""
         out += (f'<p>{e(lead)} Uses, comparison with neighbouring models and answers to frequent questions: '
                 f'<a href="/{mod[0]}.html">{e(mod[1])} for sale and model guide</a>.</p>')
+    if u["id"] in REPOWER_IDS:
+        out += ('<p>This unit fits coal-to-gas projects in which gas turbines and a heat recovery steam generator drive an existing steam turbine: '
+                '<a href="/coal-to-gas-repowering.html">coal-to-gas repowering guide</a>.</p>')
     out += ('<p>New to buying used equipment? Read the <a href="/buying-used-gas-turbines.html">buyer guide</a> and '
             '<a href="/how-we-work.html">how we work</a>.</p>')
     return out
+
+
+REPOWER_IDS = {"GT-02", "GT-25", "GT-30", "GT-36"}
 
 
 def model_links_html():
@@ -884,7 +890,7 @@ def popular_block():
             '<a href="/ge-tm2500-for-sale.html">GE TM2500 for sale</a> · <a href="/ge-tm2500-for-sale.html#price">GE TM2500 price</a> · '
             '<a href="/ge-lm6000-for-sale.html">GE LM6000 for sale</a> · <a href="/ge-lm6000-for-sale.html#variants">GE LM6000 PA, PC, PD, PF Sprint</a> · '
             '<a href="/siemens-sst-300-for-sale.html">Siemens SST-300 steam turbine</a> · <a href="/siemens-sgt-800-for-sale.html">Siemens SGT-800 for sale</a>'
-            '</p></div></section><!--/POPULAR-->')
+            '</p><p>Guide: <a href="/coal-to-gas-repowering.html">coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine</a>.</p></div></section><!--/POPULAR-->')
 
 
 def add_popular(t, name):
@@ -1103,7 +1109,7 @@ def compare_page(slug, a, b):
 
 
 STATIC = ["index.html", "inventory.html", "gas-turbines.html", "steam-turbines.html", "generator-sets.html",
-          "sell.html", "news.html", "how-we-work.html", "buying-used-gas-turbines.html", "gas-turbine-faq.html", "steam-turbine-faq.html", "generator-set-faq.html", "power-generation-glossary.html", "how-to-sell-a-used-gas-turbine.html", "used-gas-turbine-broker.html", "condensing-vs-back-pressure-steam-turbine.html", "contact.html", "compliance.html", "imprint.html", "privacy.html"]
+          "sell.html", "news.html", "how-we-work.html", "buying-used-gas-turbines.html", "gas-turbine-faq.html", "steam-turbine-faq.html", "generator-set-faq.html", "power-generation-glossary.html", "how-to-sell-a-used-gas-turbine.html", "used-gas-turbine-broker.html", "condensing-vs-back-pressure-steam-turbine.html", "coal-to-gas-repowering.html", "contact.html", "compliance.html", "imprint.html", "privacy.html"]
 
 (ROOT / "units").mkdir(exist_ok=True)
 for old in (ROOT / "units").glob("*.html"):
@@ -1216,7 +1222,7 @@ for m in MODELS:
     _own = [tuple(x) for x in TEXTS[m[0]]["faq"]] if m[0] in TEXTS else []
     _intro = [(f"What is the {m[1]} used for?", TEXTS[m[0]]["intro"] + " Typical uses: " + "; ".join(TEXTS[m[0]]["uses"]).lower() + ".")] if m[0] in TEXTS else []
     _full.append(f"### {m[1]} ({SITE}/{m[0]}.html)\n" + "\n".join(f"Q: {q}\nA: {a}" for q, a in [(f"Where can I buy a used {m[1]}?", model_short(m[0], m[1], _us))] + ([spec_block(m[0], m[1])[1]] if m[0] in SPECS else []) + _intro + _own + model_faq(m[1], _us)[1:]))
-for _n in ("how-we-work.html", "buying-used-gas-turbines.html", "gas-turbine-faq.html", "steam-turbine-faq.html", "generator-set-faq.html", "power-generation-glossary.html", "how-to-sell-a-used-gas-turbine.html", "used-gas-turbine-broker.html", "condensing-vs-back-pressure-steam-turbine.html", "compliance.html", "sell.html"):
+for _n in ("how-we-work.html", "buying-used-gas-turbines.html", "gas-turbine-faq.html", "steam-turbine-faq.html", "generator-set-faq.html", "power-generation-glossary.html", "how-to-sell-a-used-gas-turbine.html", "used-gas-turbine-broker.html", "condensing-vs-back-pressure-steam-turbine.html", "coal-to-gas-repowering.html", "compliance.html", "sell.html"):
     if (ROOT / _n).exists():
         _full.append(f"## Page: {SITE}/{_n}\n\n" + _plain(_n))
 (ROOT / "llms-full.txt").write_text("\n\n".join(_full) + "\n", encoding="utf-8", newline="\n")

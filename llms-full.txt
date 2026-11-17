@@ -49,6 +49,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [How do I sell a used gas turbine?](https://lks360.com/how-to-sell-a-used-gas-turbine.html): step by step guide for owners of used gas turbines, steam turbines and generator sets
 - [Broker for used gas turbines and generator sets](https://lks360.com/used-gas-turbine-broker.html): what a turbine broker does, how to check one, warning signs
 - [Condensing vs back pressure steam turbine](https://lks360.com/condensing-vs-back-pressure-steam-turbine.html): differences, uses and the data a buyer needs
+- [Coal-to-gas repowering](https://lks360.com/coal-to-gas-repowering.html): gas turbines and HRSG for an existing coal plant steam turbine, when it pays, sizing, grid frequency, matching units
 - [Buyer guide: buying a used gas turbine](https://lks360.com/buying-used-gas-turbines.html): data, records, condition, scope of supply, inspection, transport, compliance
 - [Compliance policy](https://lks360.com/compliance.html): counterparty identification, no handling of purchase funds
 - [Imprint](https://lks360.com/imprint.html)
@@ -97,6 +98,9 @@ Page: https://lks360.com/steam-turbines.html
 Q: Where can I buy a used generator set?
 A: LKS 360-SCHREINER LLC (lks360.com) lists 13 used and surplus gas, diesel and heavy fuel oil generator sets, including Caterpillar, Wärtsilä, MTU, Cummins and MAN engines, each with a stock number and its own page. Units are offered on behalf of their owners, price on request; full data and inspection follow a letter of intent.
 Page: https://lks360.com/generator-sets.html
+Q: What is coal-to-gas heat recovery repowering?
+A: Heat recovery repowering replaces the coal boiler of an existing power plant with one or more gas turbines and a heat recovery steam generator (HRSG); the gas turbine exhaust raises steam for the plant's existing steam turbine, so the coal unit becomes a combined cycle plant. It suits plants whose steam turbine, condenser, cooling system and grid connection still have decades of life left. LKS 360-SCHREINER LLC lists gas turbines and gas turbine trains with HRSG for such projects on behalf of their owners.
+Page: https://lks360.com/coal-to-gas-repowering.html
 
 ## Units for sale, full data (updated 2026-11-17)
 
@@ -1521,6 +1525,7 @@ See the inventory, or browse gas turbines, steam turbines and generator sets.
 
 Most searched models
 GE TM2500 for sale · GE TM2500 price · GE LM6000 for sale · GE LM6000 PA, PC, PD, PF Sprint · Siemens SST-300 steam turbine · Siemens SGT-800 for sale
+Guide: coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine.
 
 ### Looking for a unit?
 
@@ -1595,6 +1600,7 @@ More detail: buyer guide, steam turbine FAQ, generator set FAQ, glossary, how we
 
 Most searched models
 GE TM2500 for sale · GE TM2500 price · GE LM6000 for sale · GE LM6000 PA, PC, PD, PF Sprint · Siemens SST-300 steam turbine · Siemens SGT-800 for sale
+Guide: coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine.
 
 ### Looking for a unit or selling one?
 
@@ -1657,6 +1663,7 @@ More detail: buyer guide, gas turbine FAQ, steam turbine FAQ, generator set FAQ,
 
 Most searched models
 GE TM2500 for sale · GE TM2500 price · GE LM6000 for sale · GE LM6000 PA, PC, PD, PF Sprint · Siemens SST-300 steam turbine · Siemens SGT-800 for sale
+Guide: coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine.
 
 ### Looking for a unit or selling one?
 
@@ -1848,6 +1855,7 @@ More detail: buyer guide, how we work, inventory.
 
 Most searched models
 GE TM2500 for sale · GE TM2500 price · GE LM6000 for sale · GE LM6000 PA, PC, PD, PF Sprint · Siemens SST-300 steam turbine · Siemens SGT-800 for sale
+Guide: coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine.
 
 ### Looking for a unit or selling one?
 
@@ -1904,6 +1912,7 @@ More detail: buyer guide, how we work, inventory.
 
 Most searched models
 GE TM2500 for sale · GE TM2500 price · GE LM6000 for sale · GE LM6000 PA, PC, PD, PF Sprint · Siemens SST-300 steam turbine · Siemens SGT-800 for sale
+Guide: coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine.
 
 ### Looking for a unit or selling one?
 
@@ -1958,6 +1967,108 @@ More detail: buyer guide, how we work, inventory.
 ### Looking for a unit or selling one?
 
 Send type, output, frequency and fuel. We reply with matching offers.
+ Contact
+
+## Page: https://lks360.com/coal-to-gas-repowering.html
+
+Coal-to-Gas Repowering: Gas Turbines and HRSG for an Existing Steam Turbine | LKS 360
+
+Home / Gas turbines / Coal-to-gas repowering
+
+Knowledge
+
+### Coal-to-gas repowering: gas turbines and HRSG for an existing steam turbine
+
+How heat recovery repowering turns a coal unit into a combined cycle plant, when it pays and which gas turbines fit.
+
+What is coal-to-gas heat recovery repowering? Heat recovery repowering replaces the coal boiler of an existing power plant with one or more gas turbines and a heat recovery steam generator (HRSG); the gas turbine exhaust raises steam for the plant's existing steam turbine, so the coal unit becomes a combined cycle plant. It suits plants whose steam turbine, condenser, cooling system and grid connection still have decades of life left. LKS 360-SCHREINER LLC lists gas turbines and gas turbine trains with HRSG for such projects on behalf of their owners.
+
+### What is heat recovery repowering?
+
+In heat recovery repowering the coal boiler of an existing power plant is taken out of service and replaced by one or more gas turbines with a heat recovery steam generator (HRSG). The gas turbines produce power directly, and their hot exhaust raises steam in the HRSG for the plant's existing steam turbine. The coal unit becomes a combined cycle plant that keeps its steam turbine, condenser, cooling system, switchyard and grid connection.
+
+### When does it pay?
+
+Condition of the steam turbine and balance of plant: the steam turbine, condenser, cooling system and transmission connection have to be good for several more decades. According to Burns & McDonnell (April 2020), keeping the existing steam turbine essentially eliminates a third of the cost of a brand-new build if the equipment is in good working condition.
+
+Existing site: a coal plant already has interconnection, transmission, water and industrial land. According to POWER magazine (September 2026), a retiring generator's interconnection rights can often transfer to a replacement resource, usually within a window of about a year.
+
+Proven approach: the same POWER article states that from 2011 to 2019 more than 100 coal plants were converted to or replaced by gas.
+
+Reference: according to Siemens Energy, Cooperative Energy replaced an existing coal-fired unit at the R.D. Morrow, Sr. Generating Station in Mississippi (coal station built in 1978) with an SGT6-9000HL gas turbine that works together with the plant's existing steam turbine. The plant delivers 550 MW, and Siemens Energy states a carbon footprint reduced by 50 percent compared with the coal unit.
+
+### The main difficulty: matching gas turbine and steam turbine
+
+The steam an HRSG can raise follows from the exhaust flow and exhaust temperature of the gas turbine. It has to fit the design steam flow, live steam pressure and temperature, and any reheat of the existing steam turbine. If the gas turbine is too small, the steam turbine runs at part load; if it is too large, steam has to be bypassed or the gas turbine runs below its rating. The usual tools are:
+
+the size and number of gas turbines,
+
+supplementary firing in the HRSG,
+
+the pressure levels and a reheat section of the HRSG to suit the steam turbine,
+
+the space available where the coal boiler stood.
+
+The basis for sizing is the heat balance of the steam turbine and the exhaust data of the gas turbine at site conditions, checked by the buyer's engineer.
+
+### Grid frequency: 50 Hz or 60 Hz
+
+The gas turbine generator has to match the grid. A plant on a 60 Hz grid, as in North America, needs a 60 Hz gas turbine generator set or one rated for both frequencies. A plant on a 50 Hz grid, as in Europe and large parts of Asia, needs a 50 Hz unit. A geared gas turbine can sometimes be adapted with a different gearbox; a large direct drive gas turbine runs at grid speed and stays on its frequency. See also used 60 Hz units for the Americas.
+
+### Gas turbines listed for repowering projects
+
+ Stock numberUnitOutputFrequencyNote
+
+ LKS-GT-02Siemens SGT-800 gas turbines51.9 MW50/60 HzNew, 2024
+ LKS-GT-25Siemens SGT-700 gas turbine train with dual-pressure HRSG31.64 MW50 Hz2023; gas turbine train and HRSG, steam turbine not included
+ LKS-GT-30GE Frame 9E PG9171E gas turbine126 MW50 Hz2009
+ LKS-GT-362 x GE Frame 9E (9171) dual fuel gas turbines243 MW (two units combined)50 HzUsed, 2000, available for relocation
+
+Data as listed by the owners. Each unit is offered on behalf of its owner and subject to prior sale, price on request. Exhaust data, documents and inspection follow a letter of intent. Model guides: Siemens SGT-800, Siemens SGT-700, GE Frame 9E.
+
+### What a buyer should prepare
+
+Heat balance and design data of the existing steam turbine: steam flow, live steam and reheat pressure and temperature, extraction points, exhaust pressure.
+
+Condition reports of steam turbine, generator, condenser and cooling system.
+
+Grid frequency, voltage and the export capacity of the existing connection.
+
+Fuel gas supply, emission limits and the permit route for the site.
+
+Space where the coal boiler stood, for gas turbines and HRSG.
+
+### Frequent questions
+
+### Can an existing coal plant steam turbine be driven by gas turbines?
+
+Yes. In heat recovery repowering the coal boiler is replaced by one or more gas turbines and a heat recovery steam generator, which raises steam for the existing steam turbine. The steam turbine, condenser and cooling system have to be in good condition, and the HRSG steam data have to match the steam turbine.
+
+### How much does reusing the steam turbine save?
+
+According to Burns & McDonnell (2020), keeping the existing steam turbine essentially eliminates a third of the cost of a brand-new build, provided the equipment is in good working condition. The actual saving depends on the condition of the steam turbine, the condenser, the cooling system and the grid connection.
+
+### Has heat recovery repowering of a coal unit been done?
+
+Yes. According to Siemens Energy, Cooperative Energy replaced an existing coal-fired unit at the R.D. Morrow, Sr. Generating Station in Mississippi, built in 1978, with an SGT6-9000HL gas turbine working together with the plant's existing steam turbine; the plant delivers 550 MW.
+
+### What is the main technical difficulty?
+
+Matching the gas turbine to the steam turbine. The steam an HRSG can raise follows from the exhaust flow and temperature of the gas turbine, and it has to fit the design steam flow, pressure and temperature of the existing steam turbine. The usual tools are the choice of gas turbine size and number, supplementary firing in the HRSG and the HRSG pressure levels.
+
+### Does the gas turbine have to match the grid frequency?
+
+Yes. A plant on a 60 Hz grid, as in North America, needs a 60 Hz gas turbine generator set or one rated for both frequencies. A plant on a 50 Hz grid, as in Europe and large parts of Asia, needs a 50 Hz unit.
+
+### Which gas turbines does LKS 360-SCHREINER LLC list for repowering projects?
+
+For 50 Hz and 60 Hz: LKS-GT-02 Siemens SGT-800 (new, 50/60 Hz). For 50 Hz: LKS-GT-25 Siemens SGT-700 gas turbine train with dual-pressure HRSG, steam turbine not included; LKS-GT-30 GE Frame 9E; LKS-GT-36 two GE Frame 9E units. Each unit is offered on behalf of its owner, price on request.
+
+More: gas turbines for sale, steam turbines, condensing vs back pressure steam turbine, gas turbine FAQ, buyer guide.
+
+### Planning a repowering project?
+
+Send the steam turbine data, grid frequency and site continent. We reply with matching gas turbines.
  Contact
 
 ## Page: https://lks360.com/compliance.html
@@ -2090,3 +2201,4 @@ We confirm availability with you before every offer and remove sold units from o
 
 Most searched models
 GE TM2500 for sale · GE TM2500 price · GE LM6000 for sale · GE LM6000 PA, PC, PD, PF Sprint · Siemens SST-300 steam turbine · Siemens SGT-800 for sale
+Guide: coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine.

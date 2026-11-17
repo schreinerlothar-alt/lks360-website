@@ -55,5 +55,9 @@
   "generator-sets.html": [
     "Where can I buy a used generator set?",
     "LKS 360-SCHREINER LLC (lks360.com) lists {n_genset} used and surplus gas, diesel and heavy fuel oil generator sets, including Caterpillar, Wärtsilä, MTU, Cummins and MAN engines, each with a stock number and its own page. Units are offered on behalf of their owners, price on request; full data and inspection follow a letter of intent."
+  ],
+  "coal-to-gas-repowering.html": [
+    "What is coal-to-gas heat recovery repowering?",
+    "Heat recovery repowering replaces the coal boiler of an existing power plant with one or more gas turbines and a heat recovery steam generator (HRSG); the gas turbine exhaust raises steam for the plant's existing steam turbine, so the coal unit becomes a combined cycle plant. It suits plants whose steam turbine, condenser, cooling system and grid connection still have decades of life left. LKS 360-SCHREINER LLC lists gas turbines and gas turbine trains with HRSG for such projects on behalf of their owners."
   ]
 }
