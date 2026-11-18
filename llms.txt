@@ -154,7 +154,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [Wärtsilä 34SG vs Jenbacher J620](https://lks360.com/wartsila-34sg-vs-jenbacher-j620.html)
 
 ## News
-- [New Arrivals 18 November 2026: 2 x GE Frame 9E 243 MW, LM6000 PD Sprint, 2 x TM2500+, ABB VEE 40 Steam Turbine, Wärtsilä 20V34SG](https://lks360.com/news/new-arrivals-gas-turbines-steam-turbines-generator-sets-18-november-2026.html)
+- [New Arrivals 18 November 2026: 2 x GE Frame 9E 243 MW, LM6000, TM2500+, ABB VEE 40, Wärtsilä 20V34SG](https://lks360.com/news/new-arrivals-gas-turbines-steam-turbines-generator-sets-18-november-2026.html)
 - [New Arrivals 11 November 2026: 4 x Solar Taurus 60, GE LM6000PA 42.3 MW, MWM and Caterpillar G3520H Gensets](https://lks360.com/news/new-arrivals-gas-turbines-steam-turbines-generator-sets-11-november-2026.html)
 - [New: Siemens SGT-700 with HRSG, SST-300, 2 x SST-400, and 5 x SGT-300 at a reduced price](https://lks360.com/news/new-sgt-700-with-hrsg-sst-300-sst-400-and-sgt-300-price-reduced-4-november-2026.html)
 - [New this week: gas turbines, combined-cycle plants and gensets, 14 positions](https://lks360.com/news/new-this-week-gas-turbines-combined-cycle-plants-and-gensets-4-november-2026.html)
