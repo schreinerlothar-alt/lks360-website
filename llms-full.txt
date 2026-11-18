@@ -50,6 +50,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [Broker for used gas turbines and generator sets](https://lks360.com/used-gas-turbine-broker.html): what a turbine broker does, how to check one, warning signs
 - [Condensing vs back pressure steam turbine](https://lks360.com/condensing-vs-back-pressure-steam-turbine.html): differences, uses and the data a buyer needs
 - [Coal-to-gas repowering](https://lks360.com/coal-to-gas-repowering.html): gas turbines and HRSG for an existing coal plant steam turbine, when it pays, sizing, grid frequency, matching units
+- [Used gas turbines for data center power](https://lks360.com/gas-turbines-for-data-centers.html): bridge and prime power with aeroderivatives (LM2500, LM6000, TM2500) and industrial gas turbines (SGT-800, Frame 6B), 50/60 Hz, fast start, DLE, buyer checklist
 - [Buyer guide: buying a used gas turbine](https://lks360.com/buying-used-gas-turbines.html): data, records, condition, scope of supply, inspection, transport, compliance
 - [Compliance policy](https://lks360.com/compliance.html): counterparty identification, no handling of purchase funds
 - [Imprint](https://lks360.com/imprint.html)
@@ -101,6 +102,9 @@ Page: https://lks360.com/generator-sets.html
 Q: What is coal-to-gas heat recovery repowering?
 A: Heat recovery repowering replaces the coal boiler of an existing power plant with one or more gas turbines and a heat recovery steam generator (HRSG); the gas turbine exhaust raises steam for the plant's existing steam turbine, so the coal unit becomes a combined cycle plant. It suits plants whose steam turbine, condenser, cooling system and grid connection still have decades of life left. LKS 360-SCHREINER LLC lists gas turbines and gas turbine trains with HRSG for such projects on behalf of their owners.
 Page: https://lks360.com/coal-to-gas-repowering.html
+Q: Can used gas turbines power a data center?
+A: Yes. Aeroderivative gas turbines such as the GE LM2500, LM6000 and TM2500 start within minutes and serve as bridge power until the grid connection is ready or as prime power where the grid is weak, according to GE Vernova. Industrial gas turbines such as the Siemens SGT-800 and GE Frame 6B suit larger continuous loads. LKS 360-SCHREINER LLC lists such units on behalf of their owners.
+Page: https://lks360.com/gas-turbines-for-data-centers.html
 Q: What does a buyer need before a used gas turbine can be sold?
 A: A buyer first needs model, output, frequency, year, hours, starts, condition and the scope of supply. Serial numbers, site and full documents follow a signed letter of intent, and inspection follows that.
 Page: https://lks360.com/how-to-sell-a-used-gas-turbine.html
@@ -1613,7 +1617,7 @@ See the inventory, or browse gas turbines, steam turbines and generator sets.
 
 Most searched models
 GE TM2500 for sale · GE TM2500 price · GE LM6000 for sale · GE LM6000 PA, PC, PD, PF Sprint · Siemens SST-300 steam turbine · Siemens SGT-800 for sale
-Guide: coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine.
+Guide: coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine · used gas turbines for data center power.
 
 ### Looking for a unit?
 
@@ -1688,7 +1692,7 @@ More detail: buyer guide, steam turbine FAQ, generator set FAQ, glossary, how we
 
 Most searched models
 GE TM2500 for sale · GE TM2500 price · GE LM6000 for sale · GE LM6000 PA, PC, PD, PF Sprint · Siemens SST-300 steam turbine · Siemens SGT-800 for sale
-Guide: coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine.
+Guide: coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine · used gas turbines for data center power.
 
 ### Looking for a unit or selling one?
 
@@ -1761,7 +1765,7 @@ More detail: buyer guide, gas turbine FAQ, steam turbine FAQ, generator set FAQ,
 
 Most searched models
 GE TM2500 for sale · GE TM2500 price · GE LM6000 for sale · GE LM6000 PA, PC, PD, PF Sprint · Siemens SST-300 steam turbine · Siemens SGT-800 for sale
-Guide: coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine.
+Guide: coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine · used gas turbines for data center power.
 
 ### Looking for a unit or selling one?
 
@@ -1967,7 +1971,7 @@ More detail: buyer guide, how we work, inventory.
 
 Most searched models
 GE TM2500 for sale · GE TM2500 price · GE LM6000 for sale · GE LM6000 PA, PC, PD, PF Sprint · Siemens SST-300 steam turbine · Siemens SGT-800 for sale
-Guide: coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine.
+Guide: coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine · used gas turbines for data center power.
 
 ### Looking for a unit or selling one?
 
@@ -2024,7 +2028,7 @@ More detail: buyer guide, how we work, inventory.
 
 Most searched models
 GE TM2500 for sale · GE TM2500 price · GE LM6000 for sale · GE LM6000 PA, PC, PD, PF Sprint · Siemens SST-300 steam turbine · Siemens SGT-800 for sale
-Guide: coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine.
+Guide: coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine · used gas turbines for data center power.
 
 ### Looking for a unit or selling one?
 
@@ -2183,6 +2187,221 @@ More: gas turbines for sale, steam turbines, condensing vs back pressure steam t
 Send the steam turbine data, grid frequency and site continent. We reply with matching gas turbines.
  Contact
 
+## Page: https://lks360.com/gas-turbines-for-data-centers.html
+
+Used Gas Turbines for Data Center Power: Bridge and Prime Power | LKS 360
+
+Home / Gas turbines / Gas turbines for data centers
+
+Knowledge
+
+### Used gas turbines for data center power
+
+Bridge and prime power with aeroderivative and industrial gas turbines: what fits, how fast it starts and what a buyer should check.
+
+Can used gas turbines power a data center? Yes. Aeroderivative gas turbines such as the GE LM2500, LM6000 and TM2500 start within minutes and serve as bridge power until the grid connection is ready or as prime power where the grid is weak, according to GE Vernova. Industrial gas turbines such as the Siemens SGT-800 and GE Frame 6B suit larger continuous loads. LKS 360-SCHREINER LLC lists such units on behalf of their owners.
+
+### Bridge power and prime power
+
+Bridge power is on-site generation that runs a data center until the grid connection is ready. According to the GE Vernova data center FAQ (5 August 2025), mobile gas turbine units such as the TM2500 can provide bridge power during testing, commissioning or utility delays.
+
+Prime power means the turbines are the main source. The same GE Vernova FAQ states that in areas with unreliable grid infrastructure aeroderivative gas turbines can serve as the primary power source, and that turbines can act as primary power, backup generation or part of a hybrid system.
+
+Example: according to GE Vernova, it is delivering 29 LM2500XPRESS aeroderivative packages that can provide nearly 1 GW for Crusoe's data centers.
+
+### Why aeroderivatives: LM2500, LM6000, TM2500
+
+Fast start: GE Vernova states a start from cold iron to base load within 5 minutes for the LM2500, and 5 minutes to full power with a nominal ramp rate of around 50 MW per minute for the LM6000 (GE Vernova, LM6000).
+
+Short installation: GE Vernova states that the LM2500XPRESS can be installed in less than 30 days, and that the trailer mounted TM2500 puts power on the grid no later than 30 days after contract signature (GE Vernova, TM2500).
+
+Modular blocks: several units in parallel cover the load and allow maintenance without shutting the site down.
+
+### Why industrial gas turbines: SGT-800, Frame 6B
+
+For larger, continuous loads buyers look at industrial gas turbines. According to POWER (1 September 2026), medium-sized gas turbines are often selected for distributed power generation and data center applications.
+
+Siemens SGT-800: Siemens Energy states ratings of 45 to 62 MW in simple cycle, for 50 Hz and 60 Hz, with DLE combustion capable of up to 75 vol% hydrogen (Siemens Energy).
+
+GE Frame 6B: GE Vernova states 45 MW in simple cycle and a wide fuel range including gas and distillate liquids (GE Vernova, 6B).
+
+A heat recovery steam generator can be added later for combined cycle, which raises efficiency for prime power.
+
+### Delivery time: new against used
+
+According to POWER (1 September 2026), GE Vernova is mostly sold out through 2030; heavy duty machines are scheduled for shipment in 2030 or 2031 and expected in service in 2032 or 2033, and a heavy duty turbine may need another 18 months of site work after shipment, while an aeroderivative could be commissioned in about six months. Siemens Energy reported 69 GW of firm gas turbine backlog plus 26 GW under slot reservations in the same article.
+
+A used unit already exists. Its delivery time depends on its condition, any overhaul, dismantling and transport, and is checked for each unit; LKS 360-SCHREINER LLC does not quote a general figure.
+
+### Grid frequency: 50 Hz or 60 Hz
+
+The generator has to match the grid of the site: 60 Hz in North America, 50 Hz in Europe and large parts of Asia. GE Vernova offers the LM2500 with 50 Hz and 60 Hz options. A unit built for one frequency usually needs a different generator or gearbox for the other. See used 60 Hz units for the Americas.
+
+### Emissions and DLE
+
+Data centers are often built near towns, so NOx limits matter. GE Vernova states that the LM2500XPRESS has dual fuel dry low emissions capability that meets 15 ppm NOx on gas fuel, and that the Crusoe units also use selective catalytic reduction. The LM6000 is offered with DLE or with a water injected single annular combustor (SAC). For a used unit the combustion system on the data sheet decides whether it meets the permit at the site.
+
+### Mobile units
+
+Trailer mounted units such as the TM2500 can move to the next site when the grid connection is ready. GE Vernova states an installation time of about 14 days for the TM2500. For a used mobile unit the number and condition of the trailers and the mobile balance of plant matter as much as the engine.
+
+### Checklist for buyers
+
+Load profile: bridge power for a set time or prime power for years, and the redundancy target.
+
+Output at site conditions (temperature, altitude), not only ISO rating.
+
+Frequency and voltage of the generator against the site grid or the data center's medium voltage system.
+
+Combustion system (DLE, SAC with water injection) and space for SCR against the emission permit.
+
+Engine hours, cycles and the date and scope of the last overhaul; availability of a lease engine.
+
+Fuel: pipeline gas pressure and quality, or liquid fuel as backup.
+
+Scope: generator, controls, fuel system, transformer, black start equipment; for mobile units the trailers.
+
+Delivery: dismantling, transport and installation time for the concrete unit.
+
+Please confirm that the unit will not be delivered to a sanctioned country.
+
+### Units listed for data center power
+
+Stock No. LKS-GT-02 · Gas turbine 
+
+### Siemens SGT-800 gas turbines
+
+51.9 MW50/60 Hz2024New
+
+Last confirmed 12 November 2026
+
+Price on requestDetailsRequest offerWhatsApp
+
+Stock No. LKS-GT-03 · Gas turbine Reserved
+
+### Siemens SGT-800 combined cycle blocks
+
+53 MW GT + 25 MW ST50 Hz2017Asia
+
+Last confirmed 13 October 2026
+
+Price on requestDetailsRequest offerWhatsApp
+
+Stock No. LKS-GT-12 · Gas turbine 
+
+### GE Frame 6B gas turbines, OEM overhauled
+
+38.6 MW50 HzOEM overhauled
+
+Last confirmed 15 October 2026
+
+Price on requestDetailsRequest offerWhatsApp
+
+Stock No. LKS-GT-13 · Gas turbine 
+
+### GE Frame 6B (6B.03) gas turbines
+
+39.2 MW
+
+Last confirmed 30 September 2026
+
+Price on requestDetailsRequest offerWhatsApp
+
+Stock No. LKS-GT-17 · Gas turbine 
+
+### GE LM2500+G4 DLE gas turbines
+
+33.6 MW50/60 Hz
+
+Last confirmed 30 September 2026
+
+Price on requestDetailsRequest offerWhatsApp
+
+Stock No. LKS-GT-19 · Gas turbine 
+
+### GE LM6000 PD Sprint gas turbine
+
+60 HzAmericas
+
+Last confirmed 30 September 2026
+
+Price on requestDetailsRequest offerWhatsApp
+
+Stock No. LKS-GT-20 · Gas turbine 
+
+### GE LM2500 PC103B trailer-mounted gas turbines
+
+60 HzAmericas
+
+Last confirmed 16 August 2026
+
+Price on requestDetailsRequest offerWhatsApp
+
+Stock No. LKS-GT-32 · Gas turbine 
+
+### GE LM6000PA aeroderivative gas turbine generator set
+
+42.3 MW1994Usedapprox. 17,000 h
+
+Last confirmed 11 November 2026
+
+Price on requestDetailsRequest offerWhatsApp
+
+Stock No. LKS-GT-35 · Gas turbine 
+
+### GE LM6000 PD Sprint gas turbine power plant with HRSG, used
+
+approx. 46 MW50 HzUsedAsia
+
+Last confirmed 14 November 2026
+
+Price on requestDetailsRequest offerWhatsApp
+
+Stock No. LKS-GT-38 · Gas turbine 
+
+### 2 x GE TM2500+ Gen 6 mobile gas turbine generators, 2013
+
+26.2 / 29 MW (reported)50/60 Hz2013Used
+
+Last confirmed 11 November 2026
+
+Price on requestDetailsRequest offerWhatsApp
+
+Each unit is offered on behalf of its owner and subject to prior sale, price on request.
+
+### Frequent questions
+
+### Can a data center run on gas turbines?
+
+Yes. GE Vernova states that aeroderivative gas turbines can serve as the primary power source in areas with unreliable grid infrastructure, and that turbines can act as primary power, backup generation or part of a hybrid system.
+
+### What is bridge power for a data center?
+
+Bridge power is temporary on-site generation that runs the data center until the grid connection is ready. GE Vernova names mobile gas turbine units such as the TM2500 for bridge power during testing, commissioning or utility delays.
+
+### Why are aeroderivative gas turbines used for data centers?
+
+They start fast and are compact. GE Vernova states a ramp up in five minutes for aeroderivatives; for the LM6000 it states 5 minutes to full power, and for the LM2500 a start from cold iron to base load within 5 minutes.
+
+### How long does a new gas turbine take to deliver?
+
+According to POWER (1 September 2026), GE Vernova is mostly sold out through 2030; heavy duty machines ordered now are scheduled for shipment in 2030 or 2031, while an aeroderivative could be commissioned in about six months. A used unit already exists; its delivery time depends on its condition, overhaul needs and transport and is checked per unit.
+
+### Do data centers need 50 Hz or 60 Hz gas turbines?
+
+The generator has to match the grid of the site: 60 Hz in North America, 50 Hz in Europe and large parts of Asia. Many aeroderivative packages are offered for both frequencies; the data sheet of each used unit states its frequency.
+
+### Which used gas turbines does LKS 360-SCHREINER LLC list for data center power?
+
+Aeroderivatives such as the GE LM2500, LM6000 and TM2500, and industrial gas turbines such as the Siemens SGT-800 and GE Frame 6B, each with a stock number and its own page, offered on behalf of their owners, price on request.
+
+More: gas turbines for sale, LM2500 vs TM2500, LM6000 vs LM2500, gas turbine FAQ, buyer guide.
+
+### Planning power for a data center?
+
+Send the load, frequency, fuel and timeline. We reply with matching units.
+ Contact
+
 ## Page: https://lks360.com/compliance.html
 
 Compliance Policy | LKS 360-SCHREINER LLC
@@ -2313,4 +2532,4 @@ We confirm availability with you before every offer and remove sold units from o
 
 Most searched models
 GE TM2500 for sale · GE TM2500 price · GE LM6000 for sale · GE LM6000 PA, PC, PD, PF Sprint · Siemens SST-300 steam turbine · Siemens SGT-800 for sale
-Guide: coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine.
+Guide: coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine · used gas turbines for data center power.

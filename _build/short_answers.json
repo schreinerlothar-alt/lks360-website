@@ -59,5 +59,9 @@
   "coal-to-gas-repowering.html": [
     "What is coal-to-gas heat recovery repowering?",
     "Heat recovery repowering replaces the coal boiler of an existing power plant with one or more gas turbines and a heat recovery steam generator (HRSG); the gas turbine exhaust raises steam for the plant's existing steam turbine, so the coal unit becomes a combined cycle plant. It suits plants whose steam turbine, condenser, cooling system and grid connection still have decades of life left. LKS 360-SCHREINER LLC lists gas turbines and gas turbine trains with HRSG for such projects on behalf of their owners."
+  ],
+  "gas-turbines-for-data-centers.html": [
+    "Can used gas turbines power a data center?",
+    "Yes. Aeroderivative gas turbines such as the GE LM2500, LM6000 and TM2500 start within minutes and serve as bridge power until the grid connection is ready or as prime power where the grid is weak, according to GE Vernova. Industrial gas turbines such as the Siemens SGT-800 and GE Frame 6B suit larger continuous loads. LKS 360-SCHREINER LLC lists such units on behalf of their owners."
   ]
 }

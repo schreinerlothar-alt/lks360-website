@@ -959,7 +959,7 @@ def popular_block():
             '<a href="/ge-tm2500-for-sale.html">GE TM2500 for sale</a> · <a href="/ge-tm2500-for-sale.html#price">GE TM2500 price</a> · '
             '<a href="/ge-lm6000-for-sale.html">GE LM6000 for sale</a> · <a href="/ge-lm6000-for-sale.html#variants">GE LM6000 PA, PC, PD, PF Sprint</a> · '
             '<a href="/siemens-sst-300-for-sale.html">Siemens SST-300 steam turbine</a> · <a href="/siemens-sgt-800-for-sale.html">Siemens SGT-800 for sale</a>'
-            '</p><p>Guide: <a href="/coal-to-gas-repowering.html">coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine</a>.</p></div></section><!--/POPULAR-->')
+            '</p><p>Guide: <a href="/coal-to-gas-repowering.html">coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine</a> · <a href="/gas-turbines-for-data-centers.html">used gas turbines for data center power</a>.</p></div></section><!--/POPULAR-->')
 
 
 def add_popular(t, name):
@@ -988,6 +988,10 @@ def patch_static(path):
     cat = {"gas-turbines.html": "gas", "steam-turbines.html": "steam", "generator-sets.html": "genset"}.get(path.name)
     if cat and "<!--UNITS-->" in t:
         t = re.sub(r"<!--UNITS-->.*?<!--/UNITS-->", lambda m: cat_block(cat), t, flags=re.S)
+    if "<!--DCUNITS-->" in t:
+        _dc = [u for u in UNITS if u.get("status") != "sold" and re.search(r"LM2500|LM6000|TM2500|SGT-800|Frame 6B", u["model"] + " " + u["name"])]
+        t = re.sub(r"<!--DCUNITS-->.*?<!--/DCUNITS-->", lambda m: '<!--DCUNITS--><div class="ulist">' + "".join(row(u) for u in _dc)
+                   + '</div><p class="muted small">Each unit is offered on behalf of its owner and subject to prior sale, price on request.</p><!--/DCUNITS-->', t, flags=re.S)
     if path.name == "index.html" and "<!--FEATURED-->" in t:
         t = re.sub(r"<!--FEATURED-->.*?<!--/FEATURED-->", lambda m: featured_block(), t, flags=re.S)
     path.write_text(t, encoding="utf-8", newline="\n")
@@ -1182,7 +1186,7 @@ def compare_page(slug, a, b):
 
 
 STATIC = ["index.html", "inventory.html", "gas-turbines.html", "steam-turbines.html", "generator-sets.html",
-          "sell.html", "news.html", "how-we-work.html", "buying-used-gas-turbines.html", "gas-turbine-faq.html", "steam-turbine-faq.html", "generator-set-faq.html", "power-generation-glossary.html", "how-to-sell-a-used-gas-turbine.html", "used-gas-turbine-broker.html", "condensing-vs-back-pressure-steam-turbine.html", "coal-to-gas-repowering.html", "contact.html", "compliance.html", "imprint.html", "privacy.html"]
+          "sell.html", "news.html", "how-we-work.html", "buying-used-gas-turbines.html", "gas-turbine-faq.html", "steam-turbine-faq.html", "generator-set-faq.html", "power-generation-glossary.html", "how-to-sell-a-used-gas-turbine.html", "used-gas-turbine-broker.html", "condensing-vs-back-pressure-steam-turbine.html", "coal-to-gas-repowering.html", "gas-turbines-for-data-centers.html", "contact.html", "compliance.html", "imprint.html", "privacy.html"]
 
 (ROOT / "units").mkdir(exist_ok=True)
 for old in (ROOT / "units").glob("*.html"):
@@ -1361,7 +1365,7 @@ for m in MODELS:
     _own = [tuple(x) for x in TEXTS[m[0]]["faq"]] if m[0] in TEXTS else []
     _intro = [(f"What is the {m[1]} used for?", TEXTS[m[0]]["intro"] + " Typical uses: " + "; ".join(TEXTS[m[0]]["uses"]).lower() + ".")] if m[0] in TEXTS else []
     _full.append(f"### {m[1]} ({SITE}/{m[0]}.html)\n" + "\n".join(f"Q: {q}\nA: {a}" for q, a in [(f"Where can I buy a used {m[1]}?", model_short(m[0], m[1], _us))] + ([spec_block(m[0], m[1])[1]] if m[0] in SPECS else []) + _intro + _own + model_faq(m[1], _us)[1:]))
-for _n in ("how-we-work.html", "buying-used-gas-turbines.html", "gas-turbine-faq.html", "steam-turbine-faq.html", "generator-set-faq.html", "power-generation-glossary.html", "how-to-sell-a-used-gas-turbine.html", "used-gas-turbine-broker.html", "condensing-vs-back-pressure-steam-turbine.html", "coal-to-gas-repowering.html", "compliance.html", "sell.html"):
+for _n in ("how-we-work.html", "buying-used-gas-turbines.html", "gas-turbine-faq.html", "steam-turbine-faq.html", "generator-set-faq.html", "power-generation-glossary.html", "how-to-sell-a-used-gas-turbine.html", "used-gas-turbine-broker.html", "condensing-vs-back-pressure-steam-turbine.html", "coal-to-gas-repowering.html", "gas-turbines-for-data-centers.html", "compliance.html", "sell.html"):
     if (ROOT / _n).exists():
         _full.append(f"## Page: {SITE}/{_n}\n\n" + _plain(_n))
 (ROOT / "llms-full.txt").write_text("\n\n".join(_full) + "\n", encoding="utf-8", newline="\n")
