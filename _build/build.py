@@ -177,7 +177,7 @@ def row(u):
 
 def wa_link(u):
     from urllib.parse import quote
-    msg = f"Hello Lothar, I am interested in LKS-{u['id']}: {u['name']}. Please send me the price. Company: "
+    msg = f"Hello Lothar, I am interested in LKS-{u['id']}: {u['name']}. Please send me the price. I confirm that the unit will not be delivered to a sanctioned country."
     return f"{WA}?text={quote(msg)}"
 
 
@@ -197,8 +197,8 @@ def photos_html(u):
 def mailto(u):
     from urllib.parse import quote
     subj = f"Request LKS-{u['id']}: {u['name']}"
-    body = (f"Stock No.: LKS-{u['id']}\nUnit: {u['name']}\n\nCompany:\nName:\nPhone:\n"
-            "Delivery country:\nNumber of units:\nTimeline:\n")
+    body = (f"Stock No.: LKS-{u['id']}\nUnit: {u['name']}\n\nName:\nPhone:\nNumber of units:\nTimeline:\n\n"
+            "Please confirm that the unit will not be delivered to a sanctioned country. Confirmed: \n")
     return f"mailto:{MAIL}?subject={quote(subj)}&body={quote(body)}"
 
 
@@ -224,29 +224,10 @@ def unit_card(u):
 
 
 def product_ld(u, desc, img):
-    # Product facts only. No offers (prices on request) and no ratings (none collected yet).
-    p = {"@type": "Product", "name": u["name"], "sku": f"LKS-{u['id']}", "mpn": f"LKS-{u['id']}",
-         "description": desc, "image": SITE + img, "category": CATS[u["cat"]][0],
-         "url": SITE + u["url"]}
-    if u.get("make"):
-        p["brand"] = {"@type": "Brand", "name": u["make"]}
-        p["manufacturer"] = {"@type": "Organization", "name": u["make"]}
-    if u.get("model"):
-        p["model"] = u["model"]
-    if u.get("year") and re.fullmatch(r"\d{4}", str(u["year"])):
-        p["productionDate"] = str(u["year"])
-    cond = (u.get("condition") or "").lower()
-    if cond.startswith(("new", "unused")):
-        p["itemCondition"] = "https://schema.org/NewCondition"
-    elif "overhaul" in cond or "rebuilt" in cond:
-        p["itemCondition"] = "https://schema.org/RefurbishedCondition"
-    props = [(k, v) for k, v in [("Output", u["output"]), ("Frequency", u["hz"]), ("Fuel", u["fuel"]),
-             ("Year", u["year"]), ("Condition", u["condition"]), ("Operating hours", approx(u.get("hours"), "h")),
-             ("Location", u.get("continent", ""))] if v]
-    if props:
-        p["additionalProperty"] = [{"@type": "PropertyValue", "name": k, "value": v} for k, v in props]
-    p["isRelatedTo"] = {"@type": "Organization", "name": "LKS 360-SCHREINER LLC", "url": SITE + "/"}
-    return p
+    # Thing, not Product: Google treats Product markup without offers, review or rating as an invalid product snippet,
+    # and prices stay on request (GSC 18.11.2026). Facts stay in the description and the page text.
+    return {"@type": "Thing", "name": u["name"], "description": desc, "image": SITE + img, "url": SITE + u["url"],
+            "identifier": {"@type": "PropertyValue", "propertyID": "Stock No.", "value": f"LKS-{u['id']}"}}
 
 
 def unit_page(u):
@@ -311,7 +292,7 @@ def unit_page(u):
     <a class="btn ghost full" href="/contact.html?unit=LKS-{u['id']}">Contact form</a>
     <a class="btn wa full" href="{wa_link(u)}">Ask on WhatsApp (LKS-{u['id']})</a>
     <h3>Next steps</h3>
-    <ol class="nextsteps"><li>Send your requirement with company details.</li><li>You receive an offer with the owner's conditions.</li><li>With your letter of intent: full data and inspection.</li><li>Purchase contract between you and the owner.</li></ol>
+    <ol class="nextsteps"><li>Send your requirement with the stock number.</li><li>You receive an offer with the owner's conditions.</li><li>With your letter of intent: full data and inspection.</li><li>Purchase contract between you and the owner.</li></ol>
     <p class="small">Questions: <a href="mailto:{MAIL}">{MAIL}</a><br>{PHONE}</p>
   </aside>
 </div></section>
@@ -486,7 +467,7 @@ def inventory_page():
 </div></section>
 <div class="cta">
   <h2>Not on the list?</h2>
-  <p>Send type, output, frequency and delivery country. We match it with units offered by their owners.</p>
+  <p>Send type, output and frequency. We match it with units offered by their owners.</p>
   <a class="btn alt" href="/contact.html">Send your requirement</a>
 </div>
 """ + footer() + '\n<script src="/site.js"></script>\n</body>\n</html>\n'
@@ -698,7 +679,7 @@ def model_short(slugname, label, us):
                  "Price on request; full data and inspection follow a letter of intent."]
     else:
         parts = [f"LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, has no {label} listed at the moment and searches the market on request.",
-                 "Send output, frequency, fuel and delivery country to manager@lks360.com or WhatsApp +49 170 4656619."]
+                 "Send output, frequency and fuel to manager@lks360.com or WhatsApp +49 170 4656619."]
     if t:
         parts.append("?" + t["intro"].split(". ")[0].rstrip(".") + ".")
     parts += ["?The purchase contract is made directly between buyer and owner.", "?Contact: manager@lks360.com or WhatsApp +49 170 4656619."] if n else ["?Comparable units of other models are listed with stock numbers."]
@@ -831,7 +812,7 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
 </div></section>
 <div class="cta">
   <h2>Looking for a {e(label)}?</h2>
-  <p>Send output, frequency, number of units and delivery country.</p>
+  <p>Send output, frequency and number of units.</p>
   <a class="btn alt" href="/contact.html">Send your requirement</a> <a class="btn wa" href="{WA}">WhatsApp</a>
 </div>
 """ + footer() + "\n</body>\n</html>\n"
@@ -1035,7 +1016,7 @@ def hz_page():
          "LKS 360-SCHREINER LLC, 7901 4th St N, Ste 300, St. Petersburg, FL 33702, acts as independent broker. The purchase contract is made "
          "directly between buyer and owner, and payment runs through escrow or a letter of credit."),
         ("What does a buyer need to receive full data and inspection?",
-         "A letter of intent with the stock number, buyer company, end user and site. Full documents, serial numbers and inspection follow the LOI."),
+         "A letter of intent with the stock number. Please confirm that the unit will not be delivered to a sanctioned country. Full documents and inspection follow the LOI."),
     ]
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "CollectionPage", "name": "Used 60 Hz power generation equipment for the Americas", "url": SITE + path,
@@ -1068,7 +1049,7 @@ def hz_page():
 </div></section>
 <div class="cta">
   <h2>Looking for a 60 Hz unit?</h2>
-  <p>Send output, fuel, number of units and delivery country.</p>
+  <p>Send output, fuel and number of units.</p>
   <a class="btn alt" href="/contact.html">Send your requirement</a> <a class="btn wa" href="{WA}">WhatsApp</a>
 </div>
 """ + footer() + "\n</body>\n</html>\n"
@@ -1162,7 +1143,7 @@ def compare_page(slug, a, b):
              "That depends on the output you need, grid frequency, fuel, emission limits and whether the plant runs base load, peaking or combined cycle. Send these values and we propose matching units from the market.")]
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "WebPage", "name": f"{la} vs {lb}", "url": SITE + path,
-         "about": [{"@type": "Product", "name": la, "url": f"{SITE}/{a}.html"}, {"@type": "Product", "name": lb, "url": f"{SITE}/{b}.html"}],
+         "about": [{"@type": "Thing", "name": la, "url": f"{SITE}/{a}.html"}, {"@type": "Thing", "name": lb, "url": f"{SITE}/{b}.html"}],
          "publisher": {"@type": "Organization", "name": "LKS 360-SCHREINER LLC", "url": SITE + "/"}},
         {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": x}} for q, x in faqs]},
         {"@type": "BreadcrumbList", "itemListElement": [
@@ -1194,7 +1175,7 @@ def compare_page(slug, a, b):
 </div></section>
 <div class="cta">
   <h2>Looking for one of these models?</h2>
-  <p>Send output, frequency, fuel and delivery country.</p>
+  <p>Send output, frequency and fuel.</p>
   <a class="btn alt" href="/contact.html">Send your requirement</a> <a class="btn wa" href="{WA}">WhatsApp</a>
 </div>
 """ + footer() + "\n</body>\n</html>\n"

@@ -66,9 +66,10 @@
       if (form.botcheck && form.botcheck.checked) return;
       var lines = [];
       Array.prototype.forEach.call(form.elements, function (el) {
+        if (el.type === 'checkbox' && !el.checked) return;
         if (el.name && el.name !== 'botcheck' && el.value) lines.push((el.dataset.label || el.name) + ': ' + el.value);
       });
-      var subject = (form.dataset.subject || 'Inquiry') + (form.company && form.company.value ? ' from ' + form.company.value : '');
+      var subject = (form.dataset.subject || 'Inquiry') + (form.name && form.name.value ? ' from ' + form.name.value : '');
       var mailto = 'mailto:manager@lks360.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
 
       if (!FORM_KEY) {

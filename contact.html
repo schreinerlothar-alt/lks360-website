@@ -26,7 +26,8 @@
 
 <section><div class="wrap two">
   <form class="card mailform" id="mailform" data-subject="Equipment requirement">
-    <div class="frow"><label>Name<input name="name" data-label="Name" required></label><label>Company<input name="company" data-label="Company" required></label></div>
+    <div class="frow"><label>Name<input name="name" data-label="Name" required></label><label>Timeline
+      <select name="timeline" data-label="Timeline"><option value="">Please select</option><option value="Purchase within 3 months">Purchase within 3 months</option><option value="Purchase within 12 months">Purchase within 12 months</option><option value="Budget or feasibility study">Budget or feasibility study</option></select></label></div>
     <div class="frow"><label>Email<input type="email" name="email" data-label="Email" required></label><label>Phone<input type="tel" name="phone" data-label="Phone"></label></div>
     <div class="frow"><label>I am
       <select name="role" data-label="Role"><option value="Buyer">Buyer</option><option value="Equipment owner">Equipment owner</option><option value="Other">Other</option></select></label>
@@ -35,11 +36,8 @@
       <select name="type" data-label="Type" required><option value="">Please select</option><option value="Gas turbine">Gas turbine</option><option value="Steam turbine">Steam turbine</option><option value="Generator set">Generator set</option><option value="Complete power plant">Complete power plant</option></select></label>
       <label>Output (MW)<input name="output" data-label="Output" required placeholder="e.g. 25"></label></div>
     <div class="frow"><label>Frequency
-      <select name="hz" data-label="Frequency" required><option value="">Please select</option><option value="50 Hz">50 Hz</option><option value="60 Hz">60 Hz</option></select></label>
-      <label>Delivery country<input name="country" data-label="Delivery country" data-buyer required></label></div>
-    <div class="frow buyeronly"><label>End user or project<input name="enduser" data-label="End user / project" data-buyer required placeholder="Company or plant that will operate the unit"></label>
-      <label>Timeline
-      <select name="timeline" data-label="Timeline" data-buyer required><option value="">Please select</option><option value="Purchase within 3 months">Purchase within 3 months</option><option value="Purchase within 12 months">Purchase within 12 months</option><option value="Budget or feasibility study">Budget or feasibility study</option></select></label></div>
+      <select name="hz" data-label="Frequency" required><option value="">Please select</option><option value="50 Hz">50 Hz</option><option value="60 Hz">60 Hz</option></select></label></div>
+    <label class="buyeronly check"><input type="checkbox" name="sanctions" value="confirmed" data-label="Sanctions" data-buyer required> Please confirm that the unit will not be delivered to a sanctioned country.</label>
     <label>Message<textarea name="message" data-label="Message" rows="5" placeholder="Fuel, timeline, number of units, scope"></textarea></label>
     <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
     <button class="btn" type="submit">Send message</button>
@@ -55,7 +53,7 @@
       <li><span>Registered office</span>7901 4th St N, Ste 300, St. Petersburg, FL 33702, USA</li>
     </ul>
     <h3 style="margin-top:32px">What helps us answer</h3>
-    <p class="muted">Type and output, 50 or 60 Hz, fuel, delivery country, timeline and whether you need a single unit or a complete plant. Company details let us prepare an offer with the owner.</p>
+    <p class="muted">Type and output, 50 or 60 Hz, fuel, timeline and whether you need a single unit or a complete plant. Please confirm that the unit will not be delivered to a sanctioned country.</p>
     <h3 style="margin-top:32px">Prices and data</h3>
     <p class="muted">Send the stock number and we reply with the price. Full technical documents, serial numbers and inspection follow your letter of intent. Purchase payments go directly to the owner or through escrow.</p>
     <p class="muted">We use your data only to answer your inquiry. See our <a href="/privacy.html">privacy policy</a>.</p>

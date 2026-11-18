@@ -78,10 +78,10 @@ Q: What should I know before buying a used generator set?
 A: Compare generator sets at the same rating (standby, prime or continuous), then check fuel (gas, diesel or heavy fuel oil), grid frequency and running hours since the last overhaul. Medium speed engines give more output per unit, high speed engines are compact and quick to install. LKS 360-SCHREINER LLC lists 13 used gas and diesel generator sets on behalf of their owners.
 Page: https://lks360.com/generator-set-faq.html
 Q: How do I buy a used gas turbine safely?
-A: Send your requirement (output, frequency, fuel, site and timeline), compare offers by stock number, then sign a letter of intent to receive full data and inspect the unit. Sign the purchase contract directly with the owner and pay through escrow or a letter of credit, never in advance to an intermediary.
+A: Send your requirement (output, frequency, fuel and timeline), compare offers by stock number, then sign a letter of intent to receive full data and inspect the unit. Sign the purchase contract directly with the owner and pay through escrow or a letter of credit, never in advance to an intermediary.
 Page: https://lks360.com/buying-used-gas-turbines.html
 Q: How can I sell my used turbine or generator set?
-A: Give one broker an exclusive sales mandate for a limited time at your net price, so the unit is offered once, at one price, with one data set. LKS 360-SCHREINER LLC presents the unit to screened buyers, keeps your name and site confidential until a letter of intent and charges no upfront fee.
+A: Give one broker an exclusive sales mandate for a limited time at your net price, so the unit is offered once, at one price, with one data set. LKS 360-SCHREINER LLC presents the unit to screened buyers, never discloses your name, shares the site only after a letter of intent and charges no upfront fee.
 Page: https://lks360.com/sell.html
 Q: How does LKS 360-SCHREINER LLC work?
 A: LKS 360-SCHREINER LLC lists each unit on behalf of its owner, sends buyers an offer with the owner's conditions, releases full data and inspection after a letter of intent and lets buyer and owner sign the purchase contract directly. The commission is agreed in writing; purchase payments never pass through the accounts of LKS 360-SCHREINER LLC.
@@ -105,13 +105,13 @@ Q: What does a buyer need before a used gas turbine can be sold?
 A: A buyer first needs model, output, frequency, year, hours, starts, condition and the scope of supply. Serial numbers, site and full documents follow a signed letter of intent, and inspection follows that.
 Page: https://lks360.com/how-to-sell-a-used-gas-turbine.html
 Q: What is an LOI when buying a used gas turbine?
-A: A letter of intent is a signed, non-binding statement in which the buyer names the stock number, the buyer company, the end user and the site and declares the intention to buy at the stated conditions. It opens full documents and inspection; the binding purchase contract comes later, directly between buyer and owner.
+A: A letter of intent is a signed, non-binding statement in which the buyer names the stock number, declares the intention to buy at the stated conditions and confirms that the unit will not be delivered to a sanctioned country. It opens full documents and inspection; the binding purchase contract comes later, directly between buyer and owner.
 Page: https://lks360.com/how-to-sell-a-used-gas-turbine.html
 Q: How is a used gas turbine paid for?
 A: The buyer pays the owner directly through escrow or an irrevocable letter of credit agreed between them. Purchase payments never pass through the accounts of LKS 360-SCHREINER LLC.
 Page: https://lks360.com/how-to-sell-a-used-gas-turbine.html
 Q: What is an LOI when buying a used gas turbine?
-A: A letter of intent is a signed, non-binding statement in which the buyer names the stock number, the buyer company, the end user and the site and declares the intention to buy at the stated conditions. It opens full documents and inspection; the binding purchase contract comes later, directly between buyer and owner.
+A: A letter of intent is a signed, non-binding statement in which the buyer names the stock number, declares the intention to buy at the stated conditions and confirms that the unit will not be delivered to a sanctioned country. It opens full documents and inspection; the binding purchase contract comes later, directly between buyer and owner.
 Page: https://lks360.com/buying-used-gas-turbines.html
 Q: Condensing vs back pressure: which used steam turbine fits my plant?
 A: If the plant needs process steam all the time, a back pressure or extraction turbine uses the steam twice, first for power and then for heat. If only electricity is needed, a condensing turbine gives more power from the same steam but needs a condenser and cooling. See condensing vs back pressure steam turbine for the full comparison.
@@ -1254,7 +1254,7 @@ A: Yes. After your letter of intent you receive the technical documents and can 
 
 ### Siemens SGT5-2000E (https://lks360.com/siemens-sgt5-2000e-for-sale.html)
 Q: Where can I buy a used Siemens SGT5-2000E?
-A: LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, has no Siemens SGT5-2000E listed at the moment and searches the market on request. Send output, frequency, fuel and delivery country to manager@lks360.com or WhatsApp +49 170 4656619. The SGT5-2000E is a Siemens Energy heavy duty gas turbine for 50 Hz grids.
+A: LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, has no Siemens SGT5-2000E listed at the moment and searches the market on request. Send output, frequency and fuel to manager@lks360.com or WhatsApp +49 170 4656619. The SGT5-2000E is a Siemens Energy heavy duty gas turbine for 50 Hz grids. Comparable units of other models are listed with stock numbers.
 Q: What is the Siemens SGT5-2000E?
 A: The Siemens SGT5-2000E is a heavy duty gas turbine by Siemens Energy. Output: 198 MW gas turbine; SCC5-2000E combined cycle 290 MW (1x1) and 581 MW (2x1). Typical applications: simple cycle for peak load or standby, combined cycle for base load and cogeneration. Source: Siemens Energy, SGT5-2000E product page.
 Q: What is the Siemens SGT5-2000E used for?
@@ -1274,7 +1274,7 @@ A: Yes. After your letter of intent you receive the technical documents and can 
 
 ### GE 7FA (7F) (https://lks360.com/ge-7fa-for-sale.html)
 Q: Where can I buy a used GE 7FA (7F)?
-A: LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, has no GE 7FA (7F) listed at the moment and searches the market on request. Send output, frequency, fuel and delivery country to manager@lks360.com or WhatsApp +49 170 4656619. The GE 7FA is a heavy duty F class gas turbine for 60 Hz grids.
+A: LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, has no GE 7FA (7F) listed at the moment and searches the market on request. Send output, frequency and fuel to manager@lks360.com or WhatsApp +49 170 4656619. The GE 7FA is a heavy duty F class gas turbine for 60 Hz grids.
 Q: What is the GE 7FA (7F)?
 A: The GE 7FA (7F) is a heavy duty gas turbine by GE Vernova. Output: 201 MW (7F.04) to 239 MW (7F.05), simple cycle. Source: GE Vernova, 7F product page.
 Q: What is the GE 7FA (7F) used for?
@@ -1292,7 +1292,7 @@ A: Yes. After your letter of intent you receive the technical documents and can 
 
 ### Siemens SGT-750 (https://lks360.com/siemens-sgt-750-for-sale.html)
 Q: Where can I buy a used Siemens SGT-750?
-A: LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, has no Siemens SGT-750 listed at the moment and searches the market on request. Send output, frequency, fuel and delivery country to manager@lks360.com or WhatsApp +49 170 4656619. Comparable units of other models are listed with stock numbers.
+A: LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, has no Siemens SGT-750 listed at the moment and searches the market on request. Send output, frequency and fuel to manager@lks360.com or WhatsApp +49 170 4656619. Comparable units of other models are listed with stock numbers.
 Q: What is the Siemens SGT-750?
 A: The Siemens SGT-750 is a lightweight industrial gas turbine by Siemens Energy. Output: 38.9 to 41.1 MW(e) gross (simple cycle). Typical applications: industrial power, oil and gas, mechanical drive, combined cycle and CHP. Source: Siemens Energy, SGT-750 product page.
 Q: What is the Siemens SGT-750 used for?
@@ -1452,7 +1452,7 @@ A: Yes. After your letter of intent you receive the technical documents and can 
 
 ### Jenbacher J620 (https://lks360.com/jenbacher-j620-for-sale.html)
 Q: Where can I buy a used Jenbacher J620?
-A: LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, has no Jenbacher J620 listed at the moment and searches the market on request. Send output, frequency, fuel and delivery country to manager@lks360.com or WhatsApp +49 170 4656619. The Jenbacher J620 is a high speed gas engine with 20 cylinders from the Type 6 range of INNIO Jenbacher.
+A: LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, has no Jenbacher J620 listed at the moment and searches the market on request. Send output, frequency and fuel to manager@lks360.com or WhatsApp +49 170 4656619. The Jenbacher J620 is a high speed gas engine with 20 cylinders from the Type 6 range of INNIO Jenbacher.
 Q: What is the Jenbacher J620?
 A: The Jenbacher J620 is a gas engine generator set by INNIO Jenbacher. Output: up to 3,509 kW. Typical applications: power generation and combined heat and power. Source: INNIO Jenbacher, Type 6 gas engines.
 Q: What is the Jenbacher J620 used for?
@@ -1554,7 +1554,7 @@ Yes. After the letter of intent the buyer can inspect the unit on site. The insp
 
 ### I own a turbine. Will you publish my name or site?
 
-No. We present the unit with its technical data only. Your name and the site location stay confidential until a buyer has signed a letter of intent and you agree.
+No. We present the unit with its technical data only. Your name is never disclosed; the site location is shared only after a buyer has signed a letter of intent and you agree.
 
 ### Ready to start?
 
@@ -1571,17 +1571,17 @@ Buyer guide
 
 What to ask for, what to check and how a purchase of used or surplus power generation equipment runs. The same points apply to steam turbines and generator sets.
 
-How do I buy a used gas turbine safely? Send your requirement (output, frequency, fuel, site and timeline), compare offers by stock number, then sign a letter of intent to receive full data and inspect the unit. Sign the purchase contract directly with the owner and pay through escrow or a letter of credit, never in advance to an intermediary.
+How do I buy a used gas turbine safely? Send your requirement (output, frequency, fuel and timeline), compare offers by stock number, then sign a letter of intent to receive full data and inspect the unit. Sign the purchase contract directly with the owner and pay through escrow or a letter of credit, never in advance to an intermediary.
 
 Direct answers
 
 ### What is an LOI when buying a used gas turbine?
 
-A letter of intent is a signed, non-binding statement in which the buyer names the stock number, the buyer company, the end user and the site and declares the intention to buy at the stated conditions. It opens full documents and inspection; the binding purchase contract comes later, directly between buyer and owner.
+A letter of intent is a signed, non-binding statement in which the buyer names the stock number, declares the intention to buy at the stated conditions and confirms that the unit will not be delivered to a sanctioned country. It opens full documents and inspection; the binding purchase contract comes later, directly between buyer and owner.
 
 ### 1. Define the requirement
 
-Send required output, grid frequency (50 or 60 Hz), fuel (natural gas, liquid fuel or dual fuel), emission limits at the site, simple cycle or combined cycle, delivery country and planned start of operation. With these points owners can answer with a concrete offer instead of a general list.
+Send required output, grid frequency (50 or 60 Hz), fuel (natural gas, liquid fuel or dual fuel), emission limits at the site, simple cycle or combined cycle and planned start of operation. With these points owners can answer with a concrete offer instead of a general list.
 
 ### 2. Ask for the right records
 
@@ -1662,7 +1662,7 @@ Operating hours and starts, the maintenance and overhaul history, recent boresco
 
 ### What is an LOI in an equipment purchase?
 
-A letter of intent is a written statement from the buyer that names the unit, the price offered, the buyer company, the end user and country of installation and the intended payment route. It is the step that releases full data and inspection. See the LOI step in the buyer guide.
+A letter of intent is a written statement from the buyer that names the unit, the price offered and the intended payment route and confirms that the unit will not be delivered to a sanctioned country. It is the step that releases full data and inspection. See the LOI step in the buyer guide.
 
 ### What is proof of funds (POF)?
 
@@ -1876,7 +1876,7 @@ What do the common terms in used turbine trading mean? This glossary defines the
  Power barge
  A floating power plant on a barge or ship hull, often with gas turbines or engines, that can be moved to a new site.
  LOI
- Letter of intent. A written statement by the buyer naming the unit, offered price, buyer company, end user, country of installation and payment route. It releases full data and inspection.
+ Letter of intent. A written statement by the buyer naming the unit, offered price and payment route and confirming that the unit will not be delivered to a sanctioned country. It releases full data and inspection.
  POF
  Proof of funds. A bank letter confirming that the buyer can pay the purchase price.
  NCNDA
@@ -1917,7 +1917,7 @@ A buyer first needs model, output, frequency, year, hours, starts, condition and
 
 ### What is an LOI when buying a used gas turbine?
 
-A letter of intent is a signed, non-binding statement in which the buyer names the stock number, the buyer company, the end user and the site and declares the intention to buy at the stated conditions. It opens full documents and inspection; the binding purchase contract comes later, directly between buyer and owner.
+A letter of intent is a signed, non-binding statement in which the buyer names the stock number, declares the intention to buy at the stated conditions and confirms that the unit will not be delivered to a sanctioned country. It opens full documents and inspection; the binding purchase contract comes later, directly between buyer and owner.
 
 ### How is a used gas turbine paid for?
 
@@ -1953,7 +1953,7 @@ No. There is no upfront fee. Our income is agreed in writing and only arises whe
 
 ### Will my company name and site be published?
 
-No. The unit is presented with its technical data and a stock number only. Name and site stay confidential until a buyer has signed a letter of intent and you agree.
+No. The unit is presented with its technical data and a stock number only. Your name is never disclosed; the site is shared only after a buyer has signed a letter of intent and you agree.
 
 ### How is the purchase price paid to the owner?
 
@@ -2014,7 +2014,7 @@ Used and surplus gas turbines, steam turbines, generator sets and complete power
 
 ### I am looking for a unit. How do I start?
 
-Send type, output, frequency, fuel and delivery country through the contact form or to manager@lks360.com.
+Send type, output, frequency and fuel through the contact form or to manager@lks360.com.
 
 ### I own a unit. How do I list it?
 
@@ -2221,7 +2221,7 @@ For equipment owners
 
 Gas turbines, steam turbines, generator sets and complete plants. We present your unit to buyers with its technical data. Your name and site stay confidential.
 
-How can I sell my used turbine or generator set? Give one broker an exclusive sales mandate for a limited time at your net price, so the unit is offered once, at one price, with one data set. LKS 360-SCHREINER LLC presents the unit to screened buyers, keeps your name and site confidential until a letter of intent and charges no upfront fee.
+How can I sell my used turbine or generator set? Give one broker an exclusive sales mandate for a limited time at your net price, so the unit is offered once, at one price, with one data set. LKS 360-SCHREINER LLC presents the unit to screened buyers, never discloses your name, shares the site only after a letter of intent and charges no upfront fee.
 
 How it works for owners
 
