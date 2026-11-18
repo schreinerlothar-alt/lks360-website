@@ -949,6 +949,7 @@ def fix_org_ld(t):
     def walk(x):
         if isinstance(x, dict):
             if x.get("@type") == "Organization" and x.get("name") == "LKS 360-SCHREINER LLC":
+                x["@id"] = SITE + "/#organization"
                 x["url"] = SITE + "/"
                 x["sameAs"] = SAMEAS
                 if not isinstance(x.get("address"), dict):
@@ -1240,9 +1241,69 @@ for name in STATIC:
 for name in ["404.html"]:
     patch_static(ROOT / name)
 
+from PIL import Image as _Image
+
+
+def _webp(jpg, width=None):
+    # WebP copy of a JPEG, optionally scaled to width; rebuilt only when the JPEG is newer.
+    src = ROOT / jpg.lstrip("/")
+    out = src.with_name(src.stem + (f"-{width}" if width else "") + ".webp")
+    if src.exists() and (not out.exists() or out.stat().st_mtime < src.stat().st_mtime):
+        im = _Image.open(src).convert("RGB")
+        if width and im.width > width:
+            im = im.resize((width, round(im.height * width / im.width)), _Image.LANCZOS)
+        im.save(out, "WEBP", quality=78, method=6)
+    return "/" + str(out.relative_to(ROOT)).replace("\\", "/")
+
+
+def _picture(m):
+    tag, src = m.group(0), m.group(1)
+    p = ROOT / src.lstrip("/")
+    if not p.exists():
+        return tag
+    if "width=" not in tag:
+        w, h = _Image.open(p).size
+        tag = tag.replace("<img ", f'<img width="{w}" height="{h}" ', 1)
+    w1200, w600 = _webp(src), _webp(src, 600)
+    return (f'<picture><source type="image/webp" srcset="{w600} 600w, {w1200} 1200w" sizes="(max-width: 700px) 100vw, 600px">'
+            f"{tag}</picture>")
+
+
+HERO_PRELOAD = ('<link rel="preload" as="image" type="image/webp" href="/img/gas-turbine-rotor-800.webp" media="(max-width: 700px)">\n'
+                '<link rel="preload" as="image" type="image/webp" href="/img/gas-turbine-rotor.webp" media="(min-width: 701px)">\n')
+_webp("/img/gas-turbine-rotor.jpg"), _webp("/img/gas-turbine-rotor.jpg", 800)
+
+
+def _dims(m):
+    tag, src = m.group(0), m.group(1)
+    p = ROOT / src.lstrip("/")
+    if "width=" in tag or not p.exists():
+        return tag
+    w, h = _Image.open(p).size
+    return tag.replace("<img ", f'<img width="{w}" height="{h}" ', 1)
+
+
+def perf_pass(t):
+    t = re.sub(r'<img [^>]*src="(/img/[^"]+)"[^>]*>', _dims, t)
+    t = re.sub(r'(?<!600px">)<img [^>]*src="(/img/(?:cards|examples)/[^"]+\.jpg)"[^>]*>', _picture, t)
+    if 'class="hero' in t and "gas-turbine-rotor-800.webp" not in t:
+        t = t.replace("</head>", HERO_PRELOAD + "</head>", 1)
+    return t
+
+
+PERF_ERR = []
 for _p in list(ROOT.glob("*.html")) + list((ROOT / "units").glob("*.html")) + list((ROOT / "news").glob("*.html")):
     _t = _p.read_text(encoding="utf-8")
-    _t2 = fix_org_ld(_t)
+    _t2 = perf_pass(fix_org_ld(_t))
+    # Gate before push: every image has width and height, page HTML under 150 KB, eager images under 250 KB.
+    for _i in re.findall(r"<img [^>]*>", _t2):
+        if "width=" not in _i or "height=" not in _i:
+            PERF_ERR.append(f"{_p.name}: image without width/height: {_i[:90]}")
+    if len(_t2.encode()) > 150_000:
+        PERF_ERR.append(f"{_p.name}: HTML {len(_t2.encode()) // 1024} KB > 150 KB")
+    _eager = sum((ROOT / x.lstrip("/")).stat().st_size for x in re.findall(r'<img (?![^>]*loading="lazy")[^>]*src="(/img/[^"]+)"', _t2) if (ROOT / x.lstrip("/")).exists())
+    if _eager > 250_000:
+        PERF_ERR.append(f"{_p.name}: eager images {_eager // 1024} KB > 250 KB")
     if _t2 != _t:
         _p.write_text(_t2, encoding="utf-8", newline="\n")
 
@@ -1325,3 +1386,7 @@ for _n in ("how-we-work.html", "buying-used-gas-turbines.html", "gas-turbine-faq
 (ROOT / "llms-full.txt").write_text("\n\n".join(_full) + "\n", encoding="utf-8", newline="\n")
 
 print(len(UNITS), "unit pages,", len(POSTS), "posts,", len(urls), "sitemap URLs")
+if PERF_ERR:
+    print("PERF GATE FAILED (fix before push):\n" + "\n".join(PERF_ERR[:30]))
+    sys.exit(2)
+print("perf gate ok")
