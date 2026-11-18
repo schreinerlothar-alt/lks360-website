@@ -34,7 +34,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 ## Pages
 - [Home](https://lks360.com/)
 - [Inventory](https://lks360.com/inventory.html): 54 listed units with stock numbers (34 gas turbines, 7 steam turbines, 13 generator sets), each with its own page under https://lks360.com/units/, filter by type, manufacturer, frequency and output. Prices on request.
-- [News](https://lks360.com/news.html): 10 posts with offers, wanted lists and market notes on gas turbines, steam turbines and gensets
+- [News](https://lks360.com/news.html): 11 posts with offers, wanted lists and market notes on gas turbines, steam turbines and gensets
 - Model pages: 27 pages, one per turbine or engine model, see Model pages below
 - [Sell equipment](https://lks360.com/sell.html): exclusive sales mandate for owners of used gas turbines, steam turbines and gensets: one price in the market, screened buyers, no upfront fee, confidential
 - [Contact](https://lks360.com/contact.html): requirement form, email and phone
@@ -1204,6 +1204,18 @@ A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent br
 Q: Is the Solar Titan still available?
 A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
 Q: What does a used Solar Titan cost?
+A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
+Q: Can I inspect the unit, and how is payment made?
+A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.
+
+### Solar Taurus (https://lks360.com/solar-taurus-for-sale.html)
+Q: Where can I buy a used Solar Taurus?
+A: LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, lists 2 used or surplus Solar Taurus units for sale, stock numbers LKS-GT-31, LKS-GT-37, on behalf of their owners and subject to prior sale. Price on request; full data and inspection follow a letter of intent. The purchase contract is made directly between buyer and owner.
+Q: Who sells the Solar Taurus units listed here?
+A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
+Q: Is the Solar Taurus still available?
+A: Each unit is offered on behalf of its owner and subject to prior sale. Send the stock number and we confirm the current status.
+Q: What does a used Solar Taurus cost?
 A: Send the stock number and we reply with the price. The full data sheet, documents and inspection follow your letter of intent.
 Q: Can I inspect the unit, and how is payment made?
 A: Yes. After your letter of intent you receive the technical documents and can inspect the unit. Payment goes directly from buyer to owner, or through a third-party escrow agent agreed between them.

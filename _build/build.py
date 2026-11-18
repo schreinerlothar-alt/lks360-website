@@ -13,7 +13,7 @@ ALL_UNITS = json.loads((ROOT / "_build" / "units.json").read_text(encoding="utf-
 UNITS = [u for u in ALL_UNITS if u.get("status") != "hidden"]
 OPEN_UNITS = UNITS
 LISTED = "21 October 2026"
-UPDATED = "11 November 2026"
+UPDATED = "18 November 2026"
 TODAY = datetime.date.today().isoformat()
 SITE = "https://lks360.com"
 MAIL = "manager@lks360.com"
@@ -549,6 +549,8 @@ MODELS = [
      "Siemens Westinghouse W701 and W501 heavy duty gas turbines, offered on behalf of their owners."),
     ("solar-titan-for-sale", "Solar Titan", r"Titan",
      "Solar Turbines Titan 130 and Titan 250 gas turbines, offered on behalf of their owners."),
+    ("solar-taurus-for-sale", "Solar Taurus", r"Taurus",
+     "Solar Turbines Taurus 60 and Taurus 65 gas turbine generator sets, offered on behalf of their owners."),
     ("solar-centaur-40-for-sale", "Solar Centaur 40", r"Centaur",
      "Solar Turbines Centaur 40 gas turbine generator sets, offered on behalf of their owners."),
     ("mitsubishi-mf111-for-sale", "Mitsubishi MF111", r"MF111",
