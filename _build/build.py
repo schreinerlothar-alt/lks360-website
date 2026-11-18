@@ -19,6 +19,33 @@ SITE = "https://lks360.com"
 MAIL = "manager@lks360.com"
 PHONE = "+49 170 4656619"
 
+from es_pages import build_es, es_alt_map, hreflang
+ES_ALT = es_alt_map()
+
+
+def _cdate(u):
+    try:
+        return datetime.datetime.strptime(u.get("confirmed") or "", "%d.%m.%Y").date()
+    except ValueError:
+        return None
+
+
+# Thin pages (Lothar 18.11.2026, proposal 12): units without confirmation for more than 60 days get noindex and leave the sitemap.
+# They stay listed and reachable; nothing is deleted.
+STALE = {u["id"] for u in UNITS if not _cdate(u) or (datetime.date.today() - _cdate(u)).days > 60}
+
+
+def fit_words(parts, lo=40, hi=60):
+    # Join sentences in order, drop optional ones (marked with a leading "?") until the answer has lo..hi words.
+    must = [p for p in parts if not p.startswith("?")]
+    opt = [p[1:] for p in parts if p.startswith("?")]
+    out = must[:]
+    for o in opt:
+        if len(" ".join(out + [o]).split()) <= hi:
+            out.append(o)
+    return " ".join(out)
+
+
 CATS = {
     "gas": ("Gas turbine", "Gas turbines", "/gas-turbines.html"),
     "steam": ("Steam turbine", "Steam turbines", "/steam-turbines.html"),
@@ -97,7 +124,11 @@ def footer():
 <a class="wafloat" href="{WA}" aria-label="WhatsApp +49 170 4656619"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.3 3.4 14.6 14.6 0 0 0 5.6 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.2-.3-.3-.6-.4z"/></svg></a>"""
 
 
-def head(title, desc, path, extra="", img="/img/gas-turbine-rotor.jpg"):
+def head(title, desc, path, extra="", img="/img/gas-turbine-rotor.jpg", robots=""):
+    if path in ES_ALT:
+        extra = hreflang(SITE, path, ES_ALT[path]) + extra
+    if robots:
+        extra = f'<meta name="robots" content="{robots}">\n' + extra
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -251,16 +282,20 @@ def unit_page(u):
         ld["@graph"][0]["about"]["image"] = (ims if isinstance(ims, list) else [ims]) + [
             {"@type": "ImageObject", "contentUrl": f"{SITE}/img/units/{f}", "caption": f"{u['name']}, photo {i + 1}, stock number LKS-{u['id']}"} for i, f in enumerate(u["photos"])]
     related = related_units(u)
+    dq, da = unit_direct(u)
+    ld["@graph"].append({"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": dq, "acceptedAnswer": {"@type": "Answer", "text": da}}]})
     scope = f"<h2>Scope</h2><p>{e(u['scope'])}</p>" if u["scope"] else ""
     mod = unit_model(u)
     modcrumb = f' / <a href="/{mod[0]}.html">{e(mod[1])}</a>' if mod else ""
     about = unit_about(u, mod)
-    return head(title, desc, u["url"], f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n', img) + header() + f"""
+    return head(title, desc, u["url"], f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n', img,
+                robots="noindex, follow" if u["id"] in STALE else "") + header() + f"""
 <div class="crumbs wrap"><a href="/">Home</a> / <a href="/inventory.html">Inventory</a> / <a href="{catpath}">{catplural}</a>{modcrumb} / LKS-{u['id']}</div>
 <section class="unitpage"><div class="wrap two">
   <div>
     <p class="kicker">{catname} · Stock No. LKS-{u['id']} {badge(u)}</p>
     <h1>{e(u['name'])}</h1>
+    <div class="qa direct"><h2>{e(dq)}</h2><p class="answer">{e(da)}</p></div>
     <img class="ucard" src="{img}" width="1200" height="630" alt="{e(u['name'])}, stock number LKS-{u['id']}, {e(catname.lower())} for sale">
     <p class="chips big">{chips(u)}</p>
     {photos_html(u)}
@@ -291,6 +326,37 @@ def unit_page(u):
 
 
 TEXTS = json.loads((ROOT / "_build" / "model_texts.json").read_text(encoding="utf-8"))
+
+
+def unit_direct(u):
+    # One question, one answer of 40 to 60 words, facts only from units.json (proposal 11).
+    facts = [x for x in [u.get("output") if u.get("output") and u["output"] not in u["name"] else "", u.get("hz"),
+                         u.get("year") and f"year {u['year']}",
+                         u.get("condition") if u.get("condition") and u["condition"].lower() not in u["name"].lower() else "",
+                         u.get("continent") and f"located in {u['continent']}"] if x]
+    q = f"Who sells the {u['name']} (LKS-{u['id']})?"
+    parts = [f"LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, lists stock number LKS-{u['id']}, {u['name']}"
+             + (", " + ", ".join(facts) if facts else "") + ", on behalf of its owner and subject to prior sale.",
+             "Price on request.", "Serial numbers, full documents and inspection follow a letter of intent."]
+    if u.get("status") == "reserved":
+        parts.insert(1, "The unit is currently reserved; further buyer contacts are recorded.")
+    if u.get("status") == "sold":
+        # Sold units stay listed without a mark (Lothar 02.11.2026), but the answer never offers them.
+        q = f"Who sells the {u['name']}?"
+        parts = [f"LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, lists this {u['name']}" + (", " + ", ".join(facts) if facts else "") + ".",
+                 "Send your requirement to manager@lks360.com or WhatsApp +49 170 4656619 for the current status and comparable units.",
+                 "Full documents and inspection follow a letter of intent.", "?The purchase contract is made directly between buyer and owner."]
+    parts += ["?The purchase contract is made directly between buyer and owner.", "?Contact: manager@lks360.com or WhatsApp +49 170 4656619.",
+              "?Payment runs through escrow or a letter of credit."]
+    a = fit_words(parts)
+    if len(a.split()) > 60:
+        parts[0] = parts[0].replace("LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, lists", "LKS 360-SCHREINER LLC (lks360.com) lists")
+        a = fit_words(parts)
+    if len(a.split()) > 60:
+        parts = [x for x in parts if x != "Price on request."]
+        parts[0] = parts[0].replace(", on behalf of its owner and subject to prior sale.", ", on behalf of its owner, price on request.")
+        a = fit_words(parts)
+    return q, a.replace("–", "-")
 
 
 def unit_model(u):
@@ -619,12 +685,22 @@ def model_noun(slugname, cat):
 
 
 def model_short(slugname, label, us):
-    # Two or three quotable sentences: who lists it, how many, what it is.
+    # Direct answer of 40 to 60 words (proposal 11): who lists it, how many, stock numbers, what it is.
     t = TEXTS.get(slugname)
-    out = where_answer(label, us)
+    us = [u for u in us if u.get("status") != "sold"]
+    n = len(us)
+    if n:
+        ids = ", ".join(f"LKS-{u['id']}" for u in us)
+        parts = [f"LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, lists {n} used or surplus {label} unit{'s' if n != 1 else ''} for sale, "
+                 f"stock number{'s' if n != 1 else ''} {ids}, on behalf of {'their owners' if n != 1 else 'its owner'} and subject to prior sale.",
+                 "Price on request; full data and inspection follow a letter of intent."]
+    else:
+        parts = [f"LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, has no {label} listed at the moment and searches the market on request.",
+                 "Send output, frequency, fuel and delivery country to manager@lks360.com or WhatsApp +49 170 4656619."]
     if t:
-        out = t["intro"].split(". ")[0].rstrip(".") + ". " + out
-    return out
+        parts.append("?" + t["intro"].split(". ")[0].rstrip(".") + ".")
+    parts += ["?The purchase contract is made directly between buyer and owner.", "?Contact: manager@lks360.com or WhatsApp +49 170 4656619."] if n else ["?Comparable units of other models are listed with stock numbers."]
+    return fit_words(parts)
 
 
 def model_guide(slugname, label):
@@ -730,7 +806,7 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
   <h1>{e(h1)}</h1>
   <p>{e(lead)}</p>
 </div></div>
-<section class="qa"><div class="wrap"><p class="answer"><b>Where to buy a used {e(label)}:</b> {e(model_short(slugname, label, us))}</p></div></section>
+<section class="qa"><div class="wrap"><h2>Where can I buy a used {e(label)}?</h2><p class="answer">{e(model_short(slugname, label, us))}</p></div></section>
 <section><div class="wrap">
   <p class="kicker">Units in our inventory</p>
   <h2>{n} {e(label)} unit{plural} listed</h2>
@@ -915,6 +991,10 @@ def add_popular(t, name):
 
 def patch_static(path):
     t = path.read_text(encoding="utf-8")
+    t = re.sub(r"<!--HREFLANG-->.*?<!--/HREFLANG-->\n?", "", t, flags=re.S)
+    _p = "/" if path.name == "index.html" else "/" + path.name
+    if _p in ES_ALT:
+        t = t.replace("</head>", "<!--HREFLANG-->" + hreflang(SITE, _p, ES_ALT[_p]) + "<!--/HREFLANG-->\n</head>", 1)
     t = add_popular(t, path.name)
     t = add_answer(t, path.name)
     t = re.sub(r"<header>.*?</header>", lambda m: header(), t, count=1, flags=re.S)
@@ -1164,7 +1244,8 @@ for _p in list(ROOT.glob("*.html")) + list((ROOT / "units").glob("*.html")) + li
     if _t2 != _t:
         _p.write_text(_t2, encoding="utf-8", newline="\n")
 
-urls = [f"{SITE}/"] + [f"{SITE}/{n}" for n in STATIC[1:] if (ROOT / n).exists()] + [f"{SITE}/{m[0]}.html" for m in MODELS] + [f"{SITE}/{HZ_SLUG}.html"] + [f"{SITE}/{CMP_SLUG}.html"] + [f"{SITE}/{_c[0]}.html" for _c in COMPARE] + [SITE + u["url"] for u in UNITS] + [f"{SITE}/news/{p['slug']}.html" for p in POSTS]
+ES_WRITTEN = build_es(globals())
+urls = [f"{SITE}/"] + [f"{SITE}/{n}" for n in STATIC[1:] if (ROOT / n).exists()] + [f"{SITE}/{m[0]}.html" for m in MODELS] + [f"{SITE}/{HZ_SLUG}.html"] + [f"{SITE}/{CMP_SLUG}.html"] + [f"{SITE}/{_c[0]}.html" for _c in COMPARE] + [SITE + u["url"] for u in UNITS if u["id"] not in STALE] + [f"{SITE}/news/{p['slug']}.html" for p in POSTS] + [SITE + p for p in ES_WRITTEN]
 IMGS = {**{f"{SITE}/{m[0]}.html": f"{SITE}/img/cards/{m[0]}.jpg" for m in MODELS},
         **{SITE + u["url"]: f"{SITE}/img/cards/lks-{u['id'].lower()}.jpg" for u in UNITS}}
 PHOTOS = {SITE + u["url"]: [f"{SITE}/img/units/{f}" for f in (u.get("photos") or [])] for u in UNITS}
@@ -1173,6 +1254,8 @@ _lm = json.loads(LASTMOD_F.read_text(encoding="utf-8")) if LASTMOD_F.exists() el
 import hashlib
 def _file_of(x):
     rel = x[len(SITE) + 1:] or "index.html"
+    if rel.endswith("/"):
+        rel += "index.html"
     return ROOT / rel
 _new_lm = {}
 for x in urls:
@@ -1204,6 +1287,7 @@ llms = (llms_head + f"\n## Units for sale (stock list, updated {TODAY})\n"
         + "\n\n## News\n" + "\n".join(f"- [{p['title']}]({SITE}/news/{p['slug']}.html)" for p in POSTS)
         + "\n\n## Short answers\n" + "\n".join(f"- {short_answer(k)[0]} {short_answer(k)[1]} ({SITE}/{'' if k == 'index.html' else k})" for k in SHORT)
         + "\n" + "\n".join(f"- {xq} {xa} ({SITE}/{k})" for k, v in QAX.items() for xq, xa in v)
+        + "\n\n## Páginas en español (60 Hz, América Latina)\n" + "\n".join(f"- {SITE}{p}" for p in ES_WRITTEN)
         + "\n" + "\n".join(f"- Where can I buy a used {m[1]}? {model_short(m[0], m[1], [u for u in UNITS if re.search(m[2], u['model'] + ' ' + u['name'])])} ({SITE}/{m[0]}.html)" for m in MODELS) + "\n")
 llms_path.write_text(llms, encoding="utf-8", newline="\n")
 
