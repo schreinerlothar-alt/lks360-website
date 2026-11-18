@@ -2201,11 +2201,11 @@ Purchase payments go directly from buyer to owner, or through a third-party escr
 
 ### Know your counterparty
 
-Before we send an offer with full data, we identify the buyer and the owner: company name, registration, address, authorised signatory and beneficial owner. We keep these records for the duration of the business relationship and the legal retention periods.
+Before we send an offer, we ask the buyer to confirm that the unit will not be delivered to a sanctioned country. Full identification of buyer and owner (company, registration, address, authorised signatory and beneficial owner) is carried out before the contract is signed, by our lawyer or the escrow agent. These records are kept for the duration of the business relationship and the legal retention periods.
 
 ### Red flags
 
-We stop a transaction if a party refuses to identify itself, asks to route payments through us or through unrelated third parties, or asks to change the stated end user or destination.
+We stop a transaction if a party refuses to identify itself, asks to route payments through us or through unrelated third parties, or asks to deliver the unit to a sanctioned country or to change the agreed delivery terms after contract.
 
 ### Contact
 
