@@ -130,9 +130,9 @@
   "condition": "",
   "hours": "85926",
   "scope": "With heat recovery steam generator.",
-  "src": "lks360exim product 60",
+  "src": "lks360exim product 60; Texcoms 26./27.10.2026 available (VERKAEUFER-NACHFRAGE_2026-11-16.md)",
   "status": "available",
-  "confirmed": "14.10.2026",
+  "confirmed": "27.10.2026",
   "continent": "Asia"
  },
  {
@@ -167,8 +167,8 @@
   "condition": "",
   "hours": "",
   "scope": "",
-  "src": "lks360exim product 37",
-  "confirmed": "30.09.2026",
+  "src": "lks360exim product 37; TSM Arenas 02.11.2026 same price (Bestand_SELLER_Eingang_Firomar-TSM-Gaddes-Pareks_03-11-2026.md)",
+  "confirmed": "02.11.2026",
   "continent": "Americas"
  },
  {
