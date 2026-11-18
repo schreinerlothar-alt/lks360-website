@@ -84,8 +84,82 @@
       [
         "Is the SGT-400 used offshore?",
         "Yes. The manufacturer lists offshore platforms and FPSO among the typical applications of the SGT-400."
+      ],
+      [
+        "Used Siemens SGT-400 gas turbine for sale: what is available?",
+        "LKS 360-SCHREINER LLC lists LKS-GT-27, Siemens SGT-400 DLE gas turbines, 14.4 MW, 50 Hz, built 2019, located in Asia, offered on behalf of the owner, price on request. Full data and inspection follow a letter of intent."
+      ],
+      [
+        "What is the output of a Siemens SGT-400?",
+        "Siemens Energy offers the SGT-400 in a 13 MW version with 12.9 MW(e) and a 15 MW version with 14.3 MW(e), for 50 Hz and 60 Hz."
+      ],
+      [
+        "What does a used Siemens SGT-400 cost?",
+        "LKS 360-SCHREINER LLC quotes the price of each listed Siemens SGT-400 on request with the stock number. It depends on output version, hours since overhaul, condition, scope, frequency and location."
       ]
-    ]
+    ],
+    "price": {
+      "title": "Used Siemens SGT-400 price: what sets it",
+      "intro": "LKS 360-SCHREINER LLC does not publish prices; each Siemens SGT-400 is priced by its owner and quoted on request with the stock number. The price depends on these points:",
+      "factors": [
+        [
+          "Output version",
+          "The 13 MW or 15 MW version decides the comparison."
+        ],
+        [
+          "Hours, starts and the last overhaul",
+          "Equivalent operating hours, starts and the date and scope of the last hot gas path or major inspection matter more than the year of manufacture."
+        ],
+        [
+          "Overhaul records",
+          "A unit overhauled by the manufacturer or an authorised shop, with reports, sells faster than one without documents."
+        ],
+        [
+          "Condition",
+          "New and unused, overhauled, in operation or preserved: each condition is priced differently."
+        ],
+        [
+          "Scope of supply",
+          "Generator, controls, enclosure, fuel system, inlet and exhaust system, transformer and spare parts included or not."
+        ],
+        [
+          "Frequency and voltage",
+          "A 60 Hz unit and a 50 Hz unit serve different markets; the generator voltage has to fit the buyer's grid."
+        ],
+        [
+          "Emission system",
+          "DLE, water injection or diffusion combustion decides whether the unit meets the emission limits at the buyer's site."
+        ],
+        [
+          "Location and logistics",
+          "Dismantling, transport of heavy lifts and import duties are part of the buyer's total cost."
+        ]
+      ]
+    },
+    "variants": {
+      "title": "Siemens SGT-400 versions",
+      "intro": "Siemens Energy offers the SGT-400 in two output versions:",
+      "rows": [
+        [
+          "13 MW version",
+          "12.9 MW(e) (Siemens Energy)."
+        ],
+        [
+          "15 MW version",
+          "14.3 MW(e) (Siemens Energy)."
+        ],
+        [
+          "Fuels and use",
+          "Natural gas, liquid or dual fuel; simple cycle, combined cycle, cogeneration, offshore platforms and FPSO (Siemens Energy)."
+        ]
+      ],
+      "sources": [
+        [
+          "Siemens Energy, SGT-400 product page",
+          "https://www.siemens-energy.com/global/en/home/products-services/product/sgt-400.html"
+        ]
+      ]
+    }
   },
   "siemens-sgt-600-for-sale": {
     "intro": "The SGT-600 is a Siemens Energy industrial gas turbine in the medium output class. It goes back to the ABB GT10B and is still often searched under that name.",
@@ -321,8 +395,78 @@
       [
         "Who services W701 and W501 gas turbines today?",
         "Siemens Energy and independent service providers support the fleet. The service history of the specific unit is part of the documents released after a letter of intent."
+      ],
+      [
+        "Which frequency does a W701 or W501 run at?",
+        "The W701 is the 50 Hz series and the W501 the 60 Hz series; according to Wikipedia the W701 is a 50 Hz scaled version of the 60 Hz W501."
+      ],
+      [
+        "What does a used Siemens Westinghouse W701 and W501 cost?",
+        "LKS 360-SCHREINER LLC quotes the price of each listed Siemens Westinghouse W701 and W501 on request with the stock number. It depends on series and generation, hours since overhaul, condition, scope, frequency and location."
       ]
-    ]
+    ],
+    "price": {
+      "title": "Used Siemens Westinghouse W701 and W501 price: what sets it",
+      "intro": "LKS 360-SCHREINER LLC does not publish prices; each Siemens Westinghouse W701 and W501 is priced by its owner and quoted on request with the stock number. The price depends on these points:",
+      "factors": [
+        [
+          "Series and generation",
+          "W701 for 50 Hz or W501 for 60 Hz, and the generation letter."
+        ],
+        [
+          "Hours, starts and the last overhaul",
+          "Equivalent operating hours, starts and the date and scope of the last hot gas path or major inspection matter more than the year of manufacture."
+        ],
+        [
+          "Overhaul records",
+          "A unit overhauled by the manufacturer or an authorised shop, with reports, sells faster than one without documents."
+        ],
+        [
+          "Condition",
+          "New and unused, overhauled, in operation or preserved: each condition is priced differently."
+        ],
+        [
+          "Scope of supply",
+          "Generator, controls, enclosure, fuel system, inlet and exhaust system, transformer and spare parts included or not."
+        ],
+        [
+          "Frequency and voltage",
+          "A 60 Hz unit and a 50 Hz unit serve different markets; the generator voltage has to fit the buyer's grid."
+        ],
+        [
+          "Emission system",
+          "DLE, water injection or diffusion combustion decides whether the unit meets the emission limits at the buyer's site."
+        ],
+        [
+          "Location and logistics",
+          "Dismantling, transport of heavy lifts and import duties are part of the buyer's total cost."
+        ]
+      ]
+    },
+    "variants": {
+      "title": "W701 and W501 series",
+      "intro": "The frequency decides the series; the letter after the number marks the generation:",
+      "rows": [
+        [
+          "W501",
+          "60 Hz series, from about 40 MW (W501A, 1968) to about 120 MW in later generations (Wikipedia)."
+        ],
+        [
+          "W701",
+          "50 Hz scaled version of the W501 (Wikipedia)."
+        ],
+        [
+          "501F",
+          "About 150 MW class; later sold by Siemens as SGT6-5000F (Wikipedia)."
+        ]
+      ],
+      "sources": [
+        [
+          "Wikipedia, Westinghouse Combustion Turbine Systems Division",
+          "https://en.wikipedia.org/wiki/Westinghouse_Combustion_Turbine_Systems_Division"
+        ]
+      ]
+    }
   },
   "ge-frame-5-for-sale": {
     "intro": "The GE Frame 5 (MS5001) is a heavy duty gas turbine with one of the longest service histories in the industry. Many units still run in power plants, refineries and on power barges.",
@@ -350,8 +494,78 @@
       [
         "Are Frame 5 gas turbines still supported?",
         "Yes. GE and independent service providers still supply parts and service for the Frame 5 fleet."
+      ],
+      [
+        "How many Frame 5 gas turbines were built?",
+        "According to Combined Cycle Journal, well over 3,000 Frame 5 units were built in single and two shaft versions, and the single shaft MS5001 makes up about 85 percent of them."
+      ],
+      [
+        "What does a used GE Frame 5 cost?",
+        "LKS 360-SCHREINER LLC quotes the price of each listed GE Frame 5 on request with the stock number. It depends on model, hours since overhaul, condition, scope, frequency and location."
       ]
-    ]
+    ],
+    "price": {
+      "title": "Used GE Frame 5 price: what sets it",
+      "intro": "LKS 360-SCHREINER LLC does not publish prices; each GE Frame 5 is priced by its owner and quoted on request with the stock number. The price depends on these points:",
+      "factors": [
+        [
+          "Model",
+          "MS5001 single shaft for generator drive or MS5002 two shaft for mechanical drive, and the letter of the version."
+        ],
+        [
+          "Hours, starts and the last overhaul",
+          "Equivalent operating hours, starts and the date and scope of the last hot gas path or major inspection matter more than the year of manufacture."
+        ],
+        [
+          "Overhaul records",
+          "A unit overhauled by the manufacturer or an authorised shop, with reports, sells faster than one without documents."
+        ],
+        [
+          "Condition",
+          "New and unused, overhauled, in operation or preserved: each condition is priced differently."
+        ],
+        [
+          "Scope of supply",
+          "Generator, controls, enclosure, fuel system, inlet and exhaust system, transformer and spare parts included or not."
+        ],
+        [
+          "Frequency and voltage",
+          "A 60 Hz unit and a 50 Hz unit serve different markets; the generator voltage has to fit the buyer's grid."
+        ],
+        [
+          "Emission system",
+          "DLE, water injection or diffusion combustion decides whether the unit meets the emission limits at the buyer's site."
+        ],
+        [
+          "Location and logistics",
+          "Dismantling, transport of heavy lifts and import duties are part of the buyer's total cost."
+        ]
+      ]
+    },
+    "variants": {
+      "title": "GE Frame 5 versions",
+      "intro": "The Frame 5 has been built in many versions over several decades:",
+      "rows": [
+        [
+          "MS5001",
+          "Single shaft version for generator drive; about 85 percent of the Frame 5 fleet (Combined Cycle Journal)."
+        ],
+        [
+          "MS5002",
+          "Two shaft version for mechanical drive."
+        ],
+        [
+          "Output range",
+          "13.3 MW (early MS5001D) to 21 MW (MS5001N) in cited installations (Combined Cycle Journal)."
+        ]
+      ],
+      "sources": [
+        [
+          "Combined Cycle Journal, Special report: The venerable Frame 5 gas turbine",
+          "https://www.ccj-online.com/3q-2012/special-report-the-venerable-frame-5-gas-turbine/"
+        ]
+      ]
+    }
   },
   "ge-frame-6b-for-sale": {
     "intro": "The GE Frame 6B (MS6001B) is a heavy duty gas turbine known for reliability and fuel flexibility. It is common in industrial cogeneration and in refineries.",
@@ -379,8 +593,82 @@
       [
         "What fuels can a Frame 6B burn?",
         "The Frame 6B is known for fuel flexibility. The fuel a specific unit can burn depends on its fuel system and combustors, which are listed in the unit documents."
+      ],
+      [
+        "What is the output of a GE Frame 6B?",
+        "GE Vernova states 45 MW in simple cycle at ISO conditions on natural gas for the 6B. Used units are often rated lower depending on version and condition; the units listed here are rated 38.6 MW and 39.2 MW by their owners."
+      ],
+      [
+        "What does a used GE Frame 6B cost?",
+        "LKS 360-SCHREINER LLC quotes the price of each listed GE Frame 6B on request with the stock number. It depends on version and rating, hours since overhaul, condition, scope, frequency and location."
       ]
-    ]
+    ],
+    "price": {
+      "title": "Used GE Frame 6B price: what sets it",
+      "intro": "LKS 360-SCHREINER LLC does not publish prices; each GE Frame 6B is priced by its owner and quoted on request with the stock number. The price depends on these points:",
+      "factors": [
+        [
+          "Version and rating",
+          "The rating on the data plate and any uprate decide the output of a used Frame 6B."
+        ],
+        [
+          "Hours, starts and the last overhaul",
+          "Equivalent operating hours, starts and the date and scope of the last hot gas path or major inspection matter more than the year of manufacture."
+        ],
+        [
+          "Overhaul records",
+          "A unit overhauled by the manufacturer or an authorised shop, with reports, sells faster than one without documents."
+        ],
+        [
+          "Condition",
+          "New and unused, overhauled, in operation or preserved: each condition is priced differently."
+        ],
+        [
+          "Scope of supply",
+          "Generator, controls, enclosure, fuel system, inlet and exhaust system, transformer and spare parts included or not."
+        ],
+        [
+          "Frequency and voltage",
+          "A 60 Hz unit and a 50 Hz unit serve different markets; the generator voltage has to fit the buyer's grid."
+        ],
+        [
+          "Emission system",
+          "DLE, water injection or diffusion combustion decides whether the unit meets the emission limits at the buyer's site."
+        ],
+        [
+          "Location and logistics",
+          "Dismantling, transport of heavy lifts and import duties are part of the buyer's total cost."
+        ]
+      ]
+    },
+    "variants": {
+      "title": "GE Frame 6B: model data",
+      "intro": "GE Vernova states these data for the 6B; used units may carry older ratings:",
+      "rows": [
+        [
+          "Output",
+          "45 MW simple cycle, ISO, natural gas (GE Vernova)."
+        ],
+        [
+          "Frequency",
+          "50 Hz and 60 Hz."
+        ],
+        [
+          "Fuels",
+          "Gas, distillate, heavy oils and naphtha; hydrogen capable (GE Vernova)."
+        ],
+        [
+          "Fleet",
+          "Over 1,200 units installed since 1978 (GE Vernova)."
+        ]
+      ],
+      "sources": [
+        [
+          "GE Vernova, 6B product page",
+          "https://www.gevernova.com/gas-power/products/gas-turbines/6b"
+        ]
+      ]
+    }
   },
   "ge-7ea-for-sale": {
     "intro": "The GE 7EA is a heavy duty E class gas turbine for 60 Hz grids. It is a common choice for peaking and combined cycle plants in the Americas and other 60 Hz regions.",
@@ -408,8 +696,78 @@
       [
         "Is a 7EA suitable for the USA?",
         "Yes. The 7EA is a 60 Hz gas turbine and fits the US grid without frequency conversion."
+      ],
+      [
+        "What is the output of a GE 7EA?",
+        "GE Vernova states 90 MW in simple cycle for the current 7E.03 at 60 Hz. Older 7EA units carry lower ratings; the unit listed here is rated 76 to 85 MW by its owner."
+      ],
+      [
+        "What does a used GE 7EA cost?",
+        "LKS 360-SCHREINER LLC quotes the price of each listed GE 7EA on request with the stock number. It depends on version and rating, hours since overhaul, condition, scope, frequency and location."
       ]
-    ]
+    ],
+    "price": {
+      "title": "Used GE 7EA price: what sets it",
+      "intro": "LKS 360-SCHREINER LLC does not publish prices; each GE 7EA is priced by its owner and quoted on request with the stock number. The price depends on these points:",
+      "factors": [
+        [
+          "Version and rating",
+          "The rating and any upgrade decide the output of a used 7EA."
+        ],
+        [
+          "Hours, starts and the last overhaul",
+          "Equivalent operating hours, starts and the date and scope of the last hot gas path or major inspection matter more than the year of manufacture."
+        ],
+        [
+          "Overhaul records",
+          "A unit overhauled by the manufacturer or an authorised shop, with reports, sells faster than one without documents."
+        ],
+        [
+          "Condition",
+          "New and unused, overhauled, in operation or preserved: each condition is priced differently."
+        ],
+        [
+          "Scope of supply",
+          "Generator, controls, enclosure, fuel system, inlet and exhaust system, transformer and spare parts included or not."
+        ],
+        [
+          "Frequency and voltage",
+          "A 60 Hz unit and a 50 Hz unit serve different markets; the generator voltage has to fit the buyer's grid."
+        ],
+        [
+          "Emission system",
+          "DLE, water injection or diffusion combustion decides whether the unit meets the emission limits at the buyer's site."
+        ],
+        [
+          "Location and logistics",
+          "Dismantling, transport of heavy lifts and import duties are part of the buyer's total cost."
+        ]
+      ]
+    },
+    "variants": {
+      "title": "GE 7EA and 7E.03",
+      "intro": "The 7EA is the former name of the GE Vernova 7E:",
+      "rows": [
+        [
+          "7E.03",
+          "90 MW simple cycle, ISO, natural gas, 60 Hz (GE Vernova)."
+        ],
+        [
+          "Fuels",
+          "Natural gas basis with multi fuel options; up to 100 percent hydrogen (GE Vernova)."
+        ],
+        [
+          "50 Hz counterpart",
+          "The Frame 9E is the 50 Hz E class model."
+        ]
+      ],
+      "sources": [
+        [
+          "GE Vernova, 7E product page",
+          "https://www.gevernova.com/gas-power/products/gas-turbines/7e"
+        ]
+      ]
+    }
   },
   "ge-frame-9e-for-sale": {
     "intro": "The GE Frame 9E (MS9001E, for example PG9171E) is a heavy duty E class gas turbine for 50 Hz grids. It has a large installed fleet and is known for burning a wide range of fuels.",
@@ -437,8 +795,78 @@
       [
         "What is the difference between the Frame 9E and the 7EA?",
         "The 9E is built for 50 Hz grids and the 7EA for 60 Hz grids. See Frame 9E vs 7EA for the manufacturer data."
+      ],
+      [
+        "What is the output of a GE Frame 9E?",
+        "GE Vernova states 132 MW (9E.03) to 147 MW (9E.04) in simple cycle, net, at 50 Hz. Older PG9171E units are rated lower; the units listed here are rated 126 MW and 243 MW for two units by their owners."
+      ],
+      [
+        "What does a used GE Frame 9E cost?",
+        "LKS 360-SCHREINER LLC quotes the price of each listed GE Frame 9E on request with the stock number. It depends on version and rating, hours since overhaul, condition, scope, frequency and location."
       ]
-    ]
+    ],
+    "price": {
+      "title": "Used GE Frame 9E price: what sets it",
+      "intro": "LKS 360-SCHREINER LLC does not publish prices; each GE Frame 9E is priced by its owner and quoted on request with the stock number. The price depends on these points:",
+      "factors": [
+        [
+          "Version and rating",
+          "PG9171E or later 9E.03 and 9E.04 ratings, and any upgrade."
+        ],
+        [
+          "Hours, starts and the last overhaul",
+          "Equivalent operating hours, starts and the date and scope of the last hot gas path or major inspection matter more than the year of manufacture."
+        ],
+        [
+          "Overhaul records",
+          "A unit overhauled by the manufacturer or an authorised shop, with reports, sells faster than one without documents."
+        ],
+        [
+          "Condition",
+          "New and unused, overhauled, in operation or preserved: each condition is priced differently."
+        ],
+        [
+          "Scope of supply",
+          "Generator, controls, enclosure, fuel system, inlet and exhaust system, transformer and spare parts included or not."
+        ],
+        [
+          "Frequency and voltage",
+          "A 60 Hz unit and a 50 Hz unit serve different markets; the generator voltage has to fit the buyer's grid."
+        ],
+        [
+          "Emission system",
+          "DLE, water injection or diffusion combustion decides whether the unit meets the emission limits at the buyer's site."
+        ],
+        [
+          "Location and logistics",
+          "Dismantling, transport of heavy lifts and import duties are part of the buyer's total cost."
+        ]
+      ]
+    },
+    "variants": {
+      "title": "GE Frame 9E versions",
+      "intro": "GE Vernova lists these current 9E ratings; older PG9171E units carry lower ratings:",
+      "rows": [
+        [
+          "9E.03",
+          "132 MW simple cycle net, 50 Hz (GE Vernova)."
+        ],
+        [
+          "9E.04",
+          "147 MW simple cycle net, 50 Hz (GE Vernova)."
+        ],
+        [
+          "Fuels",
+          "52 fuel types including natural gas, distillate and residual oils, naphtha, crude, syngas and steel mill gases (GE Vernova)."
+        ]
+      ],
+      "sources": [
+        [
+          "GE Vernova, 9E product page",
+          "https://www.gevernova.com/gas-power/products/gas-turbines/9e"
+        ]
+      ]
+    }
   },
   "ge-7fa-for-sale": {
     "intro": "The GE 7FA is a heavy duty F class gas turbine for 60 Hz grids. It is one of the most installed F class turbines in combined cycle plants.",
@@ -490,8 +918,78 @@
       [
         "Can an unused 9HA be bought on the secondary market?",
         "Yes, unused units become available when projects are cancelled or changed. Such units are offered by their owners and listed with stock number on lks360.com when available."
+      ],
+      [
+        "What is the output of a GE 9HA?",
+        "GE Vernova states 448 MW for the 9HA.01 and 571 MW for the 9HA.02 in simple cycle, net, at 50 Hz. The unit listed here is an unused 9HA.01."
+      ],
+      [
+        "What does a used GE 9HA cost?",
+        "LKS 360-SCHREINER LLC quotes the price of each listed GE 9HA on request with the stock number. It depends on version, hours since overhaul, condition, scope, frequency and location."
       ]
-    ]
+    ],
+    "price": {
+      "title": "Used GE 9HA price: what sets it",
+      "intro": "LKS 360-SCHREINER LLC does not publish prices; each GE 9HA is priced by its owner and quoted on request with the stock number. The price depends on these points:",
+      "factors": [
+        [
+          "Version",
+          "9HA.01 or 9HA.02, and whether the unit is new and unused or has run."
+        ],
+        [
+          "Hours, starts and the last overhaul",
+          "Equivalent operating hours, starts and the date and scope of the last hot gas path or major inspection matter more than the year of manufacture."
+        ],
+        [
+          "Overhaul records",
+          "A unit overhauled by the manufacturer or an authorised shop, with reports, sells faster than one without documents."
+        ],
+        [
+          "Condition",
+          "New and unused, overhauled, in operation or preserved: each condition is priced differently."
+        ],
+        [
+          "Scope of supply",
+          "Generator, controls, enclosure, fuel system, inlet and exhaust system, transformer and spare parts included or not."
+        ],
+        [
+          "Frequency and voltage",
+          "A 60 Hz unit and a 50 Hz unit serve different markets; the generator voltage has to fit the buyer's grid."
+        ],
+        [
+          "Emission system",
+          "DLE, water injection or diffusion combustion decides whether the unit meets the emission limits at the buyer's site."
+        ],
+        [
+          "Location and logistics",
+          "Dismantling, transport of heavy lifts and import duties are part of the buyer's total cost."
+        ]
+      ]
+    },
+    "variants": {
+      "title": "GE 9HA versions",
+      "intro": "GE Vernova offers the 9HA in two versions:",
+      "rows": [
+        [
+          "9HA.01",
+          "448 MW simple cycle net, 50 Hz (GE Vernova)."
+        ],
+        [
+          "9HA.02",
+          "571 MW simple cycle net, 50 Hz (GE Vernova)."
+        ],
+        [
+          "Fuel",
+          "Natural gas; 50 percent hydrogen capable (GE Vernova)."
+        ]
+      ],
+      "sources": [
+        [
+          "GE Vernova, 9HA product page",
+          "https://www.gevernova.com/gas-power/products/gas-turbines/9ha"
+        ]
+      ]
+    }
   },
   "ge-lm2500-for-sale": {
     "intro": "The GE LM2500 is an aeroderivative gas turbine developed from the CF6 aircraft engine. It is used in industrial power generation, on ships and in oil and gas.",
@@ -519,8 +1017,82 @@
       [
         "Can an LM2500 engine be exchanged?",
         "Aeroderivative engines can be removed and exchanged as a whole, which shortens outages. Engine exchange and lease options depend on the depot and are clarified case by case."
+      ],
+      [
+        "What is the output of a GE LM2500?",
+        "GE Vernova states about 37 MW in simple cycle for the current LM2500, with 34.5 MW (G4) and 36.3 MW (G5) net at 50 Hz for the LM2500XPRESS+ package. Older units have less; the data sheet of each unit states its rating."
+      ],
+      [
+        "What does a used GE LM2500 cost?",
+        "LKS 360-SCHREINER LLC quotes the price of each listed GE LM2500 on request with the stock number. It depends on version, hours since overhaul, condition, scope, frequency and location."
       ]
-    ]
+    ],
+    "price": {
+      "title": "Used GE LM2500 price: what sets it",
+      "intro": "LKS 360-SCHREINER LLC does not publish prices; each GE LM2500 is priced by its owner and quoted on request with the stock number. The price depends on these points:",
+      "factors": [
+        [
+          "Version",
+          "Base LM2500, LM2500+ or LM2500+G4: later versions have more output, so the version decides the comparison."
+        ],
+        [
+          "Hours, starts and the last overhaul",
+          "Equivalent operating hours, starts and the date and scope of the last hot gas path or major inspection matter more than the year of manufacture."
+        ],
+        [
+          "Overhaul records",
+          "A unit overhauled by the manufacturer or an authorised shop, with reports, sells faster than one without documents."
+        ],
+        [
+          "Condition",
+          "New and unused, overhauled, in operation or preserved: each condition is priced differently."
+        ],
+        [
+          "Scope of supply",
+          "Generator, controls, enclosure, fuel system, inlet and exhaust system, transformer and spare parts included or not."
+        ],
+        [
+          "Frequency and voltage",
+          "A 60 Hz unit and a 50 Hz unit serve different markets; the generator voltage has to fit the buyer's grid."
+        ],
+        [
+          "Emission system",
+          "DLE, water injection or diffusion combustion decides whether the unit meets the emission limits at the buyer's site."
+        ],
+        [
+          "Location and logistics",
+          "Dismantling, transport of heavy lifts and import duties are part of the buyer's total cost."
+        ]
+      ]
+    },
+    "variants": {
+      "title": "GE LM2500 versions",
+      "intro": "The LM2500 family has been built in several versions. GE Vernova lists the current LM2500XPRESS+ package with these ratings:",
+      "rows": [
+        [
+          "LM2500, LM2500+, LM2500+G4",
+          "Base engine and later versions with higher output; the data sheet of a used unit states which one it is."
+        ],
+        [
+          "LM2500XPRESS+ G4",
+          "34.5 MW net at 50 Hz (GE Vernova)."
+        ],
+        [
+          "LM2500XPRESS+ G5",
+          "36.3 MW net at 50 Hz (GE Vernova)."
+        ],
+        [
+          "Trailer mounted",
+          "The TM2500 is the mobile package built around the LM2500."
+        ]
+      ],
+      "sources": [
+        [
+          "GE Vernova, LM2500 product page",
+          "https://www.gevernova.com/gas-power/products/gas-turbines/lm2500"
+        ]
+      ]
+    }
   },
   "ge-tm2500-for-sale": {
     "intro": "The GE TM2500 is a trailer mounted gas turbine generator built around the LM2500 aeroderivative engine. It is designed to be moved by road and set up quickly where power is needed.",
@@ -876,8 +1448,74 @@
       [
         "Is the SST-400 a condensing or back pressure turbine?",
         "The SST-400 is built in both designs. The data sheet of each unit states which design it is. See condensing vs back pressure steam turbine for the difference."
+      ],
+      [
+        "What is the output of a Siemens SST-400?",
+        "Siemens Energy states an output of up to 65 MW and a speed of up to 7,100 rpm for the SST-400. The output of a given unit follows from its steam conditions and is shown on its data sheet."
+      ],
+      [
+        "What does a used Siemens SST-400 cost?",
+        "LKS 360-SCHREINER LLC quotes the price of each listed Siemens SST-400 on request with the stock number. It depends on steam data and output, hours since overhaul, condition, scope, frequency and location."
       ]
-    ]
+    ],
+    "price": {
+      "title": "Used Siemens SST-400 price: what sets it",
+      "intro": "LKS 360-SCHREINER LLC does not publish prices; each Siemens SST-400 is priced by its owner and quoted on request with the stock number. The price depends on these points:",
+      "factors": [
+        [
+          "Steam data and output",
+          "The output follows from the steam conditions the turbine was built for."
+        ],
+        [
+          "Condition",
+          "New and unused with preservation records, or used with operating hours."
+        ],
+        [
+          "Steam conditions",
+          "How close the design inlet pressure, temperature, flow and exhaust pressure are to the buyer's plant."
+        ],
+        [
+          "Type",
+          "Condensing, back pressure or extraction turbine."
+        ],
+        [
+          "Scope of supply",
+          "Gearbox, generator, condenser, lube oil system and controls included or not."
+        ],
+        [
+          "Frequency and voltage",
+          "Generator frequency and voltage against the buyer's grid."
+        ],
+        [
+          "Documents and logistics",
+          "Data sheet, heat balance, test reports, dismantling and transport."
+        ]
+      ]
+    },
+    "variants": {
+      "title": "Siemens SST-400: model data",
+      "intro": "Siemens Energy states these data for the SST-400:",
+      "rows": [
+        [
+          "Output",
+          "Up to 65 MW (Siemens Energy)."
+        ],
+        [
+          "Drive",
+          "Geared or direct drive to 50 and 60 Hz generators, compressors or pumps (Siemens Energy)."
+        ],
+        [
+          "Speed",
+          "Up to 7,100 rpm (Siemens Energy)."
+        ]
+      ],
+      "sources": [
+        [
+          "Siemens Energy, Industrial steam turbines",
+          "https://www.siemens-energy.com/global/en/home/products-services/product/industrial-steam-turbines.html"
+        ]
+      ]
+    }
   },
   "siemens-sst-300-for-sale": {
     "intro": "The SST-300 is a Siemens Energy industrial steam turbine with a single casing for small and medium outputs. It is used in industrial cogeneration, biomass and waste heat plants.",
@@ -1023,8 +1661,70 @@
       [
         "Standby or prime rating: what is the difference?",
         "A standby rating applies to emergency use with limited hours per year. A prime rating applies to continuous operation with variable load. The rating of each unit is stated on its data plate."
+      ],
+      [
+        "What is the output of a Caterpillar 3516?",
+        "Caterpillar states 1,450 to 1,750 ekW for the 3516 60 Hz diesel generator set, with 1,750 ekW standby and 1,600 ekW prime. 50 Hz ratings differ; the data sheet of each unit states its rating."
+      ],
+      [
+        "What does a used Caterpillar 3516 cost?",
+        "LKS 360-SCHREINER LLC quotes the price of each listed Caterpillar 3516 on request with the stock number. It depends on generation and rating, hours since overhaul, condition, scope, frequency and location."
       ]
-    ]
+    ],
+    "price": {
+      "title": "Used Caterpillar 3516 price: what sets it",
+      "intro": "LKS 360-SCHREINER LLC does not publish prices; each Caterpillar 3516 is priced by its owner and quoted on request with the stock number. The price depends on these points:",
+      "factors": [
+        [
+          "Generation and rating",
+          "3516B or 3516C, and standby or prime rating."
+        ],
+        [
+          "Hours since overhaul",
+          "Running hours since the last major overhaul and the overhaul records."
+        ],
+        [
+          "Rating",
+          "Standby, prime or continuous rating; compare units only at the same rating."
+        ],
+        [
+          "Condition",
+          "New and unused, overhauled or in operation."
+        ],
+        [
+          "Scope of supply",
+          "Generator, radiators or cooling, controls, switchgear, enclosure or container, heat recovery."
+        ],
+        [
+          "Frequency, voltage and fuel",
+          "50 or 60 Hz, generator voltage and the fuel or gas quality at the buyer's site."
+        ],
+        [
+          "Emissions and logistics",
+          "Emission limits at the site, transport and import duties."
+        ]
+      ]
+    },
+    "variants": {
+      "title": "Caterpillar 3516 versions",
+      "intro": "The 3516 has been built in several generations:",
+      "rows": [
+        [
+          "3516B and 3516C",
+          "Generations of the same engine; the C came later with updated emission and control systems."
+        ],
+        [
+          "60 Hz ratings",
+          "1,450 to 1,750 ekW; standby 1,750 ekW, prime 1,600 ekW (Caterpillar)."
+        ]
+      ],
+      "sources": [
+        [
+          "Caterpillar, 3516 (60 Hz) diesel generator set",
+          "https://www.cat.com/en_US/products/new/power-systems/electric-power/diesel-generator-sets/1000028948.html"
+        ]
+      ]
+    }
   },
   "wartsila-34sg-for-sale": {
     "intro": "The Wärtsilä 34SG is a medium speed lean burn gas engine built in several cylinder versions. It is used in gas engine power plants for base load and for flexible grid balancing.",
@@ -1047,8 +1747,74 @@
       [
         "What is the difference between the Wärtsilä 34SG and the Jenbacher J620?",
         "The 34SG is a medium speed gas engine with higher output per unit; the J620 is a high speed gas engine. See Wärtsilä 34SG vs Jenbacher J620 for manufacturer data side by side."
+      ],
+      [
+        "What is the output of a Wärtsilä 34SG?",
+        "Wärtsilä states 5.6 to 9.8 MW per generating set across the 12V, 16V and 20V versions, at 750 rpm for 50 Hz and 720 rpm for 60 Hz."
+      ],
+      [
+        "What does a used Wärtsilä 34SG cost?",
+        "LKS 360-SCHREINER LLC quotes the price of each listed Wärtsilä 34SG on request with the stock number. It depends on cylinder version, hours since overhaul, condition, scope, frequency and location."
       ]
-    ]
+    ],
+    "price": {
+      "title": "Used Wärtsilä 34SG price: what sets it",
+      "intro": "LKS 360-SCHREINER LLC does not publish prices; each Wärtsilä 34SG is priced by its owner and quoted on request with the stock number. The price depends on these points:",
+      "factors": [
+        [
+          "Cylinder version",
+          "12V, 16V or 20V34SG decides the output per set."
+        ],
+        [
+          "Hours since overhaul",
+          "Running hours since the last major overhaul and the overhaul records."
+        ],
+        [
+          "Rating",
+          "Standby, prime or continuous rating; compare units only at the same rating."
+        ],
+        [
+          "Condition",
+          "New and unused, overhauled or in operation."
+        ],
+        [
+          "Scope of supply",
+          "Generator, radiators or cooling, controls, switchgear, enclosure or container, heat recovery."
+        ],
+        [
+          "Frequency, voltage and fuel",
+          "50 or 60 Hz, generator voltage and the fuel or gas quality at the buyer's site."
+        ],
+        [
+          "Emissions and logistics",
+          "Emission limits at the site, transport and import duties."
+        ]
+      ]
+    },
+    "variants": {
+      "title": "Wärtsilä 34SG versions",
+      "intro": "Wärtsilä builds the 34SG in three cylinder versions:",
+      "rows": [
+        [
+          "12V, 16V, 20V34SG",
+          "5.6 to 9.8 MW per set (Wärtsilä)."
+        ],
+        [
+          "Speed",
+          "750 rpm for 50 Hz, 720 rpm for 60 Hz (Wärtsilä)."
+        ],
+        [
+          "Type",
+          "Four stroke, spark ignited, lean burn gas engine generating set (Wärtsilä)."
+        ]
+      ],
+      "sources": [
+        [
+          "Wärtsilä, 34SG gas engine",
+          "https://www.wartsila.com/energy/solutions/engine-power-plants/wartsila-34sg-gas-engine"
+        ]
+      ]
+    }
   },
   "man-32-40-for-sale": {
     "intro": "The MAN 32/40 is a four stroke medium speed engine for diesel and heavy fuel oil. The designation refers to cylinder bore and stroke. It is used in power plants and in ship propulsion.",
@@ -1119,8 +1885,78 @@
       [
         "Are used Jenbacher J620 units available?",
         "Used J620 units come to the market from CHP plants that are upgraded or closed. We search the market on request."
+      ],
+      [
+        "Used Jenbacher J620 gas engine for sale: where to find one?",
+        "LKS 360-SCHREINER LLC has no Jenbacher J620 listed at the moment and searches the market for buyers on request. Comparable medium speed gas engines with more output per set, such as the Wärtsilä 34SG and Caterpillar G20CM34, are listed with stock numbers. Send output, gas type and frequency to manager@lks360.com."
+      ],
+      [
+        "What is the output of a Jenbacher J620?",
+        "INNIO Jenbacher states up to 3,509 kW for the J620, a 20 cylinder engine of the Type 6 family, running on natural gas and special gases such as biogas, sewage gas and landfill gas."
+      ],
+      [
+        "What does a used Jenbacher J620 cost?",
+        "LKS 360-SCHREINER LLC quotes the price of each listed Jenbacher J620 on request with the stock number. It depends on engine version and gas type, hours since overhaul, condition, scope, frequency and location."
       ]
-    ]
+    ],
+    "price": {
+      "title": "Used Jenbacher J620 price: what sets it",
+      "intro": "LKS 360-SCHREINER LLC does not publish prices; each Jenbacher J620 is priced by its owner and quoted on request with the stock number. The price depends on these points:",
+      "factors": [
+        [
+          "Engine version and gas type",
+          "Engine version and whether it runs on natural gas or special gases such as biogas or landfill gas."
+        ],
+        [
+          "Hours since overhaul",
+          "Running hours since the last major overhaul and the overhaul records."
+        ],
+        [
+          "Rating",
+          "Standby, prime or continuous rating; compare units only at the same rating."
+        ],
+        [
+          "Condition",
+          "New and unused, overhauled or in operation."
+        ],
+        [
+          "Scope of supply",
+          "Generator, radiators or cooling, controls, switchgear, enclosure or container, heat recovery."
+        ],
+        [
+          "Frequency, voltage and fuel",
+          "50 or 60 Hz, generator voltage and the fuel or gas quality at the buyer's site."
+        ],
+        [
+          "Emissions and logistics",
+          "Emission limits at the site, transport and import duties."
+        ]
+      ]
+    },
+    "variants": {
+      "title": "Jenbacher J620: model data",
+      "intro": "INNIO Jenbacher states these data for the J620:",
+      "rows": [
+        [
+          "Family",
+          "Type 6 gas engines (INNIO Jenbacher)."
+        ],
+        [
+          "Output",
+          "Up to 3,509 kW (INNIO Jenbacher)."
+        ],
+        [
+          "Fuels",
+          "Natural gas, biogas, sewage gas, landfill gas, coal mine gas, associated petroleum gas (INNIO Jenbacher)."
+        ]
+      ],
+      "sources": [
+        [
+          "INNIO Jenbacher, Type 6 gas engines",
+          "https://www.jenbacher.com/en/gas-engines/type-6"
+        ]
+      ]
+    }
   },
   "cummins-generator-sets-for-sale": {
     "intro": "Cummins builds gas and diesel generator sets over a wide output range. Common engines in the used market are the KTA50 and QSK60 diesel engines and the C2000 N6CB gas generator set.",

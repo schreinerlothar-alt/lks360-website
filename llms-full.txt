@@ -101,8 +101,26 @@ Page: https://lks360.com/generator-sets.html
 Q: What is coal-to-gas heat recovery repowering?
 A: Heat recovery repowering replaces the coal boiler of an existing power plant with one or more gas turbines and a heat recovery steam generator (HRSG); the gas turbine exhaust raises steam for the plant's existing steam turbine, so the coal unit becomes a combined cycle plant. It suits plants whose steam turbine, condenser, cooling system and grid connection still have decades of life left. LKS 360-SCHREINER LLC lists gas turbines and gas turbine trains with HRSG for such projects on behalf of their owners.
 Page: https://lks360.com/coal-to-gas-repowering.html
+Q: What does a buyer need before a used gas turbine can be sold?
+A: A buyer first needs model, output, frequency, year, hours, starts, condition and the scope of supply. Serial numbers, site and full documents follow a signed letter of intent, and inspection follows that.
+Page: https://lks360.com/how-to-sell-a-used-gas-turbine.html
+Q: What is an LOI when buying a used gas turbine?
+A: A letter of intent is a signed, non-binding statement in which the buyer names the stock number, the buyer company, the end user and the site and declares the intention to buy at the stated conditions. It opens full documents and inspection; the binding purchase contract comes later, directly between buyer and owner.
+Page: https://lks360.com/how-to-sell-a-used-gas-turbine.html
+Q: How is a used gas turbine paid for?
+A: The buyer pays the owner directly through escrow or an irrevocable letter of credit agreed between them. Purchase payments never pass through the accounts of LKS 360-SCHREINER LLC.
+Page: https://lks360.com/how-to-sell-a-used-gas-turbine.html
+Q: What is an LOI when buying a used gas turbine?
+A: A letter of intent is a signed, non-binding statement in which the buyer names the stock number, the buyer company, the end user and the site and declares the intention to buy at the stated conditions. It opens full documents and inspection; the binding purchase contract comes later, directly between buyer and owner.
+Page: https://lks360.com/buying-used-gas-turbines.html
+Q: Condensing vs back pressure: which used steam turbine fits my plant?
+A: If the plant needs process steam all the time, a back pressure or extraction turbine uses the steam twice, first for power and then for heat. If only electricity is needed, a condensing turbine gives more power from the same steam but needs a condenser and cooling. See condensing vs back pressure steam turbine for the full comparison.
+Page: https://lks360.com/steam-turbine-faq.html
+Q: Which data does a seller need from a buyer of a used steam turbine?
+A: Live steam pressure and temperature, steam mass flow, the required exhaust or back pressure, extraction pressures and flows, generator frequency and the site cooling conditions.
+Page: https://lks360.com/steam-turbine-faq.html
 
-## Units for sale, full data (updated 2026-11-17)
+## Units for sale, full data (updated 2026-11-18)
 
 ### 2 x Siemens Westinghouse W701DS gas turbine generator sets
 - Stock number: LKS-GT-01
@@ -867,6 +885,10 @@ Q: What is the difference between the LM2500, LM2500+ and LM2500+G4?
 A: They are versions of the same aeroderivative family. The LM2500+ and LM2500+G4 have higher output than the base LM2500. The data sheet of each unit states the exact version.
 Q: Can an LM2500 engine be exchanged?
 A: Aeroderivative engines can be removed and exchanged as a whole, which shortens outages. Engine exchange and lease options depend on the depot and are clarified case by case.
+Q: What is the output of a GE LM2500?
+A: GE Vernova states about 37 MW in simple cycle for the current LM2500, with 34.5 MW (G4) and 36.3 MW (G5) net at 50 Hz for the LM2500XPRESS+ package. Older units have less; the data sheet of each unit states its rating.
+Q: What does a used GE LM2500 cost?
+A: LKS 360-SCHREINER LLC quotes the price of each listed GE LM2500 on request with the stock number. It depends on version, hours since overhaul, condition, scope, frequency and location.
 Q: Who sells the GE LM2500 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the GE LM2500 still available?
@@ -929,6 +951,10 @@ Q: Is the Frame 6B the same as the MS6001B?
 A: Yes. Frame 6B and MS6001B name the same GE heavy duty gas turbine. Upgraded versions are often marked 6B.03.
 Q: What fuels can a Frame 6B burn?
 A: The Frame 6B is known for fuel flexibility. The fuel a specific unit can burn depends on its fuel system and combustors, which are listed in the unit documents.
+Q: What is the output of a GE Frame 6B?
+A: GE Vernova states 45 MW in simple cycle at ISO conditions on natural gas for the 6B. Used units are often rated lower depending on version and condition; the units listed here are rated 38.6 MW and 39.2 MW by their owners.
+Q: What does a used GE Frame 6B cost?
+A: LKS 360-SCHREINER LLC quotes the price of each listed GE Frame 6B on request with the stock number. It depends on version and rating, hours since overhaul, condition, scope, frequency and location.
 Q: Who sells the GE Frame 6B units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the GE Frame 6B still available?
@@ -949,6 +975,10 @@ Q: What is the difference between the 7EA and the 9E?
 A: The 7EA runs on 60 Hz grids and the 9E on 50 Hz grids. See the comparison page Frame 9E vs 7EA for manufacturer data side by side.
 Q: Is a 7EA suitable for the USA?
 A: Yes. The 7EA is a 60 Hz gas turbine and fits the US grid without frequency conversion.
+Q: What is the output of a GE 7EA?
+A: GE Vernova states 90 MW in simple cycle for the current 7E.03 at 60 Hz. Older 7EA units carry lower ratings; the unit listed here is rated 76 to 85 MW by its owner.
+Q: What does a used GE 7EA cost?
+A: LKS 360-SCHREINER LLC quotes the price of each listed GE 7EA on request with the stock number. It depends on version and rating, hours since overhaul, condition, scope, frequency and location.
 Q: Who sells the GE 7EA units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the GE 7EA still available?
@@ -969,6 +999,10 @@ Q: What is the difference between the MS5001 and the MS5002?
 A: The MS5001 is a single shaft gas turbine used for generator drive. The MS5002 is a two shaft design used mainly for compressor and pump drive.
 Q: Are Frame 5 gas turbines still supported?
 A: Yes. GE and independent service providers still supply parts and service for the Frame 5 fleet.
+Q: How many Frame 5 gas turbines were built?
+A: According to Combined Cycle Journal, well over 3,000 Frame 5 units were built in single and two shaft versions, and the single shaft MS5001 makes up about 85 percent of them.
+Q: What does a used GE Frame 5 cost?
+A: LKS 360-SCHREINER LLC quotes the price of each listed GE Frame 5 on request with the stock number. It depends on model, hours since overhaul, condition, scope, frequency and location.
 Q: Who sells the GE Frame 5 (MS5001) units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the GE Frame 5 (MS5001) still available?
@@ -989,6 +1023,10 @@ Q: What is the difference between the 9HA.01 and the 9HA.02?
 A: Both are GE H class gas turbines for 50 Hz. The 9HA.02 is the larger version. The data sheet of the specific unit states which version is offered.
 Q: Can an unused 9HA be bought on the secondary market?
 A: Yes, unused units become available when projects are cancelled or changed. Such units are offered by their owners and listed with stock number on lks360.com when available.
+Q: What is the output of a GE 9HA?
+A: GE Vernova states 448 MW for the 9HA.01 and 571 MW for the 9HA.02 in simple cycle, net, at 50 Hz. The unit listed here is an unused 9HA.01.
+Q: What does a used GE 9HA cost?
+A: LKS 360-SCHREINER LLC quotes the price of each listed GE 9HA on request with the stock number. It depends on version, hours since overhaul, condition, scope, frequency and location.
 Q: Who sells the GE 9HA units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the GE 9HA still available?
@@ -1049,6 +1087,12 @@ Q: What was the SGT-400 called before?
 A: The SGT-400 goes back to the Cyclone gas turbine from the former Alstom industrial range, now part of Siemens Energy.
 Q: Is the SGT-400 used offshore?
 A: Yes. The manufacturer lists offshore platforms and FPSO among the typical applications of the SGT-400.
+Q: Used Siemens SGT-400 gas turbine for sale: what is available?
+A: LKS 360-SCHREINER LLC lists LKS-GT-27, Siemens SGT-400 DLE gas turbines, 14.4 MW, 50 Hz, built 2019, located in Asia, offered on behalf of the owner, price on request. Full data and inspection follow a letter of intent.
+Q: What is the output of a Siemens SGT-400?
+A: Siemens Energy offers the SGT-400 in a 13 MW version with 12.9 MW(e) and a 15 MW version with 14.3 MW(e), for 50 Hz and 60 Hz.
+Q: What does a used Siemens SGT-400 cost?
+A: LKS 360-SCHREINER LLC quotes the price of each listed Siemens SGT-400 on request with the stock number. It depends on output version, hours since overhaul, condition, scope, frequency and location.
 Q: Who sells the Siemens SGT-400 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Siemens SGT-400 still available?
@@ -1109,6 +1153,10 @@ Q: What does PG9171E mean?
 A: PG9171E is a GE model designation of the Frame 9E package for generator drive.
 Q: What is the difference between the Frame 9E and the 7EA?
 A: The 9E is built for 50 Hz grids and the 7EA for 60 Hz grids. See Frame 9E vs 7EA for the manufacturer data.
+Q: What is the output of a GE Frame 9E?
+A: GE Vernova states 132 MW (9E.03) to 147 MW (9E.04) in simple cycle, net, at 50 Hz. Older PG9171E units are rated lower; the units listed here are rated 126 MW and 243 MW for two units by their owners.
+Q: What does a used GE Frame 9E cost?
+A: LKS 360-SCHREINER LLC quotes the price of each listed GE Frame 9E on request with the stock number. It depends on version and rating, hours since overhaul, condition, scope, frequency and location.
 Q: Who sells the GE Frame 9E units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the GE Frame 9E still available?
@@ -1129,6 +1177,10 @@ Q: What is the difference between the W701 and the W501?
 A: The W701 series is built for 50 Hz grids and the W501 series for 60 Hz grids. Both come from the Westinghouse heavy duty fleet.
 Q: Who services W701 and W501 gas turbines today?
 A: Siemens Energy and independent service providers support the fleet. The service history of the specific unit is part of the documents released after a letter of intent.
+Q: Which frequency does a W701 or W501 run at?
+A: The W701 is the 50 Hz series and the W501 the 60 Hz series; according to Wikipedia the W701 is a 50 Hz scaled version of the 60 Hz W501.
+Q: What does a used Siemens Westinghouse W701 and W501 cost?
+A: LKS 360-SCHREINER LLC quotes the price of each listed Siemens Westinghouse W701 and W501 on request with the stock number. It depends on series and generation, hours since overhaul, condition, scope, frequency and location.
 Q: Who sells the Siemens Westinghouse W701 and W501 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Siemens Westinghouse W701 and W501 still available?
@@ -1253,6 +1305,10 @@ Q: What is the Siemens SST-400 used for?
 A: The SST-400 is a Siemens Energy industrial steam turbine with a single casing. It is used as condensing or back pressure turbine, with or without steam extraction. Typical uses: industrial power plants and cogeneration; waste to energy and biomass plants; steam turbine in combined cycle blocks.
 Q: Is the SST-400 a condensing or back pressure turbine?
 A: The SST-400 is built in both designs. The data sheet of each unit states which design it is. See condensing vs back pressure steam turbine for the difference.
+Q: What is the output of a Siemens SST-400?
+A: Siemens Energy states an output of up to 65 MW and a speed of up to 7,100 rpm for the SST-400. The output of a given unit follows from its steam conditions and is shown on its data sheet.
+Q: What does a used Siemens SST-400 cost?
+A: LKS 360-SCHREINER LLC quotes the price of each listed Siemens SST-400 on request with the stock number. It depends on steam data and output, hours since overhaul, condition, scope, frequency and location.
 Q: Who sells the Siemens SST-400 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Siemens SST-400 still available?
@@ -1311,6 +1367,10 @@ Q: What is the difference between the 3516B and the 3516C?
 A: Both are Caterpillar 3516 engines with 16 cylinders. The 3516C is the later generation with updated emission and control systems.
 Q: Standby or prime rating: what is the difference?
 A: A standby rating applies to emergency use with limited hours per year. A prime rating applies to continuous operation with variable load. The rating of each unit is stated on its data plate.
+Q: What is the output of a Caterpillar 3516?
+A: Caterpillar states 1,450 to 1,750 ekW for the 3516 60 Hz diesel generator set, with 1,750 ekW standby and 1,600 ekW prime. 50 Hz ratings differ; the data sheet of each unit states its rating.
+Q: What does a used Caterpillar 3516 cost?
+A: LKS 360-SCHREINER LLC quotes the price of each listed Caterpillar 3516 on request with the stock number. It depends on generation and rating, hours since overhaul, condition, scope, frequency and location.
 Q: Who sells the Caterpillar 3516 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Caterpillar 3516 still available?
@@ -1329,6 +1389,10 @@ Q: What is the Wärtsilä 34SG used for?
 A: The Wärtsilä 34SG is a medium speed lean burn gas engine built in several cylinder versions. It is used in gas engine power plants for base load and for flexible grid balancing. Typical uses: gas engine power plants; combined heat and power for industry and cities; flexible generation to balance renewables.
 Q: What is the difference between the Wärtsilä 34SG and the Jenbacher J620?
 A: The 34SG is a medium speed gas engine with higher output per unit; the J620 is a high speed gas engine. See Wärtsilä 34SG vs Jenbacher J620 for manufacturer data side by side.
+Q: What is the output of a Wärtsilä 34SG?
+A: Wärtsilä states 5.6 to 9.8 MW per generating set across the 12V, 16V and 20V versions, at 750 rpm for 50 Hz and 720 rpm for 60 Hz.
+Q: What does a used Wärtsilä 34SG cost?
+A: LKS 360-SCHREINER LLC quotes the price of each listed Wärtsilä 34SG on request with the stock number. It depends on cylinder version, hours since overhaul, condition, scope, frequency and location.
 Q: Who sells the Wärtsilä 34SG units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Wärtsilä 34SG still available?
@@ -1383,6 +1447,12 @@ Q: What is the Jenbacher J620 used for?
 A: The Jenbacher J620 is a high speed gas engine with 20 cylinders from the Type 6 range of INNIO Jenbacher. It is used in combined heat and power plants, greenhouses and industrial power. Typical uses: combined heat and power for industry and district heating; greenhouse power, heat and co2 supply; gas engine power plants.
 Q: Are used Jenbacher J620 units available?
 A: Used J620 units come to the market from CHP plants that are upgraded or closed. We search the market on request.
+Q: Used Jenbacher J620 gas engine for sale: where to find one?
+A: LKS 360-SCHREINER LLC has no Jenbacher J620 listed at the moment and searches the market for buyers on request. Comparable medium speed gas engines with more output per set, such as the Wärtsilä 34SG and Caterpillar G20CM34, are listed with stock numbers. Send output, gas type and frequency to manager@lks360.com.
+Q: What is the output of a Jenbacher J620?
+A: INNIO Jenbacher states up to 3,509 kW for the J620, a 20 cylinder engine of the Type 6 family, running on natural gas and special gases such as biogas, sewage gas and landfill gas.
+Q: What does a used Jenbacher J620 cost?
+A: LKS 360-SCHREINER LLC quotes the price of each listed Jenbacher J620 on request with the stock number. It depends on engine version and gas type, hours since overhaul, condition, scope, frequency and location.
 Q: Who sells the Jenbacher J620 units listed here?
 A: LKS 360-SCHREINER LLC, a Florida limited liability company and independent broker, lists each unit on behalf of its owner. The purchase contract is made directly between buyer and owner.
 Q: Is the Jenbacher J620 still available?
@@ -1490,6 +1560,12 @@ Buyer guide
 What to ask for, what to check and how a purchase of used or surplus power generation equipment runs. The same points apply to steam turbines and generator sets.
 
 How do I buy a used gas turbine safely? Send your requirement (output, frequency, fuel, site and timeline), compare offers by stock number, then sign a letter of intent to receive full data and inspect the unit. Sign the purchase contract directly with the owner and pay through escrow or a letter of credit, never in advance to an intermediary.
+
+Direct answers
+
+### What is an LOI when buying a used gas turbine?
+
+A letter of intent is a signed, non-binding statement in which the buyer names the stock number, the buyer company, the end user and the site and declares the intention to buy at the stated conditions. It opens full documents and inspection; the binding purchase contract comes later, directly between buyer and owner.
 
 ### 1. Define the requirement
 
@@ -1618,6 +1694,16 @@ Knowledge
 Plain answers to the questions buyers and owners ask about used and surplus steam turbines and steam turbine generator sets.
 
 Used steam turbine FAQ: condensing or back pressure, what should a buyer know? A condensing steam turbine exhausts into a condenser and turns as much steam as possible into power; a back pressure steam turbine exhausts steam at a pressure a process can still use, so it delivers power and process heat at the same time. A used steam turbine is further defined by its steam data (inlet pressure, inlet temperature, flow and exhaust pressure), extraction points and generator frequency. LKS 360-SCHREINER LLC lists 7 used steam turbines and steam turbine generator sets on behalf of their owners.
+
+Direct answers
+
+### Condensing vs back pressure: which used steam turbine fits my plant?
+
+If the plant needs process steam all the time, a back pressure or extraction turbine uses the steam twice, first for power and then for heat. If only electricity is needed, a condensing turbine gives more power from the same steam but needs a condenser and cooling. See condensing vs back pressure steam turbine for the full comparison.
+
+### Which data does a seller need from a buyer of a used steam turbine?
+
+Live steam pressure and temperature, steam mass flow, the required exhaust or back pressure, extraction pressures and flows, generator frequency and the site cooling conditions.
 
 ### What types of steam turbines are traded on the used market?
 
@@ -1810,6 +1896,20 @@ Knowledge
 A step by step guide for owners of used and surplus gas turbines.
 
 How do I sell a used gas turbine? Collect the unit data (model, output, frequency, year, hours, starts, condition and documents), set your net price and offer the unit through one sales route at one price. Release serial numbers, site and full documents only to buyers who sign a letter of intent, then sign the purchase contract directly with the buyer and receive payment through escrow or an irrevocable letter of credit. LKS 360-SCHREINER LLC sells used gas turbines, steam turbines and generator sets for owners without an upfront fee.
+
+Direct answers
+
+### What does a buyer need before a used gas turbine can be sold?
+
+A buyer first needs model, output, frequency, year, hours, starts, condition and the scope of supply. Serial numbers, site and full documents follow a signed letter of intent, and inspection follows that.
+
+### What is an LOI when buying a used gas turbine?
+
+A letter of intent is a signed, non-binding statement in which the buyer names the stock number, the buyer company, the end user and the site and declares the intention to buy at the stated conditions. It opens full documents and inspection; the binding purchase contract comes later, directly between buyer and owner.
+
+### How is a used gas turbine paid for?
+
+The buyer pays the owner directly through escrow or an irrevocable letter of credit agreed between them. Purchase payments never pass through the accounts of LKS 360-SCHREINER LLC.
 
 Short answer: Collect the unit data, set your net price, offer the unit through one sales route at one price, release full data only to buyers who sign a letter of intent, sign the purchase contract directly with the buyer and receive payment through escrow or an irrevocable letter of credit. The same steps apply to steam turbines and generator sets.
 

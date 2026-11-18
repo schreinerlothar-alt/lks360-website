@@ -686,6 +686,8 @@ def model_page(slugname, label, pattern, lead, cat="gas"):
     t = TEXTS.get(slugname)
     own_faq = [tuple(x) for x in t["faq"]] if t else []
     faqs = [(f"Where can I buy a used {label}?", model_short(slugname, label, us))] + ([spec_qa] if spec_qa else []) + own_faq + model_faq(label, us)[1:]
+    if t and t.get("price"):
+        faqs = [x for x in faqs if not x[0].startswith(f"Is the {label} still available")]
     _seen = set()
     faqs = [x for x in faqs if not (x[0] in _seen or _seen.add(x[0]))]
     n = len(us)
@@ -826,12 +828,18 @@ def short_answer(name):
     return q, a
 
 
+QAX = json.loads((ROOT / "_build" / "qa_extra.json").read_text(encoding="utf-8"))
+
+
 def add_answer(t, name):
     qa = short_answer(name)
     if not qa:
         return t
     q, a = qa
-    box = f'<!--ANSWER--><section class="qa"><div class="wrap"><p class="answer"><b>{e(q)}</b> {e(a)}</p></div></section><!--/ANSWER-->'
+    extra = QAX.get(name, [])
+    xh = "".join(f"<h3>{e(xq)}</h3><p>{e(xa)}</p>" for xq, xa in extra)
+    xh = f'<section class="soft"><div class="wrap"><p class="kicker">Direct answers</p>{xh}</div></section>' if xh else ""
+    box = f'<!--ANSWER--><section class="qa"><div class="wrap"><p class="answer"><b>{e(q)}</b> {e(a)}</p></div></section>{xh}<!--/ANSWER-->'
     if "<!--ANSWER-->" in t:
         t = re.sub(r"<!--ANSWER-->.*?<!--/ANSWER-->", lambda m: box, t, flags=re.S)
     else:
@@ -846,13 +854,14 @@ def add_answer(t, name):
         faq = next((x for x in items if isinstance(x, dict) and x.get("@type") == "FAQPage"), None)
         if faq is None:
             return mm.group(0)
-        faq["mainEntity"] = [x for x in faq["mainEntity"] if x.get("name") != q]
-        faq["mainEntity"].insert(0, {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}})
+        names = {q} | {xq for xq, _ in extra}
+        faq["mainEntity"] = [x for x in faq["mainEntity"] if x.get("name") not in names]
+        faq["mainEntity"][0:0] = [{"@type": "Question", "name": xq, "acceptedAnswer": {"@type": "Answer", "text": xa}} for xq, xa in [(q, a)] + extra]
         return f'<script type="application/ld+json">{json.dumps(d, ensure_ascii=False)}</script>'
     t2 = re.sub(r'<script type="application/ld\+json">(.*?)</script>', fix, t, flags=re.S)
     if t2 == t and '"FAQPage"' not in t:
         ld = {"@context": "https://schema.org", "@type": "FAQPage",
-              "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}}]}
+              "mainEntity": [{"@type": "Question", "name": xq, "acceptedAnswer": {"@type": "Answer", "text": xa}} for xq, xa in [(q, a)] + extra]}
         t2 = t.replace("</head>", f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n</head>', 1)
     return t2
 
@@ -1194,6 +1203,7 @@ llms = (llms_head + f"\n## Units for sale (stock list, updated {TODAY})\n"
         + "\n\n## Model pages\n" + "\n".join(f"- [{m[1]} for sale]({SITE}/{m[0]}.html)" for m in MODELS) + f"\n- [Used 60 Hz gas turbines, steam turbines and generator sets for the USA and the Americas]({SITE}/{HZ_SLUG}.html)" + f"\n- [Power generation equipment models compared (output, frequency, fuel, sources)]({SITE}/{CMP_SLUG}.html)" + "".join(f"\n- [{_MINFO[_c[1]][0]} vs {_MINFO[_c[2]][0]}]({SITE}/{_c[0]}.html)" for _c in COMPARE)
         + "\n\n## News\n" + "\n".join(f"- [{p['title']}]({SITE}/news/{p['slug']}.html)" for p in POSTS)
         + "\n\n## Short answers\n" + "\n".join(f"- {short_answer(k)[0]} {short_answer(k)[1]} ({SITE}/{'' if k == 'index.html' else k})" for k in SHORT)
+        + "\n" + "\n".join(f"- {xq} {xa} ({SITE}/{k})" for k, v in QAX.items() for xq, xa in v)
         + "\n" + "\n".join(f"- Where can I buy a used {m[1]}? {model_short(m[0], m[1], [u for u in UNITS if re.search(m[2], u['model'] + ' ' + u['name'])])} ({SITE}/{m[0]}.html)" for m in MODELS) + "\n")
 llms_path.write_text(llms, encoding="utf-8", newline="\n")
 
@@ -1214,7 +1224,8 @@ def _unit_full(u):
             ("Region", u.get("continent")), ("Status", "reserved" if u.get("status") == "reserved" else "offered, subject to prior sale"),
             ("Price", "on request"), ("Page", SITE + u["url"])]
     return f"### {u['name']}\n" + "\n".join(f"- {k}: {v}" for k, v in rows if v)
-_full = [llms_head.strip(), "## Short answers\n" + "\n".join(f"Q: {short_answer(k)[0]}\nA: {short_answer(k)[1]}\nPage: {SITE}/{'' if k == 'index.html' else k}" for k in SHORT),
+_full = [llms_head.strip(), "## Short answers\n" + "\n".join(f"Q: {short_answer(k)[0]}\nA: {short_answer(k)[1]}\nPage: {SITE}/{'' if k == 'index.html' else k}" for k in SHORT)
+         + "\n" + "\n".join(f"Q: {xq}\nA: {xa}\nPage: {SITE}/{k}" for k, v in QAX.items() for xq, xa in v),
          f"## Units for sale, full data (updated {TODAY})"] + [_unit_full(u) for u in UNITS]
 _full.append("## Questions and answers per model")
 for m in MODELS:

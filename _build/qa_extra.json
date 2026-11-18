@@ -1,0 +1,32 @@
+{
+  "how-to-sell-a-used-gas-turbine.html": [
+    [
+      "What does a buyer need before a used gas turbine can be sold?",
+      "A buyer first needs model, output, frequency, year, hours, starts, condition and the scope of supply. Serial numbers, site and full documents follow a signed letter of intent, and inspection follows that."
+    ],
+    [
+      "What is an LOI when buying a used gas turbine?",
+      "A letter of intent is a signed, non-binding statement in which the buyer names the stock number, the buyer company, the end user and the site and declares the intention to buy at the stated conditions. It opens full documents and inspection; the binding purchase contract comes later, directly between buyer and owner."
+    ],
+    [
+      "How is a used gas turbine paid for?",
+      "The buyer pays the owner directly through escrow or an irrevocable letter of credit agreed between them. Purchase payments never pass through the accounts of LKS 360-SCHREINER LLC."
+    ]
+  ],
+  "buying-used-gas-turbines.html": [
+    [
+      "What is an LOI when buying a used gas turbine?",
+      "A letter of intent is a signed, non-binding statement in which the buyer names the stock number, the buyer company, the end user and the site and declares the intention to buy at the stated conditions. It opens full documents and inspection; the binding purchase contract comes later, directly between buyer and owner."
+    ]
+  ],
+  "steam-turbine-faq.html": [
+    [
+      "Condensing vs back pressure: which used steam turbine fits my plant?",
+      "If the plant needs process steam all the time, a back pressure or extraction turbine uses the steam twice, first for power and then for heat. If only electricity is needed, a condensing turbine gives more power from the same steam but needs a condenser and cooling. See condensing vs back pressure steam turbine for the full comparison."
+    ],
+    [
+      "Which data does a seller need from a buyer of a used steam turbine?",
+      "Live steam pressure and temperature, steam mass flow, the required exhaust or back pressure, extraction pressures and flows, generator frequency and the site cooling conditions."
+    ]
+  ]
+}
