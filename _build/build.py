@@ -1119,6 +1119,7 @@ def compare_overview():
   {body}
   <p class="muted small">Manufacturer data for the model type, not the data of a specific unit offered. Values of a used unit depend on its version, site and condition. Prices on request with the stock number.</p>
   <h2>Direct comparisons</h2><ul>{pairs}</ul>
+  <p>Download the model reference data as CSV/JSON: <a href="https://schreinerlothar-alt.github.io/gas-turbine-reference-data/">Gas turbine and generator set reference data</a>.</p>
   <p>More answers: <a href="/gas-turbine-faq.html">gas turbine FAQ</a>, <a href="/steam-turbine-faq.html">steam turbine FAQ</a>, <a href="/generator-set-faq.html">generator set FAQ</a>, <a href="/power-generation-glossary.html">glossary</a>. Owners: <a href="/sell.html">exclusive sales mandate</a>.</p>
 </div></section>
 """ + footer() + "\n</body>\n</html>\n"

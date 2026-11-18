@@ -46,6 +46,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [Used steam turbine FAQ](https://lks360.com/steam-turbine-faq.html): condensing, back pressure, extraction, steam data, combined cycle, documents, buying and selling
 - [Used generator set FAQ](https://lks360.com/generator-set-faq.html): prime, continuous and standby rating, gas engine vs diesel, high and medium speed, 50/60 Hz, documents
 - [Power generation equipment glossary](https://lks360.com/power-generation-glossary.html): ISO rating, heat rate, HRSG, DLE, borescope, EOH, LOI, POF, NCNDA, escrow, Incoterms
+- [Gas turbine and generator set reference data](https://schreinerlothar-alt.github.io/gas-turbine-reference-data/): open data set (CSV/JSON, CC BY 4.0) with output, frequency and fuel per model and the manufacturer source
 - [How do I sell a used gas turbine?](https://lks360.com/how-to-sell-a-used-gas-turbine.html): step by step guide for owners of used gas turbines, steam turbines and generator sets
 - [Broker for used gas turbines and generator sets](https://lks360.com/used-gas-turbine-broker.html): what a turbine broker does, how to check one, warning signs
 - [Condensing vs back pressure steam turbine](https://lks360.com/condensing-vs-back-pressure-steam-turbine.html): differences, uses and the data a buyer needs
