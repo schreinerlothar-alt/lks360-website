@@ -301,7 +301,7 @@ def unit_page(u):
   <h2>Similar units</h2>
   <p>Units of the same model come first, then {catplural.lower()} with the closest output.</p>
   <div class="ulist">{''.join(row(x) for x in related)}</div>
-  <p><a href="/inventory.html?cat={u['cat']}">All {catplural.lower()} in our inventory</a></p>
+  <p><a href="{catpath}">All {catplural.lower()} for sale</a> · <a href="/inventory.html">full inventory</a></p>
 </div></section>
 """ + footer() + "\n</body>\n</html>\n"
 
@@ -477,7 +477,7 @@ def cat_block(cat):
     us = [u for u in UNITS if u["cat"] == cat]
     return (f'<!--UNITS-->\n<section class="soft"><div class="wrap">\n  <p class="kicker">Inventory · updated {UPDATED}</p>\n'
             f'  <h2>{len(us)} {CATS[cat][1].lower()} for sale</h2>\n  <div class="ulist">{"".join(row(u) for u in us)}</div>\n'
-            f'  <p><a href="/inventory.html?cat={cat}">Filter all units in the inventory</a></p>\n</div></section>\n<!--/UNITS-->')
+            f'  <p><a href="/inventory.html">Filter all units in the inventory</a></p>\n</div></section>\n<!--/UNITS-->')
 
 
 def featured_block():
