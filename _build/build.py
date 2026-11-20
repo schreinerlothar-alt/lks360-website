@@ -832,6 +832,11 @@ def post_date(p):
     return f"{int(day)} {mon} {year}", f"{year}-{MONTHS[mon]:02d}-{int(day):02d}"
 
 
+# News lists (new arrivals, wanted, single for-sale posts) repeat the unit pages and age quickly; GSC keeps them
+# "crawled, not indexed" (validation failed 19.11.2026). They stay online and linked, but noindex and out of the sitemap.
+KEEP_POSTS = {"how-to-buy-a-used-gas-turbine-safely-ncnda-loi-and-proof-of-funds"}
+
+
 def post_page(p):
     shown, iso = post_date(p)
     plain = re.sub(r"<[^>]+>", " ", p["html"])
@@ -845,7 +850,8 @@ def post_page(p):
     m = re.search(r'src="(/img/[^"]+)"', p["html"])
     img = m.group(1) if m else "/img/gas-turbine-rotor.jpg"
     ld["image"] = SITE + img
-    return head(p["title"] + " | LKS 360-SCHREINER LLC", desc, path, f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n', img) + header() + f"""
+    return head(p["title"] + " | LKS 360-SCHREINER LLC", desc, path, f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n', img,
+                robots="" if p["slug"] in KEEP_POSTS else "noindex, follow") + header() + f"""
 <div class="crumbs wrap"><a href="/">Home</a> / <a href="/news.html">News</a></div>
 <section class="unitpage"><div class="wrap legal post">
   <p class="kicker">News{' · ' + shown if shown else ''}</p>
@@ -959,7 +965,9 @@ def popular_block():
             '<a href="/ge-tm2500-for-sale.html">GE TM2500 for sale</a> · <a href="/ge-tm2500-for-sale.html#price">GE TM2500 price</a> · '
             '<a href="/ge-lm6000-for-sale.html">GE LM6000 for sale</a> · <a href="/ge-lm6000-for-sale.html#variants">GE LM6000 PA, PC, PD, PF Sprint</a> · '
             '<a href="/siemens-sst-300-for-sale.html">Siemens SST-300 steam turbine</a> · <a href="/siemens-sgt-800-for-sale.html">Siemens SGT-800 for sale</a>'
-            '</p><p>Guide: <a href="/coal-to-gas-repowering.html">coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine</a> · <a href="/gas-turbines-for-data-centers.html">used gas turbines for data center power</a>.</p></div></section><!--/POPULAR-->')
+            '</p><p>Compare: ' + " · ".join(f'<a href="/{c[0]}.html">{e(_MINFO[c[1]][0])} vs {e(_MINFO[c[2]][0])}</a>' for c in COMPARE)
+            + ' · <a href="/power-generation-equipment-models-compared.html">all models compared</a>'
+            + '</p><p>Guide: <a href="/news/how-to-buy-a-used-gas-turbine-safely-ncnda-loi-and-proof-of-funds.html">how to buy a used gas turbine safely (NCNDA, LOI, proof of funds)</a> · <a href="/coal-to-gas-repowering.html">coal-to-gas repowering with gas turbines and HRSG for an existing steam turbine</a> · <a href="/gas-turbines-for-data-centers.html">used gas turbines for data center power</a> · <a href="/condensing-vs-back-pressure-steam-turbine.html">condensing vs back pressure steam turbine</a>.</p></div></section><!--/POPULAR-->')
 
 
 def add_popular(t, name):
@@ -1294,7 +1302,7 @@ for _p in list(ROOT.glob("*.html")) + list((ROOT / "units").glob("*.html")) + li
         _p.write_text(_t2, encoding="utf-8", newline="\n")
 
 ES_WRITTEN = build_es(globals())
-urls = [f"{SITE}/"] + [f"{SITE}/{n}" for n in STATIC[1:] if (ROOT / n).exists()] + [f"{SITE}/{m[0]}.html" for m in MODELS] + [f"{SITE}/{HZ_SLUG}.html"] + [f"{SITE}/{CMP_SLUG}.html"] + [f"{SITE}/{_c[0]}.html" for _c in COMPARE] + [SITE + u["url"] for u in UNITS if u["id"] not in STALE] + [f"{SITE}/news/{p['slug']}.html" for p in POSTS] + [SITE + p for p in ES_WRITTEN]
+urls = [f"{SITE}/"] + [f"{SITE}/{n}" for n in STATIC[1:] if (ROOT / n).exists()] + [f"{SITE}/{m[0]}.html" for m in MODELS] + [f"{SITE}/{HZ_SLUG}.html"] + [f"{SITE}/{CMP_SLUG}.html"] + [f"{SITE}/{_c[0]}.html" for _c in COMPARE] + [SITE + u["url"] for u in UNITS if u["id"] not in STALE] + [f"{SITE}/news/{p['slug']}.html" for p in POSTS if p["slug"] in KEEP_POSTS] + [SITE + p for p in ES_WRITTEN]
 IMGS = {**{f"{SITE}/{m[0]}.html": f"{SITE}/img/cards/{m[0]}.jpg" for m in MODELS},
         **{SITE + u["url"]: f"{SITE}/img/cards/lks-{u['id'].lower()}.jpg" for u in UNITS}}
 PHOTOS = {SITE + u["url"]: [f"{SITE}/img/units/{f}" for f in (u.get("photos") or [])] for u in UNITS}
