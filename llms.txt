@@ -34,7 +34,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 ## Pages
 - [Home](https://lks360.com/)
 - [Inventory](https://lks360.com/inventory.html): 55 listed units with stock numbers (34 gas turbines, 7 steam turbines, 14 generator sets), each with its own page under https://lks360.com/units/, filter by type, manufacturer, frequency and output. Prices on request.
-- [News](https://lks360.com/news.html): 11 posts with offers, wanted lists and market notes on gas turbines, steam turbines and gensets
+- [News](https://lks360.com/news.html): 12 posts with offers, wanted lists and market notes on gas turbines, steam turbines and gensets
 - Model pages: 27 pages, one per turbine or engine model, see Model pages below
 - [Sell equipment](https://lks360.com/sell.html): exclusive sales mandate for owners of used gas turbines, steam turbines and gensets: one price in the market, screened buyers, no upfront fee, confidential
 - [Contact](https://lks360.com/contact.html): requirement form, email and phone
@@ -57,7 +57,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [Imprint](https://lks360.com/imprint.html)
 - [Privacy Policy](https://lks360.com/privacy.html)
 
-## Units for sale (stock list, updated 2026-11-23)
+## Units for sale (stock list, updated 2026-11-25)
 - [LKS-GT-01: 2 x Siemens Westinghouse W701DS gas turbine generator sets](https://lks360.com/units/gt-01-2-x-siemens-westinghouse-w701ds-gas-turbine-generator-sets-127-8-mw-each-255-6-mw-to.html): 127.8 MW each, 255.6 MW total, 50 Hz, Rebuilt, unused since rebuild. Price on request, subject to prior sale.
 - [LKS-GT-02: Siemens SGT-800 gas turbines](https://lks360.com/units/gt-02-siemens-sgt-800-gas-turbines-51-9-mw.html): 51.9 MW, 50/60 Hz, 2024, New. Price on request, subject to prior sale.
 - [LKS-GT-03: Siemens SGT-800 combined cycle blocks](https://lks360.com/units/gt-03-siemens-sgt-800-combined-cycle-blocks-53-mw-gt-plus-25-mw-st.html): 53 MW GT + 25 MW ST, 50 Hz, 2017, reserved. Price on request, subject to prior sale.
@@ -143,6 +143,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [Caterpillar G20CM34 for sale](https://lks360.com/caterpillar-g20cm34-for-sale.html)
 - [Caterpillar 3516 for sale](https://lks360.com/caterpillar-3516-for-sale.html)
 - [Wärtsilä 34SG for sale](https://lks360.com/wartsila-34sg-for-sale.html)
+- [Wärtsilä 32 (Vasa 32) for sale](https://lks360.com/wartsila-32-for-sale.html)
 - [MAN 32/40 for sale](https://lks360.com/man-32-40-for-sale.html)
 - [MTU 16V4000 for sale](https://lks360.com/mtu-16v4000-for-sale.html)
 - [Jenbacher J620 for sale](https://lks360.com/jenbacher-j620-for-sale.html)
@@ -157,6 +158,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - [Wärtsilä 34SG vs Jenbacher J620](https://lks360.com/wartsila-34sg-vs-jenbacher-j620.html)
 
 ## News
+- [New Arrival 25 November 2026: Barge Mounted Power Plant, 10 x Wärtsilä Vasa 18V32D, 55 MW, 60 Hz](https://lks360.com/news/new-arrival-barge-mounted-power-plant-wartsila-vasa-18v32d-55-mw-25-november-2026.html)
 - [New Arrivals 18 November 2026: 2 x GE Frame 9E 243 MW, LM6000, TM2500+, ABB VEE 40, Wärtsilä 20V34SG](https://lks360.com/news/new-arrivals-gas-turbines-steam-turbines-generator-sets-18-november-2026.html)
 - [New Arrivals 11 November 2026: 4 x Solar Taurus 60, GE LM6000PA 42.3 MW, MWM and Caterpillar G3520H Gensets](https://lks360.com/news/new-arrivals-gas-turbines-steam-turbines-generator-sets-11-november-2026.html)
 - [New: Siemens SGT-700 with HRSG, SST-300, 2 x SST-400, and 5 x SGT-300 at a reduced price](https://lks360.com/news/new-sgt-700-with-hrsg-sst-300-sst-400-and-sgt-300-price-reduced-4-november-2026.html)
@@ -232,6 +234,7 @@ Full text with all unit data and answers: https://lks360.com/llms-full.txt
 - Where can I buy a used Caterpillar G20CM34? LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, lists 2 used or surplus Caterpillar G20CM34 units for sale, stock numbers LKS-GS-01, LKS-GS-02, on behalf of their owners and subject to prior sale. Price on request; full data and inspection follow a letter of intent. The purchase contract is made directly between buyer and owner. (https://lks360.com/caterpillar-g20cm34-for-sale.html)
 - Where can I buy a used Caterpillar 3516? LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, lists 2 used or surplus Caterpillar 3516 units for sale, stock numbers LKS-GS-05, LKS-GS-07, on behalf of their owners and subject to prior sale. Price on request; full data and inspection follow a letter of intent. The Caterpillar 3516 is a high speed engine with 16 cylinders in V arrangement. (https://lks360.com/caterpillar-3516-for-sale.html)
 - Where can I buy a used Wärtsilä 34SG? LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, lists 1 used or surplus Wärtsilä 34SG unit for sale, stock number LKS-GS-14, on behalf of its owner and subject to prior sale. Price on request; full data and inspection follow a letter of intent. The purchase contract is made directly between buyer and owner. (https://lks360.com/wartsila-34sg-for-sale.html)
+- Where can I buy a used Wärtsilä 32 (Vasa 32)? LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, lists 1 used or surplus Wärtsilä 32 (Vasa 32) unit for sale, stock number LKS-GS-26, on behalf of its owner and subject to prior sale. Price on request; full data and inspection follow a letter of intent. The purchase contract is made directly between buyer and owner. (https://lks360.com/wartsila-32-for-sale.html)
 - Where can I buy a used MAN 32/40? LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, lists 1 used or surplus MAN 32/40 unit for sale, stock number LKS-GS-04, on behalf of its owner and subject to prior sale. Price on request; full data and inspection follow a letter of intent. The purchase contract is made directly between buyer and owner. (https://lks360.com/man-32-40-for-sale.html)
 - Where can I buy a used MTU 16V4000? LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, lists 1 used or surplus MTU 16V4000 unit for sale, stock number LKS-GS-08, on behalf of its owner and subject to prior sale. Price on request; full data and inspection follow a letter of intent. The purchase contract is made directly between buyer and owner. (https://lks360.com/mtu-16v4000-for-sale.html)
 - Where can I buy a used Jenbacher J620? LKS 360-SCHREINER LLC (lks360.com), an independent broker based in Florida, has no Jenbacher J620 listed at the moment and searches the market on request. Send output, frequency and fuel to manager@lks360.com or WhatsApp +49 170 4656619. The Jenbacher J620 is a high speed gas engine with 20 cylinders from the Type 6 range of INNIO Jenbacher. (https://lks360.com/jenbacher-j620-for-sale.html)

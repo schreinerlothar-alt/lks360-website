@@ -13,7 +13,7 @@ ALL_UNITS = json.loads((ROOT / "_build" / "units.json").read_text(encoding="utf-
 UNITS = [u for u in ALL_UNITS if u.get("status") != "hidden"]
 OPEN_UNITS = UNITS
 LISTED = "21 October 2026"
-UPDATED = "18 November 2026"
+UPDATED = "25 November 2026"
 TODAY = datetime.date.today().isoformat()
 SITE = "https://lks360.com"
 MAIL = "manager@lks360.com"
@@ -552,6 +552,8 @@ MODELS = [
      "Caterpillar 3516B and 3516C generator sets, offered on behalf of their owners.", "genset"),
     ("wartsila-34sg-for-sale", "Wärtsilä 34SG", r"34SG",
      "Wärtsilä 34SG gas engine power plants, offered on behalf of their owners.", "genset"),
+    ("wartsila-32-for-sale", "Wärtsilä 32 (Vasa 32)", r"Vasa\s*\d*V?32",
+     "Wärtsilä 32 and Vasa 32 diesel and HFO generator sets and power plants, offered on behalf of their owners.", "genset"),
     ("man-32-40-for-sale", "MAN 32/40", r"32/40",
      "MAN B&W 32/40 diesel generator sets, offered on behalf of their owners.", "genset"),
     ("mtu-16v4000-for-sale", "MTU 16V4000", r"16V4000",
